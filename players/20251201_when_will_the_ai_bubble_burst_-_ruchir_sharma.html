@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchir Sharma: When Will the AI Bubble Burst? - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 4px;
+        }
+
+        .header .subtitle {
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        .header .channel {
+            font-size: 0.85rem;
+            color: #58a6ff;
+            margin-top: 2px;
+        }
+
+        /* Player wrapper */
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+            background: #161b22;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+        }
+
+        .btn:disabled {
+            background: #21262d;
+            color: #484f58;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress section */
+        .progress-section {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .progress-title {
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        .progress-stats {
+            font-size: 0.85rem;
+            color: #00b359;
+            font-weight: 500;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #21262d;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-label {
+            font-size: 0.8rem;
+            color: #8b949e;
+            text-align: center;
+        }
+
+        /* Excerpt list */
+        .excerpt-list {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .excerpt-list-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #30363d;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #e6edf3;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background 0.15s;
+            border-bottom: 1px solid #21262d;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #21262d;
+        }
+
+        .excerpt-item.active {
+            background: #1f3d2a;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.6;
+        }
+
+        .excerpt-marker {
+            width: 20px;
+            font-size: 0.9rem;
+            color: #484f58;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-marker {
+            color: #00b359;
+        }
+
+        .excerpt-item.active .excerpt-marker::before {
+            content: "▶";
+        }
+
+        .excerpt-item:not(.active) .excerpt-marker::before {
+            content: "○";
+        }
+
+        .excerpt-item.played:not(.active) .excerpt-marker::before {
+            content: "●";
+        }
+
+        .excerpt-label {
+            flex: 1;
+            font-size: 0.9rem;
+            margin-left: 8px;
+        }
+
+        .excerpt-duration {
+            font-size: 0.8rem;
+            color: #8b949e;
+            margin-left: 12px;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #484f58;
+        }
+
+        .footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Status message */
+        .status {
+            text-align: center;
+            padding: 8px;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 1.2rem;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .excerpt-item {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⏱️ Key Excerpts (8:09)</h1>
+            <div class="subtitle">Ruchir Sharma: When Will the AI Bubble Burst?</div>
+            <div class="channel">Norges Bank Investment Management</div>
+        </div>
+
+        <div class="player-wrapper">
+            <iframe id="player"
+                src="https://www.youtube.com/embed/zOOgmOKEZnw?rel=0&modestbranding=1&playsinline=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="controls">
+            <button class="btn" id="playBtn" onclick="startPlayback()">
+                <span>▶</span> Play All Excerpts
+            </button>
+            <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                <span>⏭</span> Next Excerpt
+            </button>
+            <button class="btn btn-secondary" id="skipBtn" onclick="skipToNext()" disabled style="display: none;">
+                <span>⏭</span> Skip
+            </button>
+            <button class="btn btn-secondary" onclick="window.open('https://www.youtube.com/watch?v=zOOgmOKEZnw', '_blank')">
+                <span>↗</span> Full Video (30:52)
+            </button>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-title">Excerpt Progress</span>
+                <span class="progress-stats" id="progressStats">0 / 7 excerpts</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-label" id="progressLabel">8:09 of 30:52 (26% of full video)</div>
+        </div>
+
+        <div class="excerpt-list">
+            <div class="excerpt-list-header">7 Key Moments</div>
+            <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-marker">○</span><span class="excerpt-label">US economy is one big bet on AI</span><span class="excerpt-duration">[0:49]</span></div>
+            <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-marker">○</span><span class="excerpt-label">60% of US growth driven by AI</span><span class="excerpt-duration">[0:54]</span></div>
+            <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-marker">○</span><span class="excerpt-label">Most hated tech revolution—only 35% positive</span><span class="excerpt-duration">[1:12]</span></div>
+            <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-marker">○</span><span class="excerpt-label">Four O's of bubble: overinvestment, overvaluation, overownership, overleveraging</span><span class="excerpt-duration">[2:16]</span></div>
+            <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-marker">○</span><span class="excerpt-label">China AI convergence at 1/5 the cost—bubble bursts on rate hikes</span><span class="excerpt-duration">[1:16]</span></div>
+            <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-marker">○</span><span class="excerpt-label">Quality stocks at historic discount—best time to buy</span><span class="excerpt-duration">[1:13]</span></div>
+            <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-marker">○</span><span class="excerpt-label">International outperformance is multi-year trend</span><span class="excerpt-duration">[0:29]</span></div>
+        </div>
+
+        <div class="status" id="status">Ready to play</div>
+
+        <div class="footer">
+            <p>Generated by MAELSTROEM Intelligence</p>
+            <p style="margin-top: 4px;">
+                <a href="pdfs/20251201_when_will_the_ai_bubble_burst_-_ruchir_sharma.pdf">View Full Analysis (PDF)</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 126,
+    "end": 175,
+    "duration": 49,
+    "label": "US economy is one big bet on AI",
+    "insight": "Outside AI, lots of weakness. 40% of growth from AI capex, 80% of stock gains from AI plays."
+  },
+  {
+    "id": 2,
+    "start": 196,
+    "end": 250,
+    "duration": 54,
+    "label": "60% of US growth driven by AI",
+    "insight": "Direct capex plus wealth effect powering top 10% spending. Productivity benefits still too early to measure."
+  },
+  {
+    "id": 3,
+    "start": 288,
+    "end": 360,
+    "duration": 72,
+    "label": "Most hated tech revolution\u2014only 35% positive",
+    "insight": "Unlike past bubbles, people fearful not optimistic. Techno-optimists saying 'we're coming for your job' breeds fear."
+  },
+  {
+    "id": 4,
+    "start": 409,
+    "end": 545,
+    "duration": 136,
+    "label": "Four O's of bubble: overinvestment, overvaluation, overownership, overleveraging",
+    "insight": "Tech capex at 5% GDP (2000 level), 52% household wealth in equities (higher than 2000), Meta/AMZN/MSFT now issuing debt for AI arms race."
+  },
+  {
+    "id": 5,
+    "start": 1254,
+    "end": 1330,
+    "duration": 76,
+    "label": "China AI convergence at 1/5 the cost\u2014bubble bursts on rate hikes",
+    "insight": "Chinese LLMs at parity spending $100B vs US $500B. Every bubble pricked by one factor: interest rates going up."
+  },
+  {
+    "id": 6,
+    "start": 1737,
+    "end": 1810,
+    "duration": 73,
+    "label": "Quality stocks at historic discount\u2014best time to buy",
+    "insight": "Quality factor (high ROE, low leverage) had one of worst 12-month runs in recorded history. Contrarian entry."
+  },
+  {
+    "id": 7,
+    "start": 1821,
+    "end": 1850,
+    "duration": 29,
+    "label": "International outperformance is multi-year trend",
+    "insight": "2025 not a flash in pan. These trends persist once they begin. Expect continuation in 2026."
+  }
+];
+        const videoId = 'zOOgmOKEZnw';
+
+        // State
+        let currentExcerpt = -1;
+
+        function getEmbedUrl(excerpt) {
+            // Use embed URL with start time and autoplay
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe src to play this excerpt
+            const iframe = document.getElementById('player');
+            iframe.src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('skipBtn').disabled = false;
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt < excerpts.length - 1) {
+                markExcerptPlayed(currentExcerpt);
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                markExcerptPlayed(currentExcerpt);
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+            document.getElementById('skipBtn').disabled = true;
+
+            // Mark last as played
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+
+            const percent = (completed / total) * 100;
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total} excerpts`;
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
