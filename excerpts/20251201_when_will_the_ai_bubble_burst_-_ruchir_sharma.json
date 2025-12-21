@@ -1,0 +1,73 @@
+{
+  "video_id": "zOOgmOKEZnw",
+  "url": "https://www.youtube.com/watch?v=zOOgmOKEZnw",
+  "title": "Ruchir Sharma: When Will the AI Bubble Burst?",
+  "channel": "Norges Bank Investment Management",
+  "total_duration": 1852,
+  "pdf_link": "../pdfs/20251201_when_will_the_ai_bubble_burst_-_ruchir_sharma.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 126,
+      "end": 175,
+      "duration": 49,
+      "label": "US economy is one big bet on AI",
+      "insight": "Outside AI, lots of weakness. 40% of growth from AI capex, 80% of stock gains from AI plays.",
+      "pm_takeaway": "US equity exposure = concentrated AI bet. Diversify internationally or hedge with puts."
+    },
+    {
+      "id": 2,
+      "start": 196,
+      "end": 250,
+      "duration": 54,
+      "label": "60% of US growth driven by AI",
+      "insight": "Direct capex plus wealth effect powering top 10% spending. Productivity benefits still too early to measure.",
+      "pm_takeaway": "Growth dependent on wealth effect loop. Break in AI stocks = consumer spending cliff."
+    },
+    {
+      "id": 3,
+      "start": 288,
+      "end": 360,
+      "duration": 72,
+      "label": "Most hated tech revolution—only 35% positive",
+      "insight": "Unlike past bubbles, people fearful not optimistic. Techno-optimists saying 'we're coming for your job' breeds fear.",
+      "pm_takeaway": "Sentiment different from 1999—fear not euphoria. May limit retail FOMO, slower melt-up."
+    },
+    {
+      "id": 4,
+      "start": 409,
+      "end": 545,
+      "duration": 136,
+      "label": "Four O's of bubble: overinvestment, overvaluation, overownership, overleveraging",
+      "insight": "Tech capex at 5% GDP (2000 level), 52% household wealth in equities (higher than 2000), Meta/AMZN/MSFT now issuing debt for AI arms race.",
+      "pm_takeaway": "Bubble checklist 3/4 complete. Watch corporate debt issuance as 4th shoe to drop."
+    },
+    {
+      "id": 5,
+      "start": 1254,
+      "end": 1330,
+      "duration": 76,
+      "label": "China AI convergence at 1/5 the cost—bubble bursts on rate hikes",
+      "insight": "Chinese LLMs at parity spending $100B vs US $500B. Every bubble pricked by one factor: interest rates going up.",
+      "pm_takeaway": "THE trigger = rate hikes. Monitor Fed rhetoric and inflation prints. China DeepSeek follow-ups = valuation risk."
+    },
+    {
+      "id": 6,
+      "start": 1737,
+      "end": 1810,
+      "duration": 73,
+      "label": "Quality stocks at historic discount—best time to buy",
+      "insight": "Quality factor (high ROE, low leverage) had one of worst 12-month runs in recorded history. Contrarian entry.",
+      "pm_takeaway": "Rotate to quality factor NOW. Historic entry point. QUAL, SPHQ or custom screen."
+    },
+    {
+      "id": 7,
+      "start": 1821,
+      "end": 1850,
+      "duration": 29,
+      "label": "International outperformance is multi-year trend",
+      "insight": "2025 not a flash in pan. These trends persist once they begin. Expect continuation in 2026.",
+      "pm_takeaway": "Underweight US, overweight EAFE/EM. Multi-year trend once started. Rebalance now."
+    }
+  ]
+}

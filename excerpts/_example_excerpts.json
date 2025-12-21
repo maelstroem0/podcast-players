@@ -1,0 +1,58 @@
+{
+  "video_id": "EXAMPLE_ID",
+  "url": "https://www.youtube.com/watch?v=EXAMPLE_ID",
+  "title": "Howard Marks: The Art of Risk",
+  "channel": "Bloomberg Markets",
+  "total_duration": 7200,
+  "pdf_link": "pdfs/20250115_howard_marks_risk.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 342,
+      "end": 398,
+      "duration": 56,
+      "label": "The negative art of investing",
+      "insight": "Core thesis: avoiding losers beats picking winners in credit"
+    },
+    {
+      "id": 2,
+      "start": 892,
+      "end": 945,
+      "duration": 53,
+      "label": "Choosing your game",
+      "insight": "Conscious choice between aggressive (more winners) vs defensive (fewer losers)"
+    },
+    {
+      "id": 3,
+      "start": 1205,
+      "end": 1260,
+      "duration": 55,
+      "label": "AI bubble comparison",
+      "insight": "Parallels to 1999 internet bubble - transformative tech, most investors lose"
+    },
+    {
+      "id": 4,
+      "start": 2340,
+      "end": 2395,
+      "duration": 55,
+      "label": "The pendulum never stops",
+      "insight": "Markets oscillate between fear and greed - never at equilibrium"
+    },
+    {
+      "id": 5,
+      "start": 3120,
+      "end": 3168,
+      "duration": 48,
+      "label": "When to be aggressive",
+      "insight": "Best opportunities when others are fearful and selling"
+    },
+    {
+      "id": 6,
+      "start": 4580,
+      "end": 4638,
+      "duration": 58,
+      "label": "Credit vs equity setup",
+      "insight": "Current yields make credit more attractive than equity risk"
+    }
+  ]
+}

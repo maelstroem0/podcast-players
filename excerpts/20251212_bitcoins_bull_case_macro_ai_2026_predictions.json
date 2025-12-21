@@ -1,0 +1,82 @@
+{
+  "video_id": "Jw_kDHCIA10",
+  "url": "https://www.youtube.com/watch?v=Jw_kDHCIA10",
+  "title": "Jordi Visser: Bitcoin as AI-Proof Store of Value",
+  "channel": "Coin Bureau",
+  "total_duration": 3630,
+  "pdf_link": "../pdfs/20251212_bitcoins_bull_case_macro_ai_2026_predictions.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 264,
+      "end": 328,
+      "duration": 64,
+      "label": "Bitcoin is digital store of value, not digital gold",
+      "insight": "BTC competes with all fiat stores ($500-800T), not just gold. Demographic rotation: older holders don't believe, younger ones do.",
+      "pm_takeaway": "Size BTC position against total fiat store of value TAM, not gold market cap. Generational wealth transfer = structural bid."
+    },
+    {
+      "id": 2,
+      "start": 515,
+      "end": 580,
+      "duration": 65,
+      "label": "Bitcoin is belief-based, AI disrupts everything else",
+      "insight": "BTC already won digital store of value battle. AI will disrupt all businesses including real estate—Bitcoin's moat is belief, not innovation.",
+      "pm_takeaway": "BTC = hedge against AI disruption of all other asset classes. No innovation risk, only adoption risk."
+    },
+    {
+      "id": 3,
+      "start": 774,
+      "end": 838,
+      "duration": 64,
+      "label": "Fear and need drive institutional adoption speed",
+      "insight": "OGs selling because wealthy, no longer need it. El Salvador-type buyers have need. Silent IPO: churning from OGs to new holders.",
+      "pm_takeaway": "Monitor on-chain OG wallet flows. Institutional adoption driven by career risk asymmetry—wait for 'need' catalyst."
+    },
+    {
+      "id": 4,
+      "start": 1055,
+      "end": 1118,
+      "duration": 63,
+      "label": "Mag 7 spending billions competing on free commodity",
+      "insight": "Hyperscalers competing with each other, spending enormous capex. If OpenAI fails, all multiples compress. No one's proven AI monetization yet.",
+      "pm_takeaway": "Short Mag 7 vs SPX as AI capex destroys margins. Watch OpenAI solvency as canary for multiple compression."
+    },
+    {
+      "id": 5,
+      "start": 1223,
+      "end": 1280,
+      "duration": 57,
+      "label": "Silent IPO distribution phase is over",
+      "insight": "Distribution over since October. OGs continue selling but buying power exceeds it. Three buyer types: EM entrepreneurs, institutions, retail traders.",
+      "pm_takeaway": "Technical setup bullish: supply overhang absorbed. Add on 3 daily closes >92K as retail re-engagement signal."
+    },
+    {
+      "id": 6,
+      "start": 2143,
+      "end": 2200,
+      "duration": 57,
+      "label": "Tokenization unlocks balance sheet rotation to Bitcoin",
+      "insight": "Tokenization enables real estate/PE liquidity. $178T household net worth can finally exit illiquid assets into crypto rails.",
+      "pm_takeaway": "Tokenization = structural flow unlock. Watch real estate tokenization adoption as leading indicator for BTC inflows."
+    },
+    {
+      "id": 7,
+      "start": 2605,
+      "end": 2670,
+      "duration": 65,
+      "label": "MSTR is not leverage—it's digital capital structure bet",
+      "insight": "Owns MSTR for 5% Bitcoin ownership in future digital capital structure, not leverage. No other company can catch up to that position.",
+      "pm_takeaway": "MSTR = call option on BTC becoming reserve asset. Position for NAV re-rating, not BTC beta."
+    },
+    {
+      "id": 8,
+      "start": 2859,
+      "end": 2920,
+      "duration": 61,
+      "label": "Fiscal dominance permanent—GDP growing, no jobs",
+      "insight": "Nominal GDP 5%, real GDP 3%+, yet no job creation. Innovation + AI worsens wealth distribution. Fiscal dominance can't end until abundance.",
+      "pm_takeaway": "Fed irrelevant—fiscal dominance = perpetual money printing. Long hard assets, short duration."
+    }
+  ]
+}
