@@ -44,15 +44,30 @@ def extract_transcript_text(segments: list, start: float, end: float) -> str:
     return formatted
 
 
-def load_transcript(excerpts_file: Path) -> list:
-    """Load transcript segments from corresponding transcript JSON."""
-    # Derive transcript filename from excerpts filename
-    transcript_name = excerpts_file.name.replace(".json", ".json")
-    transcript_path = TRANSCRIPTS_DIR / transcript_name
+def load_transcript(excerpts_file: Path, transcript_file: str = None) -> list:
+    """Load transcript segments from corresponding transcript JSON.
+
+    Args:
+        excerpts_file: Path to excerpts JSON (used to derive default transcript name)
+        transcript_file: Optional explicit transcript filename (without path)
+    """
+    if transcript_file:
+        transcript_path = TRANSCRIPTS_DIR / transcript_file
+    else:
+        # Default: same name as excerpts file
+        transcript_path = TRANSCRIPTS_DIR / excerpts_file.name
 
     if transcript_path.exists():
         data = json.loads(transcript_path.read_text())
         return data.get("segments", [])
+
+    # Try to find a transcript that starts with the same date prefix
+    date_prefix = excerpts_file.stem.split("_")[0]  # e.g., "20260104"
+    for f in TRANSCRIPTS_DIR.glob(f"{date_prefix}_*.json"):
+        data = json.loads(f.read_text())
+        if "segments" in data:
+            return data.get("segments", [])
+
     return []
 
 
@@ -67,7 +82,8 @@ def generate_player(excerpts_path: str, output_path: str = None) -> Path:
     data = json.loads(excerpts_file.read_text())
 
     # Load transcript and add text to each excerpt
-    transcript_segments = load_transcript(excerpts_file)
+    transcript_file = data.get("transcript_file")  # Optional explicit transcript filename
+    transcript_segments = load_transcript(excerpts_file, transcript_file)
     if transcript_segments:
         for exc in data["excerpts"]:
             exc["transcript"] = extract_transcript_text(
