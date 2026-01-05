@@ -170,7 +170,29 @@ Create `excerpts/YYYYMMDD_slug.json` with this structure:
 |-------|---------|---------|
 | `label` | Short title shown in list | "Bitcoin is digital store of value" |
 | `insight` | Descriptive summary (shown in excerpt list subtext) | "BTC competes with $500-800T fiat stores, not just gold" |
-| `pm_takeaway` | Actionable PM insight (shown in PM Takeaway panel) | "Size position against fiat TAM, not gold market cap" |
+| `pm_takeaway` | Actionable PM insight (shown in PM Takeaway panel) | "BUY BTC. Size against fiat TAM ($500-800T), not gold. This is a 10x not 2x." |
+
+#### ⚠️ PM Takeaway Style Guide
+
+PM Takeaways must be **opinionated and actionable**—not generic observations.
+
+✅ **GOOD** (specific, actionable, opinionated):
+- "BUY SOFR. Market underpricing cuts by 50-75bps."
+- "STEEPENERS NOW. Buy 10Y puts, stay long front-end."
+- "Underweight hyperscalers—own semis over software."
+- "Gold is a PASS at these levels. Too elevated to chase."
+
+❌ **BAD** (generic, passive, no trade):
+- "Consider defensive positioning"
+- "AI concentration risk is real"
+- "Prepare for non-parallel curve moves"
+- "Market underpricing cuts"
+
+**Rules:**
+1. Start with action verb or trade direction (BUY, SELL, FADE, AVOID, PASS)
+2. Include specific instrument/asset when possible
+3. State conviction level if speaker did ("highest conviction call")
+4. Include target levels if mentioned
 
 ### Excerpt Selection Rules
 - **Total duration:** 4-5 minutes (240-300 seconds)
@@ -182,6 +204,8 @@ Create `excerpts/YYYYMMDD_slug.json` with this structure:
 1. Search transcript JSON `segments` array for key quote text
 2. Note the `start` time of matching segment
 3. Extend `end` time to capture full thought (30-60s)
+
+**Note:** Transcript filenames may differ from excerpt filenames (e.g., `20260104_ds_weekly_outlook_meeting_20260101.json` vs `20260104_ds_weekly_outlook.json`). The player generator finds transcripts by date prefix automatically.
 
 ---
 
