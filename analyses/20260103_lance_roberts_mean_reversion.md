@@ -25,6 +25,22 @@ The practical implication: **don't de-risk preemptively based on valuation alone
 
 ---
 
+## Listen or Skip?
+
+**Verdict:** Listen—essential risk management framework
+
+| Aspect | Rating |
+| :--- | :--- |
+| Signal density | ★★★★☆ |
+| Actionability | ★★★★☆ |
+| Novel insights | ★★★☆☆ |
+| Production quality | ★★★★☆ |
+
+**Best for:** Long-term investors, anyone worried about valuations, risk managers
+**Skip if:** Looking for short-term trading ideas or specific sector calls
+
+---
+
 ## Key Quotes
 
 1. > "When you look at returns over the last 15 years, we're running returns 50% above the average return of the market since 1900. You can't sustain that forever, particularly when the economy is growing at 2%."

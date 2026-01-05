@@ -108,6 +108,33 @@ Add a **Speaker Bio** section immediately after the header block (before Executi
 **Alan Dunne** is founder of Archive Capital, an advisory firm focused on alternative investments. Former head of portfolio construction at Abbey Capital with 20+ years in macro/CTA allocation. Author of research on regime-adaptive portfolios.
 ```
 
+### Listen or Skip? (Required)
+
+Add a **Listen or Skip?** section after Executive Summary with verdict, ratings, and audience guidance:
+
+```markdown
+## Listen or Skip?
+
+**Verdict:** [Must-listen / Listen / Skip]
+
+| Aspect | Rating |
+| :--- | :--- |
+| Signal density | ★★★★☆ |
+| Actionability | ★★★★☆ |
+| Novel insights | ★★★★☆ |
+| Production quality | ★★★★☆ |
+
+**Best for:** [Target audience, e.g., "Rates traders, macro PMs"]
+**Skip if:** [Who should skip, e.g., "Looking for equity stock picks"]
+```
+
+**Rating Scale:**
+- ★★★★★ = Exceptional
+- ★★★★☆ = Very Good
+- ★★★☆☆ = Good
+- ★★☆☆☆ = Fair
+- ★☆☆☆☆ = Poor
+
 ### Key Formatting Rules
 
 | Element | Format |

@@ -25,6 +25,22 @@ The two binary unknowns keeping Andy from pressing bets: **Fed chair announcemen
 
 ---
 
+## Listen or Skip?
+
+**Verdict:** Must-listen for rates traders
+
+| Aspect | Rating |
+| :--- | :--- |
+| Signal density | ★★★★★ |
+| Actionability | ★★★★★ |
+| Novel insights | ★★★★☆ |
+| Production quality | ★★★☆☆ |
+
+**Best for:** Rates traders, macro PMs, anyone positioning around Fed/policy catalysts
+**Skip if:** Looking for equity stock picks or long-term strategic allocation
+
+---
+
 ## Key Quotes
 
 1. > "The Fed's going to cut more than priced and not because they have a crazy dove at the wheel but because they should."
