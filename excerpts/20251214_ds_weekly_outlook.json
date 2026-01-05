@@ -1,0 +1,73 @@
+{
+  "video_id": "3ZCUBizSf1U",
+  "url": "https://www.youtube.com/watch?v=3ZCUBizSf1U",
+  "title": "Damped Spring: Weekly Outlook Dec 14",
+  "channel": "Damped Spring",
+  "total_duration": 2379,
+  "pdf_link": "../pdfs/20251214_ds_weekly_outlook.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 47,
+      "end": 115,
+      "duration": 68,
+      "label": "Fed admits QT overdone",
+      "insight": "Committee unanimously agreed to buy $40B/month T-bills through April—signal they reduced balance sheet too much",
+      "pm_takeaway": "RMO is admission of policy error, but scope is limited vs $3T QT—don't extrapolate to full QE"
+    },
+    {
+      "id": 2,
+      "start": 158,
+      "end": 225,
+      "duration": 67,
+      "label": "Reserves don't matter—it's bills",
+      "insight": "True driver: Yellen's 50% bill-financing flooded market, keeping repo rates above corridor; Fed buying bills to rebalance",
+      "pm_takeaway": "This is plumbing, not stimulus—focus on repo rates normalizing, not risk asset implications"
+    },
+    {
+      "id": 3,
+      "start": 280,
+      "end": 335,
+      "duration": 55,
+      "label": "BTFP comparison",
+      "insight": "Similar to SVB's BTFP: $120B injection sparked 12% equity rally, 10% gold rally—but gold fully retraced in 2 months",
+      "pm_takeaway": "Any RMO-driven rally likely temporary; don't chase—especially with SPX at 6900 vs 3800 then"
+    },
+    {
+      "id": 4,
+      "start": 460,
+      "end": 520,
+      "duration": 60,
+      "label": "Alpha positions: sell bonds on rally",
+      "insight": "Bearish stocks, wants to sell bonds and USD on rallies—capitulated to 70% invested but doesn't like it",
+      "pm_takeaway": "Even the cautious PM had to add risk; watch for failed rallies to re-establish shorts"
+    },
+    {
+      "id": 5,
+      "start": 655,
+      "end": 710,
+      "duration": 55,
+      "label": "Asymmetric downside risk",
+      "insight": "With clean book, fresh assessment says asymmetric risk to downside—bond market, VIX curve key tells",
+      "pm_takeaway": "Dec VIX spread collapsed 240→140 on Friday—limited hedging in place, vol can spike fast"
+    },
+    {
+      "id": 6,
+      "start": 740,
+      "end": 800,
+      "duration": 60,
+      "label": "Bitcoin's December curse",
+      "insight": "Saylor's 73K average cost known pain point; December historically murders overexposed traders",
+      "pm_takeaway": "Watch BTC channel break as leading indicator—crypto failing first while equities hold is negative divergence"
+    },
+    {
+      "id": 7,
+      "start": 820,
+      "end": 880,
+      "duration": 60,
+      "label": "Own the wings",
+      "insight": "Not pressing shorts but owning upside (7000 calls) and downside—this will be a 'wingy event'",
+      "pm_takeaway": "Volatility regime, not directional—buy optionality on both sides into year-end illiquidity"
+    }
+  ]
+}

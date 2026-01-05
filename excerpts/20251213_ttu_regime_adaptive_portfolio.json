@@ -1,0 +1,73 @@
+{
+  "video_id": "mdq6KSqNM4o",
+  "url": "https://www.youtube.com/watch?v=mdq6KSqNM4o",
+  "title": "Alan Dunne: Inside the Regime-Adaptive Portfolio",
+  "channel": "Top Traders Unplugged",
+  "total_duration": 4143,
+  "pdf_link": "../pdfs/20251213_ttu_regime_adaptive_portfolio.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 1575,
+      "end": 1640,
+      "duration": 65,
+      "label": "40-year disinflation regime ended",
+      "insight": "China, Soviet collapse, free trade, central bank independence all disinflationary—that confluence is over since 2020",
+      "pm_takeaway": "The macro tailwinds that made 60/40 work for 40 years have reversed—adjust SAA accordingly"
+    },
+    {
+      "id": 2,
+      "start": 1680,
+      "end": 1750,
+      "duration": 70,
+      "label": "Hidden growth concentration",
+      "insight": "Typical institutional portfolio with 10-12 buckets may have 80-90% risk tied to growth and stable inflation",
+      "pm_takeaway": "Audit your portfolio by factor exposure, not asset labels—PE, VC, credit all correlate in drawdowns"
+    },
+    {
+      "id": 3,
+      "start": 1760,
+      "end": 1820,
+      "duration": 60,
+      "label": "Debt levels 2x 1999",
+      "insight": "US debt/GDP double 1999; fiscal surplus then vs 6%+ deficit now—far more fragile backdrop for recession",
+      "pm_takeaway": "Next recession triggers step-change higher in debt; $40T household equity exposure = wealth effect fragility"
+    },
+    {
+      "id": 4,
+      "start": 1880,
+      "end": 1950,
+      "duration": 70,
+      "label": "Trend following as midfielders",
+      "insight": "Trend following isn't just crisis alpha—it adds risk in uptrends, cuts in downtrends. Midfielders, not defense.",
+      "pm_takeaway": "Size trend allocation for regime flexibility, not just tail hedging—40% risk budget to adaptive"
+    },
+    {
+      "id": 5,
+      "start": 2050,
+      "end": 2120,
+      "duration": 70,
+      "label": "Standalone vs total portfolio optimization",
+      "insight": "Optimizing hedge funds in isolation → market neutral; in portfolio context → macro, trend, commodities",
+      "pm_takeaway": "Behavioral bias explains underallocation to true diversifiers—take total portfolio view"
+    },
+    {
+      "id": 6,
+      "start": 2200,
+      "end": 2270,
+      "duration": 70,
+      "label": "1990s parallel is superficial",
+      "insight": "90s productivity from PCs (supply-side); AI today is demand-side capex without proven productivity gains yet",
+      "pm_takeaway": "Don't extrapolate 90s equity returns—debt and valuation backdrop far worse now"
+    },
+    {
+      "id": 7,
+      "start": 2540,
+      "end": 2610,
+      "duration": 70,
+      "label": "Adaptive portfolio compounding edge",
+      "insight": "Outperformance vs 60/40 since 1990 comes from lower drawdowns—compound from higher base after crises",
+      "pm_takeaway": "The math of avoiding 50% drawdowns beats chasing bull market returns—prioritize resilience"
+    }
+  ]
+}

@@ -52,7 +52,7 @@ pandoc analyses/${SLUG}.md -s --css=styles/report.css -o tmp/${SLUG}.html && \
 DYLD_LIBRARY_PATH=/opt/homebrew/lib weasyprint --base-url . tmp/${SLUG}.html pdfs/${SLUG}.pdf
 
 # 5) Push to GitHub Pages
-git add players/ pdfs/ && git commit -m "Add ${SLUG}" && git push
+git add players/ pdfs/ analyses/ excerpts/ && git commit -m "Add ${SLUG}" && git push
 ```
 
 ---
@@ -74,6 +74,28 @@ python scripts/fetch_transcript.py <youtube_url>
 - **Read FULL transcript.** No truncation.
 - Use `podcast_analysis_framework.md` template
 - Output: `analyses/YYYYMMDD_slug.md`
+
+### Speaker Bio (Required)
+
+Add a **Speaker Bio** section immediately after the header block (before Executive Summary):
+
+```markdown
+## Speaker Bio
+
+**[Name]** is [role] at [firm]. [1-2 sentences on background/credentials]. [Optional: notable calls or track record].
+```
+
+**Process:**
+1. Check if transcript intro sufficiently covers speaker background
+2. If not, **websearch** `"[Speaker Name]" [firm] bio` to gather credentials
+3. Keep bio to 2-3 sentences max — focus on relevance to topic
+
+**Example:**
+```markdown
+## Speaker Bio
+
+**Alan Dunne** is founder of Archive Capital, an advisory firm focused on alternative investments. Former head of portfolio construction at Abbey Capital with 20+ years in macro/CTA allocation. Author of research on regime-adaptive portfolios.
+```
 
 ### Key Formatting Rules
 
@@ -195,8 +217,8 @@ DYLD_LIBRARY_PATH=/opt/homebrew/lib weasyprint --base-url . tmp/YYYYMMDD_slug.ht
 ## 6) Push to GitHub Pages
 
 ```bash
-git add players/ pdfs/
-git commit -m "Add YYYYMMDD_slug player and PDF"
+git add players/ pdfs/ analyses/ excerpts/
+git commit -m "Add YYYYMMDD_slug"
 git push
 ```
 

@@ -1,0 +1,55 @@
+{
+  "video_id": "FOygqjFSmEw",
+  "url": "https://www.youtube.com/watch?v=FOygqjFSmEw",
+  "title": "Damped Spring: Weekly Outlook Jan 1, 2026",
+  "channel": "Damped Spring",
+  "total_duration": 2400,
+  "pdf_link": "../pdfs/20260104_ds_weekly_outlook.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 683,
+      "end": 745,
+      "duration": 62,
+      "label": "Consumer struggling, zero job growth",
+      "insight": "Economy shows zero job growth—not crisis but not good. Consumer weak on jobs, wages, spending.",
+      "pm_takeaway": "Don't extrapolate soft landing; consumer data warrants defensive positioning"
+    },
+    {
+      "id": 2,
+      "start": 714,
+      "end": 778,
+      "duration": 64,
+      "label": "AI is everything—the only engine",
+      "insight": "AI capex in info equipment/software is the sole growth driver; housing not responding to lower mortgage spreads",
+      "pm_takeaway": "AI concentration risk is real; if capex decelerates, nothing else picks up slack"
+    },
+    {
+      "id": 3,
+      "start": 1078,
+      "end": 1145,
+      "duration": 67,
+      "label": "Fed will cut more than priced",
+      "insight": "Disinflation + slowing economy = Fed should and will cut beyond expectations—not because of dovish chair",
+      "pm_takeaway": "Long front-end rates; market underpricing cuts even with neutral Fed chair"
+    },
+    {
+      "id": 4,
+      "start": 1193,
+      "end": 1255,
+      "duration": 62,
+      "label": "Steepener is principal risk trade",
+      "insight": "Short long-term bonds, long front-end; 10Y puts + SOFR; don't chase gold here",
+      "pm_takeaway": "Express rates view via curve, not duration; steepeners work in multiple scenarios"
+    },
+    {
+      "id": 5,
+      "start": 1897,
+      "end": 1970,
+      "duration": 73,
+      "label": "2-10s to 95-100bps, evil twist",
+      "insight": "Jimmy sees 2s breaking lower as 10s break higher—potential twist to 4.35-4.40% tens",
+      "pm_takeaway": "Prepare for non-parallel curve moves; long-end has no foreign or policy support"
+    }
+  ]
+}
