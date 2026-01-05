@@ -71,7 +71,18 @@ python scripts/fetch_transcript.py <youtube_url>
 
 ## 2) Analyze
 
-- **Read FULL transcript.** No truncation.
+### ⚠️ CRITICAL: Read FULL Transcript
+
+**NEVER truncate or skip parts of the transcript.** Read the ENTIRE transcript before writing analysis.
+
+**Process for long transcripts:**
+1. Check total line count: `wc -l transcripts/SLUG.txt`
+2. Read in 400-line chunks until complete (may require 5-10+ passes)
+3. Only begin analysis AFTER reading the last line
+4. If transcript > 2000 lines, explicitly confirm "Read lines 1-X of Y total"
+
+**Why this matters:** Key insights often appear late in podcasts. Skipping content = missing alpha.
+
 - Use `podcast_analysis_framework.md` template
 - Output: `analyses/YYYYMMDD_slug.md`
 

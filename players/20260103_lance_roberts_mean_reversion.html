@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lance Roberts: Will 2026 Be The Year Stocks Revert To The Mean? - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (6:49)</h1>
+                <div class="channel">Adam Taggart | Thoughtful Money • 6 clips from 106:13 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260103_lance_roberts_mean_reversion.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=Cfax4DSWQJk" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/Cfax4DSWQJk?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 6</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">6% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Mean reversion is the most powerful force</div><div class="excerpt-insight">15-year returns 50% above 125-year average; trading at 2+ std devs from mean—reversion is inevitable, timing unknown</div></div><span class="excerpt-duration">0:54</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Valuation range: 8,100 to 4,600</div><div class="excerpt-insight">S&P 2026 range depends on multiple expansion vs contraction—75% spread between bull and bear cases</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Wood soaked in gasoline—waiting for match</div><div class="excerpt-insight">All conditions for crash exist (valuations, leverage, sentiment) but catalyst and timing unknowable</div></div><span class="excerpt-duration">1:20</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Markets will crash 50%—guaranteed</div><div class="excerpt-insight">100% guarantee of 50%+ crash—but could be 10 years out. Market deteriorates before event, not after.</div></div><span class="excerpt-duration">1:15</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Full-time employment falling—recession signal</div><div class="excerpt-insight">Full-time employment as % of working age population declining—only happens in recessions</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Rebalancing: the unsexy stuff that works</div><div class="excerpt-insight">Silver 5% → 7% on rally, trim to 5%. Crashes to 3%, buy back to 5%. Always work around target allocation.</div></div><span class="excerpt-duration">1:00</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 1,
+    "end": 55,
+    "duration": 54,
+    "label": "Mean reversion is the most powerful force",
+    "insight": "15-year returns 50% above 125-year average; trading at 2+ std devs from mean\u2014reversion is inevitable, timing unknown",
+    "pm_takeaway": "DON'T FIGHT MEAN REVERSION. You're 2 std devs above the mean. Crash is 100% coming\u2014you just don't know when. Manage deviations, don't predict timing.",
+    "transcript": "When you look at returns over the last 15 years, we're running returns 50% above the average return of the market since 1900. So over 125 years, in the last 15, we've run average returns, you know, 50% above norms. You can't sustain that forever, particularly when the economy is growing at 2%. So that increases this risk of of potential downside. And and reversions to the mean is the most powerful force in investing. Again, when you look at any asset class, stocks, bonds, crypto, precious metals, whatever, watch the mean because that mean average is where price is going to revert to at some point. It's just a function of time. Something will cause it and you're going to have this reversion to the mean. And when you're trading at two standard deviations or three or four from long-term means, that reversion becomes much more probable."
+  },
+  {
+    "id": 2,
+    "start": 720,
+    "end": 790,
+    "duration": 70,
+    "label": "Valuation range: 8,100 to 4,600",
+    "insight": "S&P 2026 range depends on multiple expansion vs contraction\u201475% spread between bull and bear cases",
+    "pm_takeaway": "PLAN FOR BOTH. 8,100 if multiples expand, 4,600 if recession. Don't bet the farm on one outcome. Have playbooks for each scenario.",
+    "transcript": "year. And I've been writing a lot about this over the last uh really two weeks. I just wrote an article uh Friday before last talking about the valuation ranges and what to expect in markets if markets have to revalue for either higher or lower valuations. Um that's a pretty big range 8,100 on the upside to about 4600 on the downside. So there's a there's a pretty big range of potential outcomes in the markets for next year. Um, you know, one of the other big risks next year is economic growth. Everybody's expecting really, really strong economic growth next year, but there's no guarantee that we're going to get really, really strong economic growth. Employment certainly a concern. So, there's a lot of variables that are going into to the markets next year, but you know, for right now, the market's looking past most of that and looking mostly at is the Fed going to cut rates and is economic growth going to be good next year? And and and so for right now, the markets are fairly convinced. If you look at the average analyst estimate right now for the for the S&P next year, uh they're expecting between 12 and 17% returns next year for the market.<br><br><strong>\u203a</strong> All right. 12 to 17% return. So that would get us to a four year.<br><br><strong>\u203a</strong> Yeah. You get 8,000."
+  },
+  {
+    "id": 3,
+    "start": 1240,
+    "end": 1320,
+    "duration": 80,
+    "label": "Wood soaked in gasoline\u2014waiting for match",
+    "insight": "All conditions for crash exist (valuations, leverage, sentiment) but catalyst and timing unknowable",
+    "pm_takeaway": "STAY INVESTED but prepared. The setup is there. Don't sell preemptively on valuation\u2014wait for technical breakdown. Have your playbook ready.",
+    "transcript": "investing is that we can make the decision to go all into one particular I think I think the the the dollar is going to crash next year and it's going to be the end of fiat currency. Great. So I'm going to go hide out all all over in this other asset class expecting that to happen, but it doesn't happen. And you know, everything else moves, the world moves past you. And so that's the risk you got to navigate is understanding these risks are out there, but and we certainly have all of the we have the wood, we've got the gasoline, we've got the tender, we've got everything for a really good market correction at some point.<br><br><strong>\u203a</strong> Yeah. You don't know what the match is going to be and you don't know even if it's show up.<br><br><strong>\u203a</strong> And the big thing is it's I don't know what the match is going to be and I don't know when. It could be five years from now.<br><br><strong>\u203a</strong> That that's what I was just saying. So, so all I'm trying to say, which I think you agree with, is<br><br><strong>\u203a</strong> it's it's not fatalistic like, well, we don't know what's going to happen, so we're just going into this blind.<br><br><strong>\u203a</strong> You can say, look, here are the different types of categories of of of um repercussions that a black swan or a match could have. And I've got at least an advanced playbook so that if I get the world gets surprised by X, I can say, well, what's that likely to do? Okay, I've already got a playbook on the shelf for that and and I've taken some I I' I've given some probability to to that category here at the beginning of the year. I maybe only give it 5% because I don't think it's very likely,"
+  },
+  {
+    "id": 4,
+    "start": 1350,
+    "end": 1425,
+    "duration": 75,
+    "label": "Markets will crash 50%\u2014guaranteed",
+    "insight": "100% guarantee of 50%+ crash\u2014but could be 10 years out. Market deteriorates before event, not after.",
+    "pm_takeaway": "WATCH FOR DETERIORATION not prediction. Crash doesn't happen overnight. Market goes down 5-10% first, THEN event hits. Cut when technicals break.",
+    "transcript": "did this, we did this. That's just that management process of risk over time because we don't know when or what is going to cause we we know, look, 100% guarantee. I'm going to agree with you, Adam. Here's the title for this week artic this week's video. Markets are going to crash by 50% or more. Right. There's your title,<br><br><strong>\u203a</strong> right? You just don't know the when. Yeah.<br><br><strong>\u203a</strong> But it could be 10 years from now. And and and you know, I want my job is to make money for my clients until that occurs. And then when that occurs, and this is the most important thing I I think this is the one thing that is is the biggest impediment to investors being successful is that they go, \"Oh, you know, they hear some guy on on the media say, oh, markets are going to crash by 50% next year.\" Okay, great. Well, the problem is as market crashes, you're not going to wake up one morning and the market's going to be down 50% in a day, right? It's going to start deteriorating and then that deterioration is going to start to accelerate and then, you know, the event, whatever it is, will actually show up. Markets will know what's coming before it happens. And so, by the time the event shows up, the market will be down five, six, seven, eight, nine, 10%. Then the event will happen and we'll go down very quickly 50%. Um, but that'll still be over a period of a couple of months. And and the point about that is there's plenty of time after the market starts to deteriorate to begin reducing"
+  },
+  {
+    "id": 5,
+    "start": 2870,
+    "end": 2940,
+    "duration": 70,
+    "label": "Full-time employment falling\u2014recession signal",
+    "insight": "Full-time employment as % of working age population declining\u2014only happens in recessions",
+    "pm_takeaway": "THIS IS THE KEY DATA. Full-time jobs falling = consumer spending falls = earnings miss. Watch jobs data closer than anything else in 2026.",
+    "transcript": "true sentiment of the worker which is hey can I get rid of this job I have and go get a better one? And right now it is pretty resoundingly no. Yeah, this is this is the thing that I'm paying most attention to. Full-time employment. Full-time employment is the key to the economy, right? You know, if you've got three part-time jobs, great. Wonderful. You're working your ass off. You're not going to really make any any strong economic progress in your life, right? Just because part-time jobs don't provide benefits. They don't provide high enough wages to support a family of four, etc. So full-time employment is key in terms of economic output. Um provides benefits, provides higher incomes, those type of things. That rate of full-time employment relative to the working age population is falling pretty quickly. That only happens during recessionary environments.<br><br><strong>\u203a</strong> Yeah. And we're still seeing that fall right now, right? Where where we're where so<br><br><strong>\u203a</strong> the state is as of last Friday.<br><br><strong>\u203a</strong> Okay. So, so, so the impact of deportations, meaning two, two and a half million bodies that have presumably have been removed from the population, that doesn't seem to be slowing this at all yet in terms of, you know, freeing"
+  },
+  {
+    "id": 6,
+    "start": 4440,
+    "end": 4500,
+    "duration": 60,
+    "label": "Rebalancing: the unsexy stuff that works",
+    "insight": "Silver 5% \u2192 7% on rally, trim to 5%. Crashes to 3%, buy back to 5%. Always work around target allocation.",
+    "pm_takeaway": "THIS IS HOW YOU SURVIVE. Buy low, sell high through mechanical rebalancing. Most people buy high, never sell, crash, sell at loss. Don't be most people.",
+    "transcript": "we took profits in silver a week and a half ago. Now they're 15% cheaper. If they come down some more, we'll add silver. So what'll happen and this is the way it works in the portfolio. Let's just pick a number. Silver's 5% of the portfolio. Silver goes from 5 to 7% on the way up. So I take it from seven back to five. And then the price crashes. It goes from five to three. I then buy it back up to five. So we're always working around that target allocation within the model. So we can buy cheaper, raise it up while it's cheaper, make money on it when it goes back up. When it goes from five back to seven, we trim it back to five again. that allows us to survive the long term, make money, and manage the volatility risk that goes along with it. What most people do is they buy stuff here, it goes to here, they never sell it, and then it crashes back to where it was or went lower, and then they sell at a loss. That's what happens to most people.<br><br><strong>\u203a</strong> Yeah, that's actually a really good just practical explanation of it all. And it's that So, we'll we'll use this as the jumping part into the rant. It's that boring, unsexy stuff that actually"
+  }
+];
+        const videoId = 'Cfax4DSWQJk';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
