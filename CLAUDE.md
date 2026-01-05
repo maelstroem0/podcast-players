@@ -86,27 +86,36 @@ python scripts/fetch_transcript.py <youtube_url>
 - Use `podcast_analysis_framework.md` template
 - Output: `analyses/YYYYMMDD_slug.md`
 
-### Speaker Bio (Required)
+### Speaker Bio(s) (Required)
 
-Add a **Speaker Bio** section immediately after the header block (before Executive Summary):
+Add speaker bio(s) immediately after header block (before Executive Summary).
 
+**When to use singular vs plural:**
+- **Single speaker** or clear primary guest → `## Speaker Bio`
+- **2+ contributors with insights** → `## Speaker Bios` (plural)
+- **Threshold for inclusion:** 1+ distinct insight (actionable thesis or original analysis)
+- **Hosts who only ask questions:** omit from bios
+
+**Single speaker format:**
 ```markdown
 ## Speaker Bio
 
-**[Name]** is [role] at [firm]. [1-2 sentences on background/credentials]. [Optional: notable calls or track record].
+**[Name]** is [role] at [firm]. [1-2 sentences on background]. [Optional: track record].
+```
+
+**Multi-speaker format:**
+```markdown
+## Speaker Bios
+
+**[Name 1]** is [role] at [firm]. [Background/specialty].
+
+**[Name 2]** is [role] at [firm]. [Background/specialty].
 ```
 
 **Process:**
-1. Check if transcript intro sufficiently covers speaker background
-2. If not, **websearch** `"[Speaker Name]" [firm] bio` to gather credentials
-3. Keep bio to 2-3 sentences max — focus on relevance to topic
-
-**Example:**
-```markdown
-## Speaker Bio
-
-**Alan Dunne** is founder of Archive Capital, an advisory firm focused on alternative investments. Former head of portfolio construction at Abbey Capital with 20+ years in macro/CTA allocation. Author of research on regime-adaptive portfolios.
-```
+1. Check transcript intro for speaker backgrounds
+2. If lacking, websearch `"[Name]" [firm] bio`
+3. Keep 2-3 sentences per speaker — focus on relevance to topic
 
 ### Listen or Skip? (Required)
 
@@ -320,8 +329,25 @@ git push
 
 **Goal:** Extract alpha, not summarize. Crystallize 2-4 core concepts that change positioning.
 
-**Structure (3 paragraphs):**
-1. Para 1-2: Core concepts (bold the **concept**, not the quote)
-2. Para 3: PM implications ("what does this mean for positioning?")
-
 **Tone:** Authoritative, direct. Write like a senior analyst briefing a PM who has 2 minutes.
+
+### Depth Tiers (Scale with Content Richness)
+
+Before writing, count content markers in transcript:
+- Hard data anchors (specific numbers, levels, dates)
+- Multi-layer mechanism (A → B → C, not just "X causes Y")
+- Regime contrast (before/after, base case/alt case)
+- Behavioral/positioning insight (why actors behave a certain way)
+- Contrarian thesis with falsifiable trigger
+- Cross-asset transmission chain
+
+**Rich (5+ markers) → 300-400 words, 3-4 paragraphs:**
+- Para 1-2: Core concepts with data woven in
+- Para 3: Mechanism/regime layer—how it works, what changed
+- Para 4: PM implications
+
+**Adequate (2-4 markers) → 200-300 words, 2-3 paragraphs:**
+- Para 1-2: Core concepts
+- Para 3: PM implications
+
+**Don't pad thin content.** If transcript has <2 markers, tier down and keep tight. Richer content earns more space—fluff never does.

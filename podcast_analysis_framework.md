@@ -28,15 +28,29 @@ Senior investment analyst playbook for podcast transcripts. Goal: extract alpha,
 ### Executive Summary
 **Goal:** Extract alpha, not summarize. Crystallize 2-4 core concepts that change positioning.
 
-**Structure (3 paragraphs):**
-1. **Para 1-2:** Crystallize the speaker's 2-4 key concepts. Bold each core concept phrase (renders green). Weave supporting evidence naturally—no standalone quotes. Each concept should be specific enough to trade or monitor.
-2. **Para 3:** PM implications—"So what?" Connect concepts to asset classes, risk posture, or regime. End with actionable takeaway.
+**Depth Assessment (do first):** Count markers in transcript:
+- Hard data anchors (numbers, levels, dates)
+- Multi-layer mechanism (A → B → C)
+- Regime contrast (before/after)
+- Behavioral/positioning insight
+- Contrarian thesis with falsifiable trigger
+- Cross-asset transmission chain
+
+**5+ markers = Rich (300-400 words, 3-4 paragraphs):**
+- Para 1-2: Core concepts with data woven in
+- Para 3: Mechanism/regime layer—how it works, what changed
+- Para 4: PM implications
+
+**2-4 markers = Adequate (200-300 words, 2-3 paragraphs):**
+- Para 1-2: Core concepts
+- Para 3: PM implications
 
 **Rules:**
 - Bold **concepts**, not quotes (quotes support, concepts lead)
 - 3-6 green highlights max
 - No summary language ("discusses", "talks about", "shares thoughts")
-- Every sentence should pass the test: "Does this change what I hold, size, hedge, or monitor?"
+- Every sentence: "Does this change what I hold, size, hedge, or monitor?"
+- Don't pad thin content—tier down and keep tight
 
 ### Listen or Skip?
 **Verdict:** Must-listen / Worth it / Skip
