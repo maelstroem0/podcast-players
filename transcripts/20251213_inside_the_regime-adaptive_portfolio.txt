@@ -1,0 +1,1708 @@
+Source: https://www.youtube.com/watch?v=mdq6KSqNM4o
+Title: Inside the Regime-Adaptive Portfolio | Systematic Investor | Ep.377
+Channel: Top Traders Unplugged
+Duration: 1:09:03
+Date: 20251213
+Fetched: 2025-12-22T11:28:06.009337
+
+---
+
+Imagine [music]
+spending an hour with the world's
+greatest traders. Imagine learning from
+their experiences, their successes, and
+their [music] failures. Imagine no more.
+Welcome to Top Traders Unplugged,
+[music] the place where you can learn
+from the best hedge fund managers in the
+world, so you can take your manager due
+diligence or investment career to the
+next level. Before we begin today's
+conversation, [music]
+remember to keep two things in mind. All
+the discussion we will have about
+investment performance is about the past
+and past performance does not guarantee
+or even infer [music] anything about
+future performance. Also understand that
+there's a significant risk of financial
+loss with all investment strategies and
+you need to request and understand
+[music] the specific risks from the
+investment manager about their product
+before you make investment decisions.
+Here's your host, veteran [music] hedge
+fund manager Neil's Krup Larson.
+Welcome or welcome back to this week's
+edition of the systematic investor
+series with Alan Don and I Neils Castle
+Larsson where each week we take the
+pulse of the global market through the
+lens of a rulesbased investor. Alan, it
+is wonderful to be back with you this
+week. Hope you're doing well. How are
+things in Dublin? All good to hear you.
+Great to be back on. Nice uh summer
+winter sunshine I should say. Yeah,
+getting very festive and pretty cold but
+but nice around. So looking forward to
+uh our discussion today. Plenty to chat
+about.
+>> There is actually plenty to chat about
+uh with a couple of world exclusives. Uh
+so I'm told uh one um thanks very much
+to you um a new paper that we will be
+talking about today. And the other world
+exclusive I think um is courtesy of uh
+Sockgen actually which we'll get to a
+little bit later. So, needless to say,
+we've got a very solid uh lineup of
+topics uh today, but as usual, before we
+even get into any of that stuff, uh I'm
+always curious to know what has been on
+your radar recently.
+>> Absolutely. Well, you know, one of the
+big talking points in markets is the
+next Fed chair, and it's been um
+something I've been monitoring for a
+while. I wrote a paper back in the
+summer about it, and at that stage,
+Chris Waller was the favorite according
+to the betting markets. the likes of
+Poly Market in the US. But we've seen
+some very interesting moves in the last
+few weeks. Um Kevin Hassad has gone from
+being kind of second or third in the
+running to being the clear favorite now.
+So according to the uh poly market uh
+betting market, you know, the likelihood
+is about 70% that he well it's touched a
+high of 70% or sorry 80% now it's about
+70%. So clearly money talk. So the
+suspicion is somebody who has
+information um is betting on him
+becoming the next Fed chair. I would
+guess that he would be a bit more uh
+dovish. He's obviously a cheerleader for
+the administration and he has been on
+the record saying he believes in the
+productivity boom and the
+disinflationary uh implications. Um so
+certainly um it's something to monitor
+and that's going to probably going to
+continue to be on my radar for for the
+next few weeks.
+>> Yeah. Know I mean it's a great it's a
+great topic. Do we I mean I don't know
+uh his background. Is he uh well known?
+>> He is well known. I mean he is well
+regarded amongst uh serious economists.
+You know he has the proper academic
+training. He did write a book back in
+1999. He co-authored a book called Dow.
+I think it was 36,000 at the time which
+of course he was eventually right but it
+just took a little bit of time to to get
+there. It you know it it fell in in half
+first. Um but no he is regarded as a um
+as as a serious uh supply sideoriented
+economist uh with with proper academic
+credentials but obviously he's been very
+close to the administration and and
+these days you know if you turn on CNBC
+you'll see him every second or third day
+it feels like um you know defending um
+the the administration's policies which
+I guess is part of his job but yeah
+that's the suspicion that he's been so
+close to the administration that uh can
+he truly be independent if he takes on
+the job of Fed chair.
+>> I actually had this point um further
+down in our conversation today. So, I
+did a little bit of research uh or at
+least I saw a headline about it. My
+understanding is that we are now
+promised that we'll know who it's going
+to be um no later than the 25th of
+December.
+>> Um so that will be interesting for sure.
+So on my radar, nothing nearly as
+exciting except if you are in in the
+crypto space. There's a little bit of
+good news. There's also a little bit of
+bad news. Um I think so. The good news
+is that Vanguard um who is the second
+largest asset manager in the world,
+they've decided that ETFs and mutual
+funds that primarily hold
+cryptocurrencies can now be traded on
+their platform. Um and that is kind of
+changing a longstanding position that
+they've had uh on this. I guess that's
+good news for the for the space um and
+for people uh looking to invest in these
+uh products. May maybe the other maybe
+the the bad news so to speak that's um
+and we know that probably from our own
+industry when when when markets go down
+or performance go down and and people um
+rack up a few losses um it makes the
+headlines and of course um micro
+strategy also now known as strategy is
+making headlines and you would think
+it's only because they're down
+substantially from their highs in
+November 2024 fall. But actually what
+caught my attention is that they're now
+facing some pressures over the
+positioning uh that Msei is um likely to
+take where it will um remove them from
+their benchmark. Um I I haven't, you
+know, studied the details as to why uh
+they wouldn't want to uh have the
+included. Um but there are some
+speculations that that may have a
+negative impact in terms of people who
+just simply need to redeem or sell the
+stock if uh if in fact it's no longer
+part of that index. So that was a little
+bit um of what um I I noticed uh this
+morning. Now, we're going to do
+something slightly different this week
+because we had a couple of questions via
+LinkedIn. Um, which I think is kind of
+the main platform people find you at
+nowadays. Is that right?
+>> Generally, yes. Yeah, that's so I put it
+out there this week to see if there was
+any uh topics or suggestions and
+>> we had two um two uh suggestions
+thankfully.
+>> Yes, absolutely. Well, we had one from
+Paisley who is uh an industry colleague.
+um I I think is fair to say. Um and she
+writes, "I'd love to hear your thoughts
+on how trend following can weather this
+storm of constant political shocks from
+the current US administration. Seems
+like another few years ahead of us of
+shifting focus and policy pivots that
+could cause trouble for trend." It's an
+very catchy headline actually. Trouble
+for trend.
+>> That's true. And it's obviously a very
+topical question and we've seen this
+this year obviously in the um early part
+of the year around the Trump uh
+liberation day. We we've nearly
+forgotten the name of it now. Um
+announcement very choppy and you know
+I've certainly got this feedback from
+investors that you know could we be in
+this environment where we'll have policy
+being announced and then being retracted
+etc and leading to choppy markets. And
+um I think it's it's definitely a valid
+concern. Um I mean you can take two ways
+of answering this. The blunt answer is
+yeah it's possible. We don't know. We
+never know what the future holds. Um at
+the same time I think there are um um
+other perspectives we can take. We we
+have seen instances in markets like this
+before um when trend following has been
+in draw downs. You know, if we go back
+to the 2012 2013 period, 2012 in
+particular, it was very much a risk on,
+risk off was was the term people were
+using a lot to characterize markets. And
+it felt like we were always going to be
+in this kind of um onoff type of risk
+cycle. At the time, it was very much
+related to the European debt crisis and
+would it be solved or not? But
+ultimately, what do we see? we saw a
+change in the fundamentals at at at some
+point where we saw um weaker economic
+growth and a breakout in European bonds
+and a sell off in the euro and and a
+breakout in in oil prices. So typically
+that's what you see markets go through
+these choppy phases and ultimately they
+can be um you know testing for investors
+particularly investors in trend
+following but eventually uh you know in
+the past we have seen breakouts or new
+pieces of information coming into the
+market. The other example would be you
+know we had a tough period in in in the
+latter part of the last decade.
+Performance did start to improve around
+2019 but then we had co which was kind
+of a new jolt for markets and knocked
+the economy out of secular stagnation
+and into a new regime. So I think um you
+know there there is a an old expression
+I don't know where it comes from and
+this too shall pass. So I you know I
+think we got to hold on to that and and
+and say yes it is tricky um in you know
+with these kind of policy reversals.
+Yeah you could definitely make the
+argument that it will continue but
+equally we have seen this type of thing
+in the past and eventually it has passed
+and we have seen um better conditions
+for trend followers.
+>> I would add two things to that. Um, one
+is that uh you would think that the
+environment that uh Paisley is referring
+to might be great actually if you're a
+short-term manager because it's um you
+know the moves are generally you know
+shortterm and and there are quite a few
+um quote unquote uh changes in direction
+and so on and so forth. But actually
+this year has turned out to be a pretty
+horrible year for short-term strategies.
+So I think that's an interesting
+takeaway uh from investors because I
+think the intuition is that it should be
+the opposite way around. Um, so I think
+that's one thing that um people should
+be um aware of. And the other thing that
+I kind of take away from your comment
+where you mentioned specifically like
+periods around liberation day in my
+conversation last week with Andrew um
+he's always a great uh sport um when
+when he's on he um he did mention that
+most of the outperformance that they
+have seen in their strategy this year
+came around liberation day where
+potentially they were either too slow
+just that was the fact that they were
+too slow to react or they were you know
+quote quote unquote in the right markets
+and didn't get hurt by some of the uh
+the movement. So I thought I mean those
+are just very interesting um
+observation. I think it doesn't
+necessarily take anything away from
+trend. Um but it does suggest certainly
+that there will be specific events in a
+year that can either go you know against
+you or or in your favor. Um and and and
+that's obviously why people need to take
+the long-term view. All right. So,
+appreciate um the question, Paisley, and
+also I do appreciate all the likes that
+you give us uh on uh on LinkedIn and
+other social platforms. Um love the
+support. Thank you so much for that,
+Eric. Um and I'm I'm deliberately not
+saying their last name. I have no
+permission necessarily to do that, but
+Eric is also a long-term um friend and
+listener of the show. Um but he has a
+question that I think might be a little
+bit difficult for us to answer. He's
+writing if you have time. How are
+managed futures in generally positioned
+for a yen carry unwind?
+>> Yeah, I mean it's um
+difficult one to answer in some senses
+because you know we we haven't had the
+unwind yet. So I mean the yen is a
+little bit stronger the last few days. I
+think clearly trend followers are short
+yen. It's been a trend for a while. I
+think it's actually quite an interesting
+trend if you look at it particularly for
+the yen crosses and markets like euroy
+yen Swiss yen I mean these have been
+very popular um you know bearish calls
+from from market commentators you know
+Swiss yen in particular was you know
+Japan's going to be hiking Swiss are
+going to have to cut Swiss yen goes down
+I've heard this argument I mean so many
+times in the last two years and yet it
+continues to trend higher so yes you
+know if if we have a yen carry on wind I
+would expect it to be negative for for
+for trend followers in those markets. As
+ever, you know, the the the full impact
+will depend on the speed of the move and
+and the context of what else is
+happening in in in the world. But on on
+the FIB side, you know, um trend
+followers have definitely participated
+in that yen weakness, which has been
+much more persistent and prolonged uh
+than I would say most people have
+expected.
+>> Yeah. uh and but maybe you could even
+suggest that u most of the exposure is
+not necessarily in outright in the end
+but it might be in JGB's um at the
+moment. So uh that's another twist uh in
+in that story. Great stuff. Okay, let's
+move on to the trend following update
+since we've kind of touching on this
+already. Uh my trend barometer finished
+yesterday at 39 which is on the weaker
+side and it is kind of suggesting a
+neutral to a little bit weak start to
+December which I think is also what
+we're going to discover in the um in the
+performance numbers uh in a couple of
+minutes. Um but since we just finished
+November I was always I'm always
+interested in hearing kind of your
+thoughts when you look at the landscape.
+Was there anything that stood out to you
+um in the month of November? December is
+a little bit too young so to speak to uh
+to have had any meaningful um stories I
+I think.
+>> Not really. No, I mean we've obviously
+had a tough start to the year in trend
+following and then a recovery and a bit
+of flatlining I think um uh since then.
+So, you know, I mean um for many
+managers now it's shaping up to be not
+certainly not as bad as it looked a few
+months ago. Um but but no I mean nothing
+um apart from what we've kind of
+previously discussed I'd say.
+>> Yeah. No I mean one thing I will because
+it never really gets mentioned but if I
+look at the landscape I would say many
+trend following managers at least the
+ones that I keep an eye on I think it
+was like the fifth or sixth consecutive
+positive month maybe the fifth pos
+consecutive positive month. That doesn't
+happen too often. Um we talk about the
+the difficult start to the year but
+there's been a lot of um you know decent
+uh performance um following uh the first
+half of uh of this year. Now from a
+performance point of view as of Tuesday
+the 2nd of December um and by the way I
+think yesterday was a pretty okay day
+for most CTAs. Um but as of Tuesday 50
+was down 22 basis points for the month
+up 1.22% for the year. Stockgen CG index
+down 35 basis points for the month, down
+1.64% for the year. The stock trend
+index down 27 basis points uh for the
+month, up 19 basis points for the year.
+And the short-term traders index down
+eight basis points um so far, but down
+5.41%
+uh in 2025, which is, as I've mentioned
+before, based on its volatility, it's a
+reasonably big number. Um on the other
+hand, um Msei World continues to move
+higher, up 11 basis points so far in
+December. Uh up 20.72%
+as of last night. The S&P US aggregate
+bond index down 11 basis points, but up
+7.1% so far this year, having a good
+year. And the S&P 500 um pretty flat,
+three basis points to the positive as of
+last night. Up [music] 17.84% so far
+this year.
+>> [music]
+>> All right, I mentioned we have two world
+exclusives. [music] Uh, one is coming
+because that is your um new wonderful
+paper. The other one is actually that
+sock genen um very kindly allowed me to
+share the tentative 202026
+um lineup um and the aum cutoff levels
+they're looking at in order to qualify
+uh for the indices and I'm focusing on
+the sock gen CTA index uh which is the
+broader index and the socken uh trend
+index which is more narrow uh has fewer
+earned constituents.
+So if we look at the broader the sock
+gen CTA index the cutoff level for 2026
+looks like it's going to be around 1.9
+billion in the program. Um that means we
+have a few uh new people joining that
+index. Uh one of them is uh our friends
+CFM their is trends program. So that
+would have seen a a a decent uh
+significant increase in AUM I would
+imagine in the last 12 months. Uh
+congratulations. The other one is a new
+name for me. Um F sorry AFBI.
+Um never come across that name before.
+It turns out um that you have but also
+it turns out that it is uh almost a a
+local uh from a Don Capital perspective
+because they're also based in Florida.
+Um, so I maybe I should have known them.
+Um, but it is a multi-manager firm.
+That's probably why it hasn't been on my
+radar. Um, and a third program that is
+qualifying for the uh stock NCT index
+for 2026, it looks like is the cradle
+advanced trend program. So that's a
+great effort. Um it's also a little bit
+interesting to me because um for those
+of us who've been around for you know
+three decades more we know Crabel as for
+one thing and that is being uh one of
+the premier short-term managers but now
+as far as I can tell their largest
+strategy is no more short-term it is
+actually their trend following program
+and I think it tells you something about
+um the long-term viability of short-term
+versus long-term strategies. That is my
+own uh words. Of course, um they may not
+agree with that, but I think it's an
+interesting development. Now, we have
+some people that came into the index.
+That means we have some people who will
+be taken out of the index due to this um
+AUM um criteria. So we have Epistine um
+that is uh being removed from the index.
+We have another crab program. So that is
+their not the shortest one they have but
+the shorter one which is Crael Gemini.
+That program is being removed. Uh we
+have Graham tactical trend but that was
+more to avoid the duplication um of the
+Graham quant macro program um which from
+my understanding is have some overlap in
+terms of allocation to the same trend
+model. So um I think that was a call um
+that made um which makes total sense.
+All right, then we have the socken trend
+index and boy has it become difficult to
+be part of that exclusive group because
+the cutoff level I actually don't know
+if this is higher or lower than last
+year but the cutoff level uh for 2026
+looks to be $4.64
+billion in one strategy. That is not an
+insignificant amount of money in a
+strategy. And that means one change
+coming into the uh index is PIMCO trends
+program being removed uh is a firm
+that's very well known in our industry
+and that is systematica actually also
+Swiss-based um leaders firm. So um
+little bit of a I don't know what's your
+what is you what are you most surprised
+about? What are you most excited about
+Alan when you see these uh names going
+in and out of the index? would be pretty
+sad if I got excited about you know new
+entrance into the sock gen CTA index but
+I am yeah a little bit little surprised
+AFBI I am familiar with them I always
+sort of more multistrat as you say
+multi-manager they kind of um they're
+not not multi-manager as in external
+managers but yeah multipm model
+obviously um
+haven't been around in this current
+current iteration in for that long um so
+maybe they've just
+grown sufficiently in terms of AUM to to
+to warrant justification but certainly
+would be more in the uh kind of quant
+macro side. Um as you say you know Crael
+is so is multi-product
+not in that at all um because
+historically that would be obviously the
+the product most associated with with
+Crael. Gemini obviously has had um some
+some diminished assets lately. So
+probably not surprising to see that
+moving out. But yeah, I mean um it is
+interesting as you say. I mean the the
+AUM threshold is is very interesting
+that it is at such a high level this
+year and I guess speaks to you know how
+we're seeing maybe the largest trend
+followers getting bigger and and just
+consolidating um their their position
+in in in the index.
+>> So I'm not going to go through the whole
+CT index. That's too many names. But I
+can mention the 10 names that will or
+looks like I should stress uh looks like
+to be in the socken trend index that's
+obviously closest to my heart. Um it
+looks like it will be alpha simplex
+managed futures. It looks like it will
+be AQR managed futures aspect core trend
+graham tactical trend is vector links
+program
+man AHL alpha pimco trends trans trend
+DTP and the winon trend program. So,
+those are the ones we need to
+keep an eye on if you're uh in the
+space. Um, but hopefully also some of
+the names that did not make the index um
+this year.
+All right. Now, which is something we
+normally do a little bit earlier in our
+conversation. So, I'm excited about
+having it now after the trend following
+uh segment. It is your current macro
+view, Alan. Um there's there should be
+enough to focus on as a macro uh
+observant. Um but what have you focused
+on?
+>> Yeah, a few things I wanted to touch on.
+Um just obviously in the context of
+moving into December, a lot of focus on
+the Fed expectation now that we'll see a
+rate cut. Um maybe going back 2 3 weeks,
+there was a lot more uncertainty about
+it, but expectations have definitely
+tilted. Then you know obviously it is
+interesting that we're seeing the Fed
+cutting rates at a time when inflation
+has settled very much above target and
+the the kind of trajectory towards 2%
+the momentum has has slipped and there
+is a clear split within the Fed as well
+between those saying no this this is not
+really the way to go forward because you
+know inflation has proven stickier than
+expected and uh and and maybe the the
+the governor's There's um Waller and
+Williams and um and probably Powell is
+is ironically probably more in in the
+Dovish camp. But um one thing that that
+I saw that was interesting was the San
+Francisco Fed had a research piece out
+looking at the impacts of tariffs. Um so
+they did a cross uh at um sectional
+study uh over 40 years across different
+advanced economies looking at what has
+been you know from a purely economic
+perspective looking at the hard data.
+How have tariffs impacted uh
+unemployment and inflation historically
+and obviously the historic um changes in
+tariffs have been much smaller relative
+to what we're seeing now. But it is
+interesting all the same that actually
+what you've seen historically is um
+unemployment tends to to rise um
+straight away when tariffs come in.
+Consumers seem to take a step back.
+Actually inflation tends to fall in um
+but then in the year after in the
+subsequent two years tends to rise to a
+reasonable degree. So I mean it's
+certainly plausible. I mean a lot of
+commentators have been arguing uh that
+we could be seeing a delayed impact of
+the tariffs in the US economy. you know
+obviously wholesalers importers may have
+taken the hit on the on the tariffs. So
+I think from that perspective there is a
+little bit of of comp maybe complacency
+around the markets with this uh you know
+I think the Fed probably will cut but
+but cutting in this environment where
+you know you know inflation is already
+above target and there is still that
+residual uncertainty of the impact of
+the tariffs. Um I you know I think I
+think there's certainly complacency from
+that perspective but I think taking a
+step back you know just thinking about
+the bigger picture is interesting. You
+know obviously we've transitioned we've
+also into a new macro regime um and I
+think one of the things that is evident
+that in that regime is is the change in
+bond markets. And if you look at bond
+markets outside the US you touched on
+JGBs already but you know JBL's yields
+have been rising steadily. We've seen
+the same thing in in European markets,
+German 25 year yields up to their
+highest levels in in in a number of
+years. So, so the bond market is telling
+us something here I think which is
+interesting and and and I think it's
+system symptomatic of that change in
+regime where we've gone from this excess
+capital world you know when we had
+negative yielding uh government bonds
+all over the world to now this world of
+more positive yields and and the trend
+higher in an environment like you know
+European bonds yields trending higher
+without much news uh behind it and
+Japanese markets continuing to trend um
+from a yield perspective. So I think
+that is telling us uh that that um there
+are there is more competition for
+capital. Obviously we've had the uh
+extreme um you know investment in in in
+data centers, AI etc. and that is
+fueling demand for capital to an extent
+and on on the public side rising defense
+spending. But all of that together is
+telling you that the kind of the the the
+savings investment um relationship has
+shifted more towards you know stronger
+investment demand uh pushing up uh
+pressure on yields versus the old regime
+where we had excess supply pushing down
+yields. So I think that is a risk factor
+in markets. We haven't really seen it
+hitting the US market yet. You know
+tenure yields still around 4.1% or so.
+So the US has probably been the outlier.
+But certainly um certainly that is is is
+one thing that that that I'm focused on.
+And I think the other thing that I think
+is interesting at the moment is we we've
+had this a lot of people I talk to draw
+a parallel between now and the and the
+mid to late 1990s
+>> and say you know look at the markets
+tech boom um it's a productivity boom um
+you know um does that mean that the
+equity market can keep going on for
+another few years before we see a turn
+down and I think clearly there are
+parallels between tech stocks doing very
+well um but there's you know, there are
+differences as well. And I think even on
+the AI, you know, productivity side, the
+'90s was quite interesting because, you
+know, as we got into the mid to late
+'90s, we had the development of the
+internet, but that wasn't what was
+fueling productivity at the time. What
+was fueling productivity growth at the
+time was more use of personal computers.
+You know, that technology had come in
+previously. So you had this coincidence
+of an an old technology that that was
+starting to permeate permeate the
+economy and you were getting the
+productivity benefit on that side on the
+supply side but also you had the the the
+demand side of more uh spending on on
+the internet infrastructure. So if you
+if you compare that to today, we're
+seeing the impact of AI from a demand
+side h in the sense that there's
+spending on chips, spending on data
+center and that's actually pushing up
+GDP arithmetically you know that
+spending as part of GDP
+>> but the other side of the the the
+equation is is well are we seeing the
+productivity gains yet and there's mixed
+evidence. So there's two studies.
+McKenzie have done a study on this
+recently, the state of generative AI
+adoption and basically saying a lot more
+a lot more triing than actual use so
+far. Uh and there was also a a study out
+from um the St. Louis Fed as well
+looking at well are we seeing actual
+gains from productivity and again
+similar some some some gains at the
+margin but I think you know the people
+kind of sometimes misinterpreted that
+that kind of distinction between the
+demand side and the supply side yes
+we're seeing the demand influence but
+bit early to say h we're seeing the the
+uh supply side benefits yet um you know
+different views on that um so I think
+you know that this parallel with with
+1990s is a bit superficial and the other
+big thing in the background and we we'll
+talk about a little bit later because I
+touch on this it's critical point in in
+my paper death levels are much different
+than they were in the 1990s. You know
+the debt GDP level in the US is is
+double what it was uh in 1999. In 1999
+2000 there was a fiscal surplus in the
+US. So that's a dramatically different
+we're in a much more unstable
+environment now when we have this
+confluence of elevated um equity
+valuations and high debt levels. So yeah
+interesting that people draw that
+parallel but I think we're in a much
+more unstable and riskier macro backdrop
+now than we were in in that kind of mid
+to late 1990s period. Yeah, I mean two
+one observation, one question for you.
+Uh, regarding the AI, one of the things
+that kind of stood out to me was uh,
+exhibit one in the McKenzie uh, which
+I'm sure you know by heart um, in the
+Mckenzie paper. It was just it it looks
+at the um, kind of the the use of AI by
+the responders to their survey. And in
+2017,
+20% um, responded yes, which actually to
+me that's is surprisingly large back
+then. you you wouldn't have thought that
+but I mean today it's like 88%. I mean
+it just really shows you how how um how
+much the penetration of of at least the
+use of AI I mean even I would fall into
+that category because I do use that GBT
+from time to time. Anyways the other
+question I had and I can't remember if
+you answered it um because I I do find
+it very interesting what you say about
+the longer term rates and how they're
+not really coming down. In fact, they're
+creeping up and in parts of the world,
+they're really creeping up. I mean, do
+you think that a lot of that is driven
+by just fiscal dominance that we have
+now that this is what they really fear
+uh the market participants that
+politicians will simply do whatever it
+takes from a fiscal point of view to get
+through their agendas and and as you say
+just leave the economies um even worse
+off uh from a debt point of view. Yeah,
+I think it's a number of factors. I
+mean, as I said, you know, the economic
+explanation is long-term bond yields
+reflect the um, you know, supply, sorry,
+savings versus investment. And that this
+was the reason why, you know, the
+conundrum in Greenspan's era, you know,
+why were bond yields going down all the
+time? Because of this excess savings
+from from Asia and then in the 2010s,
+bonds went negative. Why? because there
+was so much capital around and the view
+was the technology uh firms didn't need
+a lot of capital you know software isn't
+something that that is capital intensive
+but now we've moved into this AI economy
+where there is huge capital being
+deployed in data centers and spending on
+chips and then on the public sector as
+you say
+you know we've got rising defense
+spending whereas was previously we had a
+peace dividend you know in the in the
+2000s and um you know every time there's
+a problem you know cost of living goes
+up we need more fiscal support not less
+>> um so the political environment is uh is
+such that there's no appetite for uh
+austerity or fiscal restraint um and
+that's I think that's what we're seeing
+in that that trend hiring bondules
+>> yeah cool all right now let's get to the
+second world exclusive thanks to you
+again Alan um because you I've been busy
+uh working on uh a really terrific
+paper. Um I very much look forward to
+talking about it and I really do hope
+people will go and and uh download it
+which we'll come to later on. If you
+don't mind um I would like to start out
+by just reading two quotes that you uh
+start out your paper with. Uh one by a
+guest that I hope you will get for your
+uh series and the other one by a guest
+that you already had on your series and
+who's returning uh very soon. Um so uh
+the first one the first quote is what is
+the biggest single mistake investors
+make? It is that they conclude that the
+way things are today is the way it'll
+always be and the things that have been
+happening will continue to happen. That
+is of course Howard Mark's uh wise
+words. The other one is from um William
+White or Bill White and he says in his
+quote that you use these systems always
+break down. The lesson is be prepared.
+And then you and I I'm not going to
+steal your thunder. You uh actually also
+have a very very good introduction u
+that kind of sets out the um the
+backdrop um and why this paper is really
+something. It's a must readad uh without
+a doubt. Um so I think maybe it's better
+for you to um start out. I will uh
+hopefully be able to um ask a few
+relevant uh questions along uh the way
+but um I don't want to steal any of your
+thunder here.
+>> Sure. Well, maybe I'll just set out why
+I wrote this. I mean rather than go
+through it, it's a lengthy enough paper
+so I won't go through page by page but
+I'll give you a sense on why. I mean
+when I'm working with investors um and
+and whether it's family offices or
+institutions or high netw worth
+individuals there's been a few themes I
+think that have been recurring of late
+um you know things like clearly we're in
+a new macro regime. So does that require
+a different in approach from an asset
+allocation perspective or from a
+portfolio construction perspective.
+That's one thing you know a second thing
+is then you know what's the right way to
+think about integrating alternative
+investment strategies like trend
+following macro alongside traditional
+investments and then more recently we've
+had the growth of concepts like return
+stacking portable alpha um etc and how
+how do we thinking about incorporating
+those very often they're positioned as
+building blocks but but but what should
+an overall portfolio look like? So, um,
+these were all topics that I think I'm
+hearing a lot of. Um, I wanted to set
+out a framework for how to think about
+that and particularly for how to think
+about the the very changed macro
+environment. And when I talk about the
+the changed macro environment,
+it's been, you know, very apparent as we
+were talking about the change in the in
+in the bond markets. But if you take a
+step back, we've had we had a 40-year
+period of of disinflation. Um starting
+in the 1980s when when Vulkar raised
+rates and and and caused a recession,
+inflation has been trending down because
+of there was a confluence of of positive
+factors. There was China coming in into
+the world trade system. There was the
+Soviet Union, the fall of the Berlin
+Wall, you know, there was an acceptance
+of neoliberalism and free markets and
+free trade. Um there was an acceptance
+of the need for central bank
+independence and inflation targeting.
+And all of these things were
+disinflationary forces um which led to
+to to lower inflation and more stable
+inflation uh and and more stable
+economic growth as well. We had what was
+called a great moderation. Now clearly
+we've transitioned out of that into a
+new uh regime since 2020. We've had
+shocks with respect to co uh the Ukraine
+war. But not just that. There's a sense
+that you know inflation is going to be
+higher and stickier. um uh and and this
+is uh I suppose been reflected in a
+change in the bond equity correlation
+and all of that is is well known but I
+think there are other vulnerabilities in
+the system which I touched on earlier
+particularly this this uh coincidence of
+high debt levels at a time of high
+equity valuations and why is that
+significant well I don't hear a lot of
+people joining the dots on this you know
+but if you think about it the worst
+thing that can happen from a debt
+perspective is if we get another
+recession. Why? Because you need to
+spend more. Tax revenues goes down. You
+get a big fiscal deficit. And if you
+look at the trajectory of the US jet
+debt GDP ratio over the last number of
+decades, every time you've got a
+recession, you get a a step change
+higher. So, if you get another recession
+now, and why why might you you know,
+we've got an increasingly financialized
+economy. Um, you know, US households own
+about I think it's about $40 trillion of
+equities. Um so if you had a a
+correction in equities or a bare market
+of the magnitude that we saw in 20202
+you know that that you know the the the
+former IMF chief economist was
+suggesting that could knock 20 trillion
+dollars of wealth uh alone. So you can
+have a much we're much more levered into
+the uh equity market than we were in the
+past. And also debt levels are already
+at the point of um concerns about fiscal
+sustainability. So that could be the the
+straw that breaks the the camel's back
+and that that increases the risks of
+what you're talking about from a fiscal
+dominance and financial repression
+perspective. So the question is we're
+into an environment where you know yes
+the bond equity correlation is less
+stable more positive. You've got a risk
+of uh greater risk of tail outcomes
+whether it's runaway inflation or or
+even you know a deleveraging
+disinflation or deflation. And at the
+same time you know the policy framework
+has changed you know central bank
+independence under threat etc. And all
+of that just underpins this um idea of
+uh uh you know the risk of fiscal
+dominance financial repression etc. So
+what I wanted to address in the in in
+the paper was one that macro change, two
+what are the problems with kind of the
+traditional approaches um the and then
+what's what's a new framework
+I mean just briefly the problems with
+traditional approaches are you know
+categorizing assets and strategies using
+blunt labels like alternative or
+traditional public private you know why
+you you know something like credit is
+also often and seen as a diversifier but
+actually it it it has a low correlation
+to equities when equities are going up
+but it doesn't have a low correlation it
+tends to be positively correlation when
+equities are going down so is it really
+a diversifying asset so um what I wanted
+to set out was not just the the kind of
+the shortcomings of um the traditional
+approaches but also make the case for
+for a stronger allocation to what I call
+adaptive strategies trend following
+being one of those. So strategies that
+that can respond to a more changed macro
+environment um systematically in the
+case of of of trend following obviously
+the likes of discretionary macro is the
+same and also I wanted to address um
+maybe a misconception maybe that's a
+little strong um trend following is
+often positioned as crisis risk offset
+you know crisis alpha risk mitigation so
+you often have portfolios where you have
+you equities for growth, bonds for
+defense, and and trend following is more
+in the defense category. But actually,
+the way I see it is they're more like
+the the midfielders. You know, trend
+following can be proactive. It can be
+progrowth, pro- risk at times when when
+the equities are trending higher. They
+have the flexibility to to add risk in
+those environments.
+>> But when conditions change, they have
+the the ability to to reduce risk and uh
+play more defense. So I know we you you
+talked about the total portfolio
+approach before. So basically they act
+in that way that the total portfolio
+approach is trying to achieve of pushing
+risk into those sectors where the
+opportunities are greatest. Um so
+in in my paper it it sets out to do two
+things. One set out a framework and then
+a portfolio suggestion for this era. And
+where the portfolio I suppose differs
+from many of the conventional approaches
+is it looks at things from a risk
+perspective. So I'm thinking um in terms
+of uh risk contribution not capital uh
+amounts and and the framework has a 40%
+allocation of risk to growth 40% to
+adaptive strategies and 20% to
+diversifying assets and strategies and
+also uses uh tools like return stacking
+and and leverage. Um and obviously
+places a primacy on adaptiveness as a
+key driver as opposed to thinking about
+trend following and adaptive strategies
+as just purely diversifiers. They they f
+they they're the mechanism by which the
+overall portfolio tilts its um uh risk
+uh posture. So within the paper there's
+a the chart showing you know the uh
+rolling equity beta of a uh of this
+adaptive portfolio which swings much
+more dramatically uh from from kind of
+negative to over one than say a 60/40
+portfolio which has a pretty consistent
+6 uh equity beta. So um I mean it came
+from I suppose those uh the the reason
+for for writing a paper emanated from I
+suppose those investor questions. Um I
+have been running a portfolio like this
+for my own money for a while and I've
+had some queries around that. So I
+wanted to set it out in a framework as
+well. Um but I do think we're at a point
+where
+you know investors are looking for an
+alternative framework and an alternative
+approach but haven't uh formalized yet
+that yet. So so this is really setting
+out to to achieve that.
+>> Okay. So I mean quite a lot even in that
+little um introduction so to speak quite
+a lot to uh to to dig into but I know we
+we have a lot more to to cover but a few
+things that kind of um came to mind as I
+was hearing you uh talking about it. We
+often talk about this regime change and
+we often talk about the changes in the
+absolute level of say interest rates for
+example. Um but even also the
+correlation change that we've we've
+noticed um which obviously you can go
+back uh 125 years worth of data and
+every time interest rates uh go above 3
+4% uh the correlation tends to uh go
+positive. So, it's obviously nothing
+new, but there's one thing that I wanted
+to ask you, and I don't know if you've
+done any research on it or just maybe
+your gut feeling, because I think what
+we don't talk so much about actually the
+changes in inflation and inflation
+expect changes, meaning going from this
+stable, predictable inflation to this
+more unpredictable uh inflation
+environment. To me that strikes me as
+being quite a large challenge not just
+in in ordinary business planning and all
+of that. Um but also in in the
+investment world. Um, and oddly enough,
+I think that uh although it may not show
+up this year, but it could well be
+something that I think trend following
+tends to do better in those kind of
+environments um where inflation may not
+be high, but it's not stable at least.
+So, I don't know what what you think
+about that.
+>> I think a few things to say on that. One
+is given that we've already had this
+inflation spike um in 202122
+consumers market participants
+everybody's more sensitive to inflation
+now than they were 5 years ago. You know
+it wasn't it wasn't a talking point in
+2020. So now if you do get higher
+inflation people remember we had this
+before. So there's an an increased risk
+of of inflation expectations being
+deankered. And this is something the Fed
+has talked about. They've said they
+don't see it as a risk at the moment
+given that unemployment is rising, but
+it is something that that they see as
+theoretically something to be aware of.
+The fact that you've had that inflation
+episode means there's a heightened
+sensitivity, you know, and and obviously
+what what's the the the big talking
+point in US at the moment? It's all
+about affordability. Prices have stayed
+high even though the inflation rate has
+has has moderated. So So I think that's
+that's one thing. In my paper, I do look
+at instances where inflation was uh 1
+percentage point above its its two-year
+average and 1% below. And as you say,
+trend following is one is the one
+strategy that very much stands out when
+you get those inflation surprises. So, I
+think that's definitely uh part of it.
+And I think as as we've touched on
+earlier, you know, uh the inflation
+fighting credibility has been squandered
+somewhat. I mean it was it was hard one
+you know Vular Greenspan in that era but
+now we're at risk of of throwing it out
+and and and the reason uh central
+bankers fought so hard for for
+independence and lower inflation was
+because once it became embedded in the
+system in the 70s it was so hard to ring
+out. So I think that's a very big risk
+and that complacency. Another question.
+You mentioned the total portfolio
+approach which we've talked about um the
+last few weeks on the uh on the show
+because of the changes happening at
+Kalpus. Um is there a large different
+from the way you think about it in your
+adaptive approach rather than the total
+portfolio approach? And if if there is,
+is there a way for you to kind of narrow
+that down and say, "Well, this is how I
+see this being a little bit different to
+um to what they're doing uh over in
+California."
+>> Yeah. Well, actually it's something I
+looked at um because in my and I
+referenc it in the paper, but the
+portfolio I run this adaptive portfolio
+um it basically uh is equivalent to kind
+of using a 6040 as a as a benchmark but
+with about an 8% tracking error whereas
+Kalpers are looking at about a 4%
+tracking error versus their benchmark
+which is I think 7525 right
+>> so I mean it's I suppose it shares that
+philosophy or you can view it from that
+total portfolio perspective but
+obviously with a lot more flexibility
+around uh you know and obviously the 640
+isn't a benchmark. I'm just looking at
+the historic performance relative to
+that.
+>> Um so I mean the the issue with with
+total portfolio and I mean I think it's
+a good development you know it's all
+positive and makes sense. So I think it
+really just reflects the shortcomings of
+how large institutions were set up
+previously and how they did um strate
+strategic asset allocation. But they
+still start off with a with with with a
+um with a reference portfolio. Where
+does that come from and what justifies
+that? So um you know it's still kind of
+embedded in old ways of thinking up to a
+point albeit it gives them a certain
+amount of flexibility but you could have
+much more flexibility to deviate from
+from from that kind of reference.
+>> Yeah. The other final thing and then
+I'll let you uh dive even deeper into
+your your paper, but the other thing
+that I noticed you you bring up uh early
+on uh in your paper and that is this
+that you use the words traditional and
+alternative and and you reference them
+as being the labels we've become used
+to. And I don't know if you intended to
+do it or whether it's just me um reading
+into it, but I think there is room to
+really question what traditional is in
+this new environment, what what you know
+what and if you and I, which I'm sure we
+will in 10 years time be talking on on
+top traders unplugged. Um maybe we have
+a completely different um narrative
+around what is traditional in a
+portfolio. Um so I don't know if you
+intended to open that debate. Um but um
+and and feel free just to jump in where
+you want to go in terms of your
+>> I mean I think that's a it's it's
+absolutely a valid point. Um I mean the
+point I was making is sometimes you put
+a label of alternative on something and
+then people assume that means okay it is
+very diversifying. So the point is
+>> you know you've got assets like private
+equity venture capital they're they're
+alternative growth they're not
+diversifiers. So, you know, we we talk
+about and again public public versus
+private there there is this almost a
+kind of um insinuation that the private
+is diversifying but no it's not it's
+just a private expression of um the the
+same risk that you're getting in in
+public markets just there may it may be
+better or worse but it's in in a private
+>> um so that's why I think you know um you
+can have too many labels so I've I've
+brought it down to to growth
+diversifying assets and strategies but
+but the the But the the threshold to be
+regarded as a diversifier is is higher.
+Um and then I suppose I see adaptive
+strategies as a unique form of
+diversifiers that have that flexibility
+to tilt in in their risk posture. But I
+I think um you know one of the things I
+wanted to to talk about in the in in the
+paper is um not just the the the kind of
+the mislabeling but but why you know as
+well investors struggle to hold these
+pure diversifiers. Um and you know we've
+talked about it before. Uh JP Morgan
+Asset Management and GIC you have done a
+study on um if you are optimizing a
+hedge fund portfolio by itself on a
+standalone basis you get a different
+outcome than if you optimize a hedge
+fund portfolio in the context of a
+broader traditional port you know with
+traditional portfolio with with bonds
+and equity. So if you if you if you
+construct it on a standalone basis, you
+get more into convergent market neutral
+long short equity equity market neutral
+type strategies. But you're already
+picking up um factors that that you
+already have in your your uh traditional
+side of your portfolio. Whereas if you
+take a total portfolio perspective, I
+guess it naturally points you to the
+pure diversifiers which are things like
+global macro trend following. they
+actually vent commodities as well.
+>> Um I know David Dredge, our friend has
+done a lot of work in this, you know,
+extending it to to volatility as well.
+So I think that's one thing that you
+know this this kind of behavioral bias
+of viewing the portfolio in isolation or
+viewing the hedge fund bucket in
+isolation and not thinking about it in
+the context of the overall portfolio.
+But to your point, I think something
+that we will see a shift is
+we we tend to think in terms of you know
+buckets like um you know equities, bond,
+multiasset but but now we're
+increasingly seeing hybrids. You know
+we've got where you'll have portfolios
+including traditional assets but also
+alternative strategies.
+>> Some with leverage, some without. So how
+do you classify these? What's the right
+classification? Um and I think that's
+something that um you know the the
+current labels maybe don't account for.
+Um but coming back to the point to kind
+of the the behavioral question um I
+think another reason why we've seen an
+underallocation to these strategies
+historically is um is because of of the
+capital constraint because for a lot of
+people if you want more risk that
+naturally means more equities just to
+get the volatility up but as soon as you
+have the flexibility to use futures for
+for leverage or to allocate to high
+volatility strategies that changes that
+and and and don't forget Marovit's
+optimization was based on the idea of
+you find the best risk adjusted return.
+You blend based on the on the best asset
+allocation. That's what you do first and
+foremost and then you decide the level
+of risk. Do you need to borrow to lever
+up or do you delever to find out what
+level of risk? So that's that has been
+somewhat lost in the industry towards
+this just blanket oh you want more risk
+in your portfolio. Well, that's an 80%
+equity portfolio. You want less. That's
+a 40%. And that's not the way way it
+should be. So part of the what I address
+in the paper is one about building
+balanced resilience and then about
+thinking uh what's what's the the right
+risk level. Um and I think when you take
+it from that perspective, it's easier to
+see the merit of having diversifying
+adaptive strategies. Um and and and
+another shortcoming here is people often
+judge these strategies from the
+perspective of the last 15 years when
+we've had a you know a fantastic equity
+bull market which you know
+>> you know based on on current uh equity
+valuations you'd say well returns are
+probably going to be less going forward.
+So I think there's a number of factors
+there. Go ahead.
+>> Yeah. No, I was just going to ask and
+just maybe in a sense um putting what
+you just said and trying to put it into
+the context of what we discussed earlier
+on the global in in terms of the global
+macro. I mean what do you think the
+result is if I can put it that way of
+this structural underallocation to the
+let's call it the true diversifiers or
+the strategies that are adaptive given
+where we are today. What what what do
+you think the if you're going to
+characterize what what the consequence
+maybe the consequence is a better word
+of that underallocation is as we sit in
+towards the end of 2025 given all the
+global macro forces that are at play. Um
+what do you think the worst consequences
+might might be? Well, I think the
+obvious consequence is what you see in
+portfolios is a concentration in assets
+uh to a risk factor exposure that is
+tilted towards growth and stable
+inflation. So as I point out in the
+paper, if you take your typical
+institutional portfolio that you often
+see, say whether it's a US endowment or
+pension fund and they're they've got
+exposures across public equity, private
+equity, venture capital, private credit,
+maybe some hedge funds, but they might
+be more multistrat or equity market
+neutral and then they've got credit etc.
+They might have 10 11 12 buckets but
+actually if you break it down into how
+much of the portfolio is linked to
+growth it could be 80%. In risk terms it
+could be more than 90%. Then how much
+the portfolio is prepared for higher
+inflation. Well they might have some
+real estate and commodities and over the
+very long term equity should be uh
+should be able to withstand inflation
+but but you know as we saw in the 196682
+period we had higher inflation but
+equities got derated amid much more
+macro volatility. So I think the
+consequence is that that that it comes
+back to the Howard Marx quote that
+you've mentioned there assuming things
+will always be this way that we've had
+this long trajectory of disinflation and
+steady economic growth
+>> but not just the issue isn't just the
+change in the bond equity correlation.
+So that's that's a key point. It's that
+the tail risks are underpriced. Um that
+that there's what are the scenarios?
+Obviously much higher inflation I think
+is is obviously a clear risk and and you
+know uh I spoke to Morris Obseld another
+former you know IMF chief economist and
+he was blunt saying that when a you know
+a major economy like this US start
+behaving like an emerging market runaway
+inflation is the obvious risk but also
+you know if you get a boom and and like
+that and then if if they eventually then
+hike on the on the brakes you could get
+a an asset deleveraging deflation and
+that's something that definitely
+portfolios are are not clear um prepared
+for. So I think it's those tail risks
+that that are that are uh the obvious uh
+and and it's not just um those type of
+institutional portfolios. If you look at
+you know a typical wealth management
+multi-asset portfolio it's always kind
+of the same you know 50 60% equities 20%
+fixed income some hedge funds but not
+enough small amount of gold. So it's
+it's about rebalancing portfolios and re
+reorienting them and coupled with with
+using the tools like leverage.
+>> So maybe kind of you could give us a
+brief overview of um so what does these
+allocations look like in your view? Um
+and of course this is obviously
+hypothetical returns when you've gone
+back and you've done your research. What
+do the returns look like? How are they
+different? um you know let's let's let's
+put some numbers. So yeah, I mean from a
+from a balanced perspective in in um the
+the framework that I set out, I have 40%
+of the exposure in growth assets in in
+risk terms and 20% in diversifying
+assets uh in risk terms and 40% in in
+adaptive strategies in risk terms and
+the reason for that is it is a growth
+oriented portfolio over the long term
+but you diversification for enhancing
+the risk adjusted returns and then a
+high allocation
+reflecting the changed macro
+environments and the risks I've been
+talking about actually that it the
+portfolio outperforms the 6040 over
+going back since I look I look back
+since 1990
+>> it looks it outperforms you know uh
+quite a decent amount in in total
+returns when you compounded over time
+the benefit comes from the notably lower
+draw downs you you see in the portfolio
+because
+>> the adaptive strategies have that
+ability to respond during the major
+crisis uh such we've seen 2020 2008 and
+that's where you get the the the
+long-term benefit from a compounding
+perspective because in those tougher
+times the draw downs are limited and
+then when markets recover you can
+compound then from a higher base whereas
+obviously equities suffered a 50% draw
+down in the financial crisis something
+similar maybe not as strong 2020
+60 was down whatever depending on the
+level of duration anywhere between 20 to
+30% in 2022. So, it's in those
+environments that really impacts your
+long-term compounding by having having
+that balance and adaptiveness helps
+mitigate those draw downs and compound
+at a higher level. So, that's one
+important point. I mean, the second
+important point is that the the strategy
+doesn't outperform in every period or
+not even in every 5year period. So, you
+know, 2015 to 2019 was was particularly
+good for 6040. obviously was the year
+years when bond yields went to their
+lowest level. So you it's not about
+building a portfolio optimized for any
+particular uh scenario but it's one
+about thinking about what makes sense
+for the next 10 years when you don't
+know is it going to be good for equities
+bonds gold or trend but you know we
+don't know which one of those the
+environment will favor or will it be
+runaway inflation or not or just you
+know a return to secular stagnation but
+balancing all of the risks and and
+building in sufficient allocations to
+strategies that that that can respond.
+So,
+ironically, you know, the the approach
+has done better historically even during
+that kind of disinflationary period, but
+you would expect it's a more robust
+methodology for thinking about the
+future outcomes.
+>> Yeah. The other thing that I think is
+quite important if you think about it
+with a a very large lens um you know the
+stability in the returns that you uh
+show um will I think be even more
+important uh going forward given the
+fact that we have such a large uh
+generation of people who are getting
+very close or in their uh phase of
+retirement. So um because the worst
+thing that can happen as you enter
+retirement is that you get a big um draw
+down in in your portfolio. So um that in
+itself I think is is also very makes it
+very relevant uh for people to uh to
+take a closer look. I'm sure they can
+get many more details uh if they engage
+with you directly Alan in terms of how
+do we get these wonderful uh returns. if
+we were going to make a few conclusions
+and of course do not forget to tell us
+uh where they can download the paper. Um
+I'm sure there's going to be a long
+delay because it's such an exclusive pro
+announcement on on the on the top
+traders unplugged uh podcast but it
+could it be ready right after people
+listen to this conversation of course.
+But um but before we get to that um what
+what what should the main takeaway be
+from people who have been listening to
+us uh today would you say from from this
+um new way of thinking and building uh
+portfolios and and is it something you
+would consider setting up so that people
+could just buy the ticket from you?
+That's yeah I mean I think first and
+foremost it is a it's it's a proposed
+architecture a proposed framework for
+thinking to to to to challenge I I guess
+the consensus around the traditional
+labels etc. So I mean that was part of
+my motivation for for sure. So, so to
+think more in terms of risk terms, not
+just uh notional allocations, to think
+about the the building blocks that are
+available in terms of you know uh
+futures or return stack type products or
+portable alpha uh and to think about you
+know um if you can combine um adaptive
+strategies within a portfolio, you can
+overcome some of those behavioral biases
+that that make it difficult, you know,
+for practical reasons for for investors
+to hold them. So I think that that
+that's the really the um the uh call to
+action I guess to to investors. So the
+paper will be on uh the archive capital
+website archivec capital.ie. So have
+been heavily motivated to get it
+finished cognizant that we we would talk
+about it today. So it'll be on the
+website uh from from when this is
+released. And um yeah I mean I've had
+some interest uh in this approach. So
+it's certainly something that uh we're
+exploring uh in terms of executing as a
+strategy. So um you know certainly keep
+tuned uh we we may have more on that in
+time.
+>> Fantastic. Good stuff. Now you mentioned
+just before we wrap up completely, you
+just mentioned uh in passing um you know
+return stacking or portable alpha
+strategies and I couldn't help uh
+watching um or or reading uh briefly a
+note uh on LinkedIn um by uh another
+great uh industry participant Cory
+Hoffine um who and I'm not an expert in
+this area. it's not an area that really
+affects me directly. Um, but it has
+become very popular these return
+stacking portable alpha products. And
+then he mentioned that a small change in
+name or labeling
+by the likes of Morning Star has
+actually had quite a large or could
+potentially have quite a large impact on
+these uh products. I don't know if you
+read the note uh that Cory wrote um but
+it has something to do with how some of
+the authorities um uh rank or or or how
+should I say view these products when
+you uh when you use quote unquote
+leverage. And if you put the word
+leverage into the um labeling, then that
+becomes a problem for many platforms to
+even carry those products on their uh on
+their platform. So maybe you have a
+better way of describing what I was
+trying to say here. I just had a read of
+it as you sent it to me. It sounds like
+um I hadn't been aware it was an issue.
+Um so morning links are have come up
+with a new category it seems for for for
+products like return stacked uh products
+um uh I think it's levered multiasset or
+something like that um which you know we
+all know the label leverage can have
+negative connotations uh for for some
+investors even though there's leverage
+in lots of places um that you know um
+you get operating leverage from certain
+companies you know it's not an issue you
+get to different degrees, you know. Um,
+so I think um what I what I what I
+thought was fair is from Morning Star's
+perspective is is I do think the labels
+need to be reconsidered.
+But maybe something like unconstrained
+multiasset might be a better reflection
+of what um these types of strategies
+seek to do in the sense that
+you know multiasset traditionally in a
+European sense would be more often long
+only you know long equities, bonds,
+property etc. Once you start to
+integrate alternative strategies with
+traditional assets you're you're getting
+long and short dynamic exposures and
+leverage. So I see that as being more
+unconstrained multiasset. So admit
+that's my suggestion for Morning Star.
+>> Just again listening to you talking
+about that um going back to uh our very
+first part of our conversation uh with
+the company strategy which we know is
+not really known for being an IT company
+anymore but actually a 3x levered
+version of Bitcoin um as far as I know.
+I mean I could be wrong about the the
+the leverage amount but anyways um I
+wonder how Morning Star classifies that.
+uh is it just classified as an equity or
+is it classified as something with
+leverage? Uh which I'm pretty sure um
+people would say that's probably what's
+going on in here. Um anyways, um
+interesting an interesting uh post that
+uh Cory had about that and the quote
+unquote kind of uh uneven treatment of
+some of these products perhaps uh in
+when it comes to labeling. Well, I think
+that wraps up a wonderful uh
+conversation. Um Alan, so first of all,
+let me just um encourage everyone
+listening to really show their
+appreciation for uh not just uh you
+writing a paper that they should go and
+read um but also just um all the
+preparation that goes into these
+conversations. So um you can do that by
+going to your favorite podcast platform
+and uh find the podcast and leave a
+rating and review and say of course how
+great Alan is as a co-host. Um, and in
+fact, he's so great that he's going to
+come back next week and he's going to
+host uh the uh the the the the show um
+along with Mark. He's going to be joined
+by Mark because I will be traveling to
+um to Florida next week. And so um yes,
+that's going to be another great uh
+episode for people to tune into. Um I
+think that's going to wrap up what we um
+had planned for today. Thanks ever so
+much from Alan and me. Thanks ever so
+much for listening. We look uh of course
+forward to being back with you next
+week. And as usual, as always, in the
+meantime, take care of yourself and
+[music] take care of each other.
+Thanks for listening to Top Traders
+Unplugged. If you [music] feel you
+learned something of value from today's
+episode, the best way to stay updated is
+to go on over to iTunes and subscribe to
+[music] the show so that you'll be sure
+to get all the new episodes as they're
+released. We have some amazing guests
+lined up for you. And to ensure our show
+continues to grow, please leave us an
+honest rating and review in iTunes.
+[music] It only takes a minute and it's
+the best way to show us you love the
+podcast. We'll see you next time on Top
+Traders [music] Unplugged.

@@ -1,0 +1,14 @@
+# Podcast Analysis Pipeline Dependencies
+
+# Transcript fetching
+youtube-transcript-api>=0.6.0
+yt-dlp>=2024.0.0
+
+# PDF generation
+weasyprint>=60.0
+
+# Note: Also requires system packages (not pip installable):
+# - pandoc: brew install pandoc (macOS) or apt install pandoc (Linux)
+# - pango: brew install pango (macOS) or apt install libpango-1.0-0 (Linux)
+#
+# macOS weasyprint fix: prefix commands with DYLD_LIBRARY_PATH=/opt/homebrew/lib
