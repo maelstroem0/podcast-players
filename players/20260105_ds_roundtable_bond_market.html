@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can't BS the Bond Market: DS Roundtable 1 - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (5:42)</h1>
+                <div class="channel">Damped Spring • 6 clips from 50:25 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260105_ds_roundtable_bond_market.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=LSz5itPxbXs" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/LSz5itPxbXs?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 6</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">11% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Back of yield curve is the risk</div><div class="excerpt-insight">Jimmy: Long-end yields at range highs, no support underneath—this is where equities derail</div></div><span class="excerpt-duration">0:55</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Can't BS the bond vigilantes</div><div class="excerpt-insight">Lots of BS underneath this market—but bond vigilantes can't be fooled like equity investors</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Hassett = bonds snap down</div><div class="excerpt-insight">Team unanimous: Hassett pick triggers immediate bond selloff; no technical support below</div></div><span class="excerpt-duration">0:57</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Gold above 4,000 is FOMO</div><div class="excerpt-insight">Nik: Gold rip past 3,500 is pure FOMO into small market—no macro signal, silver even worse</div></div><span class="excerpt-duration">0:55</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Oil screaming buy if 56 holds</div><div class="excerpt-insight">Gap down on Venezuela but hold 56 = screaming buy; break below = test low 50s/40s</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Steepener if tariffs illegal</div><div class="excerpt-insight">If SCOTUS rules tariffs illegal, 2-10s could blow out to 120-250bps—massive steepener play</div></div><span class="excerpt-duration">0:55</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 155,
+    "end": 210,
+    "duration": 55,
+    "label": "Back of yield curve is the risk",
+    "insight": "Jimmy: Long-end yields at range highs, no support underneath\u2014this is where equities derail",
+    "pm_takeaway": "WATCH 10Y/30Y. Range highs with no support = one catalyst away from breakdown. Equities follow.",
+    "transcript": "You know what? It's always been my job to look out on the tea leaves and see where what's closest to derailing this thing. And when I look out, it's got to be the back of the yield curve that is most glaring to me. Anyways, a lot of things are pointing up. I think on a long-term time frame, we've been consolidating up high in equities on the charts. The charts don't have anything glaringly bearish about them. The rest of the world charts really got off to a strong start on Friday and have been making very bullish patterns themselves. So there's nothing there that I see. The only global equity chart that still looks a little sketchy is probably the EWJ chart a little bit. But even that one is starting to recover a little bit. So I look out and I think, geez, I'd love a retrace. I'd love to see some of the market give some of this rally back and check back and be a little healthier than it had been. And the only thing"
+  },
+  {
+    "id": 2,
+    "start": 305,
+    "end": 365,
+    "duration": 60,
+    "label": "Can't BS the bond vigilantes",
+    "insight": "Lots of BS underneath this market\u2014but bond vigilantes can't be fooled like equity investors",
+    "pm_takeaway": "STEEPENERS NOW. Bond vigilantes enforce what politicians won't. Long-end is the canary.",
+    "transcript": "most worried about is in the economy or the the thing I'm most worried about is probably housing. So they need that back end to comply and they're not getting that. So, it just seems like there's a lot of BS underneath this market and I'd like to see I'd like to see it back test that BS and I think the market that could cause it to back test is if there's one thing that they can't they can't their way through it's the bond vigilantes and just floating easiness and look at how wonderful everything is. We're all at all-time highs because that only adds to the weight of that. So, and I don't think this administration, I don't think Trump is used to the quandry that he's in where you don't really want to be blowing sunshine at the market right now where the bonds are on their charts. You're just going to push him over the edge and then you're going to cause a reaction. And I'm not sure how you fix this either. So my question on that and then I want to hear Nick's thoughts, but my question on that"
+  },
+  {
+    "id": 3,
+    "start": 838,
+    "end": 895,
+    "duration": 57,
+    "label": "Hassett = bonds snap down",
+    "insight": "Team unanimous: Hassett pick triggers immediate bond selloff; no technical support below",
+    "pm_takeaway": "FADE HASSETT RISK. If named, yields spike\u2014be ready with 10Y puts or steepeners.",
+    "transcript": "<strong>\u203a</strong> Let's talk about that. So, let's say he picks Hassid. Does that hurt the bond market enough to<br><br><strong>\u203a</strong> I think I think I think bonds snap down on that yield up.<br><br><strong>\u203a</strong> Jimmy, what do you think?<br><br><strong>\u203a</strong> And the reason I brought the point up too is just cuz being a a chartist, I look at the sensitive areas that we're at and we have there's not a lot of support underneath these areas in 10 and in 30s. We had really big moves in July and SEP coming out of rallies that really left no support and we're starting to creep into those areas and that's why honestly if he makes a mistake at this point they will kick him off the edge here and that I think the speed of rates will be the thing that has potential to spook the market. I don't think he has a lot of wiggle room here to<br><br><strong>\u203a</strong> Okay. So does that mean he's not going to pick Hassip?<br><br><strong>\u203a</strong> Yeah, I don't think he I don't think he does. And if there's any market out there, it hasn't showed up that he's backing off this. Maybe it's because"
+  },
+  {
+    "id": 4,
+    "start": 1705,
+    "end": 1760,
+    "duration": 55,
+    "label": "Gold above 4,000 is FOMO",
+    "insight": "Nik: Gold rip past 3,500 is pure FOMO into small market\u2014no macro signal, silver even worse",
+    "pm_takeaway": "NO NEW GOLD POSITIONS. Last $500 is technical break + FOMO, not fundamentals. Wait for pullback.",
+    "transcript": "these blowoff tops and to me the gold move is FOMO I haven't been a part of it my systematic things have been in gold so I've benefited from it but at 3500 I don't want to own gold and we're way past that I think silver is even more ridiculous So what you're saying is that you're not taking any macroeconomic signal from the prices of metals.<br><br><strong>\u203a</strong> Well, I'm taking macroeconomic signals up to 35 3,700 and then I think there was a real reason for that. I think this last little blowoff past 4,000 is all a technical break into a small market that people are extrapolating a bunch of things that just really have to do with FOMO. But that's just my<br><br><strong>\u203a</strong> big I love gold. I I've been ever since leaving Bridgewater I've owned it from my personal account in a heavy allocation relative to anything else 5 to 10% round numbers 10 most of the time currently I have nine and I broadly agree with you that I'm not taking much macroeconomic signals from it Jimmy what"
+  },
+  {
+    "id": 5,
+    "start": 2045,
+    "end": 2105,
+    "duration": 60,
+    "label": "Oil screaming buy if 56 holds",
+    "insight": "Gap down on Venezuela but hold 56 = screaming buy; break below = test low 50s/40s",
+    "pm_takeaway": "BUY OIL on gap-hold at 56. Bad news + good price action = classic setup. Stop below 55.",
+    "transcript": "tell<br><br><strong>\u203a</strong> cuz if you get if we'll have that that great technical telling bad news good price action. If we could get a bad news and good price action I think that's the time to buy oil right now. So if the oil opens up and this Venezuela things turns out not to be a big deal I think oil is a screaming buy. But if we start getting those daily closes under 56 I think we test 50 maybe even go into the 40s and then go from there.<br><br><strong>\u203a</strong> That's what I was thinking. I was thinking tonight's price action is going to be a huge tell. I'm sure we'll get a gap down, but if we can hold that 5575 56 area and bounce from there and actually have a strong reaction, that could start a completely different leg higher. But if we can't hold that, Nick, you're right. We're going to probably trade 490 or something. Get that for handle printing and trade low 50s at least off this. So tonight's going to be a huge tell for the future.<br><br><strong>\u203a</strong> Let me ask you, we covered a bunch of things. The thing that we didn't cover yet is the Scotas decision."
+  },
+  {
+    "id": 6,
+    "start": 2525,
+    "end": 2580,
+    "duration": 55,
+    "label": "Steepener if tariffs illegal",
+    "insight": "If SCOTUS rules tariffs illegal, 2-10s could blow out to 120-250bps\u2014massive steepener play",
+    "pm_takeaway": "LOAD STEEPENERS before SCOTUS decision. Illegal ruling = deficit blowout = curve explosion.",
+    "transcript": "tariffs come in, I think we have a massive steepener. And that's the trade. But you don't think it's priced? No. No. No. If terrorists are legal, I think there's a real steepener play still,<br><br><strong>\u203a</strong> but I wouldn't outright buy or sell bonds. I would play the steepener.<br><br><strong>\u203a</strong> I would play it. They are not steep by any stretch of the imagination.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> So, you could talk about 120 2 and a half to 250 is the widest they tend to get. But, you know, there's plenty of room for a steepener. I'd agree with that.<br><br><strong>\u203a</strong> Okay. Well, we covered a bunch of things that were on my list. Are there any things on your list?<br><br><strong>\u203a</strong> No. No. I guess the only thing that is going to be a common sentiment issue is are we at the top of the AI bubble and will we be able to rotate into other sectors and start seeing things like productivity gains? Will we start to see other things besides just massive"
+  }
+];
+        const videoId = 'LSz5itPxbXs';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
