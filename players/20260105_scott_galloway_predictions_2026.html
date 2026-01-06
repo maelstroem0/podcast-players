@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott Galloway's Predictions for 2026 - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (8:15)</h1>
+                <div class="channel">The Prof G Pod – Scott Galloway • 8 clips from 54:52 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260105_scott_galloway_predictions_2026.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=uiW41jFKcV8" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/uiW41jFKcV8?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 8</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">15% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">China dumps cheap AI, crashes US valuations</div><div class="excerpt-insight">China will dump massive AI into US market. 90% of OpenAI for 30% of price = crushing value prop. DeepSeek already at 4% share from zero.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Data center bubble: 250 nuclear plants at $10T</div><div class="excerpt-insight">Revenue projections imply 250 new nuclear plants at $10T. Nvidia's hometown data center empty awaiting power. 5-8 years to connect to grid.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">AI bailout coming in 2026</div><div class="excerpt-insight">Government will bail out AI via loan guarantees—effectively socialism for tech bros. Revenue projections require impossible infrastructure.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Nvidia = Intel 1999</div><div class="excerpt-insight">Nvidia market cap > Costco, BofA, IBM, Palantir, Exxon, Walmart, Netflix, Oracle, Home Depot, Salesforce COMBINED. Intel went $200B→$500B→$165B.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">AI loses at infrastructure, wins at application</div><div class="excerpt-insight">AI will lose market cap at infrastructure layer but gain at application layer—specifically autonomous and robotics. Amazon has 1M robots vs 400K rest of nation.</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Never short Tesla—it's a meme stock</div><div class="excerpt-insight">Wanted to short at $30, been wrong ever since. Tesla disconnected from fundamentals. Consider 2-3x leveraged Mag7 shorts as hedge instead.</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">Synthetic relationships: 93 min avg session</div><div class="excerpt-insight">ChatGPT avg 14 min, Character.AI avg 93 min. 3/4 teens have used AI companion. Big tech creating asocial asexual males.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="7" onclick="playExcerpt(7)"><span class="excerpt-num">8</span><div class="excerpt-content"><div class="excerpt-label">Take less risk with money, more with relationships</div><div class="excerpt-insight">Young men misallocating risk to betting apps instead of real relationships. 50% men 18-49 have betting accounts. Get out of the house.</div></div><span class="excerpt-duration">1:00</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 695,
+    "end": 755,
+    "duration": 60,
+    "label": "China dumps cheap AI, crashes US valuations",
+    "insight": "China will dump massive AI into US market. 90% of OpenAI for 30% of price = crushing value prop. DeepSeek already at 4% share from zero.",
+    "pm_takeaway": "UNDERWEIGHT NVIDIA/OPENAI. China AI dumping is accelerating. If you can get 90% capability at 30% price, that's game over for premium pricing.",
+    "transcript": "inflation will have a deflationary impulse come through in the short-term metrics that will lead to a stabilization of the bond market. And then if that can happen, dips will be viable in the stock indices. But I wouldn't chase because if the AI names<br><br><strong>\u203a</strong> sell off, there's no amount of rotation that's going to keep the market up. So, I think we could really get these chops down or these scary days down. But, I think that in the long run, you would want to really look to buy dips, raise cash on the rallies, and then look to buy dips into the stock indices and risk. Sure. The thing I'm thinking about on equities in particular is listen, we can be bullish or bearish in the next month or two and that's what our jobs are. But when I look at equities overall and I say how's the year going to be for equities, we're growing at a 10% earnings growth and that's a lot of a cruel of equity. Even if you get a multiple contraction of two points, two multiple points, you're breaking even."
+  },
+  {
+    "id": 2,
+    "start": 825,
+    "end": 885,
+    "duration": 60,
+    "label": "Data center bubble: 250 nuclear plants at $10T",
+    "insight": "Revenue projections imply 250 new nuclear plants at $10T. Nvidia's hometown data center empty awaiting power. 5-8 years to connect to grid.",
+    "pm_takeaway": "DATA CENTER BUILDOUT IS SIGNALING, NOT REALITY. Announced \u2260 constructed. Power constraints kill the thesis. Underweight data center plays.",
+    "transcript": "in line and then pick who he wants to pick. Like is it going to be Hasset? I don't think it's going to be Hasset, but it definitely could, but I think he's going to go with a more neutral pick.<br><br><strong>\u203a</strong> I agree with I agree with that about Trump.<br><br><strong>\u203a</strong> Let's talk about that. So, let's say he picks Hassid. Does that hurt the bond market enough to<br><br><strong>\u203a</strong> I think I think I think bonds snap down on that yield up.<br><br><strong>\u203a</strong> Jimmy, what do you think?<br><br><strong>\u203a</strong> And the reason I brought the point up too is just cuz being a a chartist, I look at the sensitive areas that we're at and we have there's not a lot of support underneath these areas in 10 and in 30s. We had really big moves in July and SEP coming out of rallies that really left no support and we're starting to creep into those areas and that's why honestly if he makes a mistake at this point they will kick him off the edge here and that I think the speed of rates will be the thing that has potential to spook the market. I don't think he has a lot of wiggle room here to"
+  },
+  {
+    "id": 3,
+    "start": 945,
+    "end": 1005,
+    "duration": 60,
+    "label": "AI bailout coming in 2026",
+    "insight": "Government will bail out AI via loan guarantees\u2014effectively socialism for tech bros. Revenue projections require impossible infrastructure.",
+    "pm_takeaway": "WATCH FOR BAILOUT POSITIONING. When government steps in, it signals peak bubble. Don't be long infrastructure layer when music stops.",
+    "transcript": "have Waller, which I think would be the best pick. We have Worsh, right? Correct. Yeah, Wars now. He's like a very hawkish guy in this past, but he probably is going to play the line, but it it seems more like a trap to me. Maybe not Trump, but maybe a Bess would be like, \"Do you really want to pick this guy?\" Because is he is in his heart? Maybe he was lying back then, but he was a pretty hawkish dude in his past. So, I'd like to think Worsh is is he was a governor. He had a couple of fairly out of consensus for the Fed views at the time and they wouldn't line up with what Trump's rhetoric has been. So, I see what you're seeing, but I also think that it's really hard to pin him down to his history and say that he's going to be hawkish. Maybe he will, maybe he will be, but I think it's trickier to do that. So, I'm not I don't think that a disqualifi that his prior behavior would disqualify him. I happen to agree with"
+  },
+  {
+    "id": 4,
+    "start": 1095,
+    "end": 1155,
+    "duration": 60,
+    "label": "Nvidia = Intel 1999",
+    "insight": "Nvidia market cap > Costco, BofA, IBM, Palantir, Exxon, Walmart, Netflix, Oracle, Home Depot, Salesforce COMBINED. Intel went $200B\u2192$500B\u2192$165B.",
+    "pm_takeaway": "NVIDIA 94% GPU SHARE IS UNSUSTAINABLE. Everyone developing competing chips. Market cap > Canada + UK + France + Germany + Italy combined.",
+    "transcript": "rate cuts. Currently the terminal the trough rate for sofur is still north of three and by over the next fourish [snorts] meetings January through June in which Powell is no longer chair in June you only are priced for 55 basis points of cuts. I think we're Nick and I at least are on the same page that more cuts are likely than that.<br><br><strong>\u203a</strong> Is that right?<br><br><strong>\u203a</strong> Yeah. Yeah. I'm I'm 100% on that. I don't know what Jimmy's think, but I think that in general, as long as especially I keep saying like deflationary forces. I'm not saying that there won't be any inflation. I'm just saying how how how it's calculated. It's it's it's now we've entered the time where the the the rents everything is going to roll off. So they have the backdrop of inflation. So they can cut. We need they the housing market is semilocked up. So they do need to open that up a little bit. We're not falling off a cliff, but we"
+  },
+  {
+    "id": 5,
+    "start": 1300,
+    "end": 1365,
+    "duration": 65,
+    "label": "AI loses at infrastructure, wins at application",
+    "insight": "AI will lose market cap at infrastructure layer but gain at application layer\u2014specifically autonomous and robotics. Amazon has 1M robots vs 400K rest of nation.",
+    "pm_takeaway": "LONG AMAZON, UBER, WAYMO. Application layer is undervalued. Amazon can double retail revenue by 2033 without adding employees. That's margin expansion.",
+    "transcript": "things and say wow we get a low print in GDP or a high print in GDP that means the economy is going to go higher like is it it certainly had been but it doesn't necessarily mean to me that I extrapolated as going to get hotter. I look at more the the policymakers decisions and how economies work more so than I do the data. So look that's then add on top of it what I think is stale and basically differently collected and calculated data. You can't look at infl the inflation data. You can't say definitively that these numbers are as accurate as they have been when we know certain data was not collected and was in in the case of the 16th of the housing in the CPI report was literally zeroed out and so I don't have as much firstly I don't consider data to be a very good tra actionable signal I do think data over the long term is essential"
+  },
+  {
+    "id": 6,
+    "start": 2250,
+    "end": 2320,
+    "duration": 70,
+    "label": "Never short Tesla\u2014it's a meme stock",
+    "insight": "Wanted to short at $30, been wrong ever since. Tesla disconnected from fundamentals. Consider 2-3x leveraged Mag7 shorts as hedge instead.",
+    "pm_takeaway": "DON'T SHORT TESLA DIRECTLY\u2014meme dynamics override fundamentals. Use 2-3x leveraged ETFs on Mag7 as portfolio hedge, not directional bet.",
+    "transcript": "pay back or whatever.<br><br><strong>\u203a</strong> But Congress, and this is an interesting topic too, Congress is not going to be able to pass tariffs. You're going to get filibustered to death on tariffs. So that asked, this is an important thing that I've been thinking a lot about, which is does Trump convince the middle of the Republican party because that's the group they need to do, the middle of the Republican party to get rid of the filibuster.<br><br><strong>\u203a</strong> I think they do. I I think it's a general consensus that people want to get rid of it. I think Democrats and Republicans essentially want to get rid of it.<br><br><strong>\u203a</strong> I think the Democrats want to give it back. want to get rid of it because then they can use it when they are back in power. And right now as when you're in the minority, all you could do is say no, you can't actually accomplish anything. It's less of a loss. But the one concern I have is that let's say we get that situation where it's kicked back to the Congress and I don't think they will do that, but let's say it does. Well, regardless, whatever it is, it's back in the Congress's hands. Are a bunch of farmer Republicans, farm state Republicans, going to end, for"
+  },
+  {
+    "id": 7,
+    "start": 2805,
+    "end": 2865,
+    "duration": 60,
+    "label": "Synthetic relationships: 93 min avg session",
+    "insight": "ChatGPT avg 14 min, Character.AI avg 93 min. 3/4 teens have used AI companion. Big tech creating asocial asexual males.",
+    "pm_takeaway": "BEHAVIORAL WATCH: synthetic relationships sequestering youth. Regulatory scrutiny coming. Character.AI engagement is addictive\u201493 min sessions.",
+    "transcript": "markets I don't play developing economies but we've been in foreign stocks rest of world stocks developed markets which is largely Europe Japan for all year as over the US and we've won in two ways one the stocks themselves have done well if you look at tech stocks and you see wow they've done great in the US and then you just look at European banks they've Crystal, but you don't have to be in Texas. And on top of that, you've had the dollar working for you. So going into 2026, I'm still leaning in that direction. I think that's a broader topic that we should come back next month and let's talk about that. So we're this is the first time we've done this. Dampspring offers the DS alpha product, which is our macro longer term investing product. We offer DS data. Daniel wasn't able to join us today. That is a product that allows you to utilize us as your rent quant to answer complicated macroeconomic questions. Within DS Alpha,"
+  },
+  {
+    "id": 8,
+    "start": 3215,
+    "end": 3275,
+    "duration": 60,
+    "label": "Take less risk with money, more with relationships",
+    "insight": "Young men misallocating risk to betting apps instead of real relationships. 50% men 18-49 have betting accounts. Get out of the house.",
+    "pm_takeaway": "FINAL INSIGHT: The best returns come from relationship risk, not screen risk. Gaming stocks (-38%) are casualties. Nothing wonderful happens without taking risks\u2014but pick the right risks.",
+    "transcript": ""
+  }
+];
+        const videoId = 'uiW41jFKcV8';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>

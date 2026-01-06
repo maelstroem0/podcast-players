@@ -1,0 +1,82 @@
+{
+  "video_id": "uiW41jFKcV8",
+  "url": "https://www.youtube.com/watch?v=uiW41jFKcV8",
+  "title": "Scott Galloway's Predictions for 2026",
+  "channel": "The Prof G Pod – Scott Galloway",
+  "total_duration": 3292,
+  "pdf_link": "../pdfs/20260105_scott_galloway_predictions_2026.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 695,
+      "end": 755,
+      "duration": 60,
+      "label": "China dumps cheap AI, crashes US valuations",
+      "insight": "China will dump massive AI into US market. 90% of OpenAI for 30% of price = crushing value prop. DeepSeek already at 4% share from zero.",
+      "pm_takeaway": "UNDERWEIGHT NVIDIA/OPENAI. China AI dumping is accelerating. If you can get 90% capability at 30% price, that's game over for premium pricing."
+    },
+    {
+      "id": 2,
+      "start": 825,
+      "end": 885,
+      "duration": 60,
+      "label": "Data center bubble: 250 nuclear plants at $10T",
+      "insight": "Revenue projections imply 250 new nuclear plants at $10T. Nvidia's hometown data center empty awaiting power. 5-8 years to connect to grid.",
+      "pm_takeaway": "DATA CENTER BUILDOUT IS SIGNALING, NOT REALITY. Announced ≠ constructed. Power constraints kill the thesis. Underweight data center plays."
+    },
+    {
+      "id": 3,
+      "start": 945,
+      "end": 1005,
+      "duration": 60,
+      "label": "AI bailout coming in 2026",
+      "insight": "Government will bail out AI via loan guarantees—effectively socialism for tech bros. Revenue projections require impossible infrastructure.",
+      "pm_takeaway": "WATCH FOR BAILOUT POSITIONING. When government steps in, it signals peak bubble. Don't be long infrastructure layer when music stops."
+    },
+    {
+      "id": 4,
+      "start": 1095,
+      "end": 1155,
+      "duration": 60,
+      "label": "Nvidia = Intel 1999",
+      "insight": "Nvidia market cap > Costco, BofA, IBM, Palantir, Exxon, Walmart, Netflix, Oracle, Home Depot, Salesforce COMBINED. Intel went $200B→$500B→$165B.",
+      "pm_takeaway": "NVIDIA 94% GPU SHARE IS UNSUSTAINABLE. Everyone developing competing chips. Market cap > Canada + UK + France + Germany + Italy combined."
+    },
+    {
+      "id": 5,
+      "start": 1300,
+      "end": 1365,
+      "duration": 65,
+      "label": "AI loses at infrastructure, wins at application",
+      "insight": "AI will lose market cap at infrastructure layer but gain at application layer—specifically autonomous and robotics. Amazon has 1M robots vs 400K rest of nation.",
+      "pm_takeaway": "LONG AMAZON, UBER, WAYMO. Application layer is undervalued. Amazon can double retail revenue by 2033 without adding employees. That's margin expansion."
+    },
+    {
+      "id": 6,
+      "start": 2250,
+      "end": 2320,
+      "duration": 70,
+      "label": "Never short Tesla—it's a meme stock",
+      "insight": "Wanted to short at $30, been wrong ever since. Tesla disconnected from fundamentals. Consider 2-3x leveraged Mag7 shorts as hedge instead.",
+      "pm_takeaway": "DON'T SHORT TESLA DIRECTLY—meme dynamics override fundamentals. Use 2-3x leveraged ETFs on Mag7 as portfolio hedge, not directional bet."
+    },
+    {
+      "id": 7,
+      "start": 2805,
+      "end": 2865,
+      "duration": 60,
+      "label": "Synthetic relationships: 93 min avg session",
+      "insight": "ChatGPT avg 14 min, Character.AI avg 93 min. 3/4 teens have used AI companion. Big tech creating asocial asexual males.",
+      "pm_takeaway": "BEHAVIORAL WATCH: synthetic relationships sequestering youth. Regulatory scrutiny coming. Character.AI engagement is addictive—93 min sessions."
+    },
+    {
+      "id": 8,
+      "start": 3215,
+      "end": 3275,
+      "duration": 60,
+      "label": "Take less risk with money, more with relationships",
+      "insight": "Young men misallocating risk to betting apps instead of real relationships. 50% men 18-49 have betting accounts. Get out of the house.",
+      "pm_takeaway": "FINAL INSIGHT: The best returns come from relationship risk, not screen risk. Gaming stocks (-38%) are casualties. Nothing wonderful happens without taking risks—but pick the right risks."
+    }
+  ]
+}
