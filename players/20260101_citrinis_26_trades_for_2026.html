@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Fishback: 26 Trades for 2026 - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (4:57)</h1>
+                <div class="channel">The Monetary Matters Network • 6 clips from 113:02 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260101_citrinis_26_trades_for_2026.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=YJDDhz8xTQY" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/YJDDhz8xTQY?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 6</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">4% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">BS Jobs thesis—AI replaces bloat</div><div class="excerpt-insight">Logo-aligning consultants at $150K/yr replaceable by AI for fraction of penny. Trade: long bloated orgs with AI intent.</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Advanced packaging = AI bottleneck</div><div class="excerpt-insight">Chiplets stitched via advanced packaging (CoWoS). This is THE bottleneck for all AI chips—Nvidia, TPUs, custom ASICs.</div></div><span class="excerpt-duration">0:58</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">PTSD—capital discipline premium</div><div class="excerpt-insight">Post-traumatic supply disorder: GE Vernova targeting 20% margins (from 14%) because they refuse to build capacity despite 2x demand.</div></div><span class="excerpt-duration">1:06</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">AI golden age—Uber moment</div><div class="excerpt-insight">AI is subsidized like early Uber. Use it now before monetization. Derive most value for least cost while it lasts.</div></div><span class="excerpt-duration">0:30</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Depreciation = bull for Nvidia</div><div class="excerpt-insight">Bear argument on depreciation is bull case for Nvidia and AI progress. Chips obsolete in 18mo = scaling laws work.</div></div><span class="excerpt-duration">0:27</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Inference moves on-device</div><div class="excerpt-insight">Cloud round-trip 800ms vs on-device 200ms. Agentic AI requires real-time. Memory efficiency breakthrough = device wins.</div></div><span class="excerpt-duration">0:51</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 655,
+    "end": 720,
+    "duration": 65,
+    "label": "BS Jobs thesis\u2014AI replaces bloat",
+    "insight": "Logo-aligning consultants at $150K/yr replaceable by AI for fraction of penny. Trade: long bloated orgs with AI intent.",
+    "pm_takeaway": "LONG ACN, MMC, ADP, PAYX. Highest conviction 2026. Cut half workforce = margins explode.",
+    "transcript": "in his book called a quote unquote  job. He has this great quote about John Maynard Kees saying in 1930 by the end of the century we'll all have a 15- hour work week because technology will have taken us so far that you don't need to be in the office 40 hours a week. And he was right. Technology did progress to that level but we just created a bunch more work that that nobody really needs to do. And there's a lot of people that show up to work like email jobs and they don't feel that what they're doing needs to be done. So right now, like at this exact period of time, an AI agent can do that same logo aligning task for in 4 seconds for a fraction of a penny. But Fortune 500 companies are still paying a guy from Warden $150,000 a year to do it manually because their own like internal bureaucracy hasn't caught up. Technology advances at this exponential curve and human adoption of technologies is relatively linear. So I think that there's a trade there for sure. You want to own the companies that have very bloated organizations and show some intent to cut that down with artificial intelligence. And the interesting part right now that's unique about this exact moment in time, nobody's stopping them"
+  },
+  {
+    "id": 2,
+    "start": 2017,
+    "end": 2075,
+    "duration": 58,
+    "label": "Advanced packaging = AI bottleneck",
+    "insight": "Chiplets stitched via advanced packaging (CoWoS). This is THE bottleneck for all AI chips\u2014Nvidia, TPUs, custom ASICs.",
+    "pm_takeaway": "LONG AMKR, BESI, SNPS. Agnostic to chip designer. Packaging capacity = AI scaling.",
+    "transcript": "as maybe Nvidia too?<br><br><strong>\u203a</strong> That's the advanced packaging. It is what it says, right? It's packaging these chips in a way that that basically for 50 years, um, you know, if you're familiar with Moore's law, we made transistors smaller, and that worked great. And then we hit a wall where chips like like the we could make them bigger to fit all this stuff, but we can't make them any bigger. They won't fit on the lith lithography machines. It's called the reticle limit. So, if you try to print a chip bigger than that, you know, the yields collapse, you lose money. So the new game isn't make the chip bigger. It's make a bunch of small chips which are adorably called chiplets and you know stitch them together so they act one big chip. And that stitching is advanced packaging. And you know um it's it's this is an interesting bottleneck for me because it's been a bottleneck for a while. If you've heard about KOS from TSMC that's been a big capacity constraint in making as many GPUs as possible. But the reason why this is"
+  },
+  {
+    "id": 3,
+    "start": 3684,
+    "end": 3750,
+    "duration": 66,
+    "label": "PTSD\u2014capital discipline premium",
+    "insight": "Post-traumatic supply disorder: GE Vernova targeting 20% margins (from 14%) because they refuse to build capacity despite 2x demand.",
+    "pm_takeaway": "LONG GEV, FSLR, SQM. Screen: oligopoly + demand surge + prior trauma + discipline.",
+    "transcript": "pretty much content to let their backlogs grow. average selling prices go up. And so it's like PTSD, right? Like once bitten, twice shy. So we call it post-traumatic supply disorder, which is they listen to a bullish forecast, they built a new factory or they built a new whatever a unit of capacity, they spent billions, demand fell off a cliff, and now they're just, okay, we're not going to do that again. And it's been a pretty volatile environment for cyclicals over the past five years. So these like wounds are fresh. And in both those areas, demand came back for things like data center power or high bandwidth memory or DRAM or NAND. And in a normal kind of textbook world, these companies rush to build new factories to capture that market share from that demand, but they aren't. That yes, like right now, some of them are planning on increasing capacity. But look at Genova, right? They're projecting their EVA margins to go to 20% over the next years from 14. And because<br><br><strong>\u203a</strong> Yeah. And it's they're because they're like hypervigilant. They're not believing the hockey stick charts. They're hoarding their backlog. They're like they're treating debt like a STD that they got"
+  },
+  {
+    "id": 4,
+    "start": 4635,
+    "end": 4665,
+    "duration": 30,
+    "label": "AI golden age\u2014Uber moment",
+    "insight": "AI is subsidized like early Uber. Use it now before monetization. Derive most value for least cost while it lasts.",
+    "pm_takeaway": "STAY LONG real AI. OpenAI raising = party continues. Exit if can't raise.",
+    "transcript": "you know you can become a loss and that won't last forever. It's the same thing as like when Uber was way better than taking a taxi and cheaper and eventually the company like gets the market share and they convert and they charge more for it because you're dependent on it. This is the time where you can derive the most value for the least cost by utilizing AI. So, it'll be interesting to see. I don't know what the answer is for them, but I think so far what they've done is probably the right route. And yeah, I agree with you. If they can't raise money anymore, it might be over."
+  },
+  {
+    "id": 5,
+    "start": 5078,
+    "end": 5105,
+    "duration": 27,
+    "label": "Depreciation = bull for Nvidia",
+    "insight": "Bear argument on depreciation is bull case for Nvidia and AI progress. Chips obsolete in 18mo = scaling laws work.",
+    "pm_takeaway": "Don't conflate hyperscaler bear with Nvidia bear. Depreciation concern = AI progress validated.",
+    "transcript": "that it's going to be worthless to use the last generation of chips. Yeah, that's a bullish argument for Nvidia. Like I feel that the Jim Cho's depreciation argument of OpenAI is, you know, and Microsoft and Google's uh um their profitability is inflated because the new chips are going to be so much better that the proper depreciation schedule should be two or three years instead of five or six. That to me is a bull argument for Nvidia. It's a bare argument for open AI, but it is it's a bull argument for AI progress.<br><br><strong>\u203a</strong> Yeah. And that is pretty much how these arguments fall. I think like people what"
+  },
+  {
+    "id": 6,
+    "start": 5749,
+    "end": 5800,
+    "duration": 51,
+    "label": "Inference moves on-device",
+    "insight": "Cloud round-trip 800ms vs on-device 200ms. Agentic AI requires real-time. Memory efficiency breakthrough = device wins.",
+    "pm_takeaway": "LONG MediaTek, Qualcomm. SHORT Lenovo, Dell, Nintendo (41% BOM is RAM).",
+    "transcript": "If we get a breakthrough in any single one of those inference will move to device because it makes sense. Every time that you ask Chad GPT a question, it goes to a server farm in I don't know wherever, probably Texas now. It gets processed by a GPU that costs as much as a Porsche and then it sends the answer back. And that round trip takes like 800 milliseconds. And that seems like nothing but in computer time that's a eternity. Especially when you think about the agentic AI acting as an assistant. You want to be able to have a conversation like like I'm having with you where the inference is being done while I'm speaking and then it's immediately delivered back to me. 800 milliseconds versus being on device at 200 where there's no tower involved. There's no data. The way that it is right now is great for a chatbot that's doing all these cool things. It's not that great for your agentic assistant that can like schedule things and buy things for you and all that stuff. So if"
+  }
+];
+        const videoId = 'YJDDhz8xTQY';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>

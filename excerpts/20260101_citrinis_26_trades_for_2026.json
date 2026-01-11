@@ -1,0 +1,64 @@
+{
+  "video_id": "YJDDhz8xTQY",
+  "url": "https://www.youtube.com/watch?v=YJDDhz8xTQY",
+  "title": "James Fishback: 26 Trades for 2026",
+  "channel": "The Monetary Matters Network",
+  "total_duration": 6782,
+  "pdf_link": "../pdfs/20260101_citrinis_26_trades_for_2026.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 655,
+      "end": 720,
+      "duration": 65,
+      "label": "BS Jobs thesis—AI replaces bloat",
+      "insight": "Logo-aligning consultants at $150K/yr replaceable by AI for fraction of penny. Trade: long bloated orgs with AI intent.",
+      "pm_takeaway": "LONG ACN, MMC, ADP, PAYX. Highest conviction 2026. Cut half workforce = margins explode."
+    },
+    {
+      "id": 2,
+      "start": 2017,
+      "end": 2075,
+      "duration": 58,
+      "label": "Advanced packaging = AI bottleneck",
+      "insight": "Chiplets stitched via advanced packaging (CoWoS). This is THE bottleneck for all AI chips—Nvidia, TPUs, custom ASICs.",
+      "pm_takeaway": "LONG AMKR, BESI, SNPS. Agnostic to chip designer. Packaging capacity = AI scaling."
+    },
+    {
+      "id": 3,
+      "start": 3684,
+      "end": 3750,
+      "duration": 66,
+      "label": "PTSD—capital discipline premium",
+      "insight": "Post-traumatic supply disorder: GE Vernova targeting 20% margins (from 14%) because they refuse to build capacity despite 2x demand.",
+      "pm_takeaway": "LONG GEV, FSLR, SQM. Screen: oligopoly + demand surge + prior trauma + discipline."
+    },
+    {
+      "id": 4,
+      "start": 4635,
+      "end": 4665,
+      "duration": 30,
+      "label": "AI golden age—Uber moment",
+      "insight": "AI is subsidized like early Uber. Use it now before monetization. Derive most value for least cost while it lasts.",
+      "pm_takeaway": "STAY LONG real AI. OpenAI raising = party continues. Exit if can't raise."
+    },
+    {
+      "id": 5,
+      "start": 5078,
+      "end": 5105,
+      "duration": 27,
+      "label": "Depreciation = bull for Nvidia",
+      "insight": "Bear argument on depreciation is bull case for Nvidia and AI progress. Chips obsolete in 18mo = scaling laws work.",
+      "pm_takeaway": "Don't conflate hyperscaler bear with Nvidia bear. Depreciation concern = AI progress validated."
+    },
+    {
+      "id": 6,
+      "start": 5749,
+      "end": 5800,
+      "duration": 51,
+      "label": "Inference moves on-device",
+      "insight": "Cloud round-trip 800ms vs on-device 200ms. Agentic AI requires real-time. Memory efficiency breakthrough = device wins.",
+      "pm_takeaway": "LONG MediaTek, Qualcomm. SHORT Lenovo, Dell, Nintendo (41% BOM is RAM)."
+    }
+  ]
+}
