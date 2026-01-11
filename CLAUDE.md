@@ -3,6 +3,65 @@ Repeatable steps for podcast analysis. Input: YouTube URL or raw transcript.
 
 ---
 
+## ⚠️ STRICT OUTPUT FORMAT — NO DEVIATIONS
+
+The analysis MUST follow the EXACT structure below. Do NOT create custom sections, narrative headers, or any deviation from this template.
+
+### Required Header Block (exact order)
+```markdown
+# [Speaker Name]: [Key Phrase from Title]
+## Extracted from: [Show/Podcast Name]
+
+*Source: [Channel Name (YouTube)](URL)*
+
+*Published: DD-MM-YYYY*
+
+**⏱️ 5-Minute Version:** [Watch Key Excerpts](https://maelstroem0.github.io/podcast-players/players/YYYYMMDD_slug.html)
+
+---
+```
+
+### Required Sections (exact headers, exact order)
+```
+## Speaker Bio(s)
+## Executive Summary
+## Listen or Skip?
+## Key Quotes
+## 1) Executive Dashboard (PM Read)
+## 2) Key Investable Insights
+## 3) Transmission & Cross-Asset Map
+## 4) Regime & Scenario Analysis
+## 5) Hard Data & Verifiable Claims
+## 6) BS & Bias Filter
+## 7) PM Bottom Line
+```
+
+### FORBIDDEN
+- ❌ Custom narrative section headers (e.g., "## 1. US Outperformance Narrative...")
+- ❌ "## Conclusion" section
+- ❌ "## Risks & Considerations" section
+- ❌ Any section not listed above
+- ❌ More than 10 Key Quotes (limit: 5-8)
+- ❌ More than 5 Key Investable Insights (limit: 4-5)
+- ❌ Word count exceeding 2,200 words (target: 1,800-2,100)
+
+### Verdict Qualifier (Required)
+The Listen or Skip verdict MUST include a brief qualifier:
+- ✅ "Must-listen for rates/macro traders"
+- ✅ "Must-listen—narrative-busting global equity data with hard landing mispricing"
+- ✅ "Listen—broad tech/social framework with contrarian takes"
+- ❌ "Must-listen" (missing qualifier)
+
+### Hard Data Section Format
+Use bullet list with **Data:** or **Claim:** prefix:
+```markdown
+- **Data:** ACWI +22.4%, EM +34%, South Korea +95.3%
+- **Data:** S&P high teens, NASDAQ +20%
+- **Claim:** AI decoupling labor from profits (Dan Krauss research)
+```
+
+---
+
 ## Environment Setup
 
 ```
@@ -124,7 +183,7 @@ Add a **Listen or Skip?** section after Executive Summary with verdict, ratings,
 ```markdown
 ## Listen or Skip?
 
-**Verdict:** [Must-listen / Listen / Skip]
+**Verdict:** [Must-listen / Listen / Skip]—[brief qualifier describing unique value]
 
 | Aspect | Rating |
 | :--- | :--- |
@@ -136,6 +195,12 @@ Add a **Listen or Skip?** section after Executive Summary with verdict, ratings,
 **Best for:** [Target audience, e.g., "Rates traders, macro PMs"]
 **Skip if:** [Who should skip, e.g., "Looking for equity stock picks"]
 ```
+
+**Verdict examples (MUST include qualifier after em-dash):**
+- "Must-listen for rates/macro traders"
+- "Must-listen—narrative-busting global equity data"
+- "Listen—broad tech/social framework with contrarian takes"
+- "Skip—low signal, mostly promotional"
 
 **Rating Scale:**
 - ★★★★★ = Exceptional
