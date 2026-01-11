@@ -1,0 +1,73 @@
+{
+  "video_id": "BcDi389eaR8",
+  "url": "https://www.youtube.com/watch?v=BcDi389eaR8",
+  "title": "These Foreign Markets Are Crushing US Stocks | Jack & Max",
+  "channel": "The Monetary Matters Network",
+  "total_duration": 2771,
+  "pdf_link": "../pdfs/20260107_these_foreign_markets_are_crushing_us_stocks.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 96,
+      "end": 148,
+      "duration": 52,
+      "label": "All Country World Index beat S&P 500",
+      "insight": "ACWI returned 22.4% in 2025, beating both S&P 500 and NASDAQ despite narrative of US dominance.",
+      "pm_takeaway": "ROTATE TO EX-US. ACWI beat S&P by 400bps. Add EM and developed ex-US to capture global breadth."
+    },
+    {
+      "id": 2,
+      "start": 118,
+      "end": 178,
+      "duration": 60,
+      "label": "South Korea up 95%, EM up 34%",
+      "insight": "South Korea led all markets at +95.3% (SK Hynix), EM returned +34%, most European countries outperformed US.",
+      "pm_takeaway": "BUY KOREA AND EM. Memory shortage (SK Hynix) driving Korea. EM crushed US—don't fight this momentum."
+    },
+    {
+      "id": 3,
+      "start": 206,
+      "end": 258,
+      "duration": 52,
+      "label": "China had 81 stocks double vs US 43",
+      "insight": "Of 297 global stocks >$5B up 100%+, China had 81 vs US 43. MSCI China index underweights many winners.",
+      "pm_takeaway": "USE ACTIVE CHINA. Passive indexes miss winners. Tilt to momentum names in China, not broad benchmarks."
+    },
+    {
+      "id": 4,
+      "start": 245,
+      "end": 310,
+      "duration": 65,
+      "label": "Memory semis destroying everything",
+      "insight": "SK Hynix, Western Digital, Lam Research up 300-400% on HBM shortage for AI training. Shortage persists in 2026.",
+      "pm_takeaway": "LONG MEMORY SEMIS. HBM shortage has legs. Buy SK Hynix, Western Digital, Lam—more levered than hyperscalers."
+    },
+    {
+      "id": 5,
+      "start": 519,
+      "end": 598,
+      "duration": 79,
+      "label": "OpenAI funding gates AI capex cycle",
+      "insight": "AI trade is procyclical. OpenAI raising $100B at $800B valuation signals capital still flowing. Fifth or sixth inning of boom.",
+      "pm_takeaway": "STAY LONG AI UNTIL FUNDING BREAKS. Monitor OpenAI/VC headlines. If they can't raise, exit AI complex immediately."
+    },
+    {
+      "id": 6,
+      "start": 896,
+      "end": 964,
+      "duration": 68,
+      "label": "Corporate profits up, labor market down",
+      "insight": "Unprecedented divergence: profits soaring while labor weakens. AI productivity allows margin expansion without hiring.",
+      "pm_takeaway": "NEW REGIME. Don't auto-sell on weak payrolls if earnings strong. AI enables profit growth without jobs."
+    },
+    {
+      "id": 7,
+      "start": 671,
+      "end": 729,
+      "duration": 58,
+      "label": "Recession risk severely underpriced",
+      "insight": "57% fear AI bubble, only 9% rank recession in top 3 risks. Growth deceleration ongoing since 2021.",
+      "pm_takeaway": "HEDGE RECESSION. Consensus has this backwards. Hard landing is the real risk, not AI bubble pop."
+    }
+  ]
+}
