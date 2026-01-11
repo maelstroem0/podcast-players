@@ -1,0 +1,64 @@
+{
+  "video_id": "udPgnySNJR4",
+  "url": "https://www.youtube.com/watch?v=udPgnySNJR4",
+  "title": "Mike Wilson: 2026 Market Outlook",
+  "channel": "RiskReversal Media",
+  "total_duration": 3019,
+  "pdf_link": "../pdfs/20260109_mike_wilsons_2026_market_outlook.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 345,
+      "end": 395,
+      "duration": 50,
+      "label": "Fed priority: deficit first",
+      "insight": "Fed's real order: funding the deficit, then jobs, then inflation. Treasury/Fed working together isn't new—just not transparent.",
+      "pm_takeaway": "Fed won't fight inflation if it threatens funding. STAY LONG risk assets until deficit dynamics change."
+    },
+    {
+      "id": 2,
+      "start": 474,
+      "end": 530,
+      "duration": 56,
+      "label": "30Y is the real signal",
+      "insight": "30-year less liquid, less well behaved. Treasury starving duration = 70-80bps compression on 10Y. Watch 30Y spot and dollar for stress.",
+      "pm_takeaway": "WATCH 30Y yields, not 10Y. Dollar weakness = emerging market funding pattern. TLT puts as hedge."
+    },
+    {
+      "id": 3,
+      "start": 759,
+      "end": 815,
+      "duration": 56,
+      "label": "Employment bottomed April",
+      "insight": "Out-of-consensus call: employment troughed April. Private improving, government coming down. Inflation good for stocks if Fed dormant.",
+      "pm_takeaway": "BULLISH US equities. Rolling recession over. Inflation 2.5-3% tolerated = sweet spot."
+    },
+    {
+      "id": 4,
+      "start": 885,
+      "end": 920,
+      "duration": 35,
+      "label": "No hiring = margins explode",
+      "insight": "No hiring, no firing setup. Revenue up, headcount flat = best earnings growth since 2021. Productivity up 4% (6-year high).",
+      "pm_takeaway": "LONG equal-weight over cap-weight. Margin expansion broadening to mid-tier."
+    },
+    {
+      "id": 5,
+      "start": 940,
+      "end": 975,
+      "duration": 35,
+      "label": "AI threat changes behavior",
+      "insight": "AI isn't impacting margins yet, but threat of AI is changing corporate behavior. White-collar firms won't rush to hire.",
+      "pm_takeaway": "AI productivity = 40bps modeled. The threat matters more than current tools."
+    },
+    {
+      "id": 6,
+      "start": 2064,
+      "end": 2110,
+      "duration": 46,
+      "label": "Breath divergence 10-12%",
+      "insight": "S&P vs 200-day vs stocks above 200-day shows 10-12% gap. Either breath improves or 5-10% correction coming.",
+      "pm_takeaway": "MONITOR breath resolution. Not 20% correction—but 5-10% possible. Buy dips."
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Wilson: 2026 Market Outlook - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (4:38)</h1>
+                <div class="channel">RiskReversal Media • 6 clips from 50:19 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260109_mike_wilsons_2026_market_outlook.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=udPgnySNJR4" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/udPgnySNJR4?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 6</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">9% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Fed priority: deficit first</div><div class="excerpt-insight">Fed's real order: funding the deficit, then jobs, then inflation. Treasury/Fed working together isn't new—just not transparent.</div></div><span class="excerpt-duration">0:50</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">30Y is the real signal</div><div class="excerpt-insight">30-year less liquid, less well behaved. Treasury starving duration = 70-80bps compression on 10Y. Watch 30Y spot and dollar for stress.</div></div><span class="excerpt-duration">0:56</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Employment bottomed April</div><div class="excerpt-insight">Out-of-consensus call: employment troughed April. Private improving, government coming down. Inflation good for stocks if Fed dormant.</div></div><span class="excerpt-duration">0:56</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">No hiring = margins explode</div><div class="excerpt-insight">No hiring, no firing setup. Revenue up, headcount flat = best earnings growth since 2021. Productivity up 4% (6-year high).</div></div><span class="excerpt-duration">0:35</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">AI threat changes behavior</div><div class="excerpt-insight">AI isn't impacting margins yet, but threat of AI is changing corporate behavior. White-collar firms won't rush to hire.</div></div><span class="excerpt-duration">0:35</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Breath divergence 10-12%</div><div class="excerpt-insight">S&P vs 200-day vs stocks above 200-day shows 10-12% gap. Either breath improves or 5-10% correction coming.</div></div><span class="excerpt-duration">0:46</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 345,
+    "end": 395,
+    "duration": 50,
+    "label": "Fed priority: deficit first",
+    "insight": "Fed's real order: funding the deficit, then jobs, then inflation. Treasury/Fed working together isn't new\u2014just not transparent.",
+    "pm_takeaway": "Fed won't fight inflation if it threatens funding. STAY LONG risk assets until deficit dynamics change.",
+    "transcript": "and then financial conditions third. I think it's the other way around. I think it's funding the funding the deficit, helping the Treasury fund the deficit. That's job one and has been the job one for quite a while. Then it's probably jobs and then probably inflation at the bottom.<br><br><strong>\u203a</strong> So let me ask you this question. Since you said it, since you put it in that order, should the Federal Reserve be closer linked to the Treasury? I mean, there's a there's a school of thought that I think Scott Besson has talked about that, you know, maybe there should be some over historically that's not really been the case, but I think what you're saying is maybe they should work closer together. Well, prior to the there was a I forget the name of the agreement or whatever in the early 50s where they basically separated the the post. Prior to that, the Fed and Treasury did work much more handinand glove. So, you're just going back to the way things were prior to that. Now, let's not kid ourselves. They've drifted"
+  },
+  {
+    "id": 2,
+    "start": 474,
+    "end": 530,
+    "duration": 56,
+    "label": "30Y is the real signal",
+    "insight": "30-year less liquid, less well behaved. Treasury starving duration = 70-80bps compression on 10Y. Watch 30Y spot and dollar for stress.",
+    "pm_takeaway": "WATCH 30Y yields, not 10Y. Dollar weakness = emerging market funding pattern. TLT puts as hedge.",
+    "transcript": "interesting to me recently is the 30-year yield, okay, has been a little less well behaved, right?<br><br><strong>\u203a</strong> The spread between 30s and 10. So, if you really want to look at what's going on with the term premium and like the is the bond market getting worried, look at the 30-year spot. Okay, it's less liquid, okay, there's not as much, you know, institutional demand for, you know, asset liability defeasment going on at the 30-year point because of because of the of the liquidity issue there. So, that to me is the signal that the market may not be as comfortable as you think that they it is still an issue. All right.<br><br><strong>\u203a</strong> That's See, I that's an that take I haven't heard. So by starving the market of those issuances, you're actually compressing the yield in that I guess bucket of time<br><br><strong>\u203a</strong> 100%. Because there's there there's a natural amount of demand that's organic. It's always there. There are natural buyers of 10-year Treasury yields because they have insurance companies, pension funds, you know, banks,"
+  },
+  {
+    "id": 3,
+    "start": 759,
+    "end": 815,
+    "duration": 56,
+    "label": "Employment bottomed April",
+    "insight": "Out-of-consensus call: employment troughed April. Private improving, government coming down. Inflation good for stocks if Fed dormant.",
+    "pm_takeaway": "BULLISH US equities. Rolling recession over. Inflation 2.5-3% tolerated = sweet spot.",
+    "transcript": "<strong>\u203a</strong> I think they're focused on it in a wrong way, which is that first of all, we believe the the employment market bottomed in April. We've written extensively about this. I think we've proven it out and it's an out of consensus view that the rate of change on both layoffs and the sort of you know revisions to the the payroll numbers trough in April and that's why the market has moved up so sharply. So I think focusing I I not I'm not worried about the labor market at this point like we already had the recession over the last three years and now we're seeing private employment actually improve and government employment is coming down<br><br><strong>\u203a</strong> which is what you want to see. you want to see that it's a much more healthy balanced economy. I think from an inflation standpoint, I think that the thing that I think that sometimes equity investors misinterpret is inflation is good for stocks. Yeah. Okay. It it's in fact I mean and deflation is like the worst thing imaginable for stocks. Inflation is only bad for stocks when the Fed has to react to it. So right now we're in that sweet spot where inflation is probably above target two and a half 3% and it's probably not going to go"
+  },
+  {
+    "id": 4,
+    "start": 885,
+    "end": 920,
+    "duration": 35,
+    "label": "No hiring = margins explode",
+    "insight": "No hiring, no firing setup. Revenue up, headcount flat = best earnings growth since 2021. Productivity up 4% (6-year high).",
+    "pm_takeaway": "LONG equal-weight over cap-weight. Margin expansion broadening to mid-tier.",
+    "transcript": "<strong>\u203a</strong> So that's what we have right now is kind of this interesting setup where you have no hiring, no firing. There's not a lot of firing going on but there's no hiring going on.<br><br><strong>\u203a</strong> And that's a also I mean that just means margins explode. So, like if you look at our work in the third quarter, and we we talked about this back in April, but like it's now proving out that the the average company is seeing the best earnings growth that they've seen since 2021. And a lot of that has to do with this big bump in productivity, which is really a direct function of the fact that companies are not rushing back to hire more people even as the economy starts to rebound.<br><br><strong>\u203a</strong> It's really bullish.<br><br><strong>\u203a</strong> And and again, none of those expectations or the way you're thinking about that has to do with productivity"
+  },
+  {
+    "id": 5,
+    "start": 940,
+    "end": 975,
+    "duration": 35,
+    "label": "AI threat changes behavior",
+    "insight": "AI isn't impacting margins yet, but threat of AI is changing corporate behavior. White-collar firms won't rush to hire.",
+    "pm_takeaway": "AI productivity = 40bps modeled. The threat matters more than current tools.",
+    "transcript": "<strong>\u203a</strong> And what I would say is that a I I don't see the a wide broad example of AI really impacting margins. What I see though is AI the threat of AI is impacting behavior of corporations. So in other words, what corporations are doing, white collar, not blue collar, white collar businesses are doing the following. Business is picking up, okay? And they're saying, you know what, this AI thing may be a problem. Let's not rush to hire a bunch of people. So we're getting a we're getting revenue increases, but companies are are saying, tell their current employees, you're going to have to do more. Yeah.<br><br><strong>\u203a</strong> Because we're not we don't want<br><br><strong>\u203a</strong> and the tools they're given that can help them be more productive. And I think<br><br><strong>\u203a</strong> they can, but let's be honest, Dan, it's not really happening yet."
+  },
+  {
+    "id": 6,
+    "start": 2064,
+    "end": 2110,
+    "duration": 46,
+    "label": "Breath divergence 10-12%",
+    "insight": "S&P vs 200-day vs stocks above 200-day shows 10-12% gap. Either breath improves or 5-10% correction coming.",
+    "pm_takeaway": "MONITOR breath resolution. Not 20% correction\u2014but 5-10% possible. Buy dips.",
+    "transcript": "do its thing<br><br><strong>\u203a</strong> to catch down to the breath. And so I have this index I or this relationship I look at, but it's basically looking at the S&P 500 as a percentage of its 200 day moving average relative to the number of stocks above their 200 day moving average. And all I can tell you is that you can imagine the breath that the second one's down. S&P is still kind of high relative to its 200 day moving average. And what it's saying right now is there's about a 10 to 12% gap. And it's it's a gap that doesn't show up very often. When I show you the chart, you're going to be like, \"Wow, that that's a real divergence.\" So that that has to resolve itself. Either the breath has to start improving or we're going to get a 5 10% right now, but it's not 20%.<br><br><strong>\u203a</strong> No.<br><br><strong>\u203a</strong> You know what I'm saying?"
+  }
+];
+        const videoId = 'udPgnySNJR4';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
