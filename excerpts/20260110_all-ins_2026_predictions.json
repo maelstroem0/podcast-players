@@ -1,0 +1,64 @@
+{
+  "video_id": "yEb2DX0TzKM",
+  "url": "https://www.youtube.com/watch?v=yEb2DX0TzKM",
+  "title": "All-In Podcast: 2026 Predictions",
+  "channel": "All-In Podcast",
+  "total_duration": 5470,
+  "pdf_link": "../pdfs/20260110_all-ins_2026_predictions.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 905,
+      "end": 945,
+      "duration": 40,
+      "label": "GDP 5-6%—coiled spring",
+      "insight": "Chamath: Lower bound 5%, upper bound 6.2%. If we print 6%, only China has done that—under democracy is outrageous.",
+      "pm_takeaway": "LONG US equities. 5%+ GDP = historic growth. Closed border + AI + tax cuts = coiled spring."
+    },
+    {
+      "id": 2,
+      "start": 2067,
+      "end": 2140,
+      "duration": 73,
+      "label": "Copper parabolic setup",
+      "insight": "70% global supply deficit by 2040. Most useful conductive material for data centers, chips, weapons. Set up to go parabolic.",
+      "pm_takeaway": "LONG copper, critical metals basket. Structural shortage. Trump doctrine = national security priority."
+    },
+    {
+      "id": 3,
+      "start": 2583,
+      "end": 2660,
+      "duration": 77,
+      "label": "Software industrial complex—loser",
+      "insight": "$3-4T/year in maintenance/migration revenue will shrink. AI agents disrupting 90% of enterprise software spend.",
+      "pm_takeaway": "SHORT legacy SaaS—ServiceNow, Workday, DocuSign. Per-seat model broken. Maintenance being automated."
+    },
+    {
+      "id": 4,
+      "start": 3507,
+      "end": 3565,
+      "duration": 58,
+      "label": "Jevons paradox—AI creates jobs",
+      "insight": "AI will increase knowledge worker demand. As code generation cost falls, more software created. Radiologists up despite AI because more scans.",
+      "pm_takeaway": "Don't bet on AI job destruction. Jevons paradox = lower cost = more use cases = more demand."
+    },
+    {
+      "id": 5,
+      "start": 3630,
+      "end": 3665,
+      "duration": 35,
+      "label": "SpaceX reverse merges Tesla",
+      "insight": "Chamath's contrarian: No SpaceX IPO. Reverse merge into Tesla. Elon consolidates two seminal assets into one cap table.",
+      "pm_takeaway": "Watch for Elon holding company structure. No SpaceX IPO = TSLA upside if merger."
+    },
+    {
+      "id": 6,
+      "start": 3869,
+      "end": 3925,
+      "duration": 56,
+      "label": "Atlanta Fed: 5.4% Q4 GDP",
+      "insight": "Breaking: Atlanta Fed GDP Now jumped to 5.4% for Q4 2025 (from 2.7% on Jan 5). Productivity 4.9%—6-year high.",
+      "pm_takeaway": "GDP reaccelerating. 5-6% prints coming. STAY LONG growth, cyclicals, capital equipment."
+    }
+  ]
+}
