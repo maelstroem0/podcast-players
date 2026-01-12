@@ -396,6 +396,26 @@ git push
 
 **Tone:** Authoritative, direct. Write like a senior analyst briefing a PM who has 2 minutes.
 
+### ⚠️ REQUIRED: PM Implication Paragraph (Final Paragraph)
+
+Every Executive Summary MUST end with a **bold "PM implication:" paragraph** containing:
+- Specific trade recommendations (BUY/SELL/LONG/SHORT/FADE)
+- Asset classes or instruments
+- Key watches or triggers
+
+**Format:**
+```markdown
+**PM implication:** [Opinionated, actionable trades]. [Instruments]. [Key watches].
+```
+
+**Examples:**
+✅ **PM implication:** Rotate to ACWI/EM—left 13-14% alpha on table. Long memory semis with stops (glut risk). Precious metal streamers for supply inelasticity + AI demand. Hedge hard landing via Treasuries/defensives/gold—setup clear, timing uncertain. Fade consumer discretionary (+7.4%). Watch unemployment not earnings—AI masking recession.
+
+✅ **PM implication:** Long copper and critical metals basket. Short legacy SaaS. Stay long US equities broadly—5%+ GDP, productivity surge. Watch CA wealth tax April decision.
+
+❌ "In conclusion, the speaker made several interesting points about markets." (No trades, passive)
+❌ "Investors should consider the implications carefully." (Generic, no specifics)
+
 ### Depth Tiers (Scale with Content Richness)
 
 Before writing, count content markers in transcript:

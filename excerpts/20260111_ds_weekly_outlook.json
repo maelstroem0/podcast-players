@@ -1,0 +1,64 @@
+{
+  "video_id": "LY07uQiwcQA",
+  "url": "https://www.youtube.com/watch?v=LY07uQiwcQA",
+  "title": "Andy Constan: Weekly Outlook 20260111",
+  "channel": "Damped Spring",
+  "total_duration": 2400,
+  "pdf_link": "../pdfs/20260111_ds_weekly_outlook.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 277,
+      "end": 337,
+      "duration": 60,
+      "label": "Mortgage buying = house prices up",
+      "insight": "Fannie/Freddie $200B buying lowers mortgage rate but bids up houses. Real impact is not affordability—just lower headline rate.",
+      "pm_takeaway": "Don't confuse mortgage rate cut with affordability. House prices get bid. Short banks—affordability thrust targets them."
+    },
+    {
+      "id": 2,
+      "start": 352,
+      "end": 412,
+      "duration": 60,
+      "label": "Private-sector QE if unhedged",
+      "insight": "If Fannie/Freddie run naked duration instead of matched book, it's forced QE—removing duration from market. Swap spreads already reacting.",
+      "pm_takeaway": "Watch if Fannie hedges or not. Unhedged = bullish term premium. Swap spreads least-negative = Fannie becoming payers."
+    },
+    {
+      "id": 3,
+      "start": 638,
+      "end": 698,
+      "duration": 60,
+      "label": "Short banks—affordability target",
+      "insight": "Credit card cap + mortgage buying = banks in crosshairs. Don't own them in this environment.",
+      "pm_takeaway": "SHORT banks into earnings. Affordability thrust makes them target. KBW, BKX, XLF fade."
+    },
+    {
+      "id": 4,
+      "start": 1034,
+      "end": 1094,
+      "duration": 60,
+      "label": "Vol dirt cheap—must own",
+      "insight": "Equity puts, bond puts dirt cheap. Calls also cheap. Must own whether hedging or alpha. JHEQX collar levels approaching.",
+      "pm_takeaway": "BUY equity puts, bond puts. Cheap both ways. Scale into puts on rallies, calls on dips. March 31 JHEQX levels."
+    },
+    {
+      "id": 5,
+      "start": 1424,
+      "end": 1464,
+      "duration": 40,
+      "label": "Curve squeeze was positioning",
+      "insight": "Friday flattening was overloaded boat on steepeners/weak dollar getting squeezed. Not a trend break—minor retrace in broader trend.",
+      "pm_takeaway": "STAY in steepeners. Positioning squeeze, not trend change. Long twos, short 10Y puts. Scale trade."
+    },
+    {
+      "id": 6,
+      "start": 1488,
+      "end": 1538,
+      "duration": 50,
+      "label": "Trump Fed hasn't backed off",
+      "insight": "Myran at 2.125% dot hasn't changed despite 5% GDP boasts. Administration mouthpiece still dovish. Bessent at 2.5-3.25%.",
+      "pm_takeaway": "Watch Myran. Terminal 3.16% vs Myran 2.125% = cuts underpriced. Long front-end."
+    }
+  ]
+}

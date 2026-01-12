@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Constan: Weekly Outlook 20260111 - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (5:30)</h1>
+                <div class="channel">Damped Spring • 6 clips from 40:00 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260111_ds_weekly_outlook.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=LY07uQiwcQA" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/LY07uQiwcQA?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 6</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">14% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Mortgage buying = house prices up</div><div class="excerpt-insight">Fannie/Freddie $200B buying lowers mortgage rate but bids up houses. Real impact is not affordability—just lower headline rate.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Private-sector QE if unhedged</div><div class="excerpt-insight">If Fannie/Freddie run naked duration instead of matched book, it's forced QE—removing duration from market. Swap spreads already reacting.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Short banks—affordability target</div><div class="excerpt-insight">Credit card cap + mortgage buying = banks in crosshairs. Don't own them in this environment.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Vol dirt cheap—must own</div><div class="excerpt-insight">Equity puts, bond puts dirt cheap. Calls also cheap. Must own whether hedging or alpha. JHEQX collar levels approaching.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Curve squeeze was positioning</div><div class="excerpt-insight">Friday flattening was overloaded boat on steepeners/weak dollar getting squeezed. Not a trend break—minor retrace in broader trend.</div></div><span class="excerpt-duration">0:40</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Trump Fed hasn't backed off</div><div class="excerpt-insight">Myran at 2.125% dot hasn't changed despite 5% GDP boasts. Administration mouthpiece still dovish. Bessent at 2.5-3.25%.</div></div><span class="excerpt-duration">0:50</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 277,
+    "end": 337,
+    "duration": 60,
+    "label": "Mortgage buying = house prices up",
+    "insight": "Fannie/Freddie $200B buying lowers mortgage rate but bids up houses. Real impact is not affordability\u2014just lower headline rate.",
+    "pm_takeaway": "Don't confuse mortgage rate cut with affordability. House prices get bid. Short banks\u2014affordability thrust targets them.",
+    "transcript": "They start with interest rate swap levels, swap levels. Then you layer on top of that sort of liquidity of a cash instrument, which is the OAS spread, option-adjusted spread. Then you layer on top of that the raw spread, which includes the prepayment option. And then you layer on top of that the retail level, and that gives you the... the headline mortgage rate which ticked at 599 down about 15 to 18 basis points that's about. what i expected um when the news came out i thought that was what was going to happen that is what happened and the market corrected relatively rapidly um now when you think about swap spreads when you think about mortgages um the fact that they the idea to get mortgages down is a trump goal of increasing affordability for uh homeowners at least let me just rephrase i don't know what his goals are but that's the stated goal it could be his goals are to bid up. homes because wealthy people like their homes bid up, And that's really the actual impact of a of forcing someone to buy mortgages, Fannie and Freddie, at the wrong price. It does lower the mortgage cost, but it really just increases the price of houses. So you're not going to see that. You're only going to see the mortgage rate coming down. And so it came down in terms of duration."
+  },
+  {
+    "id": 2,
+    "start": 352,
+    "end": 412,
+    "duration": 60,
+    "label": "Private-sector QE if unhedged",
+    "insight": "If Fannie/Freddie run naked duration instead of matched book, it's forced QE\u2014removing duration from market. Swap spreads already reacting.",
+    "pm_takeaway": "Watch if Fannie hedges or not. Unhedged = bullish term premium. Swap spreads least-negative = Fannie becoming payers.",
+    "transcript": "In terms of duration, we don't have enough details to how Fannie and Freddie are going to manage a portfolio of 200 extra billion of mortgages. They can do it. They have the capacity on their balance sheet to add 200 billion of mortgages. But historically, throughout history, they have matched, they've run a matched book, meaning that they finance it. And that's a financing that's done with, short-term issuance, floating issuance, callable corporate bond issuance, all of the things one would want if one was long a lot of mortgages which have negative convexity and long duration. And then they've entered into the over-the-counter derivatives market and paid swaps and bought convexity, long-dated convexity through swaption markets. And so I expect they'll do that. Now, they don't have to. They could just run a duration trade and."
+  },
+  {
+    "id": 3,
+    "start": 638,
+    "end": 698,
+    "duration": 60,
+    "label": "Short banks\u2014affordability target",
+    "insight": "Credit card cap + mortgage buying = banks in crosshairs. Don't own them in this environment.",
+    "pm_takeaway": "SHORT banks into earnings. Affordability thrust makes them target. KBW, BKX, XLF fade.",
+    "transcript": "Like if you add treasury swaps plus OAS plus the prepayment, you get a number that's quite a bit lower than the headline number. And that's because retail marks it up. And to me, the big clear message is as much as Bessent is going to push deregulation, which makes it easier for banks to create money and buy securities and so on. You know, the affordability thrust of the trade. Trump administration has the banks right in their center of their target. i don't think you want to own banks in that environment so i'm looking to short them um now let's talk about this coming week you got all the bank earnings they're going to come out i think jpm starts on tuesday i'm sure city and wells and um bfa are within hours days or minutes of the jpm release i haven't looked yet but i i know it's it's this week and so i'd be interested to see. how i mean i think they're listen every earnings report is going to be good the fourth quarter whatever the data says and we can correct all of the nasty mistakes you know it's just not my game, particularly a useless game right now, but if you read guys like Brad Setzer, for instance, who did a really nice job on the GDP effect of what appeared to be an incredibly low trade deficit, meaning a smaller deficit, and focused on pharma import-export and gold bullion export,"
+  },
+  {
+    "id": 4,
+    "start": 1034,
+    "end": 1094,
+    "duration": 60,
+    "label": "Vol dirt cheap\u2014must own",
+    "insight": "Equity puts, bond puts dirt cheap. Calls also cheap. Must own whether hedging or alpha. JHEQX collar levels approaching.",
+    "pm_takeaway": "BUY equity puts, bond puts. Cheap both ways. Scale into puts on rallies, calls on dips. March 31 JHEQX levels.",
+    "transcript": "The rest of the month is sort of scaling into twos, sofa, I'm going to use sofa, but scaling into stir, scaling into more short 10-year puts, scaling into yen if I can get long at a good level. That's sort of like 159 and a half. Buying oil on a washout and selling gold on a rip. and you know just continue to scale into some equity puts equity puts currency currency vol. generally but equity puts and bond puts are just dirt cheap you gotta you just have to own them, whether you're hedging whether you're doing it for alpha you just gotta own these things on the other hand calls are also pretty cheap and i guess i i own some i own some 700 qqq calls those are like 10 out of money i'm not going to get rid of those those are great insurance and i don't mind at all if you sort of you know buy some cheap calls if you think the market's going up they are giving. calls away um they're giving puts away too so you know as the market drifts higher i'm interested in scaling into puts if the market corrects i'll be interested in scaling into calls, in terms of the jheqx collar levels, You know, again, at 10 ish, which is 22.2, two and a half points below the market on the cost butterfly. I'm a buyer. And at two, which is getting closer on the put butterfly, I'm a buyer."
+  },
+  {
+    "id": 5,
+    "start": 1424,
+    "end": 1464,
+    "duration": 40,
+    "label": "Curve squeeze was positioning",
+    "insight": "Friday flattening was overloaded boat on steepeners/weak dollar getting squeezed. Not a trend break\u2014minor retrace in broader trend.",
+    "pm_takeaway": "STAY in steepeners. Positioning squeeze, not trend change. Long twos, short 10Y puts. Scale trade.",
+    "transcript": "So I'm not sure that, you know, if we've seen like a major trend break or just minor retraces within a broader trend, meaning like, you know, the broader trend is steepeners, a weaker dollar. And we're just seeing kind of people getting squeezed. I think the big flattener is that the Trump Fed doesn't cut. Yeah. I mean, we're going to be a lot flatter if the Trump Fed doesn't cut. Right. But I didn't see any, like, I didn't get any news or indication that that had changed in any way. The news is, you know, the news is the GDP. Yeah. You know, he's, everybody, the entire administration's pitching the GDP is not only was it great in Q3, but it's 5% in Q4. Even Trump is tweeting that. So, you know, maybe they, maybe they don't cut. Or at least that's what, no, that's not my view, but it's certainly, that's how you get a big flattener."
+  },
+  {
+    "id": 6,
+    "start": 1488,
+    "end": 1538,
+    "duration": 50,
+    "label": "Trump Fed hasn't backed off",
+    "insight": "Myran at 2.125% dot hasn't changed despite 5% GDP boasts. Administration mouthpiece still dovish. Bessent at 2.5-3.25%.",
+    "pm_takeaway": "Watch Myran. Terminal 3.16% vs Myran 2.125% = cuts underpriced. Long front-end.",
+    "transcript": "Yeah. And I don't actually see them giving up on the cuts just because we have growth. I see them pivoting to more of a bullshit excuse on why they want cuts along with the growth. I mean, I look at Myron as the mouthpiece. And, you know, he's a two and an eighth. He's a two, two and a quarter Fed funds on his last dot plot. And he's not he hasn't changed that tune at all. Like, you know, that's to me is the administration's point of view. Maybe I'm wrong, but that sure seems to me like you wouldn't like if you if you want to notice whether the Trump administration is going to ease back on that. Look at the dot plot."
+  }
+];
+        const videoId = 'LY07uQiwcQA';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
