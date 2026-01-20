@@ -1,0 +1,82 @@
+{
+  "video_id": "rYFOjhE9lu8",
+  "url": "https://www.youtube.com/watch?v=rYFOjhE9lu8",
+  "title": "Andy Constan & Jimmy: Tariff Tacos, Bond Carnage & ROW Rotation",
+  "channel": "Damped Spring",
+  "total_duration": 2386,
+  "pdf_link": "../pdfs/20260119_ds_weekly_outlook.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 258,
+      "end": 300,
+      "duration": 42,
+      "label": "STIR is a bargain",
+      "insight": "Andy sees <1 cut priced over 4 meetings as straight-up cheap; June cut is near-certain",
+      "pm_takeaway": "BUY STIR. <1 cut priced = bargain. June cut locked regardless of Fed chair noise."
+    },
+    {
+      "id": 2,
+      "start": 345,
+      "end": 390,
+      "duration": 45,
+      "label": "Significant downside to growth",
+      "insight": "Despite 3% GDP, Andy doesn't trust the economy; sees significant downside risk to growth outlook",
+      "pm_takeaway": "FADE hot GDP prints. Don't trust 3% growth—slowdown thesis intact. Position for cuts."
+    },
+    {
+      "id": 3,
+      "start": 520,
+      "end": 570,
+      "duration": 50,
+      "label": "Exiting US assets at open",
+      "insight": "Full rotation out of US equities/bonds; bearish dollar vs other fiats due to asset flows",
+      "pm_takeaway": "SELL US beta at open. Rotate to ROW/EM. Asset flows all one direction—out of dollar."
+    },
+    {
+      "id": 4,
+      "start": 840,
+      "end": 900,
+      "duration": 60,
+      "label": "Trump broke the charts",
+      "insight": "NASDAQ through yearly lows; created overhead resistance even on a tariff reversal",
+      "pm_takeaway": "SHORT gap fills. Overhead resistance now structural—taco rallies will fail at old highs."
+    },
+    {
+      "id": 5,
+      "start": 970,
+      "end": 1020,
+      "duration": 50,
+      "label": "Taco trade setup",
+      "insight": "Quick taco = recovery to 6980 area, but then sell—bonds won't rally and curve will get heavy",
+      "pm_takeaway": "SELL ES 6980 gap fill. Bonds won't participate. Curve heaviness drags equities back down."
+    },
+    {
+      "id": 6,
+      "start": 1365,
+      "end": 1410,
+      "duration": 45,
+      "label": "No cheap hedges",
+      "insight": "Feb-Mar VIX calendar crushed from $1.25 to $0.50; can't hedge with bonds either",
+      "pm_takeaway": "PASS on hedges now. No cheap vol—recipe for unravel. Wait for post-taco setup."
+    },
+    {
+      "id": 7,
+      "start": 1525,
+      "end": 1580,
+      "duration": 55,
+      "label": "Silver to $125",
+      "insight": "Metals consolidating for another leg up; silver wave targets hit $125; trim to neutral, don't short",
+      "pm_takeaway": "HOLD metals—trim overweight to neutral. Consolidation = refresher. $125 silver upside."
+    },
+    {
+      "id": 8,
+      "start": 2190,
+      "end": 2280,
+      "duration": 90,
+      "label": "Global back-end repricing",
+      "insight": "JGB selling pulling UST lower; entire back-end of curve globally getting repriced—not about deficit",
+      "pm_takeaway": "WATCH JGB flows. UST weakness = global back-end repricing, not US-specific. Flows to Japan."
+    }
+  ]
+}
