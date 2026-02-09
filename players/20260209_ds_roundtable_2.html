@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Roundtable 2: The Setup is Flawless, The Direction is Unclear - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (7:35)</h1>
+                <div class="channel">Damped Spring • 7 clips from 50:03 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260209_ds_roundtable_2.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=30R_nY7TJfg" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/30R_nY7TJfg?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 7</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">15% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Microsoft -30% is buyable</div><div class="excerpt-insight">Quality tech down 30% into support—you can't not own Microsoft at these levels</div></div><span class="excerpt-duration">0:55</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Buybacks canceled = structural negative</div><div class="excerpt-insight">Meta canceled Q4 repurchases, Google cut 67%—removes price-insensitive buyer for entire market</div></div><span class="excerpt-duration">1:15</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Crypto put in capitulation low</div><div class="excerpt-insight">BTC 68k—largest flush in years without FTX-type external crisis event</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Friday rally was technical not fundamental</div><div class="excerpt-insight">200-handle SPY rip had zero news catalyst—purely technical bounce off support</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Japan yen breaking 160 like butter</div><div class="excerpt-insight">If BOJ doesn't hike during stimulus unleashed by tonight's election, yen cuts through 160 consensus level</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Curve steepeners alive despite Worsh</div><div class="excerpt-insight">2s10s closed steepest in range—Worsh pick was supposed to flatten curve but didn't</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">Gold -20% washed out speculators</div><div class="excerpt-insight">Parabolic flush to 44-45 old highs held, making higher lows—time consolidation needed</div></div><span class="excerpt-duration">1:10</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 255,
+    "end": 310,
+    "duration": 55,
+    "label": "Microsoft -30% is buyable",
+    "insight": "Quality tech down 30% into support\u2014you can't not own Microsoft at these levels",
+    "pm_takeaway": "BUY MSFT -30%. Dip-buyers rotating back into quality. Rare opportunity in unbeatable brand that's been capital-light for decades. Size appropriately\u2014indices capped 7,200 not 7,700.",
+    "transcript": "<strong>\u203a</strong> Right. Right. Right. I think that's I think that's the easy way to pay to to buy non physical BTC. I I I I have no problem buying paper BTC with IBIT.<br><br><strong>\u203a</strong> So, I actually bought IBIT, too, to be honest.<br><br><strong>\u203a</strong> Yeah. No, no. And I actually I actually have owned BTC. I I looked into it. It was one of the first they reached into MMA because it was a growing sport, but it wasn't as expensive as like a football or something like that. So, I've been in BTC for a very long time. I have a a laptop in my closet that has it with the Tales hard drive on it. So, so like like I've had it for a long time, but that flush without a major like FTX type thing. People could say that MSTR the value of the stock crashing that much is enough to to to get that final flush, but that was by far the largest down days we've had without a major event that like some type of external crisis to bring that."
+  },
+  {
+    "id": 2,
+    "start": 330,
+    "end": 405,
+    "duration": 75,
+    "label": "Buybacks canceled = structural negative",
+    "insight": "Meta canceled Q4 repurchases, Google cut 67%\u2014removes price-insensitive buyer for entire market",
+    "pm_takeaway": "STRUCTURAL NEGATIVE. When Apple buybacks happen, sellers reinvest in SPY not AAPL. Billions in support removed. Monitor equity multiple compression. Favor stocks with intact buyback programs.",
+    "transcript": "make like a technical bottom. They're approaching these areas where you think they're going to make a bottom and and and I'm talking about XRP and Ethereum and they were all coming to these come to Jesus moments in including IBA was coming to a come to Jesus moment in that 37 area when you're when you're like that's one of those moments where you really are like buying at the wake to sell at the wedding and you have to expect maybe a little bit of a slippy like real quick and not exactly catching the bottom and you where you get one of those wicks where you almost have to just shut your eyes and know you're in the in the in in the correct area to do it. And I think that's what we got in crypto. That was a a terrific wash out and a quick recovery um into an area where we were all really interested in in jumping in. Yeah. If you were if you had weak hands and you put your stops in right away, yeah, you you didn't catch it. You got washed out in that last But that's what markets do at the bottom. That's why they leave those wicks and they're usually super fast and there's not a lot of volume that goes on with single prints at the bottom. And these this was this had a lot of attributes of a bottom. And and the bigger question here is I was always under the impression or I was thinking like this shit's not bottoming"
+  },
+  {
+    "id": 3,
+    "start": 95,
+    "end": 155,
+    "duration": 60,
+    "label": "Crypto put in capitulation low",
+    "insight": "BTC 68k\u2014largest flush in years without FTX-type external crisis event",
+    "pm_takeaway": "BUY BTC/IBIT. Clean technical capitulation (largest down-days without major event = different psychology). 69420 fill worked. Crypto bottoming often precedes broader risk asset lows.",
+    "transcript": "capex spend that the entire economy is resting on going to be funded. And I guess the last thing that's the most important thing that I am thinking about right now happens in five hours.<br><br><strong>\u203a</strong> Go Pats.<br><br><strong>\u203a</strong> Right on, brother.<br><br><strong>\u203a</strong> By the way, that sweatshirt looks purple in<br><br><strong>\u203a</strong> It's so old.<br><br><strong>\u203a</strong> That's a good one though. That's the old school.<br><br><strong>\u203a</strong> Yeah. um washed out.<br><br><strong>\u203a</strong> Nick, what are you thinking today?<br><br><strong>\u203a</strong> Uh well, like obviously in our last meeting like we talked about the Fed chair and one of the things that we got right was that we just talked about the dynamics of if they picked Hasset, the steepener, the effect it would have on markets and why he wasn't going to be the pick. I think a lot of us agreed Waller would be the better pick and then he came in actually dissented which a lot of people looked as like his attempt to get the job. I think the guy's been the same forever. So I give him the benefit of the doubt but we ended up"
+  },
+  {
+    "id": 4,
+    "start": 1095,
+    "end": 1160,
+    "duration": 65,
+    "label": "Friday rally was technical not fundamental",
+    "insight": "200-handle SPY rip had zero news catalyst\u2014purely technical bounce off support",
+    "pm_takeaway": "FADE if no retrace. Gap-and-goes need confirmation. Watch for B-wave back to 68.50 opening swings. Only ice-cold CPI can fuel real breakout from here. VIX >18 = rally not confirmed.",
+    "transcript": "there was like a year's worth of moves in there. So as we as Friday ended, I'm going to put metals or any of the ancillaries aside, just just focusing on, you know, where the indexes ended. We came up 200 handles into resistance. A lot of these a lot of the charts that got murdered in tech did the same thing. kind of came off really solid support areas and they they're down 25 30% getting smoked into them and have have bounced. That doesn't ne that doesn't necessarily mean this thing's over. That maybe it's the next move that's going to tell us whether this is going to be over or not. There's no [\u00a0__\u00a0] way we the only we the only chance we had at a at extending Friday's gap and go. Gap and goes do happen. And I think Friday's gap and go was basically technical. We everyone was looking at everyone else. They're okay. This this stock's popping. It's it's holding these lows. Oh, cryptos hold held their lows. They're extending. Everything just came up"
+  },
+  {
+    "id": 5,
+    "start": 2815,
+    "end": 2880,
+    "duration": 65,
+    "label": "Japan yen breaking 160 like butter",
+    "insight": "If BOJ doesn't hike during stimulus unleashed by tonight's election, yen cuts through 160 consensus level",
+    "pm_takeaway": "HEDGE via Treasuries. Japan contagion risk real\u2014LDP supermajority \u2192 stimulus \u2192 BOJ can't hike fast enough \u2192 JGB selloff bleeds to UST. They own lot of US bonds. Prior events needed Fed intervention.",
+    "transcript": "versus US stocks as a risk on thing. You know what I mean? Like that that spread that's a risk on spread. So if you start seeing Japanese equities outperformed US equities, that's a global impulse, a positive thing overall. But I think that that we I<br><br><strong>\u203a</strong> But it's gone a long way as well.<br><br><strong>\u203a</strong> No, 100%.<br><br><strong>\u203a</strong> Are you supposed Are you supposed listen that 160 level everybody and his mother thinks that's where they're going to step in and that's as far as strong as the USD is going to get. GL. If these guys don't hike while they're doing all this stimulus, 160, you're gonna cut through 160 like butter.<br><br><strong>\u203a</strong> Yeah. Yeah. And hopefully it does. Why not? Then we could actually start to like look at that long-term yen long again. Like let it happen. Let them do what they want to do. Like like that that's the great thing about this market is if you can diversify into the other other assets around the world. there there's so much to do right now and we have this sort of fractioning into a bipolar tripolar world like like you could talk about that forever and and get to nothing but it's it's it's a it's"
+  },
+  {
+    "id": 6,
+    "start": 1460,
+    "end": 1525,
+    "duration": 65,
+    "label": "Curve steepeners alive despite Worsh",
+    "insight": "2s10s closed steepest in range\u2014Worsh pick was supposed to flatten curve but didn't",
+    "pm_takeaway": "STEEPENERS NOW. Backend can go 20bps more. Long SOFR H7 (rolled from H6 after POW killed near-term cuts). Watch ZN 116 threshold. Fed neutered\u2014tweener data now hard no vs. previous 'defer to easy.'",
+    "transcript": "say cut?<br><br><strong>\u203a</strong> Well, we look at the jolts. The jolts was pretty bad. It was it missed a lot to the downside and and the fact remains that<br><br><strong>\u203a</strong> could we get a growth scare? That's what we haven't had for months.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> Is a growth scare. The last growth scare we had was due to tariffs in in a year ago. We haven't had a growth scare since. Not not even a peep of a growth scare. I<br><br><strong>\u203a</strong> if if growth scare is necessary for them to cut rates in the near term, I think you don't get it. But I don't I don't know if I agree that that growth is the only thing. I think that inflation is going down. If you have a slightly weakening job market, I think that the that it's there to bring the interest rates down. I really do. And I think that's I think the bias is still for them to over time cut two more times at least. So, I think by the end of this year, I'm not I I wouldn't I wouldn't buy H6 today thinking that we're going to have<br><br><strong>\u203a</strong> Yeah. Two doesn't two doesn't float my boat. Two is not two is not worth it worth anything. It's<br><br><strong>\u203a</strong> Is there a four in this in this? Is"
+  },
+  {
+    "id": 7,
+    "start": 1725,
+    "end": 1795,
+    "duration": 70,
+    "label": "Gold -20% washed out speculators",
+    "insight": "Parabolic flush to 44-45 old highs held, making higher lows\u2014time consolidation needed",
+    "pm_takeaway": "GOLD DCA 44-45 zone for long-term. Don't chase ATH retests. 20%+ flush removed excess speculators\u2014healthy base forming. Expect 500-800 range chop. Debasement hedge over very long term.",
+    "transcript": "had this ginormous move. I'm long-term bull of gold. Don't trade silver. It's just Put that in context in terms of like longer term investment sentiment. Do you think there's do you think there's a possibility that this thing just really washes out and unwinds people or is this just a dip to buy? I think it's a<br><br><strong>\u203a</strong> No, go ahead. Go ahead, Jimmy. No, go.<br><br><strong>\u203a</strong> Personally for me, I think this is a dip to buy. I don't think this is a wash out yet. As much it did get parabolic and got it took the elevator down the way they do.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> But that 44 45 area, the old highs, there was a lot of support there and it just took out it it washed the sins away. It washed the the parabolic part of the chart. And you and you guys agree it's probably not it just had to happen. It's not like we can point at any catalyst you want but wars on the balance sheet which is what people are pointing at just doesn't seem right to me.<br><br><strong>\u203a</strong> Right. You know what in a situation like that it's like a it's it's like a it's so combustionable that all you need is a match. You know what I mean? And it can be any match. You can point at that"
+  }
+];
+        const videoId = '30R_nY7TJfg';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
