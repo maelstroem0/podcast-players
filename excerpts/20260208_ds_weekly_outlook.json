@@ -1,0 +1,73 @@
+{
+  "video_id": "u6cvcSHpME0",
+  "url": "https://www.youtube.com/watch?v=u6cvcSHpME0",
+  "title": "Damped Spring: Japan Supermajority Shock",
+  "channel": "Damped Spring",
+  "total_duration": 1630,
+  "pdf_link": "../pdfs/20260208_ds_weekly_outlook.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 52,
+      "end": 105,
+      "duration": 53,
+      "label": "LDP landslide gives Takahichi free reign",
+      "insight": "LDP won supermajority (310+ seats from 233) in lower house, no coalition needed. Takahichi has free reign for aggressive fiscal stimulus—tax cuts, spending surge.",
+      "pm_takeaway": "BUY Nikkei beta on dips. Japan fiscal shock = goldilocks for equities (fiscal running hot, BOJ withdrawing easing slowly). Rare unconstrained stimulus setup."
+    },
+    {
+      "id": 2,
+      "start": 308,
+      "end": 362,
+      "duration": 54,
+      "label": "Japan is the classic great beta opportunity",
+      "insight": "Economy strengthening, BOJ tightening slowly (removing easing, not restricting), term premiums elevated, curve steep vs. global. Best beta opportunity globally.",
+      "pm_takeaway": "Long Japan beta aggressively (VA 20% Japan, IGOV GDP-weighted). 'Favorite equity market'—economy strengthening + accommodative policy + well-priced = textbook setup."
+    },
+    {
+      "id": 3,
+      "start": 393,
+      "end": 441,
+      "duration": 48,
+      "label": "JGB yields testing highs, buy sub-130 futures",
+      "insight": "30Y JGB ~20bp, 10Y +10-12bp from lows. Bond scare rippled globally, settled at elevated rates. May challenge highs again—if breaks, buy the dip.",
+      "pm_takeaway": "Own JGB puts or wait for JGB 10Y futures sub-130 after yield breakout. Bonds well-priced vs. short rates but fiscal stimulus = pressure. Buy meaningful dip (130 and below)."
+    },
+    {
+      "id": 4,
+      "start": 536,
+      "end": 582,
+      "duration": 46,
+      "label": "Fade USD/JPY at 162 if intervention fails",
+      "insight": "Yen expected to sell off initially despite structural bullishness. Market waiting for intervention at 160 (historical high). If breaks without BOJ/Fed showing up, fade at 162.",
+      "pm_takeaway": "Fade USD/JPY at 162 if 160 intervention fails. Rate differential converging (US easing, Japan tightening), repatriation flows positive. Could buy 160 but prefer seeing break + no intervention for better entry."
+    },
+    {
+      "id": 5,
+      "start": 831,
+      "end": 885,
+      "duration": 54,
+      "label": "Hyperscaler capex carnage, buybacks canceled",
+      "insight": "MSFT, GOOGL, META, AMZN bleeding on massive capex ($100B+). Everyone canceling share buybacks—'big deal.' META gave back entire earnings gain, back below 666 support.",
+      "pm_takeaway": "FADE hyperscaler rallies. Capex flowing to Broadcom (TPU), but semiconductors not breaking out. Own NASDAQ upside calls (cheap vol, MSFT to 430 = QQQ +10%) but don't chase cash equities."
+    },
+    {
+      "id": 6,
+      "start": 991,
+      "end": 1037,
+      "duration": 46,
+      "label": "Rotation to industrials, old-timer stocks",
+      "insight": "Money rotating to IDA (industrials ETF—'straight up'), retailers (tariff beneficiaries?), J&J, 'old-timer stocks' doing spectacularly. S&P rally may exclude tech.",
+      "pm_takeaway": "Rotate to industrials (IDA), defensives, old-line stocks. S&P stuck in range—tech weakness vs. industrial/defensive strength nets flat. Next rally may not include MSFT/GOOGL/META cohort."
+    },
+    {
+      "id": 7,
+      "start": 1359,
+      "end": 1410,
+      "duration": 51,
+      "label": "PM playbook: own Japan, sell S&P rallies",
+      "insight": "Core positioning: own Japanese stocks, buy JGB dips, fade yen at 162. Then sell S&P rallies, buy severe dips. Stay 80% long beta (no rush to 100%), long tails.",
+      "pm_takeaway": "BUY Japan beta (Nikkei, JGBs sub-130, yen at 162). SELL S&P rallies (sold ATM/OTM calls Friday), buy severe dips. Stay 80% long beta, own NASDAQ calls, hold gold/silver. Trade delta more aggressively in range."
+    }
+  ]
+}
