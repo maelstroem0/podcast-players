@@ -1,0 +1,46 @@
+{
+  "video_id": "npJjhZZwg-U",
+  "url": "https://www.youtube.com/watch?v=npJjhZZwg-U",
+  "title": "Bull Case on Jumia Earnings | Africa's Amazon Moment",
+  "channel": "Stocktwits Clips",
+  "total_duration": 152,
+  "pdf_link": "../pdfs/20260210_bull_case_on_jumia_earnings.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 18,
+      "end": 70,
+      "duration": 52,
+      "label": "Q4 metrics: 34% revenue, 36% GMV, 50% Nigeria",
+      "insight": "Strong top-line growth across all metrics despite stock selling off 16%",
+      "pm_takeaway": "BUY the dip. Market pricing breakeven miss, not business deterioration. Revenue/GMV/orders all accelerating—this is growth, not survival mode."
+    },
+    {
+      "id": 2,
+      "start": 70,
+      "end": 100,
+      "duration": 30,
+      "label": "Operating leverage inflection: fulfillment cost falling",
+      "insight": "Fulfillment cost per order declining while revenue/GMV/orders rising—classic marketplace density payoff",
+      "pm_takeaway": "CORE THESIS INTACT. Fulfillment cost/order falling = operating leverage inflection. This is the Amazon playbook—scale into profitability, don't shrink to breakeven."
+    },
+    {
+      "id": 3,
+      "start": 96,
+      "end": 126,
+      "duration": 30,
+      "label": "Cash burn context: $1.7M immaterial for growth profile",
+      "insight": "$1.7M quarterly burn for small-cap growing 30%+ with falling unit costs = near-profitability",
+      "pm_takeaway": "Ignore breakeven timing noise. $1.7M burn negligible vs 30%+ growth + improving unit economics. Path to profitability clear—patience required, not panic."
+    },
+    {
+      "id": 4,
+      "start": 127,
+      "end": 152,
+      "duration": 25,
+      "label": "Technical unwind vs fundamental reality",
+      "insight": "Stock drop driven by positioning (breakeven expectations), not deteriorating business. Long-term thesis unchanged.",
+      "pm_takeaway": "Entry opportunity for patient capital. Multi-year Africa e-commerce monopoly thesis + operating leverage inflection = 3-5x base case. Watch Nigeria metrics + fulfillment cost trend."
+    }
+  ]
+}
