@@ -1,0 +1,82 @@
+{
+  "video_id": "Aq0JSbuIppQ",
+  "url": "https://www.youtube.com/watch?v=Aq0JSbuIppQ",
+  "title": "Anish Acharya: SaaS is oversold — AI expands budgets, not replaces them",
+  "channel": "20VC with Harry Stebbings",
+  "total_duration": 4802,
+  "pdf_link": "../pdfs/20260209_a16z_anish_acharya_is_saas_dead_in_a_world_of_ai.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 143,
+      "end": 235,
+      "duration": 92,
+      "label": "SaaS completely oversold — innovation bazooka pointed wrong direction",
+      "insight": "IT spend is 8-12% of enterprise budgets. Even vibecoding ERP/CRM saves marginal %. Better use of AI: extend core advantage or optimize the other 90%.",
+      "pm_takeaway": "FADE SaaS apocalypse shorts. Vibecoding ERP/payroll has high downside, low upside. Market oversold—focus AI on 90% non-software spend (operations, labor), not rewriting 10% SaaS stack."
+    },
+    {
+      "id": 2,
+      "start": 177,
+      "end": 242,
+      "duration": 65,
+      "label": "75% of SaaS raised prices 8-12% post-ChatGPT",
+      "insight": "Price is measure of product-market fit. If enormous competitive pressure, you cut prices. ServiceNow and others raising prices 8-12%, large cohort at 25%+.",
+      "pm_takeaway": "LONG SaaS incumbents with pricing power intact. 75% raised 8-12% (some 25%+) = PMF holds despite AI threat. ServiceNow raised guidance. Watch for reversal—if pricing cuts emerge, PMF erosion confirmed."
+    },
+    {
+      "id": 3,
+      "start": 216,
+      "end": 286,
+      "duration": 70,
+      "label": "Coding agents lower switching costs — hostages become customers",
+      "insight": "SAP→Oracle migration previously multi-year, career-ending risk. Coding agents dramatically reduce complexity, speed, risk. More customers, less hostages = positive ecosystem incentive.",
+      "pm_takeaway": "DUAL EDGE: Switching cost collapse helps challengers (easier to take SAP customers) but also threatens incumbents (easier to lose customers). Long engagement-layer SaaS with transaction intensity. Fade on-prem databases with no human workflows."
+    },
+    {
+      "id": 4,
+      "start": 335,
+      "end": 422,
+      "duration": 87,
+      "label": "Apps layer captures value — multi-model aggregation is the moat",
+      "insight": "Foundation models 80% substitutes, 20% specialists. Cursor orchestrates Gemini (frontend), Codex (backend). Creative tools use Midjourney (aesthetic), Ideogram (graphic design). Aggregation layer valuable—single interface for best-of-breed models.",
+      "pm_takeaway": "LONG apps-layer aggregators in multi-model ecosystems. Cursor, creative suites capturing value. Foundation models = oligopoly with margins (AWS/GCP structure), not price war (Uber/Lyft). Multimodel access is defensibility."
+    },
+    {
+      "id": 5,
+      "start": 812,
+      "end": 895,
+      "duration": 83,
+      "label": "Power users now pay 10x more — consumer pricing ceiling broken",
+      "insight": "Pre-AI ceiling: Spotify family plan $20-25/mo. Now: Grok Heavy $300/mo, ChatGPT $200/mo, Gemini Ultra $250/mo. Plus consumption revenue on top. Power users incredibly valuable—SNM costs of acquiring them wisely invested.",
+      "pm_takeaway": "CONSUMER SOFTWARE EXPANSION. Pricing ceiling 10x higher + usage revenue. Target 80-90% of discretionary spend via companionship, entertainment, therapy, education. Influence is new sales/marketing—power users drive organic growth."
+    },
+    {
+      "id": 6,
+      "start": 1500,
+      "end": 1577,
+      "duration": 77,
+      "label": "Series A is optimal — seed too early, growth too late",
+      "insight": "Seed = 0→1 hardest to underwrite, could be anything. Growth = already validated. Series A = shipped and sold something = dramatic signal. Companies tend to be greater versions of themselves once working.",
+      "pm_takeaway": "SERIES A ENTRY POINT. Highest information value at optimal price. a16z model: elastic on price sub-$100M (mainly affects next-round setup), inelastic on ownership (partnership model). Competitive risk + pricing risk = risks worth taking."
+    },
+    {
+      "id": 7,
+      "start": 2328,
+      "end": 2398,
+      "duration": 70,
+      "label": "a16z model: 100% domain coverage, 100% win rate on pursued deals",
+      "insight": "Not allowed to believe in luck. Must see 100% of deals in sector, win 100% of deals we go after. Only acceptable miss: 'never saw it.' Elastic on price, inelastic on ownership. GP 360s every 2 years—measured on founder satisfaction, not returns.",
+      "pm_takeaway": "COMPETITIVE INVESTING PLAYBOOK. Network effects matter (brand lending for early companies). Series A = win via trust, market intelligence, first-to-conviction. Price doesn't matter sub-$100M—ownership does. Inertia is most powerful force—bet on founders continuously hitting target."
+    },
+    {
+      "id": 8,
+      "start": 2440,
+      "end": 2522,
+      "duration": 82,
+      "label": "Modbook overhyped point, underhyped slope — AI-native categories emerging",
+      "insight": "Late '22 ChatGPT = obviously good ideas. '23-24 = scaling. End '24 = reasoning models (O1, DeepSeek). '25 = winners scale. '26 = AI-native categories inconceivable 2 years ago. Modbook, OpenClaw just beginning. Digital twins, pseudo-dates, contextual companions = new TAMs.",
+      "pm_takeaway": "2026 = AI-NATIVE CATEGORY WAVE. Early leaders in established markets (Harvey, Gamma, Perplexity) holding unlike mobile cycle. Avoid copycats in support/code/creative. Watch reasoning-enabled use cases (Modbook digital twins, contextual companions). Companionship AI = contrarian consumer long."
+    }
+  ]
+}

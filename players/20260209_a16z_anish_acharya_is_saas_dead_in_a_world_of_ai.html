@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish Acharya: SaaS is oversold — AI expands budgets, not replaces them - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (10:26)</h1>
+                <div class="channel">20VC with Harry Stebbings • 8 clips from 80:02 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260209_a16z_anish_acharya_is_saas_dead_in_a_world_of_ai.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=Aq0JSbuIppQ" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/Aq0JSbuIppQ?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 8</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">13% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">SaaS completely oversold — innovation bazooka pointed wrong direction</div><div class="excerpt-insight">IT spend is 8-12% of enterprise budgets. Even vibecoding ERP/CRM saves marginal %. Better use of AI: extend core advantage or optimize the other 90%.</div></div><span class="excerpt-duration">1:32</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">75% of SaaS raised prices 8-12% post-ChatGPT</div><div class="excerpt-insight">Price is measure of product-market fit. If enormous competitive pressure, you cut prices. ServiceNow and others raising prices 8-12%, large cohort at 25%+.</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Coding agents lower switching costs — hostages become customers</div><div class="excerpt-insight">SAP→Oracle migration previously multi-year, career-ending risk. Coding agents dramatically reduce complexity, speed, risk. More customers, less hostages = positive ecosystem incentive.</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Apps layer captures value — multi-model aggregation is the moat</div><div class="excerpt-insight">Foundation models 80% substitutes, 20% specialists. Cursor orchestrates Gemini (frontend), Codex (backend). Creative tools use Midjourney (aesthetic), Ideogram (graphic design). Aggregation layer valuable—single interface for best-of-breed models.</div></div><span class="excerpt-duration">1:27</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Power users now pay 10x more — consumer pricing ceiling broken</div><div class="excerpt-insight">Pre-AI ceiling: Spotify family plan $20-25/mo. Now: Grok Heavy $300/mo, ChatGPT $200/mo, Gemini Ultra $250/mo. Plus consumption revenue on top. Power users incredibly valuable—SNM costs of acquiring them wisely invested.</div></div><span class="excerpt-duration">1:23</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Series A is optimal — seed too early, growth too late</div><div class="excerpt-insight">Seed = 0→1 hardest to underwrite, could be anything. Growth = already validated. Series A = shipped and sold something = dramatic signal. Companies tend to be greater versions of themselves once working.</div></div><span class="excerpt-duration">1:17</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">a16z model: 100% domain coverage, 100% win rate on pursued deals</div><div class="excerpt-insight">Not allowed to believe in luck. Must see 100% of deals in sector, win 100% of deals we go after. Only acceptable miss: 'never saw it.' Elastic on price, inelastic on ownership. GP 360s every 2 years—measured on founder satisfaction, not returns.</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="7" onclick="playExcerpt(7)"><span class="excerpt-num">8</span><div class="excerpt-content"><div class="excerpt-label">Modbook overhyped point, underhyped slope — AI-native categories emerging</div><div class="excerpt-insight">Late '22 ChatGPT = obviously good ideas. '23-24 = scaling. End '24 = reasoning models (O1, DeepSeek). '25 = winners scale. '26 = AI-native categories inconceivable 2 years ago. Modbook, OpenClaw just beginning. Digital twins, pseudo-dates, contextual companions = new TAMs.</div></div><span class="excerpt-duration">1:22</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 143,
+    "end": 235,
+    "duration": 92,
+    "label": "SaaS completely oversold \u2014 innovation bazooka pointed wrong direction",
+    "insight": "IT spend is 8-12% of enterprise budgets. Even vibecoding ERP/CRM saves marginal %. Better use of AI: extend core advantage or optimize the other 90%.",
+    "pm_takeaway": "FADE SaaS apocalypse shorts. Vibecoding ERP/payroll has high downside, low upside. Market oversold\u2014focus AI on 90% non-software spend (operations, labor), not rewriting 10% SaaS stack.",
+    "transcript": "really good reason to be there. I think the other nice thing about the Tel Aviv ecosystem is that the country is so small, it's 10 million people, that you can't possibly fool yourself into thinking that the domestic market is going to be big enough for whatever you're doing. So, you immediately go outside. Whereas, if you're in London, there's 60 million people here. Okay? And you might say, well, that's actually a lot of people. And you know what? There are parts of the market like fintech where the LTVs are so high that perhaps 60 million is sufficient.<br><br><strong>\u203a</strong> But for most mass market products, it's just not sufficient. And if you end up starting focused on the domestic market, it's often hard to actually move on to a bigger market. So there are all of these reasons that it's just it's not that it can't be done and there are incredible counter examples like 11. Um but I do think that is just that much easier in SF and and that's why that's where I focus.<br><br><strong>\u203a</strong> You said the word sufficient there. Yes, you can build a sufficient size business say in the UK uh $3 to5 billion business say as an example respectfully when we look at companies being created today 3 to5 billion just doesn't seem like it's interesting enough has the world of venture changed so significantly on what is sufficient for a venture outcome<br><br><strong>\u203a</strong> I mean 3 to 5 billion is an extraordinary outcome don't get me wrong so in no way no way am I like minimizing that and look I do think that those types the venture outcomes stack to create really meaningful funds. So this is not about working backwards from venture economics. But the biggest companies in the world today are trillion dollar companies. If you want to build a trillion dollar company, if that's your int intention, you've sort of got to start with a set of assumptions that can lead to that. If your intention is to build an extraordinary enterprise and you build a"
+  },
+  {
+    "id": 2,
+    "start": 177,
+    "end": 242,
+    "duration": 65,
+    "label": "75% of SaaS raised prices 8-12% post-ChatGPT",
+    "insight": "Price is measure of product-market fit. If enormous competitive pressure, you cut prices. ServiceNow and others raising prices 8-12%, large cohort at 25%+.",
+    "pm_takeaway": "LONG SaaS incumbents with pricing power intact. 75% raised 8-12% (some 25%+) = PMF holds despite AI threat. ServiceNow raised guidance. Watch for reversal\u2014if pricing cuts emerge, PMF erosion confirmed.",
+    "transcript": "reasons that it's just it's not that it can't be done and there are incredible counter examples like 11. Um but I do think that is just that much easier in SF and and that's why that's where I focus.<br><br><strong>\u203a</strong> You said the word sufficient there. Yes, you can build a sufficient size business say in the UK uh $3 to5 billion business say as an example respectfully when we look at companies being created today 3 to5 billion just doesn't seem like it's interesting enough has the world of venture changed so significantly on what is sufficient for a venture outcome<br><br><strong>\u203a</strong> I mean 3 to 5 billion is an extraordinary outcome don't get me wrong so in no way no way am I like minimizing that and look I do think that those types the venture outcomes stack to create really meaningful funds. So this is not about working backwards from venture economics. But the biggest companies in the world today are trillion dollar companies. If you want to build a trillion dollar company, if that's your int intention, you've sort of got to start with a set of assumptions that can lead to that. If your intention is to build an extraordinary enterprise and you build a 3 to5 billion enterprise like you are one of the few people in the world<br><br><strong>\u203a</strong> when we say about those three to five"
+  },
+  {
+    "id": 3,
+    "start": 216,
+    "end": 286,
+    "duration": 70,
+    "label": "Coding agents lower switching costs \u2014 hostages become customers",
+    "insight": "SAP\u2192Oracle migration previously multi-year, career-ending risk. Coding agents dramatically reduce complexity, speed, risk. More customers, less hostages = positive ecosystem incentive.",
+    "pm_takeaway": "DUAL EDGE: Switching cost collapse helps challengers (easier to take SAP customers) but also threatens incumbents (easier to lose customers). Long engagement-layer SaaS with transaction intensity. Fade on-prem databases with no human workflows.",
+    "transcript": "so in no way no way am I like minimizing that and look I do think that those types the venture outcomes stack to create really meaningful funds. So this is not about working backwards from venture economics. But the biggest companies in the world today are trillion dollar companies. If you want to build a trillion dollar company, if that's your int intention, you've sort of got to start with a set of assumptions that can lead to that. If your intention is to build an extraordinary enterprise and you build a 3 to5 billion enterprise like you are one of the few people in the world<br><br><strong>\u203a</strong> when we say about those three to five billion companies.<br><br><strong>\u203a</strong> Yes. Yeah, I mean I heard a brilliant statement which is the sassacre, the massacre of SAS companies that's going on in in kind of the public markets today. And you when we look at it essentially investors are no longer confident that traditional enterprise revenue is sticky or durable.<br><br><strong>\u203a</strong> Are they right to question whether traditional enterprise revenue is sticky and durable?<br><br><strong>\u203a</strong> I think software is completely oversold. I think it's a silly story. I heard it called SAS apocalypse today. It's very funny. Bloomberg is trying to get that to stick. Look, if you look at SAS spend today, if you look at IT spend overall, it's 8 to 12% of enterprise spend. Okay? So, even if you vibe coded your ERP and your payroll with all the kind of risks"
+  },
+  {
+    "id": 4,
+    "start": 335,
+    "end": 422,
+    "duration": 87,
+    "label": "Apps layer captures value \u2014 multi-model aggregation is the moat",
+    "insight": "Foundation models 80% substitutes, 20% specialists. Cursor orchestrates Gemini (frontend), Codex (backend). Creative tools use Midjourney (aesthetic), Ideogram (graphic design). Aggregation layer valuable\u2014single interface for best-of-breed models.",
+    "pm_takeaway": "LONG apps-layer aggregators in multi-model ecosystems. Cursor, creative suites capturing value. Foundation models = oligopoly with margins (AWS/GCP structure), not price war (Uber/Lyft). Multimodel access is defensibility.",
+    "transcript": "providers or Mondays of the world? Well, I don't know if that's what we're seeing across the board. Like I looked at the data this morning and if you look at um SAS public market SAS companies, 75% have raised prices since Chachi BT was released. 75% and they've raised prices meaningfully. The mean is 8 to 12% but there's a large group that have raised at 25% or more.<br><br><strong>\u203a</strong> Is that not because they have to because they're not growing seat count and so they have to grow revenue count.<br><br><strong>\u203a</strong> Price is a measure of product market fit right and if you have enormous competitive pressure you are not raising prices you're typically cutting prices. So I think one you've got this sort of un you know this dissonant fact that prices are going up right two if you look at the incumbents today like service now is not IBM they're a highly capable incumbent they just went public and they raised guidance so I think it's very easy to look at these things and say incumbents incumbents incumbents like again like they're not seers they're very very capable and I think they actually have a right to win and deploy technology in the context of these workflows now will there be disruption of course we've talked a bunch about you know companies that can now that were once priced on seats which are now going to be priced on outcomes and like that is going to be a big drag but I think for the majority of SAS it has so little upside and being rewritten and vibecoded and so much downside why would you do it now an interesting topic that's not discussed is the uh the cost of transitioning from one SAS provider to another going dramatically down so systems integration if you and Alex said this funny thing and I know you you"
+  },
+  {
+    "id": 5,
+    "start": 812,
+    "end": 895,
+    "duration": 83,
+    "label": "Power users now pay 10x more \u2014 consumer pricing ceiling broken",
+    "insight": "Pre-AI ceiling: Spotify family plan $20-25/mo. Now: Grok Heavy $300/mo, ChatGPT $200/mo, Gemini Ultra $250/mo. Plus consumption revenue on top. Power users incredibly valuable\u2014SNM costs of acquiring them wisely invested.",
+    "pm_takeaway": "CONSUMER SOFTWARE EXPANSION. Pricing ceiling 10x higher + usage revenue. Target 80-90% of discretionary spend via companionship, entertainment, therapy, education. Influence is new sales/marketing\u2014power users drive organic growth.",
+    "transcript": "when I started um it was a big problem. You didn't invest in competitors. Now everyone is investing in competitors. Yeah.<br><br><strong>\u203a</strong> Are we in a world where that no longer matters?<br><br><strong>\u203a</strong> I mean, when you think about a firm that's organized the way we are, which is we actually do stuff for our companies, it becomes very difficult to invest in directly competing companies because then you've got, you know, the same resources, the same sort of Fortune 500 buyer, the same engineer that both companies want to hire. And I just like I don't think we can run our business by investing in directly competing companies. Now with that said, I think we're in a part of the market where companies are diverging very rapidly. So even companies that appear to be directly competing today tend to be not competing in, you know, 12 months, 18 months.<br><br><strong>\u203a</strong> Going back just before to you said about kind of the opportunity in the apps layer, when we think about that, one threat that's often posed to the apps layer is the models themselves providing products. Whether it's OpenAI focusing on health now a lot or whether it's CL code or actually I saw Anthropic do you know some claw attachment to legal yesterday?<br><br><strong>\u203a</strong> Mhm.<br><br><strong>\u203a</strong> To what extent is models invading the apps layer a credible threat to the verticalization of apps?<br><br><strong>\u203a</strong> Yeah. So this is such an interesting topic. So Granola, which we're not investors in, but I admire them a great deal. It's a great company. Um they've built a really interesting thing and they were first of course to live meeting recording and transcription which is awesome. They have been copied to the moon. Right now, everybody has a meeting transcription feature. OpenAI"
+  },
+  {
+    "id": 6,
+    "start": 1500,
+    "end": 1577,
+    "duration": 77,
+    "label": "Series A is optimal \u2014 seed too early, growth too late",
+    "insight": "Seed = 0\u21921 hardest to underwrite, could be anything. Growth = already validated. Series A = shipped and sold something = dramatic signal. Companies tend to be greater versions of themselves once working.",
+    "pm_takeaway": "SERIES A ENTRY POINT. Highest information value at optimal price. a16z model: elastic on price sub-$100M (mainly affects next-round setup), inelastic on ownership (partnership model). Competitive risk + pricing risk = risks worth taking.",
+    "transcript": "that were sort of these empty calories for the startup. If instead you look at the form of subsidy that happens today, what it typically means is zero margin or negative gross margin credits for the user to try the product. So these things tend to be a drag but these are actually very healthy calories for the companies because out of that you get conversion into high-paying users and many of whom are actual power users. So I do think that um the the blended margin story for AI native companies tends to be worse. But if you look at the overall sort of form of distortion that's happening, it's a much better one than we had five years ago.<br><br><strong>\u203a</strong> Does that make sense?<br><br><strong>\u203a</strong> Yeah, it does. Um Jason Lin is a very good friend of mine from SAS and he said to me yesterday I said a brilliant statement. He said for the best companies influence is the new sales and marketing.<br><br><strong>\u203a</strong> Yeah, I love that. 100% correct. Yes. Yes. I also think that power users are so much more powerful than they ever have been. Like Andrew Chen used to say preai and I love this like power users are just users and it was true because even if they got 100x more value they typically didn't pay 100x more. Like you look at Spotify great European company the very best Spotify skew with the highest bit rate music totally lossless all the pods all the videos family plan everything was 20 $25 a month. So there was a belief that the price ceiling for consumer products mass market was 20 to25 a month. You look at Grock Heavy,"
+  },
+  {
+    "id": 7,
+    "start": 2328,
+    "end": 2398,
+    "duration": 70,
+    "label": "a16z model: 100% domain coverage, 100% win rate on pursued deals",
+    "insight": "Not allowed to believe in luck. Must see 100% of deals in sector, win 100% of deals we go after. Only acceptable miss: 'never saw it.' Elastic on price, inelastic on ownership. GP 360s every 2 years\u2014measured on founder satisfaction, not returns.",
+    "pm_takeaway": "COMPETITIVE INVESTING PLAYBOOK. Network effects matter (brand lending for early companies). Series A = win via trust, market intelligence, first-to-conviction. Price doesn't matter sub-$100M\u2014ownership does. Inertia is most powerful force\u2014bet on founders continuously hitting target.",
+    "transcript": "ask Leo in Germany at the series A. Um and I reflect on this a lot. Um a lot.<br><br><strong>\u203a</strong> I can tell it's on my mind.<br><br><strong>\u203a</strong> Yeah. Um when you reflect, what was your most painful loss and how do you reflect on that? I haven't lost a deal.<br><br><strong>\u203a</strong> You've never lost a deal?<br><br><strong>\u203a</strong> I've never lost a deal.<br><br><strong>\u203a</strong> How long have you been in Andrew?<br><br><strong>\u203a</strong> Six and a half years.<br><br><strong>\u203a</strong> Huh?<br><br><strong>\u203a</strong> Yeah. Yeah.<br><br><strong>\u203a</strong> Do you do you worry about that? I mean this in the nicest way. Like I you know I asked I asked Ran Pal about this cuz you know he lost the A of Roulette<br><br><strong>\u203a</strong> and then did the B which is great and fantastic. Well done him. Um<br><br><strong>\u203a</strong> yeah perhaps risk aperture is not high enough if you're never losing deals. Maybe I don't know like I think that there is a process by which you can be a part of most important companies that you want to be a part of. I think that there are some very difficult pre-existing conditions to overcome like somebody has a very healthy successful relationship with a past investor.<br><br><strong>\u203a</strong> You're just never going to overcome that, right? And by the way, like<br><br><strong>\u203a</strong> having been that I think healthy and supportive past investor for many people, I would never expect those founders to go work with someone else. What do you do in those situations when they're like, \"Listen, I love you, but like, yeah, I've known these guys for 10 years. They bat me before.\" Do you like, \"Hey, we're going to be the"
+  },
+  {
+    "id": 8,
+    "start": 2440,
+    "end": 2522,
+    "duration": 82,
+    "label": "Modbook overhyped point, underhyped slope \u2014 AI-native categories emerging",
+    "insight": "Late '22 ChatGPT = obviously good ideas. '23-24 = scaling. End '24 = reasoning models (O1, DeepSeek). '25 = winners scale. '26 = AI-native categories inconceivable 2 years ago. Modbook, OpenClaw just beginning. Digital twins, pseudo-dates, contextual companions = new TAMs.",
+    "pm_takeaway": "2026 = AI-NATIVE CATEGORY WAVE. Early leaders in established markets (Harvey, Gamma, Perplexity) holding unlike mobile cycle. Avoid copycats in support/code/creative. Watch reasoning-enabled use cases (Modbook digital twins, contextual companions). Companionship AI = contrarian consumer long.",
+    "transcript": "each other and earn the right to be your lead investor at the next round. And sometimes that's the right thing.<br><br><strong>\u203a</strong> How elastic will you be on ownership in order to win deals?<br><br><strong>\u203a</strong> Not very elastic. I try to explain what our model is, but I'm very elastic on price. I should probably be careful about saying that. I mean, my mental model is that below a certain threshold, the price doesn't matter. You just have to<br><br><strong>\u203a</strong> I I want to learn from you.<br><br><strong>\u203a</strong> Yeah. Yeah. Well, I mean, this is my mental model.<br><br><strong>\u203a</strong> No, no, it works. I've learned in vans um simply copy often works. Um so so like very elastic on price and below a certain price it doesn't really matter. What is that price? I mean, look, I think price starts to really matter once you're into the hundreds of millions, you know, and certainly at the stage that DG does, price does really matter. But I think at the early stage, let's say sub 100 million, like 50, 70, 100, even 120, the main way that price shows up is it may impair your ability to raise the next round because you price something so high. And like we're very transparent about that. I'll tell a founder like look, you've got great metrics. We can do this series A as you know 12 on 60 15 on 75 like 12 to 15 it's a little bit of a wash for us in terms of the check size that we're writing and it's more about what expectations do you want to sign up for at the next round and look the one thing that we typically don't flex a lot on is ownership because that is our whole model and like the model of hey we're going to put all the chips in behind you doesn't work if we're not real partners"
+  }
+];
+        const videoId = 'Aq0JSbuIppQ';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
