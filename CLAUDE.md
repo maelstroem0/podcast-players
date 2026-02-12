@@ -358,9 +358,11 @@ git commit -m "Add YYYYMMDD_slug"
 git push
 ```
 
-**URLs after push:**
-- Player: `https://maelstroem0.github.io/podcast-players/players/YYYYMMDD_slug.html`
-- PDF: `https://maelstroem0.github.io/podcast-players/pdfs/YYYYMMDD_slug.pdf`
+**URLs after push (MUST match exact filenames on disk):**
+- Player: `https://maelstroem0.github.io/podcast-players/players/{EXACT_FILENAME}.html`
+- PDF: `https://maelstroem0.github.io/podcast-players/pdfs/{EXACT_FILENAME}.pdf`
+
+⚠️ **CRITICAL:** When reporting URLs, use the EXACT filename from disk (e.g., `ls players/`). Do NOT reconstruct or guess the slug. Filenames contain underscores (e.g., `20260209_a16z_anish_acharya_is_saas_dead_in_a_world_of_ai.html`). Getting this wrong produces 404s.
 
 ---
 
