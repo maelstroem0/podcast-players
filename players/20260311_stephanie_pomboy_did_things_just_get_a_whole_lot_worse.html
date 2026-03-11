@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Pomboy: Did Things Just Get A Whole Lot Worse? - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (7:11)</h1>
+                <div class="channel">Adam Taggart | Thoughtful Money® • 7 clips from 58:01 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260311_stephanie_pomboy_did_things_just_get_a_whole_lot_worse.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=KeqyyGaE6DY" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/KeqyyGaE6DY?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 7</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">12% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">War amplifies pre-existing forces — not a new shock</div><div class="excerpt-insight">Pomboy says her 2026 thesis (higher commodities, higher yields) hasn't changed — the Iran war only accelerates both vectors and adds recession + credit crisis risk</div></div><span class="excerpt-duration">1:30</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Private credit: final innings of extend-and-pretend</div><div class="excerpt-insight">4 years of continuation funds, secondaries, and toxic ETF packaging are ending — write-downs are starting; the damage will not stay contained in private credit</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">BBB investment grade — the hidden time bomb</div><div class="excerpt-insight">Over half the IG market is BBB (one notch above junk). Oracle, Verizon, AT&T, T-Mobile, CVS, Amgen, Boeing, GM are all BBB. One downgrade triggers forced selling by IG funds</div></div><span class="excerpt-duration">1:06</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">10Y yields ROSE after Iran — no flight to safety</div><div class="excerpt-insight">Post-Iran, 10-year Treasury yield rose 22bps instead of falling. Global appetite for US Treasuries is near non-existent — watch yields not spreads</div></div><span class="excerpt-duration">1:01</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Tax refunds monetizing oil spike — CPI upside risk</div><div class="excerpt-insight">The oil spike is arriving precisely during peak tax refund season, which cushions consumers but risks fully monetizing the price increase straight into CPI — constraining Fed</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Pomboy's allocation: hard assets only</div><div class="excerpt-insight">Gold, miners, energy — stays in commodities exclusively domestically. Nothing else 'blows her skirt up' that isn't tied to hard assets</div></div><span class="excerpt-duration">0:37</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">The Icarus answer — vulnerabilities exposed, not new</div><div class="excerpt-insight">Pomboy's direct answer to 'did everything get worse': No — markets have been flying blind like Icarus. Wings melting now. Nothing fundamentally new — pressures just amplified</div></div><span class="excerpt-duration">0:42</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 650,
+    "end": 740,
+    "duration": 90,
+    "label": "War amplifies pre-existing forces \u2014 not a new shock",
+    "insight": "Pomboy says her 2026 thesis (higher commodities, higher yields) hasn't changed \u2014 the Iran war only accelerates both vectors and adds recession + credit crisis risk",
+    "pm_takeaway": "STAY COURSE on hard assets and vol. War didn't reset the macro \u2014 it accelerated it. Don't let news cycle distract from the secular thesis.",
+    "transcript": "Most of them secular, you know, the Cold War for resources, the demands for energy from AI, the dollar diversification, which found countries diversifying out of treasuries into hard assets, blah, blah, blah. And then obviously related to that is the implications for our bond market, which was less global deficit financing for the US, which would put upward pressure on bond yields, blah, blah, blah. So as I look at this Iran situation, I asked myself, does it dramatically change those two things that I thought would be that the sort of major forces driving markets in 2026. And the answer is, no, it only accelerates them. You know, I would say that the pressure on US Treasury yields is increasing, because this action we're already talking about now increasing the defense budget. And to the extent there is a risk I agreed with you at the beginning of the year that policy would run hot and growth would probably err on the stronger side. But now we have a risk that if the oil prices stay this high for an extended period, it could tip the economy into recession. Or worse yet, it could trigger a risk off in the markets, which would then create a devastating recession through the reverse wealth effect and the asset deflation. So I see that as another factor out there. So my sense is that both of those things would further compound our deficit financing problems if the economy went into recession, our deficit would explode."
+  },
+  {
+    "id": 2,
+    "start": 895,
+    "end": 960,
+    "duration": 65,
+    "label": "Private credit: final innings of extend-and-pretend",
+    "insight": "4 years of continuation funds, secondaries, and toxic ETF packaging are ending \u2014 write-downs are starting; the damage will not stay contained in private credit",
+    "pm_takeaway": "SHORT LQD or buy puts. Private credit opacity has masked the damage since 2022. The cascade into public IG markets is the next shoe to drop.",
+    "transcript": "So I think what I'm getting to is that since 2022, they've been kind of trying to do these extended pretend games to kind of keep things, keep it together long enough to get to the point where we got some interest rate relief. So we're going on four years now and they've launched continuation funds and they've done secondaries and, you know, they've rolled out everything. They're launching ETFs of packaging all their toxic stuff into ETFs to unload on the unsuspecting retail public. So we're in the final innings of that and you're starting to see it in these markdowns. But it would be a huge mistake in my view to assume that these issues are strictly private credit related that they don't obtain to the broader credit market itself in the publicly traded securities. Because while you may not be marking down, you know, those assets are being, in theory, priced every day, they're being priced based on, and you and I've talked about this a little bit, ratings that may be highly suspect as they were, you know, back when we had the global..."
+  },
+  {
+    "id": 3,
+    "start": 1024,
+    "end": 1090,
+    "duration": 66,
+    "label": "BBB investment grade \u2014 the hidden time bomb",
+    "insight": "Over half the IG market is BBB (one notch above junk). Oracle, Verizon, AT&T, T-Mobile, CVS, Amgen, Boeing, GM are all BBB. One downgrade triggers forced selling by IG funds",
+    "pm_takeaway": "MONITOR Oracle, VZ, T, GM, Boeing for downgrade risk. Any BBB-to-junk event forces IG fund liquidations \u2014 a fire sale that spreads to equities. This is the credit cascade trigger.",
+    "transcript": "An area that I think will catch people by surprise is investment grade because more than half of the investment grade market is triple B, which is one downgrade to junk. So if we got into a situation where those companies actually did get downgraded, it would be a fire sale because investment grade funds would have to dump all of that paper. Right. That would create the spiral. So that's really what I'm looking at is that triple B investment grade. And there's some major companies in there. Amgen, I think Oracle is a triple B. So there are some big name companies that you want to keep an eye on if they were to get downgraded. I'm progressive that Oracle is one above junk now. I mean, blue chip as you can get in the software space. Yeah, I think it was. I know Amgen 100%, but I need to double check on the Oracle thing. But yeah, I mean, there are a lot of very well known companies that are in that triple B slug that definitely would rattle the markets where they to be downgraded."
+  },
+  {
+    "id": 4,
+    "start": 1484,
+    "end": 1545,
+    "duration": 61,
+    "label": "10Y yields ROSE after Iran \u2014 no flight to safety",
+    "insight": "Post-Iran, 10-year Treasury yield rose 22bps instead of falling. Global appetite for US Treasuries is near non-existent \u2014 watch yields not spreads",
+    "pm_takeaway": "BEARISH Treasuries. The safe-haven bid is gone. Focus on yield levels, not credit spreads \u2014 nominal yields rising means the $1.2T refinancing wall gets more dangerous every week.",
+    "transcript": "I frankly am more concerned about the fact that rather than looking at spreads looking at yield levels because interestingly, the tenure has risen in yield. After this Iran action, normally you would normally think you'd see a flight to safety, right? Right, you'd see a flight to safety. So we're up the last I checked and it's on the move again this morning. The tenure was up 22 basis points post Iran. Normally you'd expect a minus sign in front of that number, not a plus sign. So when you're talking about junk spreads, even if junk spreads go nowhere, the nominal yield is rising and that's a problem for these companies. I'd kind of focus more on the yields than the spread necessarily because spreads reflect, you know, different attitudes around risk but don't necessarily tell you much about what's actually happening on the ground with the company. You know, the company needs to refinance and you know this and your audience knows it because I go through these numbers every time."
+  },
+  {
+    "id": 5,
+    "start": 1580,
+    "end": 1650,
+    "duration": 70,
+    "label": "Tax refunds monetizing oil spike \u2014 CPI upside risk",
+    "insight": "The oil spike is arriving precisely during peak tax refund season, which cushions consumers but risks fully monetizing the price increase straight into CPI \u2014 constraining Fed",
+    "pm_takeaway": "FADE rate cut bets. Tax refunds absorbing the gas price spike means inflation doesn't get dampened naturally. CPI could surprise higher \u2014 Fed stays frozen longer than the market expects.",
+    "transcript": "The timing of this is very interesting because it's coming precisely as this wave of tax refunds is going out. That gives consumers a cushion with which to absorb the increase in gasoline prices now obviously it wouldn't be their preference or the administration's preference presumably to see that tax refund when fall spent filling up the gas tank. But what it does do is effectively create the possibility that the increase in oil prices is monetized and therefore flows totally through the system through to the CPI whereas normally you think higher oil prices would be a tax on spending. And to the extent people are spending more filling up their gas tank they're cutting back on something else and that kind of serves to dampen out the overall inflation effect. So this is problematic. It's problematic in that it could put further upward pressure on CPI inflation that then makes the Fed say, all right, we're okay on the employment mandate, we probably have some room to cut there."
+  },
+  {
+    "id": 6,
+    "start": 2188,
+    "end": 2225,
+    "duration": 37,
+    "label": "Pomboy's allocation: hard assets only",
+    "insight": "Gold, miners, energy \u2014 stays in commodities exclusively domestically. Nothing else 'blows her skirt up' that isn't tied to hard assets",
+    "pm_takeaway": "BUY gold miners on pullbacks. STAY long energy. This is Pomboy's highest conviction domestic allocation \u2014 hard assets secular tailwinds only strengthening post-war.",
+    "transcript": "But, you know, I have a broken record. I mean, I will stick to my commodities. I think to the extent that gold and the miners have sold off, you know, gold has recovered a lot of what it sold off with the miners. Also, you know, I think I would continue to look at that space. And other than that, I mean, domestically, I'm not super nothing really blows my skirt up. That isn't tied to hard assets in some way, shape or form. So that's my view. All right. And you know, I mean, I hate to say this, but, you know, nothing like a war to remind the world of the importance of resources."
+  },
+  {
+    "id": 7,
+    "start": 3203,
+    "end": 3245,
+    "duration": 42,
+    "label": "The Icarus answer \u2014 vulnerabilities exposed, not new",
+    "insight": "Pomboy's direct answer to 'did everything get worse': No \u2014 markets have been flying blind like Icarus. Wings melting now. Nothing fundamentally new \u2014 pressures just amplified",
+    "pm_takeaway": "HOLD vol. The bear thesis hasn't changed \u2014 it's being confirmed. Don't cover hedges on relief rallies. The exposure of vulnerabilities IS the catalyst \u2014 the regime shift has begun.",
+    "transcript": "What would your answer be to that person? Now, my answer would be no, we're just seeing our vulnerabilities exposed. The vulnerabilities have always been there. Yeah. And the markets have been flying blind, like Icarus toward the sun for a long time. And their wings are now starting to melt a little bit under that heat. But I don't think there's anything new that has changed. It has just amplified the pressures that were already there in terms of the rising commodity prices and interest rates. And so, yeah, things got worse in so far as people are now waking up to it and they shift in sentiment as the potential to feed upon itself, especially in the financial markets and credit especially."
+  }
+];
+        const videoId = 'KeqyyGaE6DY';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
