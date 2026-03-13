@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward Guidance: Oil Shock at the Recession Precipice - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (7:52)</h1>
+                <div class="channel">Forward Guidance • 7 clips from 56:07 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260313_why_the_oil_shock_could_trigger_a_global_recession.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=frhd5xHQ_5Y" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/frhd5xHQ_5Y?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 7</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">14% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Stairstep walkdown — tacos don't work on physical assets</div><div class="excerpt-insight">The market is in the most obvious stairstep walkdown possible. Unlike tariffs, a physical commodity shock involving Iran can't be reversed by tweet.</div></div><span class="excerpt-duration">0:42</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Europe & Asia most exposed — dollar long is the trade</div><div class="excerpt-insight">Strait of Hormuz closure acutely hits Europe and Asia. US is energy independent with export ban optionality. The euro is pricing in a rate hike — the most absurd thing possible.</div></div><span class="excerpt-duration">1:07</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Violent dollar rally — gold caught in the crossfire</div><div class="excerpt-insight">Near-term, gold gets caught up in the dollar rally even though medium-term the gold bull thesis is intact. Initial shock = dollar up, gold down.</div></div><span class="excerpt-duration">1:04</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Brent at $100 — right on the precipice of demand destruction</div><div class="excerpt-insight">SOFR curve pricing barely one cut. Brent closed above $100 today. The classic 2008 dynamic: oil spikes above $120, then absolute demand destruction and recession. We're right at that threshold.</div></div><span class="excerpt-duration">1:29</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Agricultural commodities — the sleeper trade nobody is watching</div><div class="excerpt-insight">US farm bankruptcies +40% YoY. Farmers losing money handover fist. Supply compression cycle underway. Spring planting season is the irreversible catalyst — fertilizer ships through Hormuz.</div></div><span class="excerpt-duration">1:21</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Where is Trump's uncle? Iran knows his stop loss</div><div class="excerpt-insight">Iran has publicly stated they will push oil to $200 — they know that's Trump's liquidation level. Every tool has been used; SPR near floor, oil still above $100. This is 'uncle' not 'taco.'</div></div><span class="excerpt-duration">1:07</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">Private credit gated — the hidden tinder</div><div class="excerpt-insight">Every major private credit fund has gated — no redemptions. AI data center buildout funded by Gulf sovereign wealth funds is drying up. Helium ships via Hormuz. Second and third-order effects just starting to show.</div></div><span class="excerpt-duration">1:02</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 0,
+    "end": 42,
+    "duration": 42,
+    "label": "Stairstep walkdown \u2014 tacos don't work on physical assets",
+    "insight": "The market is in the most obvious stairstep walkdown possible. Unlike tariffs, a physical commodity shock involving Iran can't be reversed by tweet.",
+    "pm_takeaway": "SHORT equities via spot (not puts). This is a one-way bleed \u2014 1.5%/day on indices. Vol too elevated for puts to pay. Use futures or spot shorts in software/consumer discretionary.",
+    "transcript": "This is the most obvious stairst step walk down market right now. Like you could possibly see. You can't even make these things up. They're so difficult to believe. It's this perfect storm on so many fronts. When it's a unilateral decision like tariffs, you can reverse it and taco and things work out. But when you introduce assets that are physical, it's no longer a unilateral decision. Like you know, tacos don't work so well.<br><br><strong>\u203a</strong> This is the whole difficult part of trading and navigating a supply oil shock. The initial onset is super hawkish for central banks. Where is that pivot point between should maybe hike here to oh the Fed needs to cut and like we need to cut fast because there's a global recession. Like we are right on the precipice of that turning into demand destruction. Before we get"
+  },
+  {
+    "id": 2,
+    "start": 933,
+    "end": 1000,
+    "duration": 67,
+    "label": "Europe & Asia most exposed \u2014 dollar long is the trade",
+    "insight": "Strait of Hormuz closure acutely hits Europe and Asia. US is energy independent with export ban optionality. The euro is pricing in a rate hike \u2014 the most absurd thing possible.",
+    "pm_takeaway": "LONG USD / SHORT EUR. Crowded dollar short + European energy shock + ECB rate hike priced in = violent re-pricing ahead. EUR/USD short is highest-conviction FX trade right now.",
+    "transcript": "how I'm thinking about it, which is that the the the straight of form news and everything that flows out of it is acutely exposing European and Asian markets as opposed to the US. So this is just one chart that that I've been been playing around with that just shows the the energy dependency on the hormones. You can see it's largely Asia-Pacific in Europe. Like America is is largely energy independent. Um and then there's also the potential of like an export ban on that energy product if they really need to. I'm really not that worried about the US. I'm worried about Europe and Asia. and therefore I'm worried about their currencies and and their and their exposure to an imminent recession if this continues. So, okay, if if straight of Formos continues to stay closed like it is right now, that's going to lead to major shortages of of these very important pieces of resources towards Asian and European markets. That's going to lead to they're probably going to be the first to be hit with a recession. Therefore, their currencies are going to weaken relative to the dollar. At the same time that everybody is trying to do this flight to safety thing to the dollar, we've we've talked about how there's still that flight to safety to the dollar. It's just nobody"
+  },
+  {
+    "id": 3,
+    "start": 1066,
+    "end": 1130,
+    "duration": 64,
+    "label": "Violent dollar rally \u2014 gold caught in the crossfire",
+    "insight": "Near-term, gold gets caught up in the dollar rally even though medium-term the gold bull thesis is intact. Initial shock = dollar up, gold down.",
+    "pm_takeaway": "FADE gold near-term \u2014 dollar rally will pressure it. Reload on dips medium-term: Fed QE at $500B/year, no duration bid from anyone in a crisis. Gold over bonds is still the structural trade.",
+    "transcript": "like crazy. So, so to bring it all towards gold and how I'm thinking about it is that I could see a really like violent dollar rally and I think gold would get hung up in there. Even though on a medium-term basis, I'm absurdly bullish gold because nobody wants to own treasuries in a crisis. I think initially it would get caught up with that. So, that's<br><br><strong>\u203a</strong> Yeah, poke some holes there.<br><br><strong>\u203a</strong> No, I I I was replying to some of your tweets um with my I mean, I'm in the same boat. I don't I I I was playing for a bounce into Monday Tuesday and we got the bounce but I was in some you know I was in like some gold and stuff and it didn't bounce too much. Um luckily I was heavier in like n gas oil equities and in the agriculture commodities which I'm really bullish on but um yeah it just it's just hard to fight that dollar. Uh if you go to slide 39, it shows um basically the point in time, nice chart of of when the US became this procren because I mean people do forget we're we're the largest producer of natural gas and oil. So um it's it's a huge huge"
+  },
+  {
+    "id": 4,
+    "start": 1731,
+    "end": 1820,
+    "duration": 89,
+    "label": "Brent at $100 \u2014 right on the precipice of demand destruction",
+    "insight": "SOFR curve pricing barely one cut. Brent closed above $100 today. The classic 2008 dynamic: oil spikes above $120, then absolute demand destruction and recession. We're right at that threshold.",
+    "pm_takeaway": "STEEPENERS. Front-end anchored by fiscal floor (5.5% deficit). Long-end has no bid \u2014 fiscal gridlock + basis trade hedge funds = bonds are a risk asset, not a safe haven. Buy front-end, sell long-end.",
+    "transcript": "this absolute destruction and um recession and then suddenly, you know, you you pair that with our sofa curve is and you're like, are you kidding me? But we're barely pricing one cut right now when this is the possibility because you know brand oil just closed above 100 bucks today. Like we are right on the precipice of that turning into demand destruction. I think it's already pretty close to demand destruction and European and Asian markets like I was saying. But like we are we right on the precipice. And so you have to try to figure out how does where's that pivot point between oh the Fed might should should maybe hike here to oh the Fed needs to cut and like we need to cut fast because there's a global recession and it's I don't know like how do how do Yeah. How do you think about that? I I think that Okay, so if you play this through and you're you're like, \"All right, the two options are Stan Pat.\" We know they're not hiking. We know they're not hiking.<br><br><strong>\u203a</strong> They're not.<br><br><strong>\u203a</strong> So So the two options are Stan Pat into like a near-term inflationary thing. Sort it's sort of like tariffs, right? Tariffs were near-term inflationary and it's kind of worked through because it hit demand so hard. So maybe you use that. I guess the uncertainty is like how long this lasts. But um so if your baseline is do nothing or or cut into this, I think that's one side of it. And then you also have to look at fiscal because the really weird thing here is we're talking about all of this this environment and we're saying recession. We're saying we're in a negative job growth atmosphere, but the governments are still spending record emergency"
+  },
+  {
+    "id": 5,
+    "start": 2879,
+    "end": 2960,
+    "duration": 81,
+    "label": "Agricultural commodities \u2014 the sleeper trade nobody is watching",
+    "insight": "US farm bankruptcies +40% YoY. Farmers losing money handover fist. Supply compression cycle underway. Spring planting season is the irreversible catalyst \u2014 fertilizer ships through Hormuz.",
+    "pm_takeaway": "BUY wheat (ZW), corn (ZC), soybeans (ZS). Futures still net SHORT these. Spring planting disruption can't be reversed mid-year \u2014 12-month crop shortfall if unresolved by July. Russia-Ukraine analogue: 50-300% in months.",
+    "transcript": "shelved for a few for like two months on agricultural commodities because one one of the things pieces of news flow that that is been consistent is is the recession hitting farmers because tariffs really screwed, you know, small small businesses, middle America, etc. And farmers are in the worst recession uh one of the worst recessions they've ever faced in recent history. Um bankruptcies across farms in the US are up over 40% year-over-year. I mean, that's astronomical. And as anybody knows that ever has lived or visited the US, you eat our food here and it's garbage. Uh, and so we already have like a food quality issue. Um, but anyways, farmers are getting crushed. And a big reason behind that is there's never been a bigger gap between their production costs. So seeds, fertilizer, fuel, those those main things to to produce corn and soybeans and uh you know wheat versus the prices they're receiving versus the selling price of wheat, corn, soybeans, etc. And um that gap is massive. So they're losing money handover fist. And so how these things correct themselves, just like the cure for high prices is high prices, the cure for low prices is low prices and everybody goes out of business, there's no supply and and then there's a shortage and supply moons and<br><br><strong>\u203a</strong> things work on cycles too. So if you do like some like cycle analysis, this was"
+  },
+  {
+    "id": 6,
+    "start": 2553,
+    "end": 2620,
+    "duration": 67,
+    "label": "Where is Trump's uncle? Iran knows his stop loss",
+    "insight": "Iran has publicly stated they will push oil to $200 \u2014 they know that's Trump's liquidation level. Every tool has been used; SPR near floor, oil still above $100. This is 'uncle' not 'taco.'",
+    "pm_takeaway": "TAIL RISK: oil at $150-200 is Iran's explicit target. If realized, equities -30-40%, emergency Fed cut, dollar paradox. Size positions for this tail. This is not a 1% probability event.",
+    "transcript": "trying to figure out and if people are watching please reply and give us your feedback. Where where is uncle for Trump? It you know people should be we should be talking about uncle and not taco because where does he where does he it's not it's not like oh haha got you guys I'm just kidding. No tariffs. Oh I'm just kidding. We're not fighting a war. Oh I'm just kidding. you know, we're not doing the copper bands. Like all of these like shenanigans, he's just like, \"No, but every single one he's showing his stop loss and where where he where he, you know, uh can't take the pain anymore.\" But this one's role reversal. This is like he I mean, you got to imagine they're back channeling with Iran right now and begging for talks or something because because it's Uncle, it's not taco. It's like,<br><br><strong>\u203a</strong> yeah,<br><br><strong>\u203a</strong> everything is imploding in front of his eyes and he's going to be desperate and and you know, I mean, we might we might be talking like cuz he's a legacy guy, right? So like there's a point where this extends another like let's say week, two weeks where midterms are gone and it's just like salvaging like face."
+  },
+  {
+    "id": 7,
+    "start": 3108,
+    "end": 3170,
+    "duration": 62,
+    "label": "Private credit gated \u2014 the hidden tinder",
+    "insight": "Every major private credit fund has gated \u2014 no redemptions. AI data center buildout funded by Gulf sovereign wealth funds is drying up. Helium ships via Hormuz. Second and third-order effects just starting to show.",
+    "pm_takeaway": "AVOID private credit exposure and any equity dependent on Gulf SWF capex. Nvidia had 10 chances to be sold above $190 in 3 months. AI capex cycle is pausing \u2014 people won't care about AI when they can't fill their gas tank.",
+    "transcript": "show up. But, yeah. Oh, yeah. Mix in the private credit to everything we were saying. Mix in the private credit meltdown.<br><br><strong>\u203a</strong> Every like every private credit fund gated,<br><br><strong>\u203a</strong> dude. And then Yeah. You sprinkle in the t the the tinder of private credit ready to just light a match under.<br><br><strong>\u203a</strong> It's all gated. No one can get their money back.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> It dude what's going on? Like seriously, what's going on? Like I mean are we taking crazy like I don't I want to make maybe I gota put out this tweet where you know it's just like the whole e global economy and then somebody holding it up and it's just like<br><br><strong>\u203a</strong> it's video dude.<br><br><strong>\u203a</strong> No no no elevated put skew.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> Yeah dude. Seriously. I mean it it's it's it's crazy. I mean<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> We've we've had the chance to sell Nvidia like 10 times in the last three months above like at like 190 and and this thing I mean<br><br><strong>\u203a</strong> yeah. You think people are going to care about the next AI innovation when they can't put food on the table or drive to work?<br><br><strong>\u203a</strong> Yeah. [\u00a0__\u00a0] changes. Yeah.<br><br><strong>\u203a</strong> I don't know what's going on.<br><br><strong>\u203a</strong> The world is the world is resting on people buying puts. So,"
+  }
+];
+        const videoId = 'frhd5xHQ_5Y';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "video_id": "frhd5xHQ_5Y",
+  "url": "https://www.youtube.com/watch?v=frhd5xHQ_5Y",
+  "title": "Forward Guidance: Oil Shock at the Recession Precipice",
+  "channel": "Forward Guidance",
+  "total_duration": 3367,
+  "pdf_link": "../pdfs/20260313_why_the_oil_shock_could_trigger_a_global_recession.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 42,
+      "duration": 42,
+      "label": "Stairstep walkdown — tacos don't work on physical assets",
+      "insight": "The market is in the most obvious stairstep walkdown possible. Unlike tariffs, a physical commodity shock involving Iran can't be reversed by tweet.",
+      "pm_takeaway": "SHORT equities via spot (not puts). This is a one-way bleed — 1.5%/day on indices. Vol too elevated for puts to pay. Use futures or spot shorts in software/consumer discretionary."
+    },
+    {
+      "id": 2,
+      "start": 933,
+      "end": 1000,
+      "duration": 67,
+      "label": "Europe & Asia most exposed — dollar long is the trade",
+      "insight": "Strait of Hormuz closure acutely hits Europe and Asia. US is energy independent with export ban optionality. The euro is pricing in a rate hike — the most absurd thing possible.",
+      "pm_takeaway": "LONG USD / SHORT EUR. Crowded dollar short + European energy shock + ECB rate hike priced in = violent re-pricing ahead. EUR/USD short is highest-conviction FX trade right now."
+    },
+    {
+      "id": 3,
+      "start": 1066,
+      "end": 1130,
+      "duration": 64,
+      "label": "Violent dollar rally — gold caught in the crossfire",
+      "insight": "Near-term, gold gets caught up in the dollar rally even though medium-term the gold bull thesis is intact. Initial shock = dollar up, gold down.",
+      "pm_takeaway": "FADE gold near-term — dollar rally will pressure it. Reload on dips medium-term: Fed QE at $500B/year, no duration bid from anyone in a crisis. Gold over bonds is still the structural trade."
+    },
+    {
+      "id": 4,
+      "start": 1731,
+      "end": 1820,
+      "duration": 89,
+      "label": "Brent at $100 — right on the precipice of demand destruction",
+      "insight": "SOFR curve pricing barely one cut. Brent closed above $100 today. The classic 2008 dynamic: oil spikes above $120, then absolute demand destruction and recession. We're right at that threshold.",
+      "pm_takeaway": "STEEPENERS. Front-end anchored by fiscal floor (5.5% deficit). Long-end has no bid — fiscal gridlock + basis trade hedge funds = bonds are a risk asset, not a safe haven. Buy front-end, sell long-end."
+    },
+    {
+      "id": 5,
+      "start": 2879,
+      "end": 2960,
+      "duration": 81,
+      "label": "Agricultural commodities — the sleeper trade nobody is watching",
+      "insight": "US farm bankruptcies +40% YoY. Farmers losing money handover fist. Supply compression cycle underway. Spring planting season is the irreversible catalyst — fertilizer ships through Hormuz.",
+      "pm_takeaway": "BUY wheat (ZW), corn (ZC), soybeans (ZS). Futures still net SHORT these. Spring planting disruption can't be reversed mid-year — 12-month crop shortfall if unresolved by July. Russia-Ukraine analogue: 50-300% in months."
+    },
+    {
+      "id": 6,
+      "start": 2553,
+      "end": 2620,
+      "duration": 67,
+      "label": "Where is Trump's uncle? Iran knows his stop loss",
+      "insight": "Iran has publicly stated they will push oil to $200 — they know that's Trump's liquidation level. Every tool has been used; SPR near floor, oil still above $100. This is 'uncle' not 'taco.'",
+      "pm_takeaway": "TAIL RISK: oil at $150-200 is Iran's explicit target. If realized, equities -30-40%, emergency Fed cut, dollar paradox. Size positions for this tail. This is not a 1% probability event."
+    },
+    {
+      "id": 7,
+      "start": 3108,
+      "end": 3170,
+      "duration": 62,
+      "label": "Private credit gated — the hidden tinder",
+      "insight": "Every major private credit fund has gated — no redemptions. AI data center buildout funded by Gulf sovereign wealth funds is drying up. Helium ships via Hormuz. Second and third-order effects just starting to show.",
+      "pm_takeaway": "AVOID private credit exposure and any equity dependent on Gulf SWF capex. Nvidia had 10 chances to be sold above $190 in 3 months. AI capex cycle is pausing — people won't care about AI when they can't fill their gas tank."
+    }
+  ]
+}
