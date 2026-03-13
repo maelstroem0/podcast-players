@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott Bessent: Inside Trump's Treasury; War Costs; & Why Bond Market is King - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (7:24)</h1>
+                <div class="channel">The Master Investor Podcast with Wilfred Frost • 7 clips from 53:08 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260313_scott_bessent_inside_trumps_treasury_war_costs_why_bond_mark.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=zq_L011kMLs" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/zq_L011kMLs?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 7</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">14% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Bond market is king</div><div class="excerpt-insight">Bessent declares the US Treasury market the supreme arbiter — deep, liquid, functioning. Treasury's job is continuity, not price-control.</div></div><span class="excerpt-duration">0:55</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Iranian mission ahead of schedule</div><div class="excerpt-insight">Interview interrupted — Bessent pulled to Situation Room by President. Returns to confirm Iran mission proceeding ahead of plan, air force and navy degraded.</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">400M barrel SPR release — largest in history</div><div class="excerpt-insight">Coordinated G7 + IEA release of 400 million barrels already reversed the initial $30 oil spike. Market already pricing it in before official announcement.</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">War costs $11B — no fiscal constraint</div><div class="excerpt-insight">Iran conflict has cost ~$11B in a few weeks. Bessent says Treasury has cushions built in; no chance he'd ask president to pause on financial grounds.</div></div><span class="excerpt-duration">1:12</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Fed QE was the mistake — BoE did it right</div><div class="excerpt-insight">Bessent praises Bank of England for using QE only in acute crises and exiting quickly. Fed's extended QE caused the 2022-23 inflation. Policy regime lesson.</div></div><span class="excerpt-duration">1:17</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">US AI compute dominance: 70-80% of global</div><div class="excerpt-insight">US share of global AI compute rising from 40-50% to 70-80%. Bessent frames this as structural lead over China — one of three things China envies most.</div></div><span class="excerpt-duration">0:50</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">Investment advice: know your risk tolerance</div><div class="excerpt-insight">Bessent's personal investing philosophy: know your risk level, don't get out over your skis, never be forced to sell the bottom or chase the top. Applied the question back to whether America is over-extended in Iran.</div></div><span class="excerpt-duration">0:55</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 290,
+    "end": 345,
+    "duration": 55,
+    "label": "Bond market is king",
+    "insight": "Bessent declares the US Treasury market the supreme arbiter \u2014 deep, liquid, functioning. Treasury's job is continuity, not price-control.",
+    "pm_takeaway": "LONG US TREASURIES. Bessent explicitly states yield suppression is a policy objective. Only G7 10Y yield lower in 2025. Policy backstop is explicit.",
+    "transcript": "have, you've brought that into your political role, which market is the most important? Is it ultimately the bond market that you have to respect the most?<br><br><strong>\u203a</strong> It's ultimately the bond market. And the the the the US Treasury market is the the deepest, most liquid, and most most solid in the world. We we manage it out of this this building and we we are the the guardians of the treasury market and uh we try to be very transparent and we also try to uh make sure that the market itself is very resilient on an operational and a settlement basis whether it was post liberation day last year whether it's during this Iranian conflict now you know the the market is smoothly functioning, settling well. Uh so uh you know we are very concerned about it at all times.<br><br><strong>\u203a</strong> In your time as Treasury Secretary, how many times has the bond market given you"
+  },
+  {
+    "id": 2,
+    "start": 855,
+    "end": 920,
+    "duration": 65,
+    "label": "Iranian mission ahead of schedule",
+    "insight": "Interview interrupted \u2014 Bessent pulled to Situation Room by President. Returns to confirm Iran mission proceeding ahead of plan, air force and navy degraded.",
+    "pm_takeaway": "FADE OIL on conflict resolution. Mission timeline shorter than consensus expects. Bessent's confidence = near-term Hormuz re-opening catalyst. Target reversion toward $60.",
+    "transcript": "to the situation room. How was the president? Was he was he stressed?<br><br><strong>\u203a</strong> Uh no, the the the president is in great spirits. Uh the Iranian mission is proceeding well ahead of schedule. And you know, I have to tell you, Wolf, that I'm a teenage teenager who is considering a military service. And I could give this team my highest compliment. From President Trump to the head of the Joint Chiefs to the Secretary of War, I would they say that I would trust my child's life in their hands. Well, your child sounds like a brave a brave person, Mr. Secretary. And we want to come to all of those details in a couple moments. But if I may, I want to pick up to to where we were, which you just explained your successful trade on the yen. Um, and uh, and how you bought into the the policies that ARB was going to deliver and what it would do to the market. I was really struck by something uh, I I read I heard you say on the Capital Allocators podcast in November 2024. You said that your boss then George Soros asked you"
+  },
+  {
+    "id": 3,
+    "start": 1320,
+    "end": 1390,
+    "duration": 70,
+    "label": "400M barrel SPR release \u2014 largest in history",
+    "insight": "Coordinated G7 + IEA release of 400 million barrels already reversed the initial $30 oil spike. Market already pricing it in before official announcement.",
+    "pm_takeaway": "SELL OIL SPIKES. SPR release + US record liquids production + Navy escort incoming = supply shock is temporary. Duration thesis supports fade above $90-95.",
+    "transcript": "I think maybe at one point we were up about the $30 and then o overnight the the FT published that the IEA was considering a 300 to 400 million barrel release and then we had the biggest single reversal in one day history<br><br><strong>\u203a</strong> the that day. So, it was already priced in. So we we had a G7 finance ministers meeting on Monday where it was discussed energy meeting ministers meeting yesterday and then excuse me Tuesday and then yesterday uh I was in the Oval with the president for the leaders meeting and the leaders confirmed that it would in fact be a 400 million uh barrel release which is the largest in history. Yeah, I I fully accept that the the the news of a potential release brought prices down from their peak, but but clearly we're still up 50% or so from where we started the year. Um I guess my point is, are you starting to think if this does keep persisting as it is that the Navy has to go into the Straight of Hormuz to help ships get through, which would have a big effect on. Well, look, that that was always in our planning that that there's the chance that US"
+  },
+  {
+    "id": 4,
+    "start": 1543,
+    "end": 1615,
+    "duration": 72,
+    "label": "War costs $11B \u2014 no fiscal constraint",
+    "insight": "Iran conflict has cost ~$11B in a few weeks. Bessent says Treasury has cushions built in; no chance he'd ask president to pause on financial grounds.",
+    "pm_takeaway": "HOLD TREASURIES. War financing not a deficit risk signal. Foreign demand for US Treasuries increased in 2025 despite conflict. No sovereign stress.",
+    "transcript": "not the finance minister. The Well, a a a number came out today in in the the public number that was released today was about 11 billion thus far.<br><br><strong>\u203a</strong> Thus far over a couple of weeks. And and how long are as you look longterm at America's finances, how long are you planning for this this combat this conflict to continue for? I<br><br><strong>\u203a</strong> again that 11 billion is a lot of money, but you know, we we we have cushions built in and you know, it's not something that we we have to worry about over there.<br><br><strong>\u203a</strong> There's no chance you could be knocking on the president's door to say we have to pause on this. We can't afford it. Oh, absolutely not. Absolutely not. You know that the that you know what what we've seen last year uh was continued and increasing foreign interest in US treasuries. US treasuries had their best year since 2022<br><br><strong>\u203a</strong> and um we were the only G7 bond market with lower yields last year on the 10ear. Um just uh finally on this, you you issued a 30-day waiver uh on Indian refiners"
+  },
+  {
+    "id": 5,
+    "start": 2088,
+    "end": 2165,
+    "duration": 77,
+    "label": "Fed QE was the mistake \u2014 BoE did it right",
+    "insight": "Bessent praises Bank of England for using QE only in acute crises and exiting quickly. Fed's extended QE caused the 2022-23 inflation. Policy regime lesson.",
+    "pm_takeaway": "NO QE COMING. Bessent views prolonged QE as error. Extraordinary measures only in extraordinary times. Fed on hold; no balance sheet expansion signaled.",
+    "transcript": "<strong>\u203a</strong> Uh no no no not not at all. And you know in terms of QE I I have you know I I actually believe that the Bank of England's QE policy was better than the Feds because you know I I think extraordinary measures should only happen in extraordinary times and the the Bank of England stepped in. I I think they've stepped in twice in the past few years. Once during the early days of COVID, I don't remember the exact timing, but you know, let's let's say March, April, maybe May and stabilized the smooth operation of the guilt market and then they moved away. The the Fed continued buying the for years afterwards and I I believe that that's one of the things that got us the great inflation 22 and 23. Um, I wanted to touch on gold. Um, the the US has a lot of gold, but it's valued uh at a price that is is long since outdated, $42 an ounce, and we're currently at 5,000 plus. I know you and Kevin Walsh have have ideas around reducing the size of the Fed balance sheet, but you also don't want to create a liquidity crisis. Would revaluing the gold and at the same time sterilizing that provide an opportunity to sell off the assets you don't want without creating a liquidity?<br><br><strong>\u203a</strong> No, I I I think those are very very independent. I I think the if you're"
+  },
+  {
+    "id": 6,
+    "start": 2910,
+    "end": 2960,
+    "duration": 50,
+    "label": "US AI compute dominance: 70-80% of global",
+    "insight": "US share of global AI compute rising from 40-50% to 70-80%. Bessent frames this as structural lead over China \u2014 one of three things China envies most.",
+    "pm_takeaway": "LONG US AI infrastructure. Government policy commitment to compute dominance, not just market outcome. Hyperscalers and semis remain structurally supported.",
+    "transcript": "been. I think that our technology that the US leads the world and we just keep pulling away. That now with this AI boom, we're going to have over 70 or 80% of all the compute in the world up from 40 or 50 a few years ago is going to be in the US. And then the economy that the Europeans celebrated.3% growth and<br><br><strong>\u203a</strong> I don't think we celebrate that but we have<br><br><strong>\u203a</strong> well I didn't say the UK the EU celebrated.3% growth that was better than expected and I I think once things uh get back to normal after this conflict that the US is going to grow at 3% so 10x<br><br><strong>\u203a</strong> um I guess the debt is higher the oil reserves uh suddenly suddenly lower um<br><br><strong>\u203a</strong> but but that you know the the debt to GDP which is important deficit to GDP"
+  },
+  {
+    "id": 7,
+    "start": 3075,
+    "end": 3130,
+    "duration": 55,
+    "label": "Investment advice: know your risk tolerance",
+    "insight": "Bessent's personal investing philosophy: know your risk level, don't get out over your skis, never be forced to sell the bottom or chase the top. Applied the question back to whether America is over-extended in Iran.",
+    "pm_takeaway": "Framework: size position to never be forced seller. Bessent says America is NOT over-extended \u2014 highest conviction the mission completes on schedule.",
+    "transcript": "bottom. You never want to find your yourself like chasing at the top.<br><br><strong>\u203a</strong> Is America out over at skis in the Middle East right now?<br><br><strong>\u203a</strong> Uh absolutely not. As I said, we are the uh every day uh we are moving ahead of plan and the Iran is the degraded. You know, there was a message from the bunker from the new Ayatollah. We haven't seen him. So, let's see if we see him.<br><br><strong>\u203a</strong> Um you suggesting he's he's no longer alive.<br><br><strong>\u203a</strong> Uh is he compl menace? Is he injured? Is is he um you know is he under threat from the other members of the regime?<br><br><strong>\u203a</strong> Do you think regime change is is on the cards in the in the days ahead? Then<br><br><strong>\u203a</strong> again uh you know our our goals are are the three that I talked about but once once these things go in motion you never know what's going to happen. They take"
+  }
+];
+        const videoId = 'zq_L011kMLs';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
