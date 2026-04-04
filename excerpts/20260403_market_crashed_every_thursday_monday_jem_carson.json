@@ -1,0 +1,55 @@
+{
+  "video_id": "pLdiodoDK8k",
+  "url": "https://www.youtube.com/watch?v=pLdiodoDK8k",
+  "title": "Jem Carson: Market Crashes Every Thursday–Monday for 5 Weeks",
+  "channel": "tastylive",
+  "total_duration": 1128,
+  "pdf_link": "../pdfs/20260403_market_crashed_every_thursday_monday_jem_carson.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 40,
+      "end": 98,
+      "duration": 58,
+      "label": "The pain trade defined",
+      "insight": "Equities down + vol down simultaneously — everyone hedged but hedges don't work in this regime",
+      "pm_takeaway": "SELL Vega. Monthly puts losing P&L even when directionally correct. Pain trade = stair-step lower with vol compression throughout."
+    },
+    {
+      "id": 2,
+      "start": 434,
+      "end": 515,
+      "duration": 81,
+      "label": "Vega is broken — zero-DTE is the correct hedge",
+      "insight": "In vol-compression regimes, implied vol decays on the way down — options priced at 20 vol when 30 is warranted destroys P&L",
+      "pm_takeaway": "BUY zero-DTE gamma (0DTE straddles/calls), SELL monthly Vega exposure. VIX flat ≠ vol flat — skew steepening destroys long-put P&L."
+    },
+    {
+      "id": 3,
+      "start": 634,
+      "end": 700,
+      "duration": 66,
+      "label": "Thursday–Monday: 150% of annual declines in one window",
+      "insight": "Carson called this pattern in January — 5 consecutive weeks of Thursday midday to Monday open drawdowns confirmed",
+      "pm_takeaway": "SHORT ES/NQ into Thursday midday. LONG 0DTE puts on Thursday open. FADE Monday morning gap-up squeeze. Pattern persists until vol expands."
+    },
+    {
+      "id": 4,
+      "start": 752,
+      "end": 830,
+      "duration": 78,
+      "label": "10-year to 7–8% — steepener is the structural trade",
+      "insight": "Carson predicted zero to 5% in 2021; now calling 7–8% in 2–3 years. Equity yield vs 10yr = hard ceiling on multiples.",
+      "pm_takeaway": "LONG steepener (2s30s or 5s30s). 10yr at 5% triggers institutional rotation + PE/credit deleveraging. Highest-conviction structural trade."
+    },
+    {
+      "id": 5,
+      "start": 1084,
+      "end": 1128,
+      "duration": 44,
+      "label": "Positioning is everything — Soros reflexivity applied",
+      "insight": "Positioning itself creates the outcomes it predicts — not just a reflection of views. Short gamma = market must move; long gamma = market dampened.",
+      "pm_takeaway": "MONITOR dealer gamma positioning (negative gamma = trending moves, positive gamma = mean-reversion). Use as a distribution forecasting tool, not a sentiment indicator."
+    }
+  ]
+}
