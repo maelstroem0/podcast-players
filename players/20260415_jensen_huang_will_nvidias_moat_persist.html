@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jensen Huang – Will Nvidia's Moat Persist? - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (8:32)</h1>
+                <div class="channel">Dwarkesh Patel • 7 clips from 103:12 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260415_jensen_huang_will_nvidias_moat_persist.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=Hrbq66XqtCo" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/Hrbq66XqtCo?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 7</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">8% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Electrons to tokens: Nvidia's mental model</div><div class="excerpt-insight">Jensen defines Nvidia's entire corporate strategy — transform electrons to tokens, do as much as needed, as little as possible</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">Blackwell 50x over Hopper — architecture, not Moore's Law</div><div class="excerpt-insight">50x efficiency gain from Hopper to Blackwell came from architecture and algorithms, not transistor scaling (~75%). CUDA flexibility enables new algorithms like MoE, SSM hybrids.</div></div><span class="excerpt-duration">1:20</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Anthropic/TPU: 100% idiosyncratic, not a trend</div><div class="excerpt-insight">Jensen calls Anthropic a 'unique instance' — TPU/Trainium growth is 100% driven by Anthropic's capital structure deal with Google/AWS, not performance-based preference.</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Jensen's admitted miss: not investing in Anthropic early</div><div class="excerpt-insight">Rare public admission: Jensen says not investing in Anthropic when they needed it was 'my mistake'. He didn't realize VC funding couldn't work for a frontier AI lab.</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Vera Rubin, Feynman: Annual cadence as moat</div><div class="excerpt-insight">Explicit roadmap: Vera Rubin (2026), Vera Rubin Ultra (2027), Feynman (2028), unnamed (2029). Jensen frames annual delivery as a trust asset that no ASIC can replicate.</div></div><span class="excerpt-duration">1:15</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">DeepSeek on Huawei first = 'horrible outcome'</div><div class="excerpt-insight">Jensen warns that if future open source AI models debut optimized for Chinese hardware, the American tech stack loses global developer mindshare — the actual core of Nvidia's moat.</div></div><span class="excerpt-duration">1:22</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">Groq acquisition: Premium latency tokens as new segment</div><div class="excerpt-insight">Nvidia acquired Groq to expand the Pareto frontier — offering extreme low-latency tokens at higher ASP, even at lower throughput. Jensen identifies software engineers as willing to pay premium for responsive tokens.</div></div><span class="excerpt-duration">1:20</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 30,
+    "end": 90,
+    "duration": 60,
+    "label": "Electrons to tokens: Nvidia's mental model",
+    "insight": "Jensen defines Nvidia's entire corporate strategy \u2014 transform electrons to tokens, do as much as needed, as little as possible",
+    "pm_takeaway": "LONG NVDA. Jensen's 'electrons to tokens' framing is the clearest articulation of why Nvidia won't become a cloud: they print money on the hard parts and let partners do the rest. This is a structurally high-margin, capital-light position.",
+    "transcript": "other people are manufacturing, and if software\u00a0\ngets commoditized, does Nvidia get commoditized?\u00a0 In the end, something has to\u00a0\ntransform electrons to tokens.\u00a0 The transformation of electrons to tokens\u00a0\u00a0 and making those tokens more valuable over\u00a0\ntime is hard to completely commoditize.\u00a0 The transformation from electrons to\u00a0\ntokens is such an incredible journey.\u00a0 Making that token is like making one molecule\u00a0\nmore valuable than another molecule, making\u00a0\u00a0 one token more valuable than another.\nThe amount of artistry, engineering,\u00a0\u00a0 science, and invention that goes\u00a0\ninto making that token valuable,\u00a0\u00a0 obviously we're watching it happen in real time.\nThe transformation, the manufacturing, all of the\u00a0\u00a0"
+  },
+  {
+    "id": 2,
+    "start": 895,
+    "end": 975,
+    "duration": 80,
+    "label": "Blackwell 50x over Hopper \u2014 architecture, not Moore's Law",
+    "insight": "50x efficiency gain from Hopper to Blackwell came from architecture and algorithms, not transistor scaling (~75%). CUDA flexibility enables new algorithms like MoE, SSM hybrids.",
+    "pm_takeaway": "FADE the ASIC-cost-savings thesis. If 49 of 50x gains come from the software/architecture stack, ASICs optimized for fixed workloads can't replicate this. Switching costs are real and growing.",
+    "transcript": "But if TSMC is convinced, you'll have\u00a0\nplenty of EUV machines in a few years.\u00a0 My point is that none of the bottlenecks last\u00a0\nlonger than a couple of years, two, three years,\u00a0\u00a0 none of them.\nMeanwhile, we're\u00a0\u00a0 improving computing efficiency by 10x 20x, and\u00a0\nin the case of Hopper to Blackwell, 30x to 50x.\u00a0 We're coming up with new algorithms\u00a0\nbecause CUDA is so flexible.\u00a0 We're developing all kinds of new\u00a0\ntechniques so that we drive efficiency\u00a0\u00a0 in addition to increasing capacity.\nNone of those things worry me.\u00a0 It's the stuff that's downstream from us.\nEnergy policies that prevent energy from\u2026 You\u00a0\u00a0 can't create an industry without energy.\nYou can't create a whole new\u00a0\u00a0 manufacturing industry without energy.\nWe want to reindustrialize the United States.\u00a0 We want to bring back chip manufacturing,\u00a0\ncomputer manufacturing, and packaging.\u00a0 We want to build new things like EVs and robots.\nWe want to build AI factories.\u00a0 You can't build any of these things without\u00a0\nenergy, and those things take a long time.\u00a0 More chip capacity, that's a 2-3 year problem.\nMore CoWoS capacity, 2-3 year problem.\u00a0 Interesting. I feel like I have guests\u00a0\ntell me the exact opposite thing sometimes.\u00a0"
+  },
+  {
+    "id": 3,
+    "start": 2215,
+    "end": 2280,
+    "duration": 65,
+    "label": "Anthropic/TPU: 100% idiosyncratic, not a trend",
+    "insight": "Jensen calls Anthropic a 'unique instance' \u2014 TPU/Trainium growth is 100% driven by Anthropic's capital structure deal with Google/AWS, not performance-based preference.",
+    "pm_takeaway": "AVOID inferring secular ASIC shift from Anthropic deal. It was a financing event: Google/AWS invested $billions early, Anthropic used their compute in return. Unless a second major lab replicates this structure, it's noise.",
+    "transcript": "it seems like a lot of their compute\u2026 There was\u00a0\nsome point where it's all Nvidia and now it's not.\u00a0 So I'm curious how to square, if\u00a0\nthese things are true on paper,\u00a0\u00a0 why are they going with other accelerators?\nAnthropic is a unique instance, not a trend.\u00a0 Without Anthropic, why would there be any TPU\u00a0\ngrowth at all? It's 100% Anthropic. Without\u00a0\u00a0 Anthropic, why would there be Trainium growth\u00a0\nat all? It's 100% Anthropic. I think that's\u00a0\u00a0 fairly well known and well understood.\nIt's not that there's an abundance of\u00a0\u00a0 ASIC opportunities. There's only one Anthropic.\nBut OpenAI's deals with AMD\u2026 They're building\u00a0\u00a0 their own Titan accelerator.\nYeah, but I think we could\u00a0\u00a0 all acknowledge they're vastly Nvidia.\nWe're going to still do a lot of work together.\u00a0 I'm not offended by other people using\u00a0\nsomething else and trying things.\u00a0 If they don't try these other things,\u00a0\nhow would they know how good ours is?\u00a0 Sometimes you've got to be reminded of it.\nWe have to continuously earn the position\u00a0\u00a0"
+  },
+  {
+    "id": 4,
+    "start": 2390,
+    "end": 2460,
+    "duration": 70,
+    "label": "Jensen's admitted miss: not investing in Anthropic early",
+    "insight": "Rare public admission: Jensen says not investing in Anthropic when they needed it was 'my mistake'. He didn't realize VC funding couldn't work for a frontier AI lab.",
+    "pm_takeaway": "BUY the correction: $30B OpenAI + $10B Anthropic are Jensen's moves to not repeat this. These investments lock in compute relationships and signal Nvidia's balance sheet is being deployed strategically, not just returned to shareholders.",
+    "transcript": "compute. But Google and AWS were. They put in huge\u00a0\ninvestments in the beginning so that Anthropic,\u00a0\u00a0 in return, used their compute.\nWe just weren't in a position\u00a0\u00a0 to do that at the time.\nI would say my mistake is\u00a0\u00a0 I didn't deeply internalize that they really\u00a0\nhad no other options, that a VC would never\u00a0\u00a0 put in $5-10 billion of investment into an\u00a0\nAI lab with the hopes of it turning out to\u00a0\u00a0 be Anthropic. So that was my miss. But even\u00a0\nif I understood it, I don't think we would've\u00a0\u00a0 been in a position to do that at the time.\nBut I'm not going to make that same mistake again.\u00a0 I'm delighted to invest in OpenAI,\u00a0\nand I'm delighted to help them scale,\u00a0\u00a0 and I believe it's essential to do so.\nAnd then, when I was able to,\u00a0\u00a0 when Anthropic came to us, I'm delighted to\u00a0\nbe an investor, delighted to help them scale.\u00a0 We just weren't, at the time, able to do it.\nIf I could rewind everything\u2014and Nvidia could\u00a0\u00a0"
+  },
+  {
+    "id": 5,
+    "start": 3335,
+    "end": 3410,
+    "duration": 75,
+    "label": "Vera Rubin, Feynman: Annual cadence as moat",
+    "insight": "Explicit roadmap: Vera Rubin (2026), Vera Rubin Ultra (2027), Feynman (2028), unnamed (2029). Jensen frames annual delivery as a trust asset that no ASIC can replicate.",
+    "pm_takeaway": "LONG NVDA into Vera Rubin launch. Token cost decreasing 'by an order of magnitude every single year' is the demand engine. No ASIC vendor can make this commitment \u2014 it requires the full CUDA/architecture/software flywheel.",
+    "transcript": "is incredible. I can completely trust\u00a0\nthem. I can completely depend on them.\u00a0 One of the things you can count\u00a0\non with Nvidia is that this year,\u00a0\u00a0 Vera Rubin is going to be incredible.\nNext year, Vera Rubin Ultra will come.\u00a0 The year after that, Feynman will come.\nAnd the year after that,\u00a0\u00a0 I haven't introduced the name yet.\nEvery single year you can count on us.\u00a0 You're going to have to go find another ASIC\u00a0\nteam in the world\u2014pick your ASIC team\u2014where\u00a0\u00a0 you can say, \"I can bet the farm, I can\u00a0\nbet my entire business that you will be\u00a0\u00a0 here for me every single year.\nYour token cost will decrease\u00a0\u00a0 by an order of magnitude every single year.\nI can count on it like I can count on the clock.\"\u00a0 I just said something about TSMC.\nFor no other foundry in history\u00a0\u00a0 can you possibly say that.\nYou can say that about Nvidia today.\u00a0 You can count on us every single year.\nIf you would like to buy a billion dollars\u00a0\u00a0 worth of AI factory compute, no problem.\nIf you'd like to buy\u00a0\u00a0 a hundred million dollars, no problem.\nYou'd like to buy $10 million,\u00a0\u00a0 or just one rack, not a problem.\nOr just one graphics card, okay, no problem.\u00a0 If you would like to place an order for\u00a0\na $100 billion of AI factory, no problem.\u00a0"
+  },
+  {
+    "id": 6,
+    "start": 4228,
+    "end": 4310,
+    "duration": 82,
+    "label": "DeepSeek on Huawei first = 'horrible outcome'",
+    "insight": "Jensen warns that if future open source AI models debut optimized for Chinese hardware, the American tech stack loses global developer mindshare \u2014 the actual core of Nvidia's moat.",
+    "pm_takeaway": "MONITOR China export policy as the key risk. Any scenario where open models ship Huawei-first erodes CUDA ecosystem dominance more than any ASIC competitor. This is the export control debate's real stakes for NVDA.",
+    "transcript": "tell me that their army of AI researchers\u00a0\nis not their fundamental advantage. We see\u00a0\u00a0 it. DeepSeek is not an inconsequential advance.\nThe day that DeepSeek comes out on Huawei first,\u00a0\u00a0 that is a horrible outcome for our nation.\nWhy is that? Because currently you can have\u00a0\u00a0 a model like DeepSeek that can run on\u00a0\nany accelerator, if it's open source.\u00a0 Why would that stop being the case in the future?\u00a0 Suppose it doesn\u2019t. Suppose it's\u00a0\noptimized for Huawei, suppose it's\u00a0\u00a0 optimized for their architecture.\nIt would put ours at a disadvantage.\u00a0 You described a situation that\u00a0\nI perceive to be good news.\u00a0 A company developed software, developed\u00a0\nan AI model, and it runs best on\u00a0\u00a0 the American tech stack.\nI saw that as good news.\u00a0 You set it up as a premise that it was bad news.\nI'm going to give you the bad news,\u00a0\u00a0 that AI models around the world are developed\u00a0\nand they run best on non-American hardware.\u00a0 That is bad news for us.\nI guess I just don't see the\u00a0\u00a0 evidence that there's these huge disparities that\u00a0\nwould prevent you from switching accelerators.\u00a0 American labs are running their models across all\u00a0\nthe clouds, across all the different accelerators\u2014\u00a0 I am the evidence. You take a model\u00a0\nthat's optimized for Nvidia and you\u00a0\u00a0 try to run it on something else.\nBut American labs do that.\u00a0 And they don't run better. Nvidia's success\u00a0\nis perfect evidence. The fact that AI models\u00a0\u00a0"
+  },
+  {
+    "id": 7,
+    "start": 5860,
+    "end": 5940,
+    "duration": 80,
+    "label": "Groq acquisition: Premium latency tokens as new segment",
+    "insight": "Nvidia acquired Groq to expand the Pareto frontier \u2014 offering extreme low-latency tokens at higher ASP, even at lower throughput. Jensen identifies software engineers as willing to pay premium for responsive tokens.",
+    "pm_takeaway": "MODEL the premium inference segment as a new revenue tier. This is analogous to first-class vs. economy \u2014 same infrastructure, higher price for latency. As AI becomes productivity infrastructure, the willingness-to-pay for low-latency scales with developer salaries.",
+    "transcript": "workload, and that depends on the shape of the\u00a0\nmarket\u2014we may decide to add other accelerators.\u00a0 For example, recently we added Groq, and we're\u00a0\ngoing to fold Groq into our CUDA ecosystem.\u00a0 We're doing that now because the value\u00a0\nof tokens has gone up so high that\u00a0\u00a0 you could have different pricing of tokens.\nBack in the old days, just a couple years ago,\u00a0\u00a0 tokens were either free or barely expensive.\nBut now you can have different customers,\u00a0\u00a0 and those customers want different answers.\nBecause the customers make so much money\u2014for\u00a0\u00a0 example, our software engineers\u2014if I can\u00a0\ngive them much more responsive tokens so\u00a0\u00a0 that they're even more productive than\u00a0\nthey are today, I would pay for it.\u00a0 But that market has only recently emerged.\nSo I think we now have the ability to have\u00a0\u00a0 the same model, based on the response\u00a0\ntime, have different segments.\u00a0 That's the reason why we decided to expand\u00a0\nthe Pareto frontier and create a segment\u00a0\u00a0 of inference that is faster response\u00a0\ntime, even though it's lower throughput.\u00a0"
+  }
+];
+        const videoId = 'Hrbq66XqtCo';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>

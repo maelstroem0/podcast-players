@@ -1,0 +1,73 @@
+{
+  "video_id": "Hrbq66XqtCo",
+  "url": "https://www.youtube.com/watch?v=Hrbq66XqtCo",
+  "title": "Jensen Huang – Will Nvidia's Moat Persist?",
+  "channel": "Dwarkesh Patel",
+  "total_duration": 6192,
+  "pdf_link": "../pdfs/20260415_jensen_huang_will_nvidias_moat_persist.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 30,
+      "end": 90,
+      "duration": 60,
+      "label": "Electrons to tokens: Nvidia's mental model",
+      "insight": "Jensen defines Nvidia's entire corporate strategy — transform electrons to tokens, do as much as needed, as little as possible",
+      "pm_takeaway": "LONG NVDA. Jensen's 'electrons to tokens' framing is the clearest articulation of why Nvidia won't become a cloud: they print money on the hard parts and let partners do the rest. This is a structurally high-margin, capital-light position."
+    },
+    {
+      "id": 2,
+      "start": 895,
+      "end": 975,
+      "duration": 80,
+      "label": "Blackwell 50x over Hopper — architecture, not Moore's Law",
+      "insight": "50x efficiency gain from Hopper to Blackwell came from architecture and algorithms, not transistor scaling (~75%). CUDA flexibility enables new algorithms like MoE, SSM hybrids.",
+      "pm_takeaway": "FADE the ASIC-cost-savings thesis. If 49 of 50x gains come from the software/architecture stack, ASICs optimized for fixed workloads can't replicate this. Switching costs are real and growing."
+    },
+    {
+      "id": 3,
+      "start": 2215,
+      "end": 2280,
+      "duration": 65,
+      "label": "Anthropic/TPU: 100% idiosyncratic, not a trend",
+      "insight": "Jensen calls Anthropic a 'unique instance' — TPU/Trainium growth is 100% driven by Anthropic's capital structure deal with Google/AWS, not performance-based preference.",
+      "pm_takeaway": "AVOID inferring secular ASIC shift from Anthropic deal. It was a financing event: Google/AWS invested $billions early, Anthropic used their compute in return. Unless a second major lab replicates this structure, it's noise."
+    },
+    {
+      "id": 4,
+      "start": 2390,
+      "end": 2460,
+      "duration": 70,
+      "label": "Jensen's admitted miss: not investing in Anthropic early",
+      "insight": "Rare public admission: Jensen says not investing in Anthropic when they needed it was 'my mistake'. He didn't realize VC funding couldn't work for a frontier AI lab.",
+      "pm_takeaway": "BUY the correction: $30B OpenAI + $10B Anthropic are Jensen's moves to not repeat this. These investments lock in compute relationships and signal Nvidia's balance sheet is being deployed strategically, not just returned to shareholders."
+    },
+    {
+      "id": 5,
+      "start": 3335,
+      "end": 3410,
+      "duration": 75,
+      "label": "Vera Rubin, Feynman: Annual cadence as moat",
+      "insight": "Explicit roadmap: Vera Rubin (2026), Vera Rubin Ultra (2027), Feynman (2028), unnamed (2029). Jensen frames annual delivery as a trust asset that no ASIC can replicate.",
+      "pm_takeaway": "LONG NVDA into Vera Rubin launch. Token cost decreasing 'by an order of magnitude every single year' is the demand engine. No ASIC vendor can make this commitment — it requires the full CUDA/architecture/software flywheel."
+    },
+    {
+      "id": 6,
+      "start": 4228,
+      "end": 4310,
+      "duration": 82,
+      "label": "DeepSeek on Huawei first = 'horrible outcome'",
+      "insight": "Jensen warns that if future open source AI models debut optimized for Chinese hardware, the American tech stack loses global developer mindshare — the actual core of Nvidia's moat.",
+      "pm_takeaway": "MONITOR China export policy as the key risk. Any scenario where open models ship Huawei-first erodes CUDA ecosystem dominance more than any ASIC competitor. This is the export control debate's real stakes for NVDA."
+    },
+    {
+      "id": 7,
+      "start": 5860,
+      "end": 5940,
+      "duration": 80,
+      "label": "Groq acquisition: Premium latency tokens as new segment",
+      "insight": "Nvidia acquired Groq to expand the Pareto frontier — offering extreme low-latency tokens at higher ASP, even at lower throughput. Jensen identifies software engineers as willing to pay premium for responsive tokens.",
+      "pm_takeaway": "MODEL the premium inference segment as a new revenue tier. This is analogous to first-class vs. economy — same infrastructure, higher price for latency. As AI becomes productivity infrastructure, the willingness-to-pay for low-latency scales with developer salaries."
+    }
+  ]
+}
