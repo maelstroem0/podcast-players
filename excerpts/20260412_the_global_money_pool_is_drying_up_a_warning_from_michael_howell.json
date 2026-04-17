@@ -1,0 +1,82 @@
+{
+  "video_id": "nILaE7NkMt8",
+  "url": "https://www.youtube.com/watch?v=nILaE7NkMt8",
+  "title": "Michael Howell: The Global Money Pool is Drying Up",
+  "channel": "Maggie Lake Talking Markets",
+  "total_duration": 1172,
+  "pdf_link": "../pdfs/20260412_the_global_money_pool_is_drying_up_a_warning_from_michael_howell.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 77,
+      "end": 125,
+      "duration": 48,
+      "label": "Money moves markets — the master framework",
+      "insight": "Howell explains why global liquidity is the primary driver of everything: economics is downstream of markets, geopolitics is downstream of economics, so money flows are the root signal to watch",
+      "pm_takeaway": "MONITOR global liquidity as your leading indicator — before earnings, before rates, before geopolitics. If liquidity turns down, reduce risk regardless of other signals."
+    },
+    {
+      "id": 2,
+      "start": 160,
+      "end": 230,
+      "duration": 70,
+      "label": "80% of markets are debt refinancing — the structural reframe",
+      "insight": "Modern financial markets are not capital-raising venues. ~80% of all primary financial transactions are debt rollovers. Debt refinancing swamps new capital investment 4-to-1. Financial crises occur when debt exceeds refinancing capacity",
+      "pm_takeaway": "REFRAME your market model: markets exist primarily to roll over debt, not raise new capital. Any analysis that ignores refinancing cycles is missing the primary driver of market structure and crisis risk."
+    },
+    {
+      "id": 3,
+      "start": 399,
+      "end": 464,
+      "duration": 65,
+      "label": "Oil price: small GDP hit, massive liquidity drain",
+      "insight": "Iran war oil premium (~$40/bbl) has only cut 0.5–0.75% of world GDP — modest. But every $10 oil increase cuts ~3% from global liquidity. The financial market impact is disproportionately larger than the economic impact",
+      "pm_takeaway": "FADE the 'oil = GDP hit' narrative. Oil's primary damage is liquidity, not growth. $40 oil premium = ~12% global liquidity drain. Long oil hedges, but that money is NOT available for equities or treasuries — reduce financial asset exposure accordingly."
+    },
+    {
+      "id": 4,
+      "start": 466,
+      "end": 580,
+      "duration": 114,
+      "label": "MOVE index + collateral multiplier + dollar: three simultaneous drains",
+      "insight": "Three transmission channels are draining liquidity simultaneously: (1) MOVE index spike — 10pt increase = -4% global liquidity via repo haircuts on Treasury collateral; (2) 80% of lending is collateral-based so volatility shrinks borrowing capacity; (3) dollar +3–5% since Iran crisis = -3–5% global liquidity (1-for-1 relationship)",
+      "pm_takeaway": "WATCH MOVE index as a liquidity leading indicator. MOVE > 130 is a flashing red — repo haircuts widen, global credit contracts. Short credit / reduce risk. Dollar strength = additional liquidity headwind for EM and dollar borrowers globally. These three channels are compounding right now."
+    },
+    {
+      "id": 5,
+      "start": 634,
+      "end": 695,
+      "duration": 61,
+      "label": "The COVID debt maturity wall arrives 2026–2030",
+      "insight": "COVID-era zero-rate borrowers extended debt maturities, creating a bulge of refinancing due 2026–2030 at higher rates and against thinner bank balance sheets. This is the slow-motion structural threat",
+      "pm_takeaway": "SIZE UP crisis hedges for 2026–2029. COVID zero-rate debt matures into a high-rate environment with reduced bank balance sheet capacity. This is structural, not cyclical. Repo stress episodes will intensify. Own gold, bonds, and SOFR hedges before the wall hits in volume."
+    },
+    {
+      "id": 6,
+      "start": 706,
+      "end": 765,
+      "duration": 59,
+      "label": "Fed's stealth QE: RMP is QE — $200B already added",
+      "insight": "Late-2025 SOFR spread spike forced the Fed to restart QE under the label 'Reserve Management Purchases' (RMP). Despite official QT narrative, the Fed balance sheet has expanded ~$200B since start of 2026. No evidence of QT — balance sheet is clearly expanding",
+      "pm_takeaway": "BUY risk assets on any Fed balance sheet expansion — RMP is QE regardless of label. Fed balance sheet at ~$200B expansion YTD. Next SOFR spike will force a larger RMP. Front-run the Fed: own bonds and gold before the next crisis forces their hand."
+    },
+    {
+      "id": 7,
+      "start": 893,
+      "end": 970,
+      "duration": 77,
+      "label": "Yield curve: consensus was wrong — bear flattening playing out",
+      "insight": "Consensus entered 2026 positioned for bear steepening (long-end rising faster). Howell's model called bear flattening, transitioning to bull flattening. The flattening is happening now. Cause: liquidity cycle turning down, not policy tightening — driven by real-economy demand for capital (AI capex, working capital, oil costs)",
+      "pm_takeaway": "RECEIVE 2s10s (flatteners). Consensus bear steepener unwind is in progress. Howell called this before it happened. Next phase: bull flattening — buy duration, add 10Y+ Treasuries. The liquidity cycle governs the curve, not the Fed."
+    },
+    {
+      "id": 8,
+      "start": 1079,
+      "end": 1140,
+      "duration": 61,
+      "label": "T-bill monetization: banks buying short debt = monetary inflation = gold",
+      "insight": "Bessent (like Yellen) is issuing massive T-bill volume. Banks absorb T-bills = textbook monetization. US M2 hit all-time high. Banks' Treasury holdings grow 2–3 ppts/year faster than M2. Government spending is the biggest driver of money supply. This is monetary inflation — the mechanical reason gold is surging",
+      "pm_takeaway": "LONG GOLD — this is not a narrative trade. T-bill issuance absorbed by banks = monetization by definition. M2 all-time high. Banks' Treasury holdings outpacing M2 by 2–3 ppts/yr = inflation embedded in the banking system. Gold is the cleanest hedge. This dynamic persists as long as deficits are T-bill funded."
+    }
+  ]
+}

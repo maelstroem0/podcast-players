@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Howell: The Global Money Pool is Drying Up - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (9:15)</h1>
+                <div class="channel">Maggie Lake Talking Markets • 8 clips from 19:32 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260412_the_global_money_pool_is_drying_up_a_warning_from_michael_howell.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=nILaE7NkMt8" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/nILaE7NkMt8?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 8</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">47% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Money moves markets — the master framework</div><div class="excerpt-insight">Howell explains why global liquidity is the primary driver of everything: economics is downstream of markets, geopolitics is downstream of economics, so money flows are the root signal to watch</div></div><span class="excerpt-duration">0:48</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">80% of markets are debt refinancing — the structural reframe</div><div class="excerpt-insight">Modern financial markets are not capital-raising venues. ~80% of all primary financial transactions are debt rollovers. Debt refinancing swamps new capital investment 4-to-1. Financial crises occur when debt exceeds refinancing capacity</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Oil price: small GDP hit, massive liquidity drain</div><div class="excerpt-insight">Iran war oil premium (~$40/bbl) has only cut 0.5–0.75% of world GDP — modest. But every $10 oil increase cuts ~3% from global liquidity. The financial market impact is disproportionately larger than the economic impact</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">MOVE index + collateral multiplier + dollar: three simultaneous drains</div><div class="excerpt-insight">Three transmission channels are draining liquidity simultaneously: (1) MOVE index spike — 10pt increase = -4% global liquidity via repo haircuts on Treasury collateral; (2) 80% of lending is collateral-based so volatility shrinks borrowing capacity; (3) dollar +3–5% since Iran crisis = -3–5% global liquidity (1-for-1 relationship)</div></div><span class="excerpt-duration">1:54</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">The COVID debt maturity wall arrives 2026–2030</div><div class="excerpt-insight">COVID-era zero-rate borrowers extended debt maturities, creating a bulge of refinancing due 2026–2030 at higher rates and against thinner bank balance sheets. This is the slow-motion structural threat</div></div><span class="excerpt-duration">1:01</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Fed's stealth QE: RMP is QE — $200B already added</div><div class="excerpt-insight">Late-2025 SOFR spread spike forced the Fed to restart QE under the label 'Reserve Management Purchases' (RMP). Despite official QT narrative, the Fed balance sheet has expanded ~$200B since start of 2026. No evidence of QT — balance sheet is clearly expanding</div></div><span class="excerpt-duration">0:59</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">Yield curve: consensus was wrong — bear flattening playing out</div><div class="excerpt-insight">Consensus entered 2026 positioned for bear steepening (long-end rising faster). Howell's model called bear flattening, transitioning to bull flattening. The flattening is happening now. Cause: liquidity cycle turning down, not policy tightening — driven by real-economy demand for capital (AI capex, working capital, oil costs)</div></div><span class="excerpt-duration">1:17</span></div>
+                <div class="excerpt-item" data-index="7" onclick="playExcerpt(7)"><span class="excerpt-num">8</span><div class="excerpt-content"><div class="excerpt-label">T-bill monetization: banks buying short debt = monetary inflation = gold</div><div class="excerpt-insight">Bessent (like Yellen) is issuing massive T-bill volume. Banks absorb T-bills = textbook monetization. US M2 hit all-time high. Banks' Treasury holdings grow 2–3 ppts/year faster than M2. Government spending is the biggest driver of money supply. This is monetary inflation — the mechanical reason gold is surging</div></div><span class="excerpt-duration">1:01</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 77,
+    "end": 125,
+    "duration": 48,
+    "label": "Money moves markets \u2014 the master framework",
+    "insight": "Howell explains why global liquidity is the primary driver of everything: economics is downstream of markets, geopolitics is downstream of economics, so money flows are the root signal to watch",
+    "pm_takeaway": "MONITOR global liquidity as your leading indicator \u2014 before earnings, before rates, before geopolitics. If liquidity turns down, reduce risk regardless of other signals.",
+    "transcript": "that you keep us focused on. So why do why does this matter so much?<br><br><strong>\u203a</strong> Okay. Yeah. Well, I think the simple answer is that money moves markets and what we got to watch, we've got to watch money flows as get some sense as to the direction of markets. Uh economics is downstream of markets and I would argue that geopolitics is downstream of economics. So, if you would already understand the political climate going on at the moment, you got to understand what's happening in economies. To understand economies, you've got to understand markets. And markets are all about money. And we're in a situation now where in the modern world it's the markets. You might say it's the tail wagging the dog, but it's the markets that are controlling the real economies. You got to understand what's happening in financial markets. Get any sense as the direction economies are going in. And that's why we monitor global liquidity. That's the key factor, the key metric.<br><br><strong>\u203a</strong> Yeah. I feel like it's the source, but it's easily lost in in the sort of"
+  },
+  {
+    "id": 2,
+    "start": 160,
+    "end": 230,
+    "duration": 70,
+    "label": "80% of markets are debt refinancing \u2014 the structural reframe",
+    "insight": "Modern financial markets are not capital-raising venues. ~80% of all primary financial transactions are debt rollovers. Debt refinancing swamps new capital investment 4-to-1. Financial crises occur when debt exceeds refinancing capacity",
+    "pm_takeaway": "REFRAME your market model: markets exist primarily to roll over debt, not raise new capital. Any analysis that ignores refinancing cycles is missing the primary driver of market structure and crisis risk.",
+    "transcript": "worried because if you look at what causes financial crisis, it's basically uh because debt gets out of line with liquidity. And the key thing to understand really in the modern world is that uh modern financial markets are basically debt refinancing mechanisms. Uh they're not there to raise capital for new investment projects. That was the textbook ideal. We kind of long past that. It's not all about refinancing the huge debt burdens that we're sitting upon. And you've got massive debts. Everyone realizes that those debts have escalated enormously uh first since the GFC laterally since COVID and it's not a question of uh paying debt back because it's never paid back of course that's the spoiler alert in all this but it basically is refinanced has to be rolled over. Uh if you issue debt for 5 years in 5 years time you've got to effectively service that debt by rolling it over again. And that's what markets really have to do. something like 80% of all financial transactions I'm talking of primary transactions in financial markets are basically debt refinancing transactions now and that's the way the world has evolved uh they're far far more important I mean I think they uh they basically swamp new uh they swamp capital uh capital investment about 4 to one so you can see the importance of uh"
+  },
+  {
+    "id": 3,
+    "start": 399,
+    "end": 464,
+    "duration": 65,
+    "label": "Oil price: small GDP hit, massive liquidity drain",
+    "insight": "Iran war oil premium (~$40/bbl) has only cut 0.5\u20130.75% of world GDP \u2014 modest. But every $10 oil increase cuts ~3% from global liquidity. The financial market impact is disproportionately larger than the economic impact",
+    "pm_takeaway": "FADE the 'oil = GDP hit' narrative. Oil's primary damage is liquidity, not growth. $40 oil premium = ~12% global liquidity drain. Long oil hedges, but that money is NOT available for equities or treasuries \u2014 reduce financial asset exposure accordingly.",
+    "transcript": "the lasting effects can actually uh be around in financial markets for some time. And the reason for that is that if we assume that oil prices will remain elevated, and that's clearly something we got to think about, it may not be that the rate of change keeps going up, but certainly they're higher than they started by, let's say, on average about $40 a barrel. What we find is that that actually dents the pool of liquidity because all money that's anywhere must be somewhere. So if you're using that money for higher oil prices, you're not using it to buy treasury debt or you're not using it to speculate in the stock market or wherever else. And that's really the point. And what you're seeing at the margin is more money is being shifting is shifting from the financial sector into the real economy. And that's both a combination of the Iran crisis and anyway before the Iran crisis, the fact that working capital demands of the real economy were picking up anyway because there was some sense of a of a beginning of a recovery going on in in the world economy I'm talking about. So th those are the factors. So number one, uh you would tend to find that each $10 increase in the oil price probably cuts about 3% from global liquidity, which is a meaningful figure. Certainly a lot more than the impact on GDP. Secondly, you've got to take other secondary or"
+  },
+  {
+    "id": 4,
+    "start": 466,
+    "end": 580,
+    "duration": 114,
+    "label": "MOVE index + collateral multiplier + dollar: three simultaneous drains",
+    "insight": "Three transmission channels are draining liquidity simultaneously: (1) MOVE index spike \u2014 10pt increase = -4% global liquidity via repo haircuts on Treasury collateral; (2) 80% of lending is collateral-based so volatility shrinks borrowing capacity; (3) dollar +3\u20135% since Iran crisis = -3\u20135% global liquidity (1-for-1 relationship)",
+    "pm_takeaway": "WATCH MOVE index as a liquidity leading indicator. MOVE > 130 is a flashing red \u2014 repo haircuts widen, global credit contracts. Short credit / reduce risk. Dollar strength = additional liquidity headwind for EM and dollar borrowers globally. These three channels are compounding right now.",
+    "transcript": "you've got to take other secondary or second round effects into account. The move index, which is a measure of the volatility of the US Treasury market across the curve, has jumped quite noticeably uh certainly since the crisis. Now, I'm sure the Treasury and the Fed together are struggling to bring that down because it's a key metric and probably an implicit target for them anyway, but that tends to have quite a big effect. So, if you look at a a 10point increase uh in the move index, that can take as much as 4% uh out of global liquidity. And the reason for that is that that really uh filters through. This is getting slightly wonkish, but in terms of the way that the financial system works, uh, collateral is a very important element in creating liquidity. In other words, something like 80% of all lending today, according to the World Bank, is collateralbased. And the collateral markets operate uh via what you might call repo haircuts. So in other words, if you post a collateral of a,000 bucks, let's say, uh you may be given a haircut of let's say arguably uh 10% on that. So you can only use uh $900 or you can only borrow $900. That haircut will vary according to the underlying volatility of the asset. So if the treasury market which is what the move index is measuring volatility in starts to jump and treasury uh debt is pristine collateral for most borrowers you'll find that actually the collateral multiply will shrink and global equity will correspondingly falter and that's another factor. Third factor is the dollar. We've seen something like what a 3 to 5% increase in the dollar since the uh crisis started. That tends to be kind of one for one with liquidity. So if you get a 10% increase in the dollar that will take 10% out of global liquidity and the reason for that is that there's a lot of a lot of borrowing internationally is in dollars and if the dollar is a strong currency it would it basically put people off borrowing.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> So all these factors combined."
+  },
+  {
+    "id": 5,
+    "start": 634,
+    "end": 695,
+    "duration": 61,
+    "label": "The COVID debt maturity wall arrives 2026\u20132030",
+    "insight": "COVID-era zero-rate borrowers extended debt maturities, creating a bulge of refinancing due 2026\u20132030 at higher rates and against thinner bank balance sheets. This is the slow-motion structural threat",
+    "pm_takeaway": "SIZE UP crisis hedges for 2026\u20132029. COVID zero-rate debt matures into a high-rate environment with reduced bank balance sheet capacity. This is structural, not cyclical. Repo stress episodes will intensify. Own gold, bonds, and SOFR hedges before the wall hits in volume.",
+    "transcript": "that if you like, but I mean, basically what that's saying is that there is a concept out there called a debt maturity wall. And that debt maturity wall is basically indicating the amount of of existing debt that is going to be fed back into the system to be refinanced in coming years. And the issue is that with COVID when policy makers decided to slash interest rates to uh well near zero and in cases below zero, it incentivized not only a lot more debt take up, but it actually encouraged a lot of borrowers, existing borrowers to term out their debt. So a debt that was say due in let's for argument sake 2026 uh may have been refinanced for at lower rates for 2029 or 2030. And so you get the idea. So debt that was due in 2022 may have been refinanced for 2026 and that's when it's going to uh come back back into the system and it's going to come back at higher interest rates and it's going to come back at a time when maybe uh financial sector balance sheets don't have the capacity they once did. And so it's going to put a lot more strain on the system and you'll see that evident first of all in things like the"
+  },
+  {
+    "id": 6,
+    "start": 706,
+    "end": 765,
+    "duration": 59,
+    "label": "Fed's stealth QE: RMP is QE \u2014 $200B already added",
+    "insight": "Late-2025 SOFR spread spike forced the Fed to restart QE under the label 'Reserve Management Purchases' (RMP). Despite official QT narrative, the Fed balance sheet has expanded ~$200B since start of 2026. No evidence of QT \u2014 balance sheet is clearly expanding",
+    "pm_takeaway": "BUY risk assets on any Fed balance sheet expansion \u2014 RMP is QE regardless of label. Fed balance sheet at ~$200B expansion YTD. Next SOFR spike will force a larger RMP. Front-run the Fed: own bonds and gold before the next crisis forces their hand.",
+    "transcript": "economy uh that's the collateralized lending markets they'll start to see strains and repo spreads in other words interest rate spreads in those markets will start to bulge out and we've seen evidence of that we saw a lot of it we saw a lot of evidence actually at the back end of last year uh in the US market where sofa spreads jumped and the Fed had to introduce a new QE program, although need to say they denied.<br><br><strong>\u203a</strong> They were going to call it that.<br><br><strong>\u203a</strong> Uh they know it was QE clearly was uh which is the RMP, the reserve management uh purchases. Those were you proved substantial. They probably increased the uh balance sheet, Fed balance sheet by circa 200 billion u you know since the start of the year. So they've been fairly meaningful. And if you look at the Fed balance sheet now, I mean there's no evidence of uh of QT going on. is clearly expanding again and that's helpful for markets but you get the idea that you can get these tensions going up and it'll be the in the repo markets it might be in uh bond volatility so look at things like move index those will be indications of how fragile the system is and then you can go to a deeper dive and look at credit"
+  },
+  {
+    "id": 7,
+    "start": 893,
+    "end": 970,
+    "duration": 77,
+    "label": "Yield curve: consensus was wrong \u2014 bear flattening playing out",
+    "insight": "Consensus entered 2026 positioned for bear steepening (long-end rising faster). Howell's model called bear flattening, transitioning to bull flattening. The flattening is happening now. Cause: liquidity cycle turning down, not policy tightening \u2014 driven by real-economy demand for capital (AI capex, working capital, oil costs)",
+    "pm_takeaway": "RECEIVE 2s10s (flatteners). Consensus bear steepener unwind is in progress. Howell called this before it happened. Next phase: bull flattening \u2014 buy duration, add 10Y+ Treasuries. The liquidity cycle governs the curve, not the Fed.",
+    "transcript": "terms of my interpretation at least is because if you look at the beginning of this year, people came into the year with um an absolutely certain view that yield curves were going to steepen. Um and that was for a variety of reasons. I mean it may have been inflation fears or whatever, but it was basically a view that uh that the long end of the market would be rising faster than the short end. The feeling was that the Trump administration would be successful in keeping rates low. Uh they would get their guy into the Fed, he would cut rates. The long end would suffer because of all this issuance and because of inflation fears etc. And so the yield curve was certain to steepen. Now that clearly hasn't been the case. I mean our view contra-wise which you know reassuringly seems to be uh from our purposes panning out is that yield curves we thought yield curves would flatten by the middle of the year and it seems to be happening now. I mean they're poised to go down. A lot of people are scratching their head as to why that may be given the backdrop but in our view it's all to do with the fact the liquidity cycle is turning down. Now what I should stress and we can get into some look at some charts in a moment if you like but if you look at the backdrop why is this happening it's not happening because policy makers are tightening make let's make that absolutely clear it's happening because the demands of the real economy are increasing and those those demands from the real economy are things like capex spend we'll look at the you know the AI bubble spend if you like what's going on"
+  },
+  {
+    "id": 8,
+    "start": 1079,
+    "end": 1140,
+    "duration": 61,
+    "label": "T-bill monetization: banks buying short debt = monetary inflation = gold",
+    "insight": "Bessent (like Yellen) is issuing massive T-bill volume. Banks absorb T-bills = textbook monetization. US M2 hit all-time high. Banks' Treasury holdings grow 2\u20133 ppts/year faster than M2. Government spending is the biggest driver of money supply. This is monetary inflation \u2014 the mechanical reason gold is surging",
+    "pm_takeaway": "LONG GOLD \u2014 this is not a narrative trade. T-bill issuance absorbed by banks = monetization by definition. M2 all-time high. Banks' Treasury holdings outpacing M2 by 2\u20133 ppts/yr = inflation embedded in the banking system. Gold is the cleanest hedge. This dynamic persists as long as deficits are T-bill funded.",
+    "transcript": "<strong>\u203a</strong> but he's doing exactly the same plus. And the reason that this is occurring is the question to ask is who buys that debt? Who typically buys that debt are banks and credit providers. Now, economic textbooks will tell you if banks and credit providers buy debt, that's monetization, pure and simple. And that's what's going on right at the moment. So, if you look at, you know, US money supply data, money supplies picked up. We actually saw about what three or four days ago all-time high on USM2 data. But what is being missed is that behind the scenes um banks holdings of treasury debt are growing two to three percentage points faster each year uh than M2 money supply. So what's happening is you're getting monetization and the biggest driver of money supply is actually government spending implicitly or funding of government spending and that's monetary inflation. And if you want to know why the gold price is up uh generally that's your answer. Michael's models that show falling liquidity and rising risks of a financial crisis are in stark contrast"
+  }
+];
+        const videoId = 'nILaE7NkMt8';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
