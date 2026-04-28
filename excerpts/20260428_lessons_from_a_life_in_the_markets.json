@@ -1,0 +1,64 @@
+{
+  "video_id": "S31J5ACsOqU",
+  "url": "https://www.youtube.com/watch?v=S31J5ACsOqU",
+  "title": "Paul Tudor Jones: Lessons From a Life in the Markets",
+  "channel": "Invest Like The Best",
+  "total_duration": 4275,
+  "pdf_link": "../pdfs/20260428_lessons_from_a_life_in_the_markets.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 2030,
+      "end": 2100,
+      "duration": 70,
+      "label": "Long JPY: undervalued 24 months with a live catalyst",
+      "insight": "PTJ identifies dollar/yen as highest-conviction current trade — yen grossly undervalued, $4.5T unhedged USD liability, new Japanese PM triggers Thatcher-style repatriation",
+      "pm_takeaway": "SHORT USDJPY NOW. Yen undervalued 24mo, $4.5T unhedged USD coil. New Japan PM = Thatcher catalyst. Every 'nation-first' reformer (Trump, Thatcher) saw domestic currency +10% instantly. Setup is live."
+    },
+    {
+      "id": 2,
+      "start": 2420,
+      "end": 2510,
+      "duration": 90,
+      "label": "252% stock/GDP — historic equity overextension",
+      "insight": "US stock market cap at 252% of GDP vs 65% in 1929, 170% at 2000 peak. Mean-reversion to normalized PE = 30-35% equity decline = 80-90% GDP wealth destruction event",
+      "pm_takeaway": "RAISE CASH. At 252% mkt cap/GDP, a PE mean-reversion wipes 80-90% of GDP. Capital gains taxes go to zero, deficit explodes, bonds sell. Not a question of if — question of when. This is the most overstretched equity market in history."
+    },
+    {
+      "id": 3,
+      "start": 2340,
+      "end": 2410,
+      "duration": 70,
+      "label": "IPO unlock cascade — the 2000 analog",
+      "insight": "Buybacks retired 2-3% of market cap annually for a decade; hyperscalers now redirecting to capex. IPOs = 5-6% of market cap contemplated next 12 months. Unlock cascade = rolling equity top, identical to 1999-2000",
+      "pm_takeaway": "UNDERWEIGHT TECH. Primary buyer (buybacks) being removed as hyperscalers commit capex. 5-6% of mkt cap in IPOs + lockup unlocks = exact 2000 supply cascade. Watch unlock schedules — they are the timing trigger for the top."
+    },
+    {
+      "id": 4,
+      "start": 2165,
+      "end": 2230,
+      "duration": 65,
+      "label": "Bitcoin over gold as inflation hedge — and its tail risks",
+      "insight": "PTJ: Bitcoin is the best inflation hedge because finite supply beats gold's 2% annual growth. But two explicit tail risks: cyber warfare and quantum computing",
+      "pm_takeaway": "LONG BTC (peacetime). Superior scarcity over gold — finite vs +2% annual supply. But size against tail risks: kinetic conflict = cyber warfare kills electronic assets; quantum computing = cryptographic breach. Not a max-size conviction — a sized-for-tails conviction."
+    },
+    {
+      "id": 5,
+      "start": 1530,
+      "end": 1590,
+      "duration": 60,
+      "label": "AI safety: model insiders expect casualties before regulation",
+      "insight": "PTJ at a private AI safety conference: consensus among model-company scientists is that meaningful regulation only happens after 50-100M people die in an accident",
+      "pm_takeaway": "HEDGE AI TAIL RISK. Fat-tail, unpriced. No regulatory framework, model insiders admit they wait for mass casualties. 'Build-break-iterate' fine for apps, catastrophic for AI. If you own AI infrastructure, size for an event that could crater the entire sector overnight."
+    },
+    {
+      "id": 6,
+      "start": 1060,
+      "end": 1120,
+      "duration": 60,
+      "label": "Liquidity rule: you're only worth what you can write a check for",
+      "insight": "PTJ's grandfather's maxim reinforced by watching Bunker Hunt go from $11B to near-bankrupt in 8 weeks. Liquidity discipline as foundational risk management principle",
+      "pm_takeaway": "STAY LIQUID. Institutional portfolios at historic illiquidity: PE at 16% of portfolios (vs 7% in 2008), RE and infra elevated. At 22x S&P PE, 10yr forward returns are negative. The illiquidity premium is now a liability. Run a liquidity audit on the book."
+    }
+  ]
+}

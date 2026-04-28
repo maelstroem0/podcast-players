@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Tudor Jones: Lessons From a Life in the Markets - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (6:55)</h1>
+                <div class="channel">Invest Like The Best • 6 clips from 71:15 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260428_lessons_from_a_life_in_the_markets.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=S31J5ACsOqU" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/S31J5ACsOqU?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 6</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">10% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Long JPY: undervalued 24 months with a live catalyst</div><div class="excerpt-insight">PTJ identifies dollar/yen as highest-conviction current trade — yen grossly undervalued, $4.5T unhedged USD liability, new Japanese PM triggers Thatcher-style repatriation</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">252% stock/GDP — historic equity overextension</div><div class="excerpt-insight">US stock market cap at 252% of GDP vs 65% in 1929, 170% at 2000 peak. Mean-reversion to normalized PE = 30-35% equity decline = 80-90% GDP wealth destruction event</div></div><span class="excerpt-duration">1:30</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">IPO unlock cascade — the 2000 analog</div><div class="excerpt-insight">Buybacks retired 2-3% of market cap annually for a decade; hyperscalers now redirecting to capex. IPOs = 5-6% of market cap contemplated next 12 months. Unlock cascade = rolling equity top, identical to 1999-2000</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Bitcoin over gold as inflation hedge — and its tail risks</div><div class="excerpt-insight">PTJ: Bitcoin is the best inflation hedge because finite supply beats gold's 2% annual growth. But two explicit tail risks: cyber warfare and quantum computing</div></div><span class="excerpt-duration">1:05</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">AI safety: model insiders expect casualties before regulation</div><div class="excerpt-insight">PTJ at a private AI safety conference: consensus among model-company scientists is that meaningful regulation only happens after 50-100M people die in an accident</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Liquidity rule: you're only worth what you can write a check for</div><div class="excerpt-insight">PTJ's grandfather's maxim reinforced by watching Bunker Hunt go from $11B to near-bankrupt in 8 weeks. Liquidity discipline as foundational risk management principle</div></div><span class="excerpt-duration">1:00</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 2030,
+    "end": 2100,
+    "duration": 70,
+    "label": "Long JPY: undervalued 24 months with a live catalyst",
+    "insight": "PTJ identifies dollar/yen as highest-conviction current trade \u2014 yen grossly undervalued, $4.5T unhedged USD liability, new Japanese PM triggers Thatcher-style repatriation",
+    "pm_takeaway": "SHORT USDJPY NOW. Yen undervalued 24mo, $4.5T unhedged USD coil. New Japan PM = Thatcher catalyst. Every 'nation-first' reformer (Trump, Thatcher) saw domestic currency +10% instantly. Setup is live.",
+    "transcript": "that they shouldn't be doing or a government does something they shouldn't be doing. So that's I think the genesis of most of the big moves. Typically, it's going to be inspired by central bank or central government. A good one right now in the making that's going to be interesting, I think, is is dollar yen. The yen's grossly undervalued. Has been for some time. What's the catalytic moment? That's really the the point you've got to ask. What's the catalytic moment? And that catalytic moment was this new president that was just a new prime minister that was just elected. She has all the characteristics of a Ronald Reagan or a Margaret Thatcher or Donald Trump when he got elected um the second time. And if you look at what those local currencies did, they all appreciated pretty quickly 10% off the bat. I want to say Japan has $4.5 trillion dollars. Uh a $4 and half trillion dollar net international investment position to the good with the rest of the world. Probably 60% of that's in the US and most of that is unhedged. So they just have this massive dollar liability. And all of a sudden,"
+  },
+  {
+    "id": 2,
+    "start": 2420,
+    "end": 2510,
+    "duration": 90,
+    "label": "252% stock/GDP \u2014 historic equity overextension",
+    "insight": "US stock market cap at 252% of GDP vs 65% in 1929, 170% at 2000 peak. Mean-reversion to normalized PE = 30-35% equity decline = 80-90% GDP wealth destruction event",
+    "pm_takeaway": "RAISE CASH. At 252% mkt cap/GDP, a PE mean-reversion wipes 80-90% of GDP. Capital gains taxes go to zero, deficit explodes, bonds sell. Not a question of if \u2014 question of when. This is the most overstretched equity market in history.",
+    "transcript": "tech stocks. When you say are we in a bubble, I don't know if we're necessarily in a bubble. We're clearly so leveraged in equities in this country. We're so dependent upon firm equity prices at this point in time. And when I say leveraged, we're 252% of stock market cap to GDP. So 1929 we were I think at the top we were 65%. And then in 87 we got to about 85 or 90%. Then 2000 we got to 170% and now we're at 252. So you can just imagine if you think about the periodicity of significant bare markets since 1970, we get kind of a mean reversion about on average every 10 years. When I say mean reversion, let's say mean revert to the past 25 or 30 year PE. So if we did that here that would be and again these are elevated peas way elevated be uh beyond the 20th century that would be a say a 30 35% decline well 35% on 250% of GDP is 80 90% of GDP the reverse wealth effect oh my gosh 10% of our tax revenues or capital gains they go to zero so you can see the budget deficit blowing up you see the bond market getting smoked, you"
+  },
+  {
+    "id": 3,
+    "start": 2340,
+    "end": 2410,
+    "duration": 70,
+    "label": "IPO unlock cascade \u2014 the 2000 analog",
+    "insight": "Buybacks retired 2-3% of market cap annually for a decade; hyperscalers now redirecting to capex. IPOs = 5-6% of market cap contemplated next 12 months. Unlock cascade = rolling equity top, identical to 1999-2000",
+    "pm_takeaway": "UNDERWEIGHT TECH. Primary buyer (buybacks) being removed as hyperscalers commit capex. 5-6% of mkt cap in IPOs + lockup unlocks = exact 2000 supply cascade. Watch unlock schedules \u2014 they are the timing trigger for the top.",
+    "transcript": "they unlocked uh you just had this neverending<br><br><strong>\u203a</strong> cascade of selling<br><br><strong>\u203a</strong> cascade of selling that's a great way of putting it and we're getting ready I I want to say that the the the contemplated IPOs in the next year are going to be five 6% of market cap. So why are we where we are right now? Because we've been retiring 2 or 3% of market cap, probably led a little less than 2% market cap every year without fail for the past 10 years<br><br><strong>\u203a</strong> through buybacks and things like this<br><br><strong>\u203a</strong> through buybacks.<br><br><strong>\u203a</strong> And so now all of a sudden you're going to completely reverse that math.<br><br><strong>\u203a</strong> And so I don't think it's necessarily happens instantaneously with the IPOs, but then there'll be the unlocks. So you could see a situation where okay, maybe go through some kind of rolling top and then 18 months from now, six months, we'll have to look at the buyback, the the unlock schedule, but you're going to want to watch those because that'll just be adding equity supply and you've already going to be diminishing the buybacks because of all the commitment to capex from the hyperscalers. They're already going to be eating into their cash flow. So, I think that's why tech has dogged it and why it will continue"
+  },
+  {
+    "id": 4,
+    "start": 2165,
+    "end": 2230,
+    "duration": 65,
+    "label": "Bitcoin over gold as inflation hedge \u2014 and its tail risks",
+    "insight": "PTJ: Bitcoin is the best inflation hedge because finite supply beats gold's 2% annual growth. But two explicit tail risks: cyber warfare and quantum computing",
+    "pm_takeaway": "LONG BTC (peacetime). Superior scarcity over gold \u2014 finite vs +2% annual supply. But size against tail risks: kinetic conflict = cyber warfare kills electronic assets; quantum computing = cryptographic breach. Not a max-size conviction \u2014 a sized-for-tails conviction.",
+    "transcript": "central bank and the treasury um you just knew that the inflation trades were going to take off and what was of all of them what was the best one at that point in time it was Bitcoin. Bitcoin is unequivocally the best inflation hedge that there is more than gold because Bitcoin is finite. There's only so much Bitcoin that can be mined. The problem with it is inflation hedge is if you got into kinetic exchange, there's clearly going to be cyber warfare and anything that you have to deal with electronically is going down, including Bitcoin. So, strike one. And then secondly, quantum computing. Who knows if and when with AI advancing as fast as it is that we may actually have quantum computing. Now quantum computing, someone can come in and can hack any bank and hack anything they want to. So in terms of it being a great inflation hedge, gold increasing supply every year by by a couple of percent. Bitcoin there's a finite amount that can be mined. It's decentralized. And so in that sense it's has the greatest"
+  },
+  {
+    "id": 5,
+    "start": 1530,
+    "end": 1590,
+    "duration": 60,
+    "label": "AI safety: model insiders expect casualties before regulation",
+    "insight": "PTJ at a private AI safety conference: consensus among model-company scientists is that meaningful regulation only happens after 50-100M people die in an accident",
+    "pm_takeaway": "HEDGE AI TAIL RISK. Fat-tail, unpriced. No regulatory framework, model insiders admit they wait for mass casualties. 'Build-break-iterate' fine for apps, catastrophic for AI. If you own AI infrastructure, size for an event that could crater the entire sector overnight.",
+    "transcript": "only about 35 or 40 people with one modeler from the four biggest model companies and when I was able to ask them pointedly how do you think that AI safety gets resolved the pretty much the consensus answer is I think we'll finally do something about it when 50 or 100 million people die in an accident. I mean it's crazy. My big problems with AI are that one, there's no plebicide on this. There's no vote. There's no way for the public to say yay or nay on the pace at which we're going. And that's the way that most innovation occurs. Again, this one has a tail event on it that's so large. I go back to when the nuclear bomb was dropped 18 months later. our Congress and our uh administration was smart enough and forward thinking to create the Atomic Energy Commission to begin to try to regulate something that had huge tales. Here we are, we're three years in and regulate, what are you talking about? If there ever was a leadership position that needs to be taken by any any uh"
+  },
+  {
+    "id": 6,
+    "start": 1060,
+    "end": 1120,
+    "duration": 60,
+    "label": "Liquidity rule: you're only worth what you can write a check for",
+    "insight": "PTJ's grandfather's maxim reinforced by watching Bunker Hunt go from $11B to near-bankrupt in 8 weeks. Liquidity discipline as foundational risk management principle",
+    "pm_takeaway": "STAY LIQUID. Institutional portfolios at historic illiquidity: PE at 16% of portfolios (vs 7% in 2008), RE and infra elevated. At 22x S&P PE, 10yr forward returns are negative. The illiquidity premium is now a liability. Run a liquidity audit on the book.",
+    "transcript": "short space of six or seven weeks. Right then and there, I would never own anything for the or trust anything for the rest of my life. You know, again, my my grandfather when I was when I was really young said, \"Son, you're only worth what you can write a check for tomorrow.\" That also had a a really deep impression on me. Um, so liquidity has always been something that's been it was in my DNA as a child because that was my grandfather's favorite saying all the time. And then also just my early trading days cuz my early trading days had $10,000 account. I'd run that thing to a hundred, run it back down to zero. And also living in my early 20s, um I had this friend, he's such a character, he could take 2500 bucks or five grand and run it to 2 million. Of course, the market moves in were crazy like no one I'd ever seen. We were brokers at that time at EF Hutton. And we called him a mortician cuz he'd get an account with 10,000, churn about $100,000"
+  }
+];
+        const videoId = 'S31J5ACsOqU';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
