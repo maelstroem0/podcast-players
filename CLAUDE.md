@@ -65,7 +65,7 @@ Use bullet list with **Data:** or **Claim:** prefix:
 ## Environment Setup
 
 ```
-Working dir: /Users/adham/Claude-sandbox/Podcasts/
+Working dir: /Users/adham/AI/Podcasts/
 ├── scripts/
 │   ├── fetch_transcript.py   # YouTube transcript fetcher (with timestamps)
 │   └── generate_player.py    # Excerpt player generator (extracts transcript text)
@@ -92,27 +92,45 @@ Working dir: /Users/adham/Claude-sandbox/Podcasts/
 
 ---
 
-## Quick Pipeline (for new podcast)
+## Quick Pipeline (for new podcast) — v6.0 DEFAULT (Apex Quantix deep analysis)
+
+**The deep pipeline is the DEFAULT for every analysis request** (including orders arriving headless via Iris `project_pipeline`). Read `podcast_analysis_framework.md` **v6.0 section first** — it defines document structure, HTML cover/speaker-card components, conflict-meter rules, and hard requirements.
 
 ```bash
-# 1) Fetch transcript
-python scripts/fetch_transcript.py "https://www.youtube.com/watch?v=VIDEO_ID"
+# 1) Fetch + archive transcript (json+txt; keep everything)
+conda run -n ai python scripts/fetch_transcript.py "https://www.youtube.com/watch?v=VIDEO_ID"
+yt-dlp --skip-download --no-update --print "%(description)s" "<URL>" > transcripts/${SLUG}_description.txt
 
-# 2) Read transcript and write analysis (manually or via Claude)
-# Output: analyses/YYYYMMDD_slug.md
+# 2) Delegate mechanical extraction to subagents (sonnet), keep analysis in main session:
+#    Agent A: 10-12 verbatim quotes + EXHAUSTIVE timestamped claims table -> analyses/${SLUG}_claims.md
+#    Agent B (web research): every participant (fund, 13F, private stakes, selling/buying around
+#    events discussed, track record) + verify central factual claims -> analyses/${SLUG}_participants.md
+#    Run A+B concurrently. Mark unverifiable items UNVERIFIED.
 
-# 3) Create excerpts JSON with pm_takeaway field
-# Output: excerpts/YYYYMMDD_slug.json
+# 3) Verify market claims vs Apexium data (main session):
+#    ~/AI/Apexium/data/bars/<SYM>/daily.parquet ('date' is a COLUMN) -> YTD/1M/3M/off-52H
+#    ~/AI/Apexium/data/rs_dashboard_stocks/<latest>/rows_27d.parquet -> RS pcts/badges
 
-# 4) Generate player + PDF
+# 4) Write v6.0 analysis -> analyses/${SLUG}.md
+#    cover dashboard (verdict box + CONFLICT METER + top-3) -> speaker cards w/ conflict chips ->
+#    exec summary -> episode map -> attributed theses w/ falsifiers -> verification table (✅/⚠️) ->
+#    quotes -> anti-theses -> ranked talking-their-book audit -> COMPANIES & SECTORS MAP w/ stance ->
+#    dated key watches. HTML snippets in framework doc.
+
+# 5) Excerpts (6-8 segments, 45-90s, w/ pm_takeaway) -> player -> branded PDF
 SLUG="YYYYMMDD_slug"
-python scripts/generate_player.py excerpts/${SLUG}.json && \
-pandoc analyses/${SLUG}.md -s --css=styles/report.css -o tmp/${SLUG}.html && \
-DYLD_LIBRARY_PATH=/opt/homebrew/lib weasyprint --base-url . tmp/${SLUG}.html pdfs/${SLUG}.pdf
+conda run -n ai python scripts/generate_player.py excerpts/${SLUG}.json
+conda run -n ai python scripts/build_pdf.py ${SLUG}   # Apex Quantix branding, logo, WeasyPrint internal
 
-# 5) Push to GitHub Pages
-git add players/ pdfs/ analyses/ excerpts/ && git commit -m "Add ${SLUG}" && git push
+# 6) Finalize (do NOT send Telegram from headless pipeline runs — Iris attaches the PDF
+#    automatically in its completion notification; sending here would duplicate via the wrong bot.
+#    Interactive sessions: send via send-telegram skill only if asked.)
+git add analyses/${SLUG}*.md excerpts/${SLUG}.json players/${SLUG}.html pdfs/${SLUG}.pdf transcripts/${SLUG}* \
+  && git commit -m "Add ${SLUG}" && git push
+# NOTE: commit ONLY the new slug files — repo has pre-existing file-mode (644->755) noise; never sweep it in.
 ```
+
+Legacy v5.0 build (Maelstroem styling, superseded): `pandoc analyses/${SLUG}.md -s --css=styles/report.css -o tmp/${SLUG}.html && DYLD_LIBRARY_PATH=/opt/homebrew/lib weasyprint --base-url . tmp/${SLUG}.html pdfs/${SLUG}.pdf`
 
 ---
 
@@ -383,7 +401,7 @@ git push
 
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| No styling in PDF | Wrong working directory | Run from `/Users/adham/Claude-sandbox/Podcasts/` |
+| No styling in PDF | Wrong working directory | Run from `/Users/adham/AI/Podcasts/` |
 | PDF link broken in player | Wrong relative path | Use `../pdfs/SLUG.pdf` in excerpts JSON |
 | Player link broken in PDF | Local path | Use full GitHub Pages URL in analysis.md |
 | Video Error 150/153 | Opening from file:// with YT API | Use iframe embeds (current template does this) |
