@@ -1,0 +1,82 @@
+{
+  "video_id": "Tx9jT2c6e3U",
+  "url": "https://www.youtube.com/watch?v=Tx9jT2c6e3U",
+  "title": "BG2: The SpaceX IPO, Fable 5 & the AI Capex Reality Check",
+  "channel": "BG2 Pod",
+  "total_duration": 4847,
+  "pdf_link": "../pdfs/20260611_bg2_spacex_ipo_fable5_ai_capex.pdf",
+  "excerpts": [
+    {
+      "id": 1,
+      "start": 196,
+      "end": 252,
+      "duration": 56,
+      "label": "Colossus 55% IRR — 'that math maths'",
+      "insight": "Baker: xAI's Google/Anthropic deals = highest operating profit per GW of anyone; 55% IRR on Colossus 1 vs 6-8% cost of debt. Terrestrial DC build speed is variable #1 for the IPO.",
+      "pm_takeaway": "The deal economics, not launch, are the IPO's near-term engine. Watch GW-online cadence."
+    },
+    {
+      "id": 2,
+      "start": 1100,
+      "end": 1158,
+      "duration": 58,
+      "label": "EWS: #4 hyperscaler in 30 days",
+      "insight": "Baker: SpaceX went from not-an-AI-hyperscaler to number four in 30 days, passing Oracle. Data centers are NOT commodities — Elon re-engineered DC design from first principles (122-day builds).",
+      "pm_takeaway": "EWS competes with every NeoCloud. Be selective in CRWV/Nebius/Iren tier — shortage rent gets arbitraged."
+    },
+    {
+      "id": 3,
+      "start": 1601,
+      "end": 1665,
+      "duration": 64,
+      "label": "Orbital math: $5B/GW space vs $25B ground",
+      "insight": "Fox: 100t Starship = ~5MW compute per launch → ~$5B/GW orbital capex vs $20-25B/GW terrestrial BOM. Ground inflationary, space deflationary. NOT needed for IPO valuation — pure call option.",
+      "pm_takeaway": "Orbital = 2028+ option gated on 2-stage rapid reuse. H2'26 second-stage recovery attempt is the binary."
+    },
+    {
+      "id": 4,
+      "start": 2659,
+      "end": 2750,
+      "duration": 91,
+      "label": "We don't know how smart models are",
+      "insight": "Baker via Noam Brown: nobody runs a model for a year before the next ships — snapshot benchmarks dead. Einstein-thinking-for-a-year thought experiment → 'however bullish I was on compute, I'm a lot more bullish.'",
+      "pm_takeaway": "Agent runtime × compute = new demand curve. Structurally bullish inference capacity."
+    },
+    {
+      "id": 5,
+      "start": 3208,
+      "end": 3262,
+      "duration": 54,
+      "label": "Frontier 90% of revenue, OSS 80% of tokens",
+      "insight": "Baker: both persist — and open source winning share is BULLISH for compute/hardware because less model-layer margin = more silicon spend. Harvey example: OSS + own data + router beat Opus at lower cost.",
+      "pm_takeaway": "Watch token-mix data (silicon data index OSS shift), not benchmarks — leading indicator for token pricing."
+    },
+    {
+      "id": 6,
+      "start": 3443,
+      "end": 3514,
+      "duration": 71,
+      "label": "'That's a cute ASIC' — Jensen's OSS weapon",
+      "insight": "Baker: if customers compete with Nvidia via ASICs, Jensen can ship frontier open-source models and gut the margin pool funding those ASIC programs — and NVDA becomes a top cloud 'much faster than people think.'",
+      "pm_takeaway": "NVDA = laggard price (+10% YTD vs SMH +69%) + best narrative. The episode's implicit rotation target."
+    },
+    {
+      "id": 7,
+      "start": 4470,
+      "end": 4530,
+      "duration": 60,
+      "label": "'The next-bottleneck game is over'",
+      "insight": "Baker: stocks went 'straight up a cliff — they're tired, they need to rest.' NVDA/AVGO ironically the laggards. Both funds trimmed (Altimeter large → medium-small) into seasonal weakness, CPI 4.2, oil $100.",
+      "pm_takeaway": "MU/MRVL/AMD = trail stops, don't initiate. Consolidation expected by the bulls themselves."
+    },
+    {
+      "id": 8,
+      "start": 4677,
+      "end": 4745,
+      "duration": 68,
+      "label": "Next $1T of revenue: 3 companies, half the time",
+      "insight": "Gerstner: Mag 7's last $1T of revenue took 7 years and created $17T of market cap. The forecast: SpaceX + Anthropic + OpenAI add the next $1T in 4-5 years. AI ends at 5-15% of global GDP.",
+      "pm_takeaway": "The size-of-prize frame — from a host with stakes in all three. Discount the messenger, keep the math."
+    }
+  ]
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG2: The SpaceX IPO, Fable 5 & the AI Capex Reality Check - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (8:42)</h1>
+                <div class="channel">BG2 Pod • 8 clips from 80:47 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260611_bg2_spacex_ipo_fable5_ai_capex.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=Tx9jT2c6e3U" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/Tx9jT2c6e3U?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 8</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">11% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Colossus 55% IRR — 'that math maths'</div><div class="excerpt-insight">Baker: xAI's Google/Anthropic deals = highest operating profit per GW of anyone; 55% IRR on Colossus 1 vs 6-8% cost of debt. Terrestrial DC build speed is variable #1 for the IPO.</div></div><span class="excerpt-duration">0:56</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">EWS: #4 hyperscaler in 30 days</div><div class="excerpt-insight">Baker: SpaceX went from not-an-AI-hyperscaler to number four in 30 days, passing Oracle. Data centers are NOT commodities — Elon re-engineered DC design from first principles (122-day builds).</div></div><span class="excerpt-duration">0:58</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">Orbital math: $5B/GW space vs $25B ground</div><div class="excerpt-insight">Fox: 100t Starship = ~5MW compute per launch → ~$5B/GW orbital capex vs $20-25B/GW terrestrial BOM. Ground inflationary, space deflationary. NOT needed for IPO valuation — pure call option.</div></div><span class="excerpt-duration">1:04</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">We don't know how smart models are</div><div class="excerpt-insight">Baker via Noam Brown: nobody runs a model for a year before the next ships — snapshot benchmarks dead. Einstein-thinking-for-a-year thought experiment → 'however bullish I was on compute, I'm a lot more bullish.'</div></div><span class="excerpt-duration">1:31</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Frontier 90% of revenue, OSS 80% of tokens</div><div class="excerpt-insight">Baker: both persist — and open source winning share is BULLISH for compute/hardware because less model-layer margin = more silicon spend. Harvey example: OSS + own data + router beat Opus at lower cost.</div></div><span class="excerpt-duration">0:54</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">'That's a cute ASIC' — Jensen's OSS weapon</div><div class="excerpt-insight">Baker: if customers compete with Nvidia via ASICs, Jensen can ship frontier open-source models and gut the margin pool funding those ASIC programs — and NVDA becomes a top cloud 'much faster than people think.'</div></div><span class="excerpt-duration">1:11</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">'The next-bottleneck game is over'</div><div class="excerpt-insight">Baker: stocks went 'straight up a cliff — they're tired, they need to rest.' NVDA/AVGO ironically the laggards. Both funds trimmed (Altimeter large → medium-small) into seasonal weakness, CPI 4.2, oil $100.</div></div><span class="excerpt-duration">1:00</span></div>
+                <div class="excerpt-item" data-index="7" onclick="playExcerpt(7)"><span class="excerpt-num">8</span><div class="excerpt-content"><div class="excerpt-label">Next $1T of revenue: 3 companies, half the time</div><div class="excerpt-insight">Gerstner: Mag 7's last $1T of revenue took 7 years and created $17T of market cap. The forecast: SpaceX + Anthropic + OpenAI add the next $1T in 4-5 years. AI ends at 5-15% of global GDP.</div></div><span class="excerpt-duration">1:08</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 196,
+    "end": 252,
+    "duration": 56,
+    "label": "Colossus 55% IRR \u2014 'that math maths'",
+    "insight": "Baker: xAI's Google/Anthropic deals = highest operating profit per GW of anyone; 55% IRR on Colossus 1 vs 6-8% cost of debt. Terrestrial DC build speed is variable #1 for the IPO.",
+    "pm_takeaway": "The deal economics, not launch, are the IPO's near-term engine. Watch GW-online cadence.",
+    "transcript": "Google, than OpenAI. uh their deal um actually with uh Anthropic also generates probably more operating profit than anyone but um Anthropic<br><br><strong>\u203a</strong> and so you know um the your your colleague at alttimeter Freda also she calculated a 55% IRR<br><br><strong>\u203a</strong> on Colossus one<br><br><strong>\u203a</strong> you know if you can borrow money at six seven 8% and invest in something with a 55% ARR<br><br><strong>\u203a</strong> I'm not the most sophisticated thinker but that math maths<br><br><strong>\u203a</strong> right And so I think the most important variable, one of the two most important is how quickly they bring on terrestrial data centers.<br><br><strong>\u203a</strong> We do know from Jensen that uh Elon brings data centers up faster than anyone. 122 days. Speed is literally cost<br><br><strong>\u203a</strong> because every day you're paying electricians and plumbers. That's cost. Um and they're now monetizing them at arguably the highest rate.<br><br><strong>\u203a</strong> And so I think, you know, everybody should run their own math on that, but that is a massive variable. Yes."
+  },
+  {
+    "id": 2,
+    "start": 1100,
+    "end": 1158,
+    "duration": 58,
+    "label": "EWS: #4 hyperscaler in 30 days",
+    "insight": "Baker: SpaceX went from not-an-AI-hyperscaler to number four in 30 days, passing Oracle. Data centers are NOT commodities \u2014 Elon re-engineered DC design from first principles (122-day builds).",
+    "pm_takeaway": "EWS competes with every NeoCloud. Be selective in CRWV/Nebius/Iren tier \u2014 shortage rent gets arbitraged.",
+    "transcript": "the AI compute market where you have the hyperscalers on the one hand and on the other hand, you know, he may emerge as the largest strongest player in the AI compute market.<br><br><strong>\u203a</strong> Yeah. So I think they are are they the number four or number five hyperscaler today after the Google deal? um it will be number four.<br><br><strong>\u203a</strong> Kind of wild,<br><br><strong>\u203a</strong> right?<br><br><strong>\u203a</strong> In 30 days,<br><br><strong>\u203a</strong> we went from not being an AI hyperscaler to being number four. And we passed a lot of companies, including Oracle.<br><br><strong>\u203a</strong> Corweave is a huge business, right? That we're investors in, you know, and have been investors in, right? But there are a lot of other players, the Nebuses of the world, the Irons of the world. And I would say that there probably 50 Neolabs being funded in Silicon Valley right now as we speak because of the shortage in compute. Absolutely. Um, so that's kind of crazy in 30 days. That's just extraordinary. What I would say is there I think there is a belief that these data centers are commodities.<br><br><strong>\u203a</strong> Mhm.<br><br><strong>\u203a</strong> And I do not share that belief. Um, I don't think anybody around this table shares that belief. And in the same way"
+  },
+  {
+    "id": 3,
+    "start": 1601,
+    "end": 1665,
+    "duration": 64,
+    "label": "Orbital math: $5B/GW space vs $25B ground",
+    "insight": "Fox: 100t Starship = ~5MW compute per launch \u2192 ~$5B/GW orbital capex vs $20-25B/GW terrestrial BOM. Ground inflationary, space deflationary. NOT needed for IPO valuation \u2014 pure call option.",
+    "pm_takeaway": "Orbital = 2028+ option gated on 2-stage rapid reuse. H2'26 second-stage recovery attempt is the binary.",
+    "transcript": "<strong>\u203a</strong> right?<br><br><strong>\u203a</strong> Launch this compute into space.<br><br><strong>\u203a</strong> Um, and the math that you get to before you account for things like um bad GPUs, bad satellites, right? These will all be things that happen, but the math you get to is it's about $5 billion per gigawatt of capex to put these in space,<br><br><strong>\u203a</strong> right?<br><br><strong>\u203a</strong> For comparison, terrestrially, talk about the switch gears, the generators, the transformers, the shell, getting the power, that today is about 25 20 to 25 billion per gigawatt. So we're talking about a 5x reduction in cost on half of your bill of materials, right,<br><br><strong>\u203a</strong> for the data center, right?<br><br><strong>\u203a</strong> Which is a huge number.<br><br><strong>\u203a</strong> Yeah. Just just very simply, I mean, just to say put it cost $60 billion to put a gigawatt on the ground today.<br><br><strong>\u203a</strong> And we'll call it 35 of that is are the GPUs and the silicon that's doing the training and the inference<br><br><strong>\u203a</strong> and 25 billion is the land, the shell, the power, and the cooling. I would hypothesize that those elements are probably going to be inflationary. So that 25 billion may not go down. And"
+  },
+  {
+    "id": 4,
+    "start": 2659,
+    "end": 2750,
+    "duration": 91,
+    "label": "We don't know how smart models are",
+    "insight": "Baker via Noam Brown: nobody runs a model for a year before the next ships \u2014 snapshot benchmarks dead. Einstein-thinking-for-a-year thought experiment \u2192 'however bullish I was on compute, I'm a lot more bullish.'",
+    "pm_takeaway": "Agent runtime \u00d7 compute = new demand curve. Structurally bullish inference capacity.",
+    "transcript": "<strong>\u203a</strong> and just the idea that we do not know how smart these models are<br><br><strong>\u203a</strong> and we may<br><br><strong>\u203a</strong> say more about that. Why don't we know how smart they are?<br><br><strong>\u203a</strong> Because nobody has run mythos for a year continuously and we may never know how smart each generation of models actually is or was but because we don't have time to appropriately evaluate their intelligence before the next model comes out. I mean this is a profound statement and just just imagine okay so I always say like when you think about FSD just imagine a human being who never gets distracted, never gets tired, never talks on the phone in the car, never drinks and drives, never yells at their kids, never has to go to the back seat to give their baby a bottle. And like of course you would think that over time that is superior to humans who are distracted. I don't know how long. How long can you think deeply about one topic, Brad?<br><br><strong>\u203a</strong> Well, it could be an hour like an hour.<br><br><strong>\u203a</strong> Like an hour.<br><br><strong>\u203a</strong> Oh, man.<br><br><strong>\u203a</strong> Yeah,<br><br><strong>\u203a</strong> that makes me feel terrible because I think I could think deeply about one topic continuously before having a stray thought enter my mind<br><br><strong>\u203a</strong> for like maybe 5 minutes. Now I can come back to that.<br><br><strong>\u203a</strong> Imagine if Albert Einstein<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> had been able instead of, you know, maybe that maybe maybe he could think for three hours at a time. Clearly an exceptional intellect.<br><br><strong>\u203a</strong> But imagine Albert Einstein had just thought about fundamental physics.<br><br><strong>\u203a</strong> 24 hours a day.<br><br><strong>\u203a</strong> Yeah.<br><br><strong>\u203a</strong> He doesn't have to eat. He doesn't have to sleep. He doesn't have to relax. He doesn't drink<br><br><strong>\u203a</strong> and never gets old.<br><br><strong>\u203a</strong> Never has dimmunition of intelligence.<br><br><strong>\u203a</strong> And he think thought for one year."
+  },
+  {
+    "id": 5,
+    "start": 3208,
+    "end": 3262,
+    "duration": 54,
+    "label": "Frontier 90% of revenue, OSS 80% of tokens",
+    "insight": "Baker: both persist \u2014 and open source winning share is BULLISH for compute/hardware because less model-layer margin = more silicon spend. Harvey example: OSS + own data + router beat Opus at lower cost.",
+    "pm_takeaway": "Watch token-mix data (silicon data index OSS shift), not benchmarks \u2014 leading indicator for token pricing.",
+    "transcript": "what folks concluded B when they said that they said therefore the frontier models will not acrue most of the revenue and what we're seeing right now it's 90% of<br><br><strong>\u203a</strong> that has been decisively wrong probably more than 90% and it may continue to be decisively wrong frontier might be 90% of the econ economic value right<br><br><strong>\u203a</strong> open source might be 80% of tokens something that I think is very important on open source<br><br><strong>\u203a</strong> is that you know I think there's this belief that it's bearish for AI it's actually and maybe bearish for the frontier models. There's that bare case you talked about.<br><br><strong>\u203a</strong> It's actually really bullish for compute and hardware because if the frontier models are capturing less of the margin,<br><br><strong>\u203a</strong> then you're going to spend more on compute.<br><br><strong>\u203a</strong> So the better open source does, the better it is for compute providers. I I I will say it there is a very I would say between um spending time in the heart of like the west Silicon Valley and also spending time in Asia there is like a very big um like a deep-seated"
+  },
+  {
+    "id": 6,
+    "start": 3443,
+    "end": 3514,
+    "duration": 71,
+    "label": "'That's a cute ASIC' \u2014 Jensen's OSS weapon",
+    "insight": "Baker: if customers compete with Nvidia via ASICs, Jensen can ship frontier open-source models and gut the margin pool funding those ASIC programs \u2014 and NVDA becomes a top cloud 'much faster than people think.'",
+    "pm_takeaway": "NVDA = laggard price (+10% YTD vs SMH +69%) + best narrative. The episode's implicit rotation target.",
+    "transcript": "landscape?<br><br><strong>\u203a</strong> Well, um you might not have the revenue to fund to fund that uh the revenue or the margins to fund that ASIC. And I do think Nvidia is highly likely to be the world's dominant provider of open source AI. And I do think Jensen will bring open source. You know, right now it's whatever six months behind the frontier. Yeah,<br><br><strong>\u203a</strong> we might see it<br><br><strong>\u203a</strong> creep closer and closer and closer.<br><br><strong>\u203a</strong> And I do think Jensen has a big business decision. I see this, you know, chart here. So, let's, you know, chop it up about Nvidia as you say,<br><br><strong>\u203a</strong> but if all of his customers are going to compete with him,<br><br><strong>\u203a</strong> yes,<br><br><strong>\u203a</strong> then why not compete with his customers? And we have all these Neoclouds.<br><br><strong>\u203a</strong> So, that's a cloud computing business that can compete with all these cloud computing businesses. He has his own models that are really really good. Neatron 3 or 3.1 was actually really really cool from a compute efficiency perspective and he's always careful to release small models right so as to not tread on anthropic openi Google's toes<br><br><strong>\u203a</strong> but I do think that is a choice he is making<br><br><strong>\u203a</strong> and just you know at if if the economics change right<br><br><strong>\u203a</strong> I think Nvidia can join the frontier and become one of the world's largest cloud"
+  },
+  {
+    "id": 7,
+    "start": 4470,
+    "end": 4530,
+    "duration": 60,
+    "label": "'The next-bottleneck game is over'",
+    "insight": "Baker: stocks went 'straight up a cliff \u2014 they're tired, they need to rest.' NVDA/AVGO ironically the laggards. Both funds trimmed (Altimeter large \u2192 medium-small) into seasonal weakness, CPI 4.2, oil $100.",
+    "pm_takeaway": "MU/MRVL/AMD = trail stops, don't initiate. Consolidation expected by the bulls themselves.",
+    "transcript": "companies in particular you know ironically you know Nvidia and Broadcom they they have been lagards totally<br><br><strong>\u203a</strong> and so but a lot of these<br><br><strong>\u203a</strong> like I do see a lot on X about finding the next bottleneck I think that was the last game<br><br><strong>\u203a</strong> that game is over<br><br><strong>\u203a</strong> you've had a lot of stocks that forget climbing a mountain or hill. They've gone straight up a cliff.<br><br><strong>\u203a</strong> Okay.<br><br><strong>\u203a</strong> Yes.<br><br><strong>\u203a</strong> They're tired.<br><br><strong>\u203a</strong> They need to rest.<br><br><strong>\u203a</strong> And we'll see.<br><br><strong>\u203a</strong> Do they just rest at the top of that cliff they climbed?<br><br><strong>\u203a</strong> Do they hang out on in their harness?<br><br><strong>\u203a</strong> We'll see. And we've seen the last week, we've seen, you know, some retracement<br><br><strong>\u203a</strong> or do they need to go downhill for a bit?<br><br><strong>\u203a</strong> We'll see. But I'm thinking very similarly to you.<br><br><strong>\u203a</strong> But it is and I think there's, you know, the market is seasonal.<br><br><strong>\u203a</strong> Yes. I think there's real real concerns around inflation and rates. What was CPI this morning?<br><br><strong>\u203a</strong> It was uh 4.2. I think we added core came in at like 0.2 versus.3. So, a little bit better. Um but, you know, clearly we're we're above four again.<br><br><strong>\u203a</strong> And um and and there's short-term pressure on, you know, core PCE, etc."
+  },
+  {
+    "id": 8,
+    "start": 4677,
+    "end": 4745,
+    "duration": 68,
+    "label": "Next $1T of revenue: 3 companies, half the time",
+    "insight": "Gerstner: Mag 7's last $1T of revenue took 7 years and created $17T of market cap. The forecast: SpaceX + Anthropic + OpenAI add the next $1T in 4-5 years. AI ends at 5-15% of global GDP.",
+    "pm_takeaway": "The size-of-prize frame \u2014 from a host with stakes in all three. Discount the messenger, keep the math.",
+    "transcript": "business, they might think this is the way that it kind of always was, right? And like this line, the steepening of the line of creative destruction, the steepening of the line of, you know, scale advantages, um, I always believed it was to was going to be true. I never thought it would be true at this rate. I went back last night. In the last seven years, we've added 1 trillion of revenue to the MAG 7 in the last seven years. Okay. To get to a trillion, to get to the first trillion of, you know, took over 20 years.<br><br><strong>\u203a</strong> In the last seven, we added another trillion and that added 17 trillion in market cap. That trillion dollars. Okay. uh the forecast now that we're going to add another trillion of revenue in just three companies, SpaceX, Anthropic, and OpenAI over the next four to five years.<br><br><strong>\u203a</strong> Okay? Like not seven companies, three companies and in half the time, right? And so I would say that, you know, we are going to have bumps in the road. I know that it's going to be like this, but we're going to higher highs because the size of the prize. This is going to transform 5 10 15% of global GDP. There"
+  }
+];
+        const videoId = 'Tx9jT2c6e3U';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
