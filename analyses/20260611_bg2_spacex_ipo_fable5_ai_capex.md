@@ -1,15 +1,67 @@
 # BG2 Pod: The SpaceX IPO, Fable 5 & the AI Capex Reality Check
-## Extracted from: BG2 Pod (Brad Gerstner) — w/ Gavin Baker, Andrew Fox & Clark Tang
 
-*Source: [BG2 Pod (YouTube)](https://www.youtube.com/watch?v=Tx9jT2c6e3U)*
+<div class="title-block">
+<p class="show-line">BG2 Pod — Brad Gerstner w/ Gavin Baker, Andrew Fox &amp; Clark Tang</p>
+<p class="meta-line">Published 2026-06-11 · 1h 20m · <a href="https://www.youtube.com/watch?v=Tx9jT2c6e3U">YouTube source</a> · <a href="players/20260611_bg2_spacex_ipo_fable5_ai_capex.html">⏱ 7-min excerpt player</a></p>
+</div>
 
-*Published: 11-06-2026 · 1h 20m · transcript archived at `transcripts/20260611_bg2_spacex_ipo_fable5_ai_capex.{json,txt}`*
+<div class="verdict-grid">
+<div class="verdict-box">
+<p class="verdict-label">Verdict</p>
+<p class="verdict-value">Must-Listen</p>
+<div class="ratings">
+<span class="stars">★★★★★</span> signal density<br>
+<span class="stars">★★★★☆</span> actionability<br>
+<span class="stars">★★★★☆</span> novel insights<br>
+<span class="stars">★★☆☆☆</span> independence
+</div>
+</div>
+<div class="conflict-box">
+<p class="conflict-label">Conflict Meter — HIGH</p>
+<div class="meter"><div class="fill" style="width:85%"></div></div>
+<p class="conflict-note">All four participants long SpaceX into the IPO. Host publicly selling ~30% of his fund's stake into the same IPO he calls "a must buy, must own" on air; led Anthropic's $65B Series H two weeks prior; holds stakes in all three companies of his "next $1T revenue" forecast. Bear chair (Gurley) empty.</p>
+</div>
+</div>
 
-**⏱️ 7-Minute Version:** [Watch Key Excerpts](players/20260611_bg2_spacex_ipo_fable5_ai_capex.html)
+<div class="top-ideas">
+<p class="ideas-label">Top 3 Takeaways for the Book</p>
+<ol>
+<li><strong>NVDA</strong> — the episode's implicit rotation target: laggard price (+9.9% YTD vs SMH +69%) + best narrative (tokens/watt, open-source weapon, cloud option)</li>
+<li><strong>SPCX</strong> — strong four-lever analysis, conflicted messengers; their own playbook (base + ballast, &gt;50% drawdown base rate) beats their "set &amp; forget" soundbite</li>
+<li><strong>MU / MRVL / AMD</strong> — "the next-bottleneck game is over"; trail stops on bottleneck winners, don't initiate; both funds already trimmed gross</li>
+</ol>
+</div>
 
 ---
 
 ## 0) Who Is On It — And Who Does What
+
+<div class="speaker-cards">
+<div class="speaker-card">
+<p class="sp-name">Brad Gerstner</p>
+<p class="sp-firm">Altimeter Capital — Founder/CEO · Host</p>
+<p class="sp-role">Frames every segment, supplies the bank-model numbers, runs the market-check close.</p>
+<span class="chip chip-red">SELLING ~30% INTO IPO</span><span class="chip chip-red">LED ANTHROPIC SERIES H</span><span class="chip chip-amber">OPENAI HOLDER</span><span class="chip chip-amber">NVDA TOP 13F ($1.5B)</span><span class="chip chip-gray">CRWV · CEREBRAS</span>
+</div>
+<div class="speaker-card">
+<p class="sp-name">Gavin Baker</p>
+<p class="sp-firm">Atreides Management — Founder/CIO</p>
+<p class="sp-role">The intellectual engine: Pareto curve, Cursor thesis, Einstein long-running agents, NVDA-vs-ASIC strategy.</p>
+<span class="chip chip-red">SPACEX = LARGEST POSITION (SINCE 2015)</span><span class="chip chip-amber">LEVERAGED NVDA CALLS</span><span class="chip chip-blue">XAI-ADJACENT ADVISOR</span><span class="chip chip-green">DISCLOSES BIAS</span>
+</div>
+<div class="speaker-card">
+<p class="sp-name">Andrew Fox "Foxy"</p>
+<p class="sp-firm">Atreides Management — Analyst</p>
+<p class="sp-role">The quant: launch $/kg, orbital vs terrestrial $/GW, monetization-per-GW trajectory. Most replicable math on the table.</p>
+<span class="chip chip-amber">SAME BOOK AS BAKER</span><span class="chip chip-gray">EX-PJT TMT</span><span class="chip chip-green">EXPLICIT ASSUMPTIONS</span>
+</div>
+<div class="speaker-card">
+<p class="sp-name">Clark Tang</p>
+<p class="sp-firm">Altimeter Capital — Partner</p>
+<p class="sp-role">Asia/semis channel checks from Computex/GTC Taiwan; author of the xAI op-profit/GW chart; Vera Rubin intel.</p>
+<span class="chip chip-amber">PITCHED NVDA SEPT '22</span><span class="chip chip-blue">TAIWAN CHANNEL CHECKS</span><span class="chip chip-green">ONLY QUASI-BEAR</span>
+</div>
+</div>
 
 | Person | Firm / Role | Role in this episode | Skin in the game (researched, sourced) |
 |---|---|---|---|
