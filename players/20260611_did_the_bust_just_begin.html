@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Felder: Did The Bust Just Begin? - Key Excerpts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e6edf3;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #21262d;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .header-left h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 2px;
+        }
+
+        .header-left .channel {
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: #21262d;
+            color: #e6edf3;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.15s;
+        }
+
+        .header-btn:hover {
+            background: #30363d;
+            border-color: #484f58;
+        }
+
+        /* Main layout */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        /* Left column - Video */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #161b22;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls */
+        .controls-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
+
+        .btn-secondary:hover {
+            background: #30363d;
+        }
+
+        /* Progress */
+        .progress-row {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #21262d;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00b359, #00d468);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: #8b949e;
+            white-space: nowrap;
+        }
+
+        /* Excerpt list */
+        .excerpts-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .excerpts-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .excerpts-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .excerpts-badge {
+            background: #00b35920;
+            color: #00b359;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .excerpt-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-bottom: 1px solid #21262d;
+            gap: 12px;
+        }
+
+        .excerpt-item:last-child {
+            border-bottom: none;
+        }
+
+        .excerpt-item:hover {
+            background: #1c2128;
+        }
+
+        .excerpt-item.active {
+            background: #1a3d2a;
+            border-left: 3px solid #00b359;
+            padding-left: 13px;
+        }
+
+        .excerpt-item.played {
+            opacity: 0.5;
+        }
+
+        .excerpt-item.played.active {
+            opacity: 1;
+        }
+
+        .excerpt-num {
+            width: 24px;
+            height: 24px;
+            background: #21262d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .excerpt-item.active .excerpt-num {
+            background: #00b359;
+            color: #0a0a0a;
+        }
+
+        .excerpt-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .excerpt-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .excerpt-insight {
+            font-size: 0.75rem;
+            color: #8b949e;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .excerpt-duration {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-family: "SF Mono", Monaco, monospace;
+            flex-shrink: 0;
+        }
+
+        /* Right column - Transcript */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            .right-column {
+                position: sticky;
+                top: 80px;
+                max-height: calc(100vh - 100px);
+            }
+        }
+
+        .transcript-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex: 1;
+            min-height: 300px;
+            max-height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            .transcript-card {
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .transcript-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .transcript-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .transcript-time {
+            font-size: 0.75rem;
+            color: #00b359;
+            font-family: "SF Mono", Monaco, monospace;
+        }
+
+        .transcript-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .transcript-empty {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .transcript-text {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #c9d1d9;
+        }
+
+        .transcript-text .highlight {
+            background: #00b35930;
+            color: #00d468;
+            padding: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Current excerpt info */
+        .current-info {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .current-label {
+            font-size: 0.75rem;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .current-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00b359;
+            margin-bottom: 8px;
+        }
+
+        .current-insight {
+            font-size: 0.85rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        /* Status */
+        .status-bar {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #8b949e;
+            background: #0d1117;
+            border-radius: 8px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header {
+                padding: 12px 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>⏱️ Key Excerpts (8:12)</h1>
+                <div class="channel">Adam Taggart | Thoughtful Money® • 7 clips from 56:36 video</div>
+            </div>
+            <div class="header-right">
+                <a href="../pdfs/20260611_did_the_bust_just_begin.pdf" class="header-btn" target="_blank">
+                    <span>📄</span> Full Analysis
+                </a>
+                <a href="https://www.youtube.com/watch?v=bXJQMHO5Bx4" class="header-btn" target="_blank">
+                    <span>↗</span> Full Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <div class="player-wrapper">
+                <iframe id="player"
+                    src="https://www.youtube.com/embed/bXJQMHO5Bx4?rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="controls-card">
+                <div class="controls-row">
+                    <button class="btn" id="playBtn" onclick="startPlayback()">
+                        <span>▶</span> Play All Excerpts
+                    </button>
+                    <button class="btn" id="nextBtn" onclick="skipToNext()" style="display: none;">
+                        <span>⏭</span> Next Excerpt
+                    </button>
+                </div>
+                <div class="progress-row">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressStats">0 / 7</span>
+                </div>
+            </div>
+
+            <div class="excerpts-card">
+                <div class="excerpts-header">
+                    <span class="excerpts-title">Key Moments</span>
+                    <span class="excerpts-badge">14% of video</span>
+                </div>
+                <div class="excerpt-item" data-index="0" onclick="playExcerpt(0)"><span class="excerpt-num">1</span><div class="excerpt-content"><div class="excerpt-label">Delays → first cancellations: the writing on the wall</div><div class="excerpt-insight">Data centers delayed all year; now the FIRST cancellations are appearing — the trigger that turns the AI boom into a bust as analysts reprice.</div></div><span class="excerpt-duration">0:56</span></div>
+                <div class="excerpt-item" data-index="1" onclick="playExcerpt(1)"><span class="excerpt-num">2</span><div class="excerpt-content"><div class="excerpt-label">The earnings illusion: revenue now, depreciation later</div><div class="excerpt-insight">~$750B 2026 AI capex; NVDA/memory book revenue immediately while hyperscalers defer the depreciation — a timing mismatch inflating reported earnings that reverses as charges land.</div></div><span class="excerpt-duration">1:09</span></div>
+                <div class="excerpt-item" data-index="2" onclick="playExcerpt(2)"><span class="excerpt-num">3</span><div class="excerpt-content"><div class="excerpt-label">The physics constraint: two-thirds haven't broken ground</div><div class="excerpt-insight">~2/3 of data centers due in 2027 haven't broken ground; Nadella's 'warm shells' bottleneck is worse 6 months on — nowhere to plug the chips, so semi revenue estimates must fall.</div></div><span class="excerpt-duration">1:03</span></div>
+                <div class="excerpt-item" data-index="3" onclick="playExcerpt(3)"><span class="excerpt-num">4</span><div class="excerpt-content"><div class="excerpt-label">Maleficent Seven: monopolies now competing, FCF gone</div><div class="excerpt-insight">Grantham frame — former monopolies (Google/Meta/Microsoft) now fight in one capital-intensive arena; combined free cash flow is zero/negative, forcing bond issuance to fund capex.</div></div><span class="excerpt-duration">1:22</span></div>
+                <div class="excerpt-item" data-index="4" onclick="playExcerpt(4)"><span class="excerpt-num">5</span><div class="excerpt-content"><div class="excerpt-label">Oil to $150: greatest disruption in history, suppressed</div><div class="excerpt-insight">Fundamentals say crude ~$150; price held down by China importing ~5 mbd less + record SPR draws. Strait of Hormuz: 6–8 months to 80% flow even if reopened today.</div></div><span class="excerpt-duration">1:14</span></div>
+                <div class="excerpt-item" data-index="5" onclick="playExcerpt(5)"><span class="excerpt-num">6</span><div class="excerpt-content"><div class="excerpt-label">Gold leads commodities/rates by 20 months → 6% 10Y</div><div class="excerpt-insight">Gold's 2-year rally is a ~20-month leading indicator for commodities, oil, and rates; Felder reads it as oil → $150 and the 10-year yield → 6% within 6–12 months.</div></div><span class="excerpt-duration">1:10</span></div>
+                <div class="excerpt-item" data-index="6" onclick="playExcerpt(6)"><span class="excerpt-num">7</span><div class="excerpt-content"><div class="excerpt-label">The Fed pincer: 4% CPI forces a hike into the bust</div><div class="excerpt-insight">With CPI ~4% and core PCE hotter, rising commodities force the Fed to hike just as the AI wealth-effect economy slows — the punch-bowl removal that historically ends bubbles.</div></div><span class="excerpt-duration">1:18</span></div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="current-info" id="currentInfo" style="display: none;">
+                <div class="current-label">PM Takeaway</div>
+                <div class="current-title" id="currentTitle"></div>
+                <div class="current-insight" id="currentInsight"></div>
+            </div>
+
+            <div class="transcript-card">
+                <div class="transcript-header">
+                    <span class="transcript-title">Transcript</span>
+                    <span class="transcript-time" id="transcriptTime"></span>
+                </div>
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-empty">
+                        Select an excerpt to view transcript
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status">Ready to play</div>
+        </div>
+    </main>
+
+    <script>
+        // Excerpt data (injected by generator)
+        const excerpts = [
+  {
+    "id": 1,
+    "start": 10,
+    "end": 66,
+    "duration": 56,
+    "label": "Delays \u2192 first cancellations: the writing on the wall",
+    "insight": "Data centers delayed all year; now the FIRST cancellations are appearing \u2014 the trigger that turns the AI boom into a bust as analysts reprice.",
+    "pm_takeaway": "TRAIL-STOP the AI complex. The catalyst Felder watches (cancellations, not delays) has arrived. Tighten stops on semis/hyperscalers; don't chase +95% YTD SOXX into a repricing.",
+    "transcript": "this basically this whole year. We've seen tons of delays cropping up. Now, we're starting to see the first cancellations. To me, that's that this is the writing on the wall. This is why we're starting to see more volatility in the uh in the tech sector and you're starting to see analysts start to repric these things. So, as it becomes more obvious, you'll see it more manifest in price. But I do think it's actually playing out right now already as we speak. Welcome to Thoughtful Money. I'm its founder and your host, Adam Tagert. Today's guest has been warning for a good while now that the current bull market in stocks is in its final innings. In fact, he thinks the AI boom may be right now in the process of metastasizing into the AI bust. It's not all doom and gloom for investors, though. He's quite bullish on commodities and the stocks of the companies that produce them, which he"
+  },
+  {
+    "id": 2,
+    "start": 76,
+    "end": 145,
+    "duration": 69,
+    "label": "The earnings illusion: revenue now, depreciation later",
+    "insight": "~$750B 2026 AI capex; NVDA/memory book revenue immediately while hyperscalers defer the depreciation \u2014 a timing mismatch inflating reported earnings that reverses as charges land.",
+    "pm_takeaway": "FADE the 'earnings are awesome' narrative on hyperscalers. The reported-earnings boom is a depreciation-timing artifact; margin compression is the second-wave catalyst. Underweight MSFT/META (both below 200dma).",
+    "transcript": "outlook, we welcome back to the program macro analyst Jesse Felder, founder and editor of the respected market research firm, The Felder Report. Jesse, thanks so much for joining us today.<br><br><strong>\u203a</strong> Always great to be with you, Adam. Thanks for having me.<br><br><strong>\u203a</strong> Oh, thanks for coming back on, my friend. All right. Well, look, why don't we just start with just kind of a check-in on your latest macro and and market assessment here. Um, Jesse, you know, I kind of gave a recap there in the intro of of what you've sort of said when you've come on the program in the past, but in the here and now with stocks still pretty close to all-time highs, a new factor since we last talked, the Iran war going on here, obviously a ton of capital just both flooding into the AI space and being spent into the economy by the AI space. when you kind of look at at it all from a 30,000 foot view, what's your current assessment both of the macro side and the market side?<br><br><strong>\u203a</strong> Yeah, I think we're in a a uh a prolonged um topping process in the stock market. That's taken longer obviously than I thought it would take for it to play out. Um especially with this latest move in semiconductors, this this kind of final blowoff phase I think is what we're kind of in the midst of. I"
+  },
+  {
+    "id": 3,
+    "start": 282,
+    "end": 345,
+    "duration": 63,
+    "label": "The physics constraint: two-thirds haven't broken ground",
+    "insight": "~2/3 of data centers due in 2027 haven't broken ground; Nadella's 'warm shells' bottleneck is worse 6 months on \u2014 nowhere to plug the chips, so semi revenue estimates must fall.",
+    "pm_takeaway": "SHORT/AVOID the picks-and-shovels at peak multiples. SOXX trades 95% YTD on revenue the physical buildout can't absorb. The estimate cut is mechanical, not optional.",
+    "transcript": "uh all the data centers that are supposed to be completed next year haven't even be broken ground yet.<br><br><strong>\u203a</strong> So there there's no possible way they're going to be completed next year. Where are all these chips going to go? We're we're rapidly running into uh a point in time where a lot of this this revenue growth is going to um you know analyst estimates are going to have to come down rapidly just because of the physics of it is is is not going to to to to happen. So I think you have that on one side of things which is a really important um component of this AI bubble. same time you have macro things going on too where it really looks like we have a stagflationary scenario building. We had the small business NFIB survey come out this week and showed small businesses are raising prices and dramatically reducing plans to hire people. So you know that that is a good leading indicator of rising unemployment and rising prices which is the definition of stagflation. So we have these stagflationary dynamics uh you know obviously that are partly at"
+  },
+  {
+    "id": 4,
+    "start": 1338,
+    "end": 1420,
+    "duration": 82,
+    "label": "Maleficent Seven: monopolies now competing, FCF gone",
+    "insight": "Grantham frame \u2014 former monopolies (Google/Meta/Microsoft) now fight in one capital-intensive arena; combined free cash flow is zero/negative, forcing bond issuance to fund capex.",
+    "pm_takeaway": "Re-rate the Mag-7 as the 'Maleficent Seven.' When FCF goes negative and bonds fund capex, the quality premium compresses. Watch credit spreads on hyperscaler debt as the tell.",
+    "transcript": "realization that as Jeremy Grantham recently said the next decade for the hyperscalers is going to look so unlike the last decade as to be shocking that this these these kind of moes that they've had these uh you know cashgenerating monopolies ies that they've had in each one of their spaces. They've all had their kind of their own sandbox and that's been their monopoly and nobody's going to, you know, Google and search um you know, Meta in social, Microsoft and its, you know, software and things. Uh now they're all competing in the same space in an area that is super capital intensive, right? We're seeing, like I said, almost a trillion dollars in spend this year alone. and all of their free cash flow for all of these companies is gone zero or negative<br><br><strong>\u203a</strong> because they're all competing in the same space. So this to go from you know monopolies to now we're all competing in the same field in an area that has dubious profitability. People are not really yet appreciating. I mean, it's going to start with the semiconductor stocks and they're going to say, \"Okay, look, the the the forward revenue and earnings estimates are going to come down because the spending is going to slow.\" But at the same time, we're going to start to hear more about how the profitability of these formerly great magnificent companies is really"
+  },
+  {
+    "id": 5,
+    "start": 2156,
+    "end": 2230,
+    "duration": 74,
+    "label": "Oil to $150: greatest disruption in history, suppressed",
+    "insight": "Fundamentals say crude ~$150; price held down by China importing ~5 mbd less + record SPR draws. Strait of Hormuz: 6\u20138 months to 80% flow even if reopened today.",
+    "pm_takeaway": "LONG energy \u2014 oil already +59% YTD (our bars) yet XLE is only 3% of the S&P (vs 8\u201312% historically) and -9% off its high. The +50% crude move is NOT in the shares. Best AI-bust hedge.",
+    "transcript": "<strong>\u203a</strong> well, well, we'll see because commodities haven't caught a real bid yet, but go ahead.<br><br><strong>\u203a</strong> Right. Right. No, I'm saying just from the AI standpoint, the semiconductors and and tech stocks haven't really kind of reflected the AI bust that's coming that I see.<br><br><strong>\u203a</strong> On the other side of it, um, I think the fundamentals of the the energy um sector of the, you know, crude oil suggest crude oil should probably be trading $150 a barrel right now. Today it's being, you know, suppressed by China importing five whatever 5 million barrels a day of oil less than they normally would uh and strategic reserves being um you know emptied faster than we've ever seen before. So you have but you know that can only go on for for so long, right? Um you you look at uh to me one of the most interesting things and this kind of comes back I was inspired by a lot of the work that Tom Mlullen has done. Gold is a really good leading indicator for the ro the broader commodity space and I think we probably talked about this last time I was on is that what is this dramatic rise in the gold price herald over the over the next 20 months following it is a is a rise in the broader commodity space the rise in the oil price a rise in interest rates"
+  },
+  {
+    "id": 6,
+    "start": 2230,
+    "end": 2300,
+    "duration": 70,
+    "label": "Gold leads commodities/rates by 20 months \u2192 6% 10Y",
+    "insight": "Gold's 2-year rally is a ~20-month leading indicator for commodities, oil, and rates; Felder reads it as oil \u2192 $150 and the 10-year yield \u2192 6% within 6\u201312 months.",
+    "pm_takeaway": "STEEPENER / short duration. If gold's signal holds, the 10Y at 6% guts the long bond and forces a Fed hike INTO an AI bust \u2014 the stagflation pincer. Own TIPS over nominals.",
+    "transcript": "the broader commodity space the rise in the oil price a rise in interest rates and right now the the the rise that the gold price has had over the last two years is now just starting to be reflected in the broader commodity space, oil prices and interest rates. And if you look at these things closely, it says that yeah, oil should go to $150 a barrel. The 10-year yield should go to could go to 6% over the next 6 to 12 months. Um those are things that that you know to me that's the interpret what I interpret. What is the gold gold price saying? And uh it's amazing to me that we have literally the the greatest disruption to the oil markets in history, right? And uh and no sign of it ending anytime soon, right? Despite what we hear about, you know, things all we see is actual war military conflict and uh no real kind of hope of restarting oil production. you have uh experts in the space saying that even if the straight of warm was open to open today, it would take six eight months to get back to 80% of the flow that we were at before the war. So to me it's it's pretty obvious that we we're going to"
+  },
+  {
+    "id": 7,
+    "start": 2332,
+    "end": 2410,
+    "duration": 78,
+    "label": "The Fed pincer: 4% CPI forces a hike into the bust",
+    "insight": "With CPI ~4% and core PCE hotter, rising commodities force the Fed to hike just as the AI wealth-effect economy slows \u2014 the punch-bowl removal that historically ends bubbles.",
+    "pm_takeaway": "DEFENSIVE + real assets. Hike-into-slowdown is the worst tape for long-duration tech. Rotate to energy, healthcare, staples (insider buying), cash/T-bills; lean away from precious metals until the Fed pivots.",
+    "transcript": "too. You look at what is usually ended bubbles. It's the Fed taking the punch bowl away. Why does the Fed take the punch bowl away? Well, because things get too speculative and crazy in the markets, but more often, you know, they'll kind of let that run. You know, Alan Greenspan talked about rational exuberance, but didn't really do anything about it until inflation became a problem a year or two later. when inflation is doing what it's doing now. we have 4% you know on CPI today PCE and core PCE coming in even you know stronger than those types of things. Uh you know Fed's going to be forced to raise interest rates and uh raising interest rates at the same time with all this other stuff going on. It's it's the Fed taking the punch ball away. Um, but what's going to force the Fed's hand, I think, is further rise in commodities, further rise in oil prices, which is to me at this point just looks inevitable. It's not just the gold price saying this. It's the fundamental, you know, supply demand dynamics in the energy market saying this can't go on. And what you need, what you have to have is a is a runup in price that actually goes far enough to really dampen demand uh, you know, in the space. And that runup in price is going to force the Fed's hand.<br><br><strong>\u203a</strong> So I think we're really kind of at another kind of interesting dichotomy"
+  }
+];
+        const videoId = 'bXJQMHO5Bx4';
+
+        // State
+        let currentExcerpt = -1;
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function getEmbedUrl(excerpt) {
+            return `https://www.youtube.com/embed/${videoId}?start=${excerpt.start}&end=${excerpt.end}&autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        }
+
+        function startPlayback() {
+            playExcerpt(0);
+        }
+
+        function playExcerpt(index) {
+            if (index >= excerpts.length) {
+                finishPlayback();
+                return;
+            }
+
+            currentExcerpt = index;
+            const excerpt = excerpts[index];
+
+            // Update iframe
+            document.getElementById('player').src = getEmbedUrl(excerpt);
+
+            // Update UI
+            updateExcerptList();
+            updateProgress();
+            updateCurrentInfo(excerpt);
+            updateTranscript(excerpt);
+            updateStatus(`Playing ${index + 1}/${excerpts.length}: ${excerpt.label}`);
+
+            document.getElementById('playBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+        }
+
+        function skipToNext() {
+            if (currentExcerpt >= 0) {
+                markExcerptPlayed(currentExcerpt);
+            }
+            if (currentExcerpt < excerpts.length - 1) {
+                playExcerpt(currentExcerpt + 1);
+            } else {
+                finishPlayback();
+            }
+        }
+
+        function markExcerptPlayed(index) {
+            const items = document.querySelectorAll('.excerpt-item');
+            if (items[index]) {
+                items[index].classList.add('played');
+            }
+        }
+
+        function finishPlayback() {
+            if (currentExcerpt >= 0) markExcerptPlayed(currentExcerpt);
+
+            updateStatus('✓ All excerpts complete');
+            document.getElementById('playBtn').innerHTML = '<span>↺</span> Replay All';
+            document.getElementById('playBtn').style.display = 'inline-flex';
+            document.getElementById('nextBtn').style.display = 'none';
+
+            currentExcerpt = -1;
+            updateProgress();
+        }
+
+        function updateExcerptList() {
+            const items = document.querySelectorAll('.excerpt-item');
+            items.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === currentExcerpt) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        }
+
+        function updateProgress() {
+            const total = excerpts.length;
+            const completed = document.querySelectorAll('.excerpt-item.played').length;
+            const percent = (completed / total) * 100;
+
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressStats').textContent = `${completed} / ${total}`;
+        }
+
+        function updateCurrentInfo(excerpt) {
+            const info = document.getElementById('currentInfo');
+            info.style.display = 'block';
+            document.getElementById('currentTitle').textContent = excerpt.label;
+            // Show PM takeaway if available, otherwise fall back to insight
+            document.getElementById('currentInsight').textContent = excerpt.pm_takeaway || excerpt.insight || '';
+        }
+
+        function updateTranscript(excerpt) {
+            const body = document.getElementById('transcriptBody');
+            const time = document.getElementById('transcriptTime');
+
+            time.textContent = `${formatTime(excerpt.start)} - ${formatTime(excerpt.end)}`;
+
+            // Display actual transcript text if available
+            if (excerpt.transcript) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.transcript}</div>`;
+            } else if (excerpt.insight) {
+                body.innerHTML = `<div class="transcript-text">${excerpt.insight}</div>`;
+            } else {
+                body.innerHTML = `<div class="transcript-text">${excerpt.label}</div>`;
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStatus('Ready - click "Play All Excerpts" or select one below');
+        });
+    </script>
+</body>
+</html>
