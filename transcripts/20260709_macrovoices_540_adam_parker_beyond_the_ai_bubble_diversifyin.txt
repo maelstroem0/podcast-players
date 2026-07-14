@@ -1,0 +1,1190 @@
+Source: https://www.youtube.com/watch?v=-wKLuErezzQ
+Title: MacroVoices #540 Adam Parker: Beyond the AI Bubble Diversifying Portfolios in Earnings-Driven Market
+Channel: Macro Voices
+Duration: 41:57
+Date: 20260709
+Fetched: 2026-07-12T23:05:11.089553
+
+---
+
+This is Macrovoices, the free weekly
+financial podcast targeting professional
+finance, high- netw worth individuals,
+[music] family offices, and other
+sophisticated investors. Macrovoices is
+all about the brightest [music] minds in
+the world of finance and macroeconomics,
+telling it like it is, bullish or
+bearish, no holds barred. Now, here are
+your hosts, Eric Townsend and Patrick
+[music] Serezna.
+Macrovoic's episode 540 was produced on
+July 9th, 2026. I'm Eric Townsend. We're
+going to take a break from the Hormuz
+focus of the last few episodes and turn
+our attention back to US equity markets
+in this week's podcast. Trivariat
+Research founder Adam Parker joins me as
+a firsttime guest and we'll focus on the
+US equity market. Then stay tuned for
+our new and improved Macrovoices trading
+desk where Patrick and Missile will
+deliver a fast-paced market rap
+featuring Patrick's trade of the week,
+fresh positioning insights from the
+commitment of traders reports, and a
+concise breakdown of the key markets you
+need to watch. Our friends over at Alo
+Atomics made history this past holiday
+weekend. Regular listeners may remember
+that I interviewed their CEO, Matt
+Lozak, on this program in our March 5th
+episode. Now, just in the short time
+since that interview, Alo literally
+built their first nuclear reactor in
+just 40 days and then turned it on and
+demonstrated a sustained nuclear fision
+chain reaction on the 4th of July. I
+interviewed Matt and his co-founder and
+CTO Yaser Arafat for Zero Hedge earlier
+this week and I strongly encourage our
+listeners who are interested in
+investing in the nuclear renaissance to
+watch that video which you can find on
+YouTube and it's also linked in this
+week's research roundup email. And I'm
+Patrick Szna. We saw another week of
+meaningful repricing across the macro
+markets. Crude oil surged roughly 850
+basis points week overw week as the
+Middle East peace deal broke down and
+geopolitical risk premiums rushed back
+into the energy complex. At the same
+time, the 10ear Treasury yields
+continued to rise sharply, breaking back
+above their June highs and putting
+renewed pressure on the rate sensitive
+parts of the market. Now, this week's
+feature interview guest is Trivariat
+Research founder Adam Parker. Eric and
+Adam discussed the US equity outlook,
+why earnings may continue to support the
+market even as valuations look
+stretched, the durability of the AI
+trade, and why energy may be one of the
+more interesting diversification themes
+inside an otherwise crowded equity
+market. Eric's interview with Adam
+Parker is coming up as macrovoices
+continues right here at macrovoices.com.
+And now with this week's special guest,
+here's your host, Eric Townsend. Joining
+me now is Adam Parker, founder of
+Tvariat Research. Adam, great to have
+you on as a firsttime guest. I want to
+start because you cover equities uh
+quite heavily. Give me the big picture
+on where we stand now cuz so many people
+have said, "Oh, well, you know, it's
+it's a bubble. It's going to roll over
+any minute now." sure hasn't yet. Where
+where's this market headed?
+>> You know, I don't really talk to that
+many people who think it's a bubble.
+Maybe I'm in a bubble, [laughter]
+but you know, a different kind of
+bubble, but I think the corporate
+earnings have been strong and the price
+to earnings probably likely contract
+some. And so, you're left with a choppy
+but upward trending US equity market for
+at least the next 6 12 months just
+because of the strength of the
+underlying earnings.
+>> Let's imagine that maybe there is
+another reescalation of this conflict in
+Hormuz and oil gets tight again. Do you
+think that presents a serious event risk
+to equity markets or are we going to
+just get through this whatever happens?
+I think investors are really unlikely to
+preposition for that kind of stuff at
+this point. I think they've seen the
+most acute part of it kind of late
+February into March and I think they'll
+be skeptical that there'll be huge
+damage to the earnings growth or
+outlook. So I I don't expect that to
+cause a meaningful u you know headline
+market selloff. I mean, look, people
+have called for 17 of the last zero, you
+know, you know, problems with their
+earnings trajectory. So, I think it's
+pretty unlikely that anything from
+Hormuz could cause a big damage to the
+equity market from here. And I know
+you've also commented quite a bit on
+energy markets with respect to Hormuz.
+Is oil, you know, only partway sold off
+or is it sold off too far and overdue a
+bounce or how do you uh see the
+situation?
+>> I mean, it's a little uh choir talking
+to the preacher on this topic talking to
+you. It sounds like Eric but um my sense
+is at least the public US equities you
+know S&P is something like 4% and change
+energy equities I think you can own more
+than that 7 8% because the estimate
+achievability is above average. I mean
+in the US equity market one of the main
+dynamics in the last year has been the
+penalty for missing earnings has been
+way harsher than the reward for beating
+earnings. So if you're running a
+diversified portfolio of equities trying
+to beat the S&P you just cannot own
+stuff that misses. So, one of the things
+I like about the energy stocks right now
+is I think their estimate achievability
+is above average. I think, you know,
+it's pretty clear that the change in the
+oil price is highly correlated to the
+change in the net income of of a lot of
+the underlying stocks. And so, I like
+that. And then because the S&P is such
+an AI semiconductor ETF, having energy
+stocks at a 40-year low on their
+correlation to the tech sector, I think
+is a nice diversifying feature as well.
+So, I I kind of like owning more than
+the bench weight in energy in a US
+equity book. I know you've done some
+work on semiconductors, particularly
+micron technology. Give us the picture
+of what is driving this incredible
+strength in the semis. Is it just AI or
+is it more than AI? Seems like there's
+just not enough memory to go around. How
+long is that going to last? And is there
+a risk that we get to, you know, a glut
+situation where this memory shortage
+leads to too much production at some
+point?
+>> I'm a former fundamental semiconductor
+analyst for many years, although it's
+been a long time. So long so that when I
+was an analyst, Nvidia was too small to
+cover by market cap and liquidity if you
+can believe that
+>> it's changed.
+>> Yeah. Look, I think this is going to be
+above compute is going to be an above GB
+GDP growing business for the next
+several years. And I think the way to
+think about it is what is the
+benchweight AI revenue exposure and you
+know what kinds of AI revenue are there
+and where in the AI revenue chain do am
+I willing to be over or underweight that
+index. We did some work a few months
+back reading in the top 3,000 US
+equities with an LLM doing some
+principal components and clustering and
+we came up with six AI revenue buckets.
+These are all companies that have
+meaningful AI revenue. is currently
+about 265 of the top 3,000 US equities
+by market cap have meaningful revenue
+which we define as 5% or more of their
+revenue or a new product announcement
+indicating that's imminent. When you do
+that, every sector is recommended except
+for consumer staples. All of the grade
+eight except for Apple have meaningful
+AI revenue. So there's a big chunk of
+market cap that's exposed here. I think
+the memory and and semicaps which are
+highly ced are one cluster and that's
+the one that's going to be the most
+volatile and we kind of think you have
+to be market weight that we've had a
+pretty sharp selloff here early in July
+but I think there's just so much
+earnings upside so we did um a bunch of
+work on micron in particular uh we did
+10,000 simulations varying the
+periodicity and amplitude of their
+earnings cycle kind of came to the
+conclusion that the stock trades around
+four to five times peak earnings and 10
+times normalized earnings right now we
+think that's probably a little bit too
+cheap. So, you're going to get
+volatility for sure, but I think there's
+a lot of upside to the base and and peak
+earnings in over the next 6 months. So,
+I don't think it's like the trade's
+over. And frankly, I don't think it'll
+be very easy for most people to call
+that. So, you know, when I look at
+portfolios and I see people really
+underweight that, I always wonder why
+that's their highest conviction idea
+when it's going to be so challenging to
+get right. Something that I can't decide
+what I think about this AI trade is on
+one hand I really am convinced that AI
+is a trend that you know could be bigger
+than the internet eventually. But the
+thing I can't seem to reconcile is where
+are they going to get the energy in the
+time frame that they need it and how
+does energy not become a gating factor
+that at some point prevents the growth
+of the AI industry. What do you think
+about that? Is there an energy gate and
+are there any efficiency technologies
+where eventually AI can do more with
+less energy?
+>> Sure, it's all the above, right? I mean,
+power and if you look at the stocks, um,
+you know, people have been bottleneck
+hunting on that AI path for several
+quarters now and you see that with the G
+Venova and Vistra and Constellations and
+you see it with Panasonic and you see it
+with Corning and and Sienna and other
+parts of the chain. So I I think there's
+no question people are focused on power.
+The big companies themselves have talked
+about access to it. In some ways what I
+think it does is prolong the periodicity
+of the cycle by preventing it from
+getting heated up to use an energy word
+earlier. You know, I think the challenge
+is, you know, we're in an earning super
+cycle for the S&P 500 and being bearish
+on AI is is and and thinking that you
+can time where the Google top is is
+going to be super challenging. So, I I
+like having exposure to different parts
+of the AI revenue chain and obviously
+power, utilities, and energy are are one
+meaningful chunk of that. As much as I
+hate to say it, my take on this is that
+whether we like it or not, China's got
+their act together better on energy than
+we do. Is there a way to play that in
+the market to benefit from that
+unfortunate situation for Americans?
+Great situation if you're Chinese. Yeah,
+I'll defer to you on on China's
+exposure. I'm I'm not so sure of the
+underlying fundamentals there, but there
+are definitely ways to play it within
+the US public market. I think the
+challenge is a lot of these stocks are
+really correlated to like an AI
+semiconductor basket. So what you have
+to decide is how much of that exposure
+do you want and stocks that previously
+had been considered anti-correlated or
+unrelated have become like some of the
+power and utilities are good examples
+right so I think you just have to ask
+yourself what's the bench weight do I
+want to be over or underweight I think
+there's a lot of things to own even
+traditional utilities could be good gas
+oil the whole the whole kind of chain uh
+nuke etc so I'm I'm kind of bullish on
+that base. Um, and I think the market is
+trying to look out to 2031 earnings and
+revenue and say like where could there
+be potential upside? I hear sometimes
+people say, you know, you mentioned the
+bubble word earlier. Hey, this is
+frustrating. The market's not trading on
+fundamentals. And I kind of disagree. I
+think the market is it's trading on a
+distribution of outcomes on 2031
+revenue. And the companies where the
+outear revisions are going up, I think,
+have have outperformed those where
+they're not going up. And so I think the
+power energy space is definitely one of
+those.
+>> What others do you see? Where are the
+other opportunities that that you see in
+the market for exceptional growth?
+Exceptional growth and good stocks
+aren't always the same thing. And for
+many years, you didn't want to own the
+fastest growing stocks because they came
+with higher expectations and more
+disappointment. But it's interesting you
+phrase it that way because in the last
+couple years fast revenue growth has
+outperformed especially among higher
+quality stocks because the high quality
+stocks have had multiple contraction.
+You needed to grow fast to offset it.
+But I'll I'll take the tenor of your
+question and say like what what really
+hasn't worked but could. I think the
+health care sector is kind of
+interesting because the market telling
+us that there's a 0% chance healthcare
+is the best performing sector in the
+market over the next 5 years and I think
+it's like a 30 or 40% chance and I want
+to arb that difference and you know what
+the market's telling me is that the
+government is going to stop paying for
+meaningful chunks of what they currently
+pay for and again I I just don't I don't
+think there's a political will for that
+to happen at the rate that's in the
+price. So we have an aging population.
+Healthcare revenue per share has grown
+every year 30 plus years in a row. The
+stocks are very anti-correlated to AI
+semis achievability should be should be
+above average here. So I kind of like
+all these things that are you know kind
+of potential AI productivity
+beneficiaries where the businesses have
+low margins could get better at
+predicting their employee and customer
+behavior with AI tools and driving out
+cost. So I I like tech we're
+recommending tech healthcare and energy
+I guess to summarize the offensive side
+of our recommendation set. We're hearing
+more and more people getting concerned
+about inflation, secular inflation
+risks, and we're we're seeing some
+signals in the markets. What's your
+take? Do you think that we have a
+serious inflation risk? And if so, who
+are the winners and losers as a result?
+I really don't think that actually, but
+again, like I think you hang out in the
+smart energy fixed income cohort of the
+world more than I do and I hang out in
+the dumb American equity cohort. And so
+we've learned that listening to interest
+rate strategists to to pull equity
+capital is a losers game. I mean, when I
+worked at Morgan Stanley, they were
+wrong every single year forecasting
+interest rates. Every year I worked
+there, they were wrong. And if I
+impregnated their rate view into my
+equity view, it would have not been
+helpful. And I'm not saying I can do it.
+I'm just saying these are all really
+smart people with access to the Fed and
+the Treasury and a lot of data and they
+couldn't get it right. So, why the hell
+would I I just one thing I've observed
+is that people always think there's some
+level of the 10-year yield that
+magically caps the ability for equities
+to work. And I think that's who I think
+when the market when growth is strong,
+the multiple expands and earnings grow.
+And so, I don't I'm not that worried
+that we're in some sort of
+stagflationary environment or growth
+scare and I wouldn't preposition for
+that in an equity book today. Adam,
+we've been talking a lot on this show
+about the Hormuz crisis, but I know you
+guys look at it from a different
+perspective, which is not trying to
+analyze the barrel counting and all
+that, but who are the companies that
+might not even be related to the oil
+business that are going to be the
+winners and losers as a result of this
+crisis? You published a note on that. I
+think it was more than a month or two
+ago.
+>> Yeah.
+>> Give us some perspective on that. How do
+you think about who wins and loses? you
+know, we have a US equity lens and so
+when I think about giving advice to our
+clients, it's going to be around like
+who could be the winners and losers. So
+what we did a while back is we we we
+looked at every earnings call transcript
+particularly through that April earning
+season when the bulk of them report and
+we look for any commentary from the top
+S&P 500 companies on Iran and on oil and
+um you know obviously
+that that could take the form of of many
+other things you know as you know quite
+well you've got whatever all the base
+petrochemicals that come from that some
+of the companies might talk about
+ethylene or propylene or ammonia or
+benzene or all that stuff. And so we
+wanted to see what companies have been
+saying on the topic, look at all the
+transcripts, figure out if their
+commentary was mixed, negative, neutral,
+or positive, and kind of see what we
+thought it could mean for estimates. And
+we came out with a view that it really
+wasn't. And this was done um the note we
+published was a couple months ago now,
+early May. We kind of concluded it
+wasn't going to have that big of a net
+impact on earnings. and a lot of the
+companies that it most negatively
+impacted were actually in in kind of
+lower quality consumer discretionary
+which had you know sort of largely been
+beaten up in an anticipatory fashion. So
+I I don't know. I I kind of think that
+the overall net impact from higher oil
+isn't that great. And that's why I made
+that comment earlier that I just don't
+think that that hormous related news
+earlier this week there were sort of
+three boats getting attacked and the
+president was talking about, you know,
+restricting Iran oil and and and oil
+went up. But I just don't see it causing
+like a huge sustained growth scare to US
+equities.
+>> You've also done some work on portfolio
+construction and how to diversify
+around. there's so much market
+concentration on this AI and
+semiconductor trade if you've got a lot
+of beta exposure to the S&P and you're
+concerned about that concentration risk.
+What do you do to round out the
+portfolio and and be diversified in case
+AI takes a nose dive at some point?
+>> Yeah, I mean that's a really good
+question and we spend a lot of time with
+um clients trying to think through that.
+I think there's a few things that you
+can do. I mean one is you have to
+measure your AI exposure carefully and
+that's why I mentioned you know kind of
+really trying to think through who what
+are the AI revenue beneficiaries and
+just figure out if which parts of the AI
+revenue chain you're over underweight
+two you got to find things that are not
+correlated to AI semis but also are good
+in other words I can find stuff that's
+not correlated that sucks right so the
+question is can I find stocks that maybe
+have a 02 or lower correlation to my AI
+semis basket that recently had upward
+revisions or that have positive momentum
+or decent alphas that a lot of those
+names are in energy or in healthcare or
+select uh industrials consumers places
+that just aren't the same trait because
+we all know Eaton and Caterpillar and
+and uh Gernova might look like they're
+an industrial and utility sectors but
+they're just 0.9 correlated to AI
+semiis. So I think it's measuring and
+then diversifying away from it. I think
+the defensive part also is important. So
+what are the low beta names can you own?
+Maybe it's not your your your father's
+forward so to speak. it's not maybe
+staples and and telos but maybe it's you
+know aggregates or you know maybe
+software is trading like tobacco used to
+or maybe it's other things that are
+defensive. So I I think that's one kind
+of vector of thinking and then I think
+the other thing is like how many stocks
+do you own? So when I talk to a lot of
+my clients I say well okay could
+anything happen in the next 10 years
+that would make you want to own more or
+less stocks? If you usually own 50
+stocks could something make you want to
+own 25 or 75 and what is that? And so we
+did a bunch of simulation work where we
+kind of said let's look let's pretend
+you're a 75th percentile stock picker.
+So like a really solid alpha generator
+and let's look at 25 50 75 and 100 stock
+portfolios and let's measure you
+simulate thousands of them for every a
+rolling one month period back for 25
+years and let's look at whether it made
+sense to run concentrated or diversified
+in various regimes. And our our
+conclusion was pretty strong that really
+since 2020 you had to run more
+diversified than normal. That the draw
+downs from concentrated portfolios even
+for 75th percentile stock pickers have
+been too extreme. And so running with
+more like 50 or 75 names for an
+institutional manager has just resulted
+in a lot better performance over the
+last few years. And whether that's the
+multistrats or retail or passive or
+whatever, it's hard to measure. But I
+feel like this is a regime where I got
+to own more names than normal because
+your point's spot on that if very few
+stocks are outperforming, but the ones
+that are outperforming by a lot, I can't
+afford not to have any exposure in that
+in that pond.
+>> It seems like the obvious thing to do
+there would be to look for value trades.
+Are there any value trades in this
+market? I mean, is that the right way to
+diversify or or is there nothing that
+that really fits the bid there?
+>> I don't really think valuation works to
+pick stocks. Meaning like if I buy cheap
+stocks and short expensive stocks, I
+make zero money and I haven't made any
+money doing that for 15 years. So that
+valuation doesn't work. Neither does
+like PEG ratio. What what does work
+actually and maybe this is just in the
+regime we're in is buying stocks that
+just got more expensive and avoiding
+stocks that just got cheaper. And the
+reason is if you look at stocks that
+just got more expensive over the last
+quarter, say on price to forward
+earnings, they actually have a higher
+probability of beating estimates. And
+given we're in this regime I mentioned
+earlier where the penalty for missing
+has been so harsh versus the reward for
+beating, you just can't afford to own
+stuff that misses. So we we've been
+looking a lot more for and by the way,
+the probability you beat a second time
+given you beat a first time this is
+higher than the unconditional
+probability. So all of a sudden it's not
+just momentum and more expensive. It's
+actually there's information in it.
+Companies that got cheaper have a higher
+probability of missing. Well, I don't
+want to own something that misses. So I
+think that logic has been more
+pervasive. And so I I don't think value
+the way people think about it like price
+to earnings or price of orderings or
+price of book. I I I don't think that
+has any information in it at all in in a
+in a less than three-year time frame.
+>> And where you're focused on US equities,
+do you consider the US political cycle
+in part of your analysis? is obviously
+what happens next as we come into these
+midterm elections could be pretty
+significant one way or the other.
+>> For sure. You know, I think it we
+definitely think about it. We look at
+polymarket odds on the on the house and
+the senate and there are a group of my
+clients that speculate on what could uh
+you know meaningful blue shift do to
+regulation and the financial sector to
+healthcare to defense to oil whatever
+but I think it's a different question to
+say do you think broadly your clients
+are prepositioning for that today? I'd
+say not really not really. I think it's
+hard for them, you know, I think it's a
+little a little premature for them to
+preposition for what happens.
+>> And do you analyze which stocks or which
+sectors would benefit from that blue
+shift? If you see it coming, look, when
+Harris's poly market probability peaked,
+I think it was in September before the
+last election, it started to come down.
+You started to see the micro structure
+of the market change a lot. You started
+seeing the alternative asset managers go
+up on on regulation and deal making. you
+know, there there are ways you can try
+to measure some changes in in the market
+micro structure, but you know, if I were
+CFO and and I thought I might have a
+regul regulatory issue, I'd probably get
+it done soon with a deal, but I just
+don't think right now there's a ton of
+folks that I'm talking to on the
+institutional side that are actively
+changing their portfolio strategy around
+this. I I I do think there'll be more
+conversation going forward. I think
+there's some confusion about what the
+president can do unilaterally versus
+what the House and Senate would do. I
+think historical data shows that a red
+president and and a blue uh you know
+house and senate you know that gridlock
+generally is is good for equities
+because you get less sort of change but
+you know the president hasn't always
+relied on on those branches of
+government to to facilitate the change
+anyway. So I think people are a little
+bit unsure that there's statistical
+significance to the historical analog
+that they should position for today.
+Adam, the obvious uh move here in a
+richly valued market would be to focus
+on quality stocks. Tell me about how you
+guys at Tvariat, it's easy to say we
+only choose quality stocks. How do you
+decide which ones are truly quality
+stocks? It's a good question and that's
+really changed over time and I have a a
+different view and evolving view on
+that. You know, we have our own way of
+scoring that. We tag stocks monthly as
+high, mid, low quality or junk into
+these four buckets.
+The way we computed high quality
+actually hasn't beaten junk for six
+years now. So a lot of my a lot of
+instit institutional investors complain,
+oh this junk run, the Goldman junk
+basket, the profitless basket, like
+that's beating quality. And I keep I've
+been hearing that complaint for a really
+long time. It's definitely true that
+junk stocks outperform high quality
+historically 3 months before a recession
+bottom where you get a lot of monetary
+stimulus, fiscal stimulus, and then the
+stocks that were discounting bankruptcy
+that are generally the junk stocks
+outperform a ton. I assume that's the
+same in the bond market as well. But
+what's happened and been different
+recently is just that the high quality
+companies have underperformed because
+the average one maintaining your
+awesomeness doesn't really carry any
+price to earnings expansion. it's it the
+median high quality companies had
+multiple contraction and so this sort of
+ability to improve has been what's
+what's better and so we don't really
+think quality investing works very well
+um and it hasn't for a long time. It is
+true that companies where the quality
+improved
+particularly lowquality and value stocks
+can outperform but it's not it's
+contemporaneous not predictive. So you
+don't you don't want to buy something
+that just improved its quality. You have
+to be right that it's going to improve.
+So, we do a lot of work on on quality
+and and changing quality. I I I also
+think that maybe not everyone
+understands this, but the way we tag
+stocks, high, mid, low quality, and
+junk, about 82% of the current S&P 500
+market cap is top half quality. So, like
+a reasonable question for a long
+investor trying to beat the S&P 500
+would be, do you need to be overweight
+to 82%. I mean, maybe you can be a high
+quality skewed investor and own
+twothirds top half quality and you're
+way underweight the index. And I think
+that's been a better strategy, you know,
+for quality investing over the last few
+years.
+>> We talked earlier about investing in the
+AI sector. Do you use AI in your
+research? And if so, how? So, we use it
+a ton and it's evolving. It's, you know,
+we we're a small firm, Triari Research,
+but we have a pretty substantial token
+expense, you know. So our firm always
+has you know every day for the biggest
+3,000 US equities we're we're
+downloading or computing hundreds of
+pieces of information for for you know
+these companies we're doing the natural
+language processing of all their
+earnings called transcripts and all
+that. So we've always done things
+quantitatively and you know kind of
+systematically to do the research but
+the AI tools are amazing. Like I I'll
+give you an example. Um it's kind of
+cool. So so I write a note every Sunday
+at 5:00 p.m. East Coast time called a
+level set. The idea is, you know, we do
+I think I do whatever is 15 or 16
+institutional investor meetings for an
+hour every week and whatever. So, in
+some ways my Sunday notes reflecting
+what I'm hearing from investors,
+questions, sentiment, new data, etc. So,
+we use Claude and analyzed all of my
+Sunday level sets for the last three and
+a half years to see if there's any
+subsequent oneweek predictive power in
+the language I was using in my level
+sets. And the answer was there was, you
+know, broken into like very neutral,
+bearish, very bearish sentiment from my
+language and found there was actually
+some predictive value. So there's
+there's crazy ways we're using it all
+the time. I'd say the main way it's
+awesome is actually for data ingestion,
+but there's so many ways to code more
+efficiently, etc. So we're we're huge
+users of um of the you know of the
+tools. You mentioned quant analysis.
+There's of course also quant funds that
+in many cases use what originally were
+very simple algorithmic trading systems.
+Now they're AI based algorithmic trading
+systems. What are the impacts on the US
+market? I' I've heard that the volume of
+transactions these days you know a huge
+percentage of transactions in US
+equities are actually you know robots
+that are doing the trading. How much
+does that affect the market? You know,
+it's it's it's even less um the robots
+than the pods in a way, right? Like the
+robots are gaining. There's definitely
+been some new quant strategies that are
+pure AI have announced. I haven't heard
+any that have been too successful yet.
+There's going to be more, but it's
+actually more the quant pods. So, if you
+think about the multistrats that are out
+there, and there's a lot of them. Um
+most of them have many teams. So, pick
+pick one multistrat A, right? They might
+have 30 quant teams at one of these
+multistrats. The quant teams might run
+50 to $150 million each. it might be
+around 6 to 1200 gross exposure in the
+back room. So now one multistrat's
+running $20 billion balance sheet wise
+and remember there's 15 of these firms
+and each of those teams has hundreds of
+longs and hundreds of shorts and the
+part that kind of melts your motherboard
+is the holding period of these is
+usually 3 hours to 10 days with a median
+of about 5 days. So almost all quant
+money these days is run with a 20 30%
+daily turnover. So if you think about
+the impact that has in the market, like
+if I told you I'm running $50 million
+quantitatively, you might be like
+whatever. You're you're like, you know,
+a gnat on an elephant's ass. But when
+you think about the fact that there
+might be 35 teams like mine running
+1,200 gross and then 12 firms like mine,
+the impact is massive on the equity
+market trading on a daily basis. And yet
+a lot of those quants purposely don't
+operate when companies report earnings
+because the fundamental news actually
+fouls up the efficacy of their algo. So,
+are we approaching a point where the
+human trader is basically outgunned by
+the robots and you know it's pointless
+to try to beat them or are there still
+some markets that also and quants just
+aren't good at that humans are better
+at?
+>> No, I think there are always going to be
+tons of area for fundamentals. I mean,
+look, I spent a lot of time thinking
+like if I were CIO of a fundamental
+shop, where would I deploy my alpha
+generating widgets to beat the to beat
+the index? and quant horizon super short
+is really capturing price liquidity and
+whether one other signal obviously over
+meaningful periods of time something
+about the reported P&L of a company you
+know impacts its value right so I think
+a lot of my view is like quant is
+probably helpful for purely for like a
+third of equities probably quant plus
+fundamental combined is probably good
+for about a third then pure fundamentals
+is good for a third I used to have a
+quant model and I ranked stocks and if I
+ever met a fundamental analyst and
+Morgan Stanley for example and the model
+disagreed everything the fundamentals
+analyst said back to me I was
+disadvantaged so I made a list of that
+like where do the quant models fail and
+then I realized no no no no that's not
+what I should call the page I should
+call it where should fundamental people
+spend their time and so these tend to be
+areas like is there a new CEO or CFO is
+there a deal is there a complex capital
+structure is there a litigation is there
+something highly company specific coming
+a product a drug a new technology a new
+consumer product right you know is Was
+there a an imminent secondary? Was there
+a broken follow like anything where a
+human being can intervene and add value?
+And I think that's about a third of the
+equities. And I think human beings tend
+to introduce volatility into equities.
+And so I think there'll always be room
+for alpha generation. Well, Adam, I
+can't thank you enough for a terrific
+interview. Before I let you go though,
+please tell our listeners a little bit
+about what you guys do at Triariat
+Research. I think you also have a uh
+retail brand as well. Tell us about
+that. what services are on offer and how
+people can follow your work. I mean so
+our core business TV we sell to
+institutions but the business that I
+think your listeners might be interested
+is called Tvector Research. So they
+should go to www.trivectoresarch.com
+which is t r i vec t o r tvecctor
+research and on there we do financial
+insights two or three short publications
+a week. We do uh weekly videos where I
+kind of talk about main issues. I do
+monthly zooms where I'll take live
+questions from investors. We do ETF
+analysis, sort of a Dave Portoi pizza
+review style of all the ETFs. We write a
+lot of insights like why you should stay
+fully invested equities and not make,
+you know, short-term market calls and
+how to dollar cost average new business
+for your advisor. We try to like give
+advice. It's a $100 $110 a month or
+$1,200 a year product. So it's basically
+just a newsletter and um we you know we
+have a lot of uh you know subscribers
+which we're really excited about and you
+know we provide some weekly data uh a
+dashboard that people want with some
+unique data about US equities. So if you
+care about US equities and want insights
+on that definitely go to
+triacctorresearch.com or uh you can
+follow us on LinkedIn or on X as well.
+Mile Begnan and Patrick Szna will be
+back with our macrovoices trading desk
+segment right after this.
+>> Welcome to the macrovoices trading desk.
+I'm Patrick Serzna.
+>> And I'm Michelle McNan. Let's drive
+straight into the trade of the week.
+Patrick, what do we got this week?
+>> Now, coming out of Adam Parker's
+interview, the setup is pretty
+straightforward. If you want to stay
+constructive on equities without adding
+more exposure to the crowded tech, he
+was suggesting energy is one of the
+cleanest places to rotate. So, for this
+week's trade of the week, I want to
+express this through the XLE, which is
+the energy sector ETF, which is trading
+around 55 and a quarter at the time of
+recording. Now, for investors, simply
+adding energy as a part of a diversified
+portfolio, owning the ETF outright is a
+perfectly reasonable approach. But for
+those taking a more concentrated
+position, I'd consider a short-term
+asymmetric collar overlay as a
+volatility dampener. Now, using the
+August 21st, 2026 expiration about 43
+days out, I'm looking at buying the $50
+put for around 30 cents and selling the
+$65 call for about 20 cents, creating a
+50x65 collar for about a 10-cent net
+debit. This leaves about $10 upside
+potential from here and the hedge kicks
+in about $5 lower, giving you a clean
+way to stay with the energy leadership
+theme throughout what could be a
+headline driven summer tape. Now,
+everything I just walked you through,
+that's what I do live every single
+morning at Big Picture Trading, Monday
+through Thursday at 9:45 a.m. I'm
+analyzing and trading these markets
+live. You can even bring me a setup
+you're watching and I'll break it down
+on the spot right there on Where's the
+Trade to watch me free for the next two
+weeks. Just go to
+bigpicturertrading.com/mv.
+All right, Patrick, you know what? After
+a 50% correction from the May highs on
+energy stocks, it's definitely an
+interesting tactical entry point. I like
+that the short call sits right above
+that 52- week high, giving the trade
+lots of room. All right, let's dive into
+equities. All right, mass let's dive
+into it. On the geopolitical front, the
+US Iran ceasefire collapsed. Now,
+renewed concerns in the markets about
+the fallout and the impact on energy and
+inflation. Now, the first reactions in
+the market have been contained to small
+amounts of volatility. The bigger
+question in these markets is have we
+seen the top and the Cosby and the
+semiconductors and has a bigger sector
+rotation begun? Now, if this rotation is
+underway, can it occur without the
+markets hitting the systematic sell trip
+wires that could exacerbate that
+downside volatility? So far, we're
+staying away from those systematic
+trigger points. The real puzzle to solve
+here is that if those semis begin a
+profit taking cycle, will that index be
+able to absorb the pressure without
+tripping into those index cell triggers?
+All indications right now are that those
+sell triggers are somewhere around that
+7,300 to 7350 level on the S&P. So those
+are going to be the technical levels to
+watch for sure from here. All right, I
+want to add to that, Patrick. From a
+positioning perspective, the S&P and the
+Dow futures remain in the 100th
+percentile of long positioning with a
+one-year look back. This directly
+reflects the CTA systematic positioning.
+The market is holding strong so far, but
+things can get messy if these long
+positions start rebalancing their
+exposures. All right, let's rotate to
+the dollar here. Pat, what do you see?
+Well, listen, that bullish breakout of
+the 15-month trade range is holding. The
+consolidation has been contained well
+above the 100 level on that Dixie. Now
+looking at some of the cross currencies,
+Thursday we saw a big break on the
+downside on that US dollar yen which
+could have triggered carry trade
+pressures but instead the entire move
+faded within days which continues to
+show that the US dollar strength and
+global funding stresses remain in the
+driver's seat. Now missile how does it
+look from a positioning perspective? We
+continue to see extreme positioning on
+US dollar and correspondingly washed out
+or short positioning on most cross
+currencies. We don't automatically
+assume this to be a contrad opportunity
+until we see when the price stops
+confirming. Now Pat, let's move out to
+crude. What are you seeing? Well,
+listen. The narrative flipped on a dime.
+From oil trading back to pre-war levels
+below $70 to now having to discount a
+war risk premium. Oil has to assess
+global depleted inventories against the
+constrained oil flows through that
+straight of hormuz. Now WTI oil
+rebounded with a trough to peak $9
+advance before settling down. The big
+question is there a builtup short
+positioning that can add short squeeze
+fuel to the fire. A 50% retracement of
+the two-month decline is back to the $90
+level. It was very likely that the
+forced flows of the over the last month
+overshot the price of oil to the
+downside. So, this current advance will
+likely settle in in a much more
+sustainable fair value zone. Now, as of
+last week's SC report positioning, the
+large and small speculators continued
+reducing long exposures to the 30th
+percentile while still far from 52- week
+lows. It is noteworthy that we are at
+the lowest exposure since the war began.
+All right, now let's move forward on
+gold. What's happening now? Mass gold
+remains in a primary downtrend and the
+price action continues to exhibit all of
+the characteristics of distribution.
+Monday saw the bulls attempt a bullish
+reversal that was immediately met with
+supply driving the price back down to
+last week's trade range. We continue
+trading right at a psychological round
+number near 4,000 which lies at that
+Fibonacci retracement zone of the 2-year
+bull advance which suggests the
+asymmetry of being long has reset. Now
+this would be a logical place to see the
+bulls hold the line but there's no
+evidence of that. Now if 4,000 doesn't
+hold the next level down is a key
+support line that lies in that 36 to
+3700 level. While I'm not necessarily
+anticipating it to get down there, that
+would be the target if the 4,000 level
+gives out. Now, interestingly enough, I
+was looking at the report and large
+speculators were at the 0 percentile on
+a one-year look back at the end of May.
+And while the price has been weak, you
+can see the large speculators rebuilding
+long exposure. So, this is quietly
+occurring on silver as well. Now looking
+at other precious metals, we've seen
+substantial deleveraging in the
+palladium space now pressing to the
+bottom dile of its one-year look back.
+While it looks extreme, it's important
+to note that long positioning is still
+substantially higher than its 2024 2025
+lows. All right, listeners, this is
+where I want to introduce a new segment
+called the COT signal positioning pulse
+where Mile highlights some of the key
+changes in the futures markets that we
+didn't cover yet. So Mass, what are you
+looking at right now? All right, let's
+get into this week's positioning pulse.
+And this week, the numbers all point to
+rates. Since the Fed president's speech,
+the consensus in the market has flipped
+hard. From rate cuts to two or three
+hikes being priced in, and the
+positioning shows everyone leaning into
+that. You know, we talked about the
+dollar crowded long at the top of its
+one-year range, the pound and the yen at
+their most net short, but look at what
+the tape is doing. Bonds are back above
+where they were the day of that speech.
+And in the newest report, the single
+biggest move on the board was a 30-year
+bond. Large speculators covered 85,000
+contracts of shorts in one week from
+near the bottom of the range to the
+middle, while commercials flipped from
+net long to net short and the small
+speculators added 30,000 long contracts.
+That's the first real crack we've seen
+in the everyone short the long end
+trade. And if you want to get all of
+this data and its related charts, you
+can get all of it at codsignal.com. the
+moment the CFTC updates this report
+every single Friday. Great observations,
+Mass. I'm definitely going to watch this
+going into next week. Now, listeners,
+reminder that you can find the trade of
+the week chart book and the supporting
+links in this week's research roundup or
+on the homepage of macrovoices.com.
+Now, that does it for this week's
+edition of Macrovoic's Marketes. Have a
+great trading day, everyone. Thanks for
+joining us.
+>> Have a great trading day, everyone.
+That concludes this edition of
+Macrovoices. Be sure to tune in each
+week to hear feature interviews with the
+brightest minds in finance and
+macroeconomics.
+Macrovoices is made possible by
+sponsorship from bigpicturrading.com,
+[music] the internet's premier source of
+online education for traders. Please
+visit bigpicturertrading.com
+for more information. Please register
+your free account at macrovoices.com.
+[music]
+Once registered, you'll receive our free
+weekly research roundup email containing
+[music] links to supporting documents
+from our featured guests and the very
+best free financial content our
+volunteer research team could find on
+the internet each week. You'll also gain
+[music] access to our free listener
+discussion forums and research library.
+And the more registered [music] users we
+have, the more we'll be able to recruit
+high-profile feature interview guests
+for future programs. [music] So, please
+register your free account today at
+macrovoices.com
+if you haven't already. You can
+subscribe [music] to Macrovoices on
+iTunes to have Macrovoices automatically
+delivered to your mobile device each
+week free of charge. You can email
+questions for the program to
+mailbag@macrovoices.com
+and we'll answer your questions on the
+air from time to time in our mailbag
+segment. Macrovoices is presented
+[music] forformational and entertainment
+purposes only. The information presented
+on macrovoices should not be construed
+as investment advice. Always consult a
+licensed investment professional before
+[music] making investment decisions. The
+views and opinions expressed on
+Macrovoices are those of the
+participants and do not necessarily
+reflect those of the show's hosts or
+sponsors. Macrovoices, [music] its
+producers, sponsors, and hosts, Eric
+Townsend and Patrick Serzna shall not be
+liable for losses [music] resulting from
+investment decisions based on
+information or viewpoints presented on
+Macrovoices. [music]
+Macrovoices is made possible by
+sponsorship from bigpicturetrading.com
+and by funding from Fourth Turning
+Capital Management LLC. For more
+information, visit macrovoices.com.
